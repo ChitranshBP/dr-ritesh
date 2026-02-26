@@ -18,32 +18,72 @@
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
+            <!-- Logo -->
             <a href="#" class="logo">
-                <span class="logo-dr">Dr. Ritesh Amin</span>
-                <span class="logo-title">Psychiatry & TMS</span>
+                <span class="logo-mark">
+                    <svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="3" fill="currentColor"/></svg>
+                </span>
+                <div class="logo-text">
+                    <span class="logo-name">Dr. Ritesh Amin</span>
+                    <span class="logo-tag">MD &middot; Psychiatry &amp; TMS</span>
+                </div>
             </a>
+
+            <!-- Desktop nav links -->
             <div class="nav-links">
-                <a href="#about">About</a>
+                <a href="#about" class="nav-link">About</a>
                 <div class="dropdown">
-                    <a href="#" class="dropbtn">Services <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                    <div class="dropdown-content shadow-soft">
-                        <a href="/neurology-tms-therapy/">Neurology TMS</a>
-                        <a href="/psychiatry-tms-therapy/">Psychiatry TMS</a>
-                        <a href="/what-is-spravato">Spravato (Esketamine)</a>
-                        <a href="/what-is-ketamine-therapy">Ketamine Therapy</a>
+                    <a href="#" class="nav-link dropbtn">
+                        Services
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/neurology-tms-therapy/">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                            Neurology TMS
+                        </a>
+                        <a href="/psychiatry-tms-therapy/">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+                            Psychiatry TMS
+                        </a>
+                        <a href="/what-is-spravato">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                            Spravato (Esketamine)
+                        </a>
+                        <a href="/what-is-ketamine-therapy">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></span>
+                            Ketamine Therapy
+                        </a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="#" class="dropbtn">Resources <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-                    <div class="dropdown-content shadow-soft">
-                        <a href="/reviews">Patient Testimonials</a>
-                        <a href="/faq">FAQs</a>
-                        <a href="/blog">Blog</a>
-                        <a href="/mental-health-resources">Resources</a>
+                    <a href="#" class="nav-link dropbtn">
+                        Resources
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/reviews">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                            Patient Testimonials
+                        </a>
+                        <a href="/faq">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                            FAQs
+                        </a>
+                        <a href="/blog">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+                            Blog
+                        </a>
+                        <a href="/mental-health-resources">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                            Resources
+                        </a>
                     </div>
                 </div>
-                <a href="/contact" class="btn btn-primary btn-sm">Schedule Consultation</a>
+                <a href="/contact" class="btn btn-primary btn-sm nav-cta">Schedule Consultation</a>
             </div>
+
+            <!-- Mobile hamburger -->
             <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -55,41 +95,96 @@
     <!-- Hero Section -->
     <header class="hero" id="hero">
         <div class="hero-bg"></div>
-        <div class="hero-orb hero-orb-1"></div>
-        <div class="hero-orb hero-orb-2"></div>
-        <div class="container hero-container">
-            <div class="hero-content reveal">
-                <p class="hero-eyebrow-text"><span class="hero-eyebrow-dot"></span>Board Certified Psychiatrist &middot; New Jersey</p>
-                <h1 class="hero-title">Advanced TMS Therapy for <span class="hero-title-accent">Depression</span> & Mental Wellness</h1>
-                <p class="hero-subtitle">Experience non-invasive, FDA-approved treatment specifically tailored for your journey to recovery by Dr. Ritesh Amin.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
-                    <a href="#tms-therapy" class="btn btn-ghost">Learn About TMS</a>
-                </div>
-                <div class="trust-badges">
-                    <div class="badge">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span>Board Certified</span>
+
+        <!-- Two-column editorial split -->
+        <div class="hero-split">
+
+            <!-- ── Left: Content ── -->
+            <div class="hero-left">
+                <div class="hero-content reveal">
+                    <p class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Board-Certified Psychiatrist &middot; New Jersey</p>
+                    <h1 class="hero-title">
+                        Advanced TMS<br>
+                        Therapy for<br>
+                        <em class="hero-title-accent">Mental Clarity.</em>
+                    </h1>
+                    <div class="hero-rule"></div>
+                    <p class="hero-subtitle">FDA-approved, non-invasive brain stimulation therapy tailored by Dr. Ritesh Amin for treatment-resistant depression, anxiety, and complex psychiatric conditions.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+                        <a href="#tms-therapy" class="btn btn-ghost">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z"/></svg>
+                            Explore TMS
+                        </a>
                     </div>
-                    <div class="badge">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                        <span>FDA-Approved TMS</span>
-                    </div>
-                    <div class="badge">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-                        <span>Compassionate Care</span>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">500<span class="hero-stat-sup">+</span></span>
+                            <span class="hero-stat-lbl">Patients Treated</span>
+                        </div>
+                        <div class="hero-stat-div"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">15<span class="hero-stat-sup">+</span></span>
+                            <span class="hero-stat-lbl">Years Experience</span>
+                        </div>
+                        <div class="hero-stat-div"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">4.9<span class="hero-stat-sup">★</span></span>
+                            <span class="hero-stat-lbl">Patient Rating</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="hero-image-wrapper reveal delay-1">
-                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dr. Ritesh Amin Portrait" class="hero-image">
-                <div class="hero-image-glow"></div>
-                <div class="hero-image-arc"></div>
+
+            <!-- ── Right: Doctor portrait ── -->
+            <div class="hero-right reveal delay-1">
+                <div class="hero-img-frame">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Dr. Ritesh Amin, MD" class="hero-img">
+                    <div class="hero-img-overlay"></div>
+                </div>
+                <!-- Floating glass credential card -->
+                <div class="hero-cred-card">
+                    <div class="hero-cred-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="hero-cred-info">
+                        <span class="hero-cred-title">Board Certified</span>
+                        <span class="hero-cred-sub">American Board of Psychiatry &amp; Neurology</span>
+                    </div>
+                </div>
+                <!-- FDA pill tag -->
+                <div class="hero-fda-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    FDA Approved
+                </div>
+                <!-- Vertical name — editorial detail -->
+                <p class="hero-name-vert">Dr. Ritesh Amin &middot; MD &middot; Psychiatrist</p>
+            </div>
+
+        </div>
+
+        <!-- Scrolling marquee strip -->
+        <div class="hero-marquee" aria-hidden="true">
+            <div class="hero-marquee-track">
+                <span>TMS Therapy</span><span class="mq-dot">◆</span>
+                <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
+                <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
+                <span>OCD</span><span class="mq-dot">◆</span>
+                <span>FDA-Approved</span><span class="mq-dot">◆</span>
+                <span>NJ Licensed</span><span class="mq-dot">◆</span>
+                <span>Non-Invasive</span><span class="mq-dot">◆</span>
+                <span>ABPN Certified</span><span class="mq-dot">◆</span>
+                <span>TMS Therapy</span><span class="mq-dot">◆</span>
+                <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
+                <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
+                <span>OCD</span><span class="mq-dot">◆</span>
+                <span>FDA-Approved</span><span class="mq-dot">◆</span>
+                <span>NJ Licensed</span><span class="mq-dot">◆</span>
+                <span>Non-Invasive</span><span class="mq-dot">◆</span>
+                <span>ABPN Certified</span><span class="mq-dot">◆</span>
             </div>
         </div>
-        <div class="hero-scroll-indicator">
-            <div class="hero-scroll-bar"></div>
-        </div>
+
     </header>
 
     <!-- Our Main Service Section -->
@@ -111,7 +206,7 @@
                 <div class="services-track" id="servicesTrack">
                     <!-- Service Card 1 -->
                     <div class="service-card">
-                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Neurology TMS Therapy" class="service-img">
+                        <img src="assets/images/neurology_tms_therapy.png" alt="Neurology TMS Therapy" class="service-img">
                         <div class="service-overlay"></div>
                         <span class="service-tag">Neuromodulation</span>
                         <div class="service-content">
@@ -126,7 +221,7 @@
 
                     <!-- Service Card 2 -->
                     <div class="service-card">
-                        <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Psychiatry TMS Therapy" class="service-img">
+                        <img src="assets/images/psychiatry_tms_therapy.png" alt="Psychiatry TMS Therapy" class="service-img">
                         <div class="service-overlay"></div>
                         <span class="service-tag">Psychiatry</span>
                         <div class="service-content">
@@ -141,7 +236,7 @@
 
                     <!-- Service Card 3 -->
                     <div class="service-card">
-                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Spravato Treatment" class="service-img">
+                        <img src="assets/images/spravato_treatment.png" alt="Spravato Treatment" class="service-img">
                         <div class="service-overlay"></div>
                         <span class="service-tag">Esketamine</span>
                         <div class="service-content">
@@ -156,7 +251,7 @@
 
                     <!-- Service Card 4 -->
                     <div class="service-card">
-                        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ketamine Therapy" class="service-img">
+                        <img src="assets/images/ketamine_therapy.png" alt="Ketamine Therapy" class="service-img">
                         <div class="service-overlay"></div>
                         <span class="service-tag">Infusion Therapy</span>
                         <div class="service-content">
