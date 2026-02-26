@@ -471,7 +471,7 @@ img {
 }
 
 /* ── Mobile full-screen menu ── */
-@media (max-width: 900px) {
+@media (max-width: 991px) {
     .mobile-menu-btn { display: flex; }
 
     /* Relative dropdown panel */
@@ -1489,6 +1489,7 @@ img {
     display: flex;
     flex-direction: column;
     border-top: 1px solid rgba(197, 168, 128, 0.2);
+    margin-bottom: 2rem;
 }
 
 .accordion-item {
@@ -2535,6 +2536,12 @@ img {
 /* =========================================
    RESPONSIVE DESIGN
    ========================================= */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
 @media (max-width: 991px) {
     .container { padding: 0 1.5rem; }
     
