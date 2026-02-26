@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -type f -exec ls -lh {} ;)",
+      "Read(//d/download/ritesh/**)"
+    ]
+  }
+}
