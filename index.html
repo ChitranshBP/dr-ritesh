@@ -13,6 +13,42 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: { DEFAULT: '#0b192c', light: '#162b47' },
+                        gold:     { DEFAULT: '#c5a880', light: '#d6be99' },
+                        beige:    { DEFAULT: '#faf9f6', dark: '#f0ebe1'  },
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans:  ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* ── Component classes powered by Tailwind @apply ── */
+        .eyebrow {
+            @apply block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4;
+        }
+        .section-header        { @apply mb-16; }
+        .section-header.center { @apply text-center max-w-[800px] mx-auto; }
+        .section-title         { @apply text-[2.5rem] mb-4; }
+        .section-subtitle      { @apply text-[1.1rem] max-w-[600px] mx-auto; }
+
+        /* Responsive override for section-title — kept here so it wins over the base rule above */
+        @media (max-width: 991px) {
+            .section-title { font-size: 2.2rem; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -297,7 +333,7 @@
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Board Certified by the ABPN</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Specialized expertise in Neuromodulation</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary mt-4">Book an Appointment</a>
+                    <a href="#contact" class="btn btn-primary mt-6">Book an Appointment</a>
                 </div>
             </div>
         </div>
@@ -505,7 +541,7 @@
                         </div>
                     </div>
                     
-                    <a href="#contact" class="btn btn-primary mt-5">Book Your Consultation</a>
+                    <a href="#contact" class="btn btn-primary mt-12">Book Your Consultation</a>
                 </div>
 
                 <!-- Right: Large Clean Image -->
@@ -686,8 +722,8 @@
     <section class="closing-cta">
         <div class="container text-center reveal">
             <h2 class="section-title text-white">Take the First Step Toward Better Mental Health</h2>
-            <p class="section-subtitle text-white-70 mb-5">You don't have to navigate this journey alone. Dr. Amin and our dedicated team are here to help you regain your life.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-4">Book Your Consultation Today</a>
+            <p class="section-subtitle text-white/70 mb-8">You don't have to navigate this journey alone. Dr. Amin and our dedicated team are here to help you regain your life.</p>
+            <a href="#contact" class="btn btn-primary py-5 px-12 text-lg mt-6">Book Your Consultation Today</a>
         </div>
     </section>
 
@@ -696,12 +732,12 @@
         <div class="container">
             <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
                 <div class="footer-brand">
-                    <a href="#" class="logo mb-4">
+                    <a href="#" class="logo mb-6">
                         <span class="logo-dr text-white">Dr. Ritesh Amin</span>
                         <span class="logo-title text-gold">Psychiatry & TMS</span>
                     </a>
-                    <p class="text-white-70 mt-3">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
-                    <p class="emergency-disclaimer mt-4">
+                    <p class="text-white/70 mt-3">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
+                    <p class="emergency-disclaimer mt-6">
                         <strong>Emergency:</strong> If you are experiencing a medical emergency or a crisis, please call 911 or visit the nearest emergency room immediately.
                     </p>
                 </div>
@@ -736,7 +772,7 @@
                 </div>
             </div>
             
-            <div class="map-wrapper mt-5 mb-5" style="border-radius: var(--radius-lg); overflow: hidden;">
+            <div class="map-wrapper mt-12 mb-12" style="border-radius: var(--radius-lg); overflow: hidden;">
                 <div class="map-placeholder" style="margin-bottom: 0;">
                     <span>Interactive Google Map Location<br><small>New Jersey Clinic</small></span>
                 </div>
