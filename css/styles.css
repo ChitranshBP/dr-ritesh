@@ -1924,7 +1924,7 @@ img {
     height: 48px;
     border-radius: 50%;
     background: var(--color-gold);
-    color: var(--color-midnight);
+    color: white;
     font-family: var(--font-serif);
     font-weight: 700; /* Bold */
     font-size: 1.25rem;
