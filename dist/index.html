@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ritesh Amin | Advanced TMS Therapy &amp; Psychiatry in NJ</title>
+    <meta name="description" content="Dr. Ritesh Amin offers cutting-edge, FDA-approved TMS therapy, Spravato, and comprehensive psychiatric care in New Jersey for depression and anxiety.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: { DEFAULT: '#0b192c', light: '#162b47' },
+                        gold:     { DEFAULT: '#256fa8', light: '#5dadee' },
+                        beige:    { DEFAULT: '#ffffff', dark: '#f4f7fb'  },
+                        sage:     { DEFAULT: '#E8F1F2', dark: '#D1E3E6' }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans:  ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* ── Component classes powered by Tailwind @apply ── */
+        .eyebrow {
+            @apply block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4;
+        }
+        .section-header        { @apply mb-16; }
+        .section-header.center { @apply text-center max-w-[800px] mx-auto; }
+        .section-title         { @apply text-[2.5rem] mb-4; }
+        .section-subtitle      { @apply text-[1.1rem] max-w-[600px] mx-auto; }
+
+        @media (max-width: 991px) {
+            .section-title { font-size: 2.2rem; }
+        }
+
+        
+        /* Responsive override for section-title — kept here so it wins over the base rule above */
+        @media (max-width: 991px) {
+            .section-title { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body class="bg-beige">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <span class="logo-mark">
+                    <svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="3" fill="currentColor"/></svg>
+                </span>
+                <div class="logo-text">
+                    <span class="logo-name">Dr. Ritesh Amin</span>
+                    <span class="logo-tag">MD &middot; Psychiatry &amp; TMS</span>
+                </div>
+            </a>
+
+            <!-- Desktop nav links -->
+            <div class="nav-links">
+                <a href="/dr-ritesh-amin.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        Services
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/neurology-tms-therapy.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                            Neurology TMS
+                        </a>
+                        <a href="/psychiatry-tms-therapy.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+                            Psychiatry TMS
+                        </a>
+                        <a href="/what-is-spravato.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                            Spravato (Esketamine)
+                        </a>
+                        <a href="/what-is-ketamine-therapy.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></span>
+                            Ketamine Therapy
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        Resources
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/reviews">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                            Patient Testimonials
+                        </a>
+                        <a href="/faq">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                            FAQs
+                        </a>
+                        <a href="/blog">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+                            Blog
+                        </a>
+                        <a href="/mental-health-resources">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                            Resources
+                        </a>
+                    </div>
+                </div>
+                <a href="/contact.html" class="btn btn-primary btn-sm nav-cta">Schedule Consultation</a>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-bg"></div>
+
+        <!-- Two-column editorial split -->
+        <div class="hero-split">
+
+            <!-- ── Left: Content ── -->
+            <div class="hero-left">
+                <div class="hero-content reveal">
+                    <p class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Board-Certified Psychiatrist &middot; New Jersey</p>
+                    <h1 class="hero-title">
+                        Advanced TMS<br>
+                        Therapy for<br>
+                        <em class="text-[#5dadee] not-italic">Mental Clarity.</em>
+                    </h1>
+                    <div class="hero-rule"></div>
+                    <p class="hero-subtitle">FDA-approved, non-invasive brain stimulation therapy tailored by Dr. Ritesh Amin for treatment-resistant depression, anxiety, and complex psychiatric conditions.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+                        <a href="#tms-therapy" class="btn btn-ghost">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z"/></svg>
+                            Explore TMS
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">500<span class="hero-stat-sup">+</span></span>
+                            <span class="hero-stat-lbl">Patients Treated</span>
+                        </div>
+                        <div class="hero-stat-div"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">15<span class="hero-stat-sup">+</span></span>
+                            <span class="hero-stat-lbl">Years Experience</span>
+                        </div>
+                        <div class="hero-stat-div"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-num">4.9<span class="hero-stat-sup">★</span></span>
+                            <span class="hero-stat-lbl">Patient Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Right: TMS Chair portrait ── -->
+            <div class="hero-right reveal delay-1">
+                <div class="hero-img-frame">
+                    <img src="assets/images/tms_brain_banner.png" alt="Advanced TMS Therapy Chair" class="hero-img">
+                    <div class="hero-img-overlay"></div>
+                </div>
+                <!-- Floating glass credential card -->
+                <div class="hero-cred-card">
+                    <div class="hero-cred-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="hero-cred-info">
+                        <span class="hero-cred-title">Board Certified</span>
+                        <span class="hero-cred-sub">American Board of Psychiatry &amp; Neurology</span>
+                    </div>
+                </div>
+                <!-- FDA pill tag -->
+                <div class="hero-fda-pill">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    FDA Approved
+                </div>
+                <!-- Vertical name — editorial detail -->
+                <p class="hero-name-vert">Dr. Ritesh Amin &middot; MD &middot; Psychiatrist</p>
+            </div>
+
+        </div>
+
+        <!-- Scrolling marquee strip -->
+        <div class="hero-marquee" aria-hidden="true">
+            <div class="hero-marquee-track">
+                <span>TMS Therapy</span><span class="mq-dot">◆</span>
+                <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
+                <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
+                <span>OCD</span><span class="mq-dot">◆</span>
+                <span>FDA-Approved</span><span class="mq-dot">◆</span>
+                <span>NJ Licensed</span><span class="mq-dot">◆</span>
+                <span>Non-Invasive</span><span class="mq-dot">◆</span>
+                <span>ABPN Certified</span><span class="mq-dot">◆</span>
+                <span>TMS Therapy</span><span class="mq-dot">◆</span>
+                <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
+                <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
+                <span>OCD</span><span class="mq-dot">◆</span>
+                <span>FDA-Approved</span><span class="mq-dot">◆</span>
+                <span>NJ Licensed</span><span class="mq-dot">◆</span>
+                <span>Non-Invasive</span><span class="mq-dot">◆</span>
+                <span>ABPN Certified</span><span class="mq-dot">◆</span>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Our Main Service Section -->
+    <section class="services-section" id="conditions">
+        <div class="container services-container">
+            <div class="services-header reveal">
+                <div class="services-title-wrapper">
+                    <span class="eyebrow">Our Services</span>
+                    <h2 class="section-title">Advanced Treatments,<br>Exceptional Outcomes</h2>
+                    <p class="services-header-desc">Cutting-edge, evidence-based therapies tailored to your unique mental health journey.</p>
+                </div>
+                <!-- <div class="services-nav">
+                    <button class="nav-btn prev-btn" aria-label="Previous service"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 18l-6-6 6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                    <button class="nav-btn next-btn" aria-label="Next service"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 18l6-6-6-6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                </div> -->
+            </div>
+
+            <div class="services-carousel-wrapper reveal delay-1">
+                <div class="services-track" id="servicesTrack">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <img src="assets/images/neurology_tms_therapy.png" alt="Neurology TMS Therapy" class="service-img">
+                        <div class="service-overlay"></div>
+                        <span class="service-tag">Neuromodulation</span>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <span class="service-card-idx">01 / 04</span>
+                                <h3>Neurology TMS</h3>
+                                <p class="service-desc">Brain stimulation for neurological recovery</p>
+                            </div>
+                            <a href="/neurology-tms-therapy.html" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <img src="assets/images/psychiatry_tms_therapy.png" alt="Psychiatry TMS Therapy" class="service-img">
+                        <div class="service-overlay"></div>
+                        <span class="service-tag">Psychiatry</span>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <span class="service-card-idx">02 / 04</span>
+                                <h3>Psychiatry TMS</h3>
+                                <p class="service-desc">FDA-approved for depression, OCD & anxiety</p>
+                            </div>
+                            <a href="/psychiatry-tms-therapy.html" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <img src="assets/images/spravato_treatment.png" alt="Spravato Treatment" class="service-img">
+                        <div class="service-overlay"></div>
+                        <span class="service-tag">Esketamine</span>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <span class="service-card-idx">03 / 04</span>
+                                <h3>Spravato</h3>
+                                <p class="service-desc">Fast-acting esketamine nasal spray treatment</p>
+                            </div>
+                            <a href="/what-is-spravato" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <img src="assets/images/ketamine_therapy.png" alt="Ketamine Therapy" class="service-img">
+                        <div class="service-overlay"></div>
+                        <span class="service-tag">Infusion Therapy</span>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <span class="service-card-idx">04 / 04</span>
+                                <h3>Ketamine Therapy</h3>
+                                <p class="service-desc">Rapid relief for treatment-resistant depression</p>
+                            </div>
+                            <a href="/what-is-ketamine-therapy" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties & Conditions Section (Luxury Redesign Light Theme) -->
+    <section class="specialties-section bg-beige-dark" id="specialties">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="eyebrow">Expert Care</span>
+                <h2 class="section-title">Targeted Conditions</h2>
+                <p class="section-subtitle">We offer specialized, advanced treatments across Neurology and Psychiatry to address complex mental and neurological health challenges.</p>
+            </div>
+            
+            <div class="silo-container">
+                <!-- Neurology Silo -->
+                <div class="silo-block reveal">
+                    <div class="silo-header">
+                        <span class="silo-num">01</span>
+                        <div class="silo-title-group">
+                            <div class="silo-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+                            </div>
+                            <h3>Neurology</h3>
+                        </div>
+                    </div>
+                    <div class="silo-chips">
+                        <!-- Brain wave / ECG — represents neural activity disruption from TBI -->
+                        <a href="/neurology/tms-for-traumatic-brain-injury/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Traumatic Brain Injury <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- 4-way move arrows — represents motor/movement dysfunction -->
+                        <a href="/neurology/tms-for-functional-movement-disorder/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg></span>Functional Movement Disorders <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Refresh / recovery arrows — represents rehabilitation & regaining function -->
+                        <a href="/neurology/tms-for-stroke-recovery/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>Stroke Recovery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Open hand — represents tremor & motor control loss -->
+                        <a href="/neurology/tms-for-parkinsons-symptoms/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M6 14v0a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-2.5"/></svg></span>Parkinson's Symptoms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- CPU chip — represents cognitive/memory processing decline -->
+                        <a href="/neurology/tms-for-alzheimers/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6"/><path d="M15 9V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v2"/><path d="M9 15v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"/><line x1="20" y1="13" x2="22" y2="13"/><line x1="2" y1="13" x2="4" y2="13"/><line x1="13" y1="2" x2="13" y2="4"/><line x1="13" y1="20" x2="13" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/></svg></span>Alzheimer's &amp; Dementia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Lightning bolt — represents sudden, intense head pain -->
+                        <a href="/neurology/tms-for-migraine/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Chronic Migraine <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Signal/wifi arcs — represents nerve signal disruption -->
+                        <a href="/neurology/tms-for-neuropathic-pain/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>Neuropathic Pain <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+                
+                <!-- Psychiatry Silo -->
+                <div class="silo-block reveal delay-1">
+                    <div class="silo-header">
+                        <span class="silo-num">02</span>
+                        <div class="silo-title-group">
+                            <div class="silo-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            </div>
+                            <h3>Psychiatry</h3>
+                        </div>
+                    </div>
+                    <div class="silo-chips">
+                        <!-- Rain cloud — represents persistent low mood / emotional heaviness -->
+                        <a href="/psychiatry/tms-for-depression/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 15.25"/><line x1="8" y1="19" x2="8" y2="21"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="16" y1="19" x2="16" y2="21"/><line x1="16" y1="13" x2="16" y2="15"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="12" y1="15" x2="12" y2="17"/></svg></span>Major Depressive Disorder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Shield — represents resisting standard treatments, protection via TMS -->
+                        <a href="/psychiatry/tms-for-trd/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Treatment-Resistant Depression <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Wind — represents uncontrollable, swirling anxious thoughts -->
+                        <a href="/psychiatry/tms-for-anxiety/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg></span>Generalized Anxiety <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Alert triangle — represents hypervigilance & trauma response -->
+                        <a href="/psychiatry/tms-for-ptsd/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>PTSD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Repeat loop arrows — represents compulsive, repetitive cycles -->
+                        <a href="/psychiatry/tms-for-ocd/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>OCD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Heart — represents overwhelming fear & racing heart during attacks -->
+                        <a href="/psychiatry/tms-for-panic-disorder/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>Panic Disorder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Moon — represents mood cycling between highs and lows -->
+                        <a href="/psychiatry/tms-for-bipolar-depression/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>Bipolar Depression <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Target / crosshair — represents attention focus deficit -->
+                        <a href="/psychiatry/tms-for-adhd/" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>ADHD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trust & Credibility Section -->
+    <section class="trust-section" id="trust">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="eyebrow">Why Choose Us</span>
+                <h2 class="section-title">A Higher Standard of Mental Healthcare</h2>
+                <p class="section-subtitle">Combining cutting-edge treatments with deep compassion to help you regain your quality of life.</p>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="trust-stats reveal delay-1">
+                <div class="trust-stat">
+                    <span class="trust-stat-num">500<span class="trust-stat-sym">+</span></span>
+                    <span class="trust-stat-label">Patients Treated</span>
+                </div>
+                <div class="trust-stat-divider"></div>
+                <div class="trust-stat">
+                    <span class="trust-stat-num">15<span class="trust-stat-sym">+</span></span>
+                    <span class="trust-stat-label">Years of Excellence</span>
+                </div>
+                <div class="trust-stat-divider"></div>
+                <div class="trust-stat">
+                    <span class="trust-stat-num">4.9<span class="trust-stat-sym">★</span></span>
+                    <span class="trust-stat-label">Average Rating</span>
+                </div>
+                <div class="trust-stat-divider"></div>
+                <div class="trust-stat">
+                    <span class="trust-stat-num">FDA</span>
+                    <span class="trust-stat-label">Approved Treatment</span>
+                </div>
+            </div>
+
+            <div class="trust-grid">
+                <div class="trust-card reveal">
+                    <span class="trust-card-num">01</span>
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3>Board Certified</h3>
+                    <p>Expert psychiatric care backed by rigorous training and certification.</p>
+                </div>
+                <div class="trust-card reveal delay-1">
+                    <span class="trust-card-num">02</span>
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3>Advanced TMS</h3>
+                    <p>Offering the latest in non-invasive, drug-free depression treatment.</p>
+                </div>
+                <div class="trust-card reveal delay-2">
+                    <span class="trust-card-num">03</span>
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    </div>
+                    <h3>Personalized Plans</h3>
+                    <p>Tailored treatment approaches designed specifically for your unique needs.</p>
+                </div>
+                <div class="trust-card reveal delay-3">
+                    <span class="trust-card-num">04</span>
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3>Compassionate Care</h3>
+                    <p>A safe, supportive environment focused entirely on your well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+<!-- About Section -->
+    <section class="about-section about-section-light" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-img-frame">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Dr. Ritesh Amin providing care" class="portrait-img">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content reveal delay-1">
+                    <span class="eyebrow">Meet Your Doctor</span>
+                    <h2 class="section-title">Dr. Ritesh Amin, MD</h2>
+                    <div class="about-title-rule"></div>
+                    <div class="about-cred-tags">
+                        <span class="about-cred-tag">ABPN Certified</span>
+                        <span class="about-cred-tag">TMS Specialist</span>
+                        <span class="about-cred-tag">NJ Licensed</span>
+                    </div>
+                    <p class="lead-text">Board-Certified Psychiatrist specializing in Treatment-Resistant Depression and Advanced TMS Therapy.</p>
+                    <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p>
+                    <ul class="credentials-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Top Tier Education and Medical Training</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Board Certified by the ABPN</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Specialized expertise in Neuromodulation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary mt-6">Book an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- What is TMS Therapy? (Oak Method Accordion) -->
+    <section class="tms-section bg-white" id="tms-therapy">
+        <div class="container tms-container">
+            <div class="tms-grid header-align-start">
+                
+                <!-- Left: Content & Accordion -->
+                <div class="tms-content reveal">
+                    <span class="eyebrow">Innovation in Mental Health</span>
+                    <h2 class="section-title">A science-backed approach to<br>restoring mental clarity.</h2>
+                    <p class="tms-para">Transcranial Magnetic Stimulation (TMS) is an FDA-approved, non-invasive treatment that uses gentle magnetic pulses to reactivate brain pathways regulating mood.</p>
+                    
+                    <div class="tms-accordion">
+                        <!-- Item 1 -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <h3>Non-Invasive Treatment</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>No surgery, no anesthesia, and no downtime. You can drive yourself to and from every session.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>FDA-Approved & Safe</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Proven reliable and safe for treating depression and OCD, with high efficacy rates for resistant cases.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>No Systemic Side Effects</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Avoids common medication issues like weight gain, drowsiness, or sexual dysfunction.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <h3>Quick & Efficacious</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Sessions take just 20-30 minutes, fitting easily into your daily schedule.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary mt-12">Book Your Consultation</a>
+                </div>
+
+                <!-- Right: Large Clean Image -->
+                <div class="tms-image-col reveal delay-1">
+                    <img src="assets/images/tms-therapy.png" alt="Dr. Amin TMS Therapy" class="tms-oak-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Patient Journey -->
+    <section class="journey-section bg-beige-dark" id="patient-journey">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="eyebrow">Your Path to Wellness</span>
+                <h2 class="section-title">How TMS Therapy Works</h2>
+                <p class="section-subtitle">A straightforward, transparent process designed to get you on the road to recovery as quickly as possible.</p>
+            </div>
+            <div class="journey-timeline">
+                <!-- Step 1: Left -->
+                <div class="timeline-row reveal">
+                    <div class="timeline-content content-left">
+                        <h3>Initial Consultation</h3>
+                        <p>Discuss your symptoms, medical history, and treatment goals with Dr. Amin to determine if TMS is right for you, or if other psychiatric solutions fit better.</p>
+                    </div>
+                    <div class="timeline-center">
+                        <div class="timeline-marker">01</div>
+                    </div>
+                    <div class="timeline-content content-right empty"></div>
+                </div>
+
+                <!-- Step 2: Right -->
+                <div class="timeline-row reveal delay-1">
+                    <div class="timeline-content content-left empty"></div>
+                    <div class="timeline-center">
+                        <div class="timeline-marker">02</div>
+                    </div>
+                    <div class="timeline-content content-right">
+                        <h3>Personalized Evaluation</h3>
+                        <p>A comprehensive assessment to map out your specific treatment protocol and pinpoint the exact location for stimulation (motor threshold mapping).</p>
+                    </div>
+                </div>
+
+                <!-- Step 3: Left -->
+                <div class="timeline-row reveal delay-2">
+                    <div class="timeline-content content-left">
+                        <h3>TMS Sessions</h3>
+                        <p>Brief, 20-30 minute daily sessions over a period of 4-6 weeks while you relax in a comfortable chair. You can return to normal activities immediately.</p>
+                    </div>
+                    <div class="timeline-center">
+                        <div class="timeline-marker">03</div>
+                    </div>
+                    <div class="timeline-content content-right empty"></div>
+                </div>
+
+                <!-- Step 4: Right -->
+                <div class="timeline-row reveal delay-3">
+                    <div class="timeline-content content-left empty"></div>
+                    <div class="timeline-center">
+                        <div class="timeline-marker">04</div>
+                    </div>
+                    <div class="timeline-content content-right">
+                        <h3>Measurable Improvement</h3>
+                        <p>Track your progress with structured assessments and experience a return to your best self. Most patients notice changes within a few weeks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="eyebrow">Patient Stories</span>
+                <h2 class="section-title">Real Transformations</h2>
+                <p class="section-subtitle">Hear from patients who have regained their lives through our advanced treatments.</p>
+            </div>
+            <div class="wall-of-love-grid reveal delay-1">
+                <!-- Column 1 -->
+                <div class="wol-col">
+                    <!-- Card 1 -->
+                    <div class="wol-card">
+                        <div class="wol-header">
+                            <div class="wol-avatar">S</div>
+                            <div class="wol-meta">
+                                <h4>Sarah M.</h4>
+                                <span>Depression Patient</span>
+                            </div>
+                            <div class="wol-stars">★★★★★</div>
+                        </div>
+                        <p class="wol-text">"After years of trying different medications with little relief and profound side effects, TMS with Dr. Amin changed my life. Within weeks, the heavy cloud lifted."</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="wol-card">
+                        <div class="wol-header">
+                            <div class="wol-avatar">D</div>
+                            <div class="wol-meta">
+                                <h4>David K.</h4>
+                                <span>OCD Treatment</span>
+                            </div>
+                            <div class="wol-stars">★★★★★</div>
+                        </div>
+                        <p class="wol-text">"I was skeptical at first, but the results speak for themselves. The intrusive thoughts have properly faded into the background for the first time in forever."</p>
+                    </div>
+                </div>
+
+                <!-- Column 2 (Central Feature) -->
+                <div class="wol-col">
+                    <!-- Video/Feature Card -->
+                    <div class="wol-card video-card">
+                        <div class="video-overlay">
+                            <div class="play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <div class="video-text" style="text-shadow: 0 2px 6px rgba(0,0,0,0.8);">
+                                <h4 style="color: #ffffff;">Mark's Journey</h4>
+                                <span style="color: rgba(255,255,255,0.9);">Overcoming 10 Years of Anxiety</span>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Patient Video Thumbnail">
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="wol-card">
+                        <div class="wol-header">
+                            <div class="wol-avatar">E</div>
+                            <div class="wol-meta">
+                                <h4>Emily R.</h4>
+                                <span>Postpartum Support</span>
+                            </div>
+                            <div class="wol-stars">★★★★★</div>
+                        </div>
+                        <p class="wol-text">"Dr. Amin is incredibly compassionate. He took the time to explain everything to me and my husband. I finally feel like myself again."</p>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="wol-col">
+                    <!-- Card 4 -->
+                    <div class="wol-card">
+                        <div class="wol-header">
+                            <div class="wol-avatar">M</div>
+                            <div class="wol-meta">
+                                <h4>Michael T.</h4>
+                                <span>TMS Patient</span>
+                            </div>
+                            <div class="wol-stars">★★★★★</div>
+                        </div>
+                        <p class="wol-text">"The clinic environment is so soothing and professional. It doesn't feel like a typical doctor's office. Highly recommend Dr. Amin for anyone struggling."</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="wol-card">
+                        <div class="wol-header">
+                            <div class="wol-avatar">J</div>
+                            <div class="wol-meta">
+                                <h4>Jessica L.</h4>
+                                <span>Anxiety Relief</span>
+                            </div>
+                            <div class="wol-stars">★★★★★</div>
+                        </div>
+                        <p class="wol-text">"TMS was a game changer. I have my energy and motivation back. The team at Dr. Amin's practice is simply wonderful."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Closing CTA -->
+    <section class="closing-cta">
+        <div class="container text-center reveal">
+            <h2 class="section-title text-white">Take the First Step Toward Better Mental Health</h2>
+            <p class="section-subtitle text-white/70 mb-8">You don't have to navigate this journey alone. Dr. Amin and our dedicated team are here to help you regain your life.</p>
+            <a href="#contact" class="btn btn-primary py-5 px-12 text-lg mt-6">Book Your Consultation Today</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="logo mb-6 inline-block">
+                        <span class="logo-dr text-white" style="font-size: 1.5rem; font-weight: 600; font-family: var(--font-serif); letter-spacing: -0.5px;">Dr. Ritesh Amin</span>
+                        <span class="logo-title text-gold block mt-1" style="font-size: 0.85rem; letter-spacing: 2px;">Psychiatry & TMS</span>
+                    </a>
+                    <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
+                    <div class="emergency-disclaimer mt-8">
+                        <div class="disclaimer-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <p><strong>Emergency:</strong> If you are experiencing a medical crisis, call 911 or visit the nearest emergency room.</p>
+                    </div>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/dr-ritesh-amin.html">About Dr. Amin</a></li>
+                        <li><a href="/our-approach">Our Approach</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul>
+                        <li><a href="/insurance">Insurance & Financing</a></li>
+                        <li><a href="/faq">Patient FAQs</a></li>
+                        <li><a href="/refer">Physician Referral</a></li>
+                        <li><a href="/reviews">Success Stories</a></li>
+                        <li><a href="/blog">Wellness Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/hipaa-notice">HIPAA Notice</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Premium Map Container -->
+            <div class="footer-map-section mt-16 mb-12">
+                <div class="footer-map-glass">
+                    <iframe src="https://maps.google.com/maps?q=New%20Jersey&t=&z=10&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer bar with Socials -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Dr. Ritesh Amin, MD. All Rights Reserved. Not acting as a substitute for medical advice.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

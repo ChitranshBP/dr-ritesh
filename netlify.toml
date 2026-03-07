@@ -1,0 +1,38 @@
+[build]
+  publish = "dist"
+
+# Clean URLs: serve .html files without extension
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/dr-ritesh-amin"
+  to = "/dr-ritesh-amin.html"
+  status = 200
+
+[[redirects]]
+  from = "/neurology-tms-therapy"
+  to = "/neurology-tms-therapy.html"
+  status = 200
+
+[[redirects]]
+  from = "/psychiatry-tms-therapy"
+  to = "/psychiatry-tms-therapy.html"
+  status = 200
+
+[[redirects]]
+  from = "/tms-for-depression"
+  to = "/tms-for-depression.html"
+  status = 200
+
+[[redirects]]
+  from = "/what-is-ketamine-therapy"
+  to = "/what-is-ketamine-therapy.html"
+  status = 200
+
+[[redirects]]
+  from = "/what-is-spravato"
+  to = "/what-is-spravato.html"
+  status = 200
