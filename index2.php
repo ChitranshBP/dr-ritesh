@@ -1,54 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ritesh Amin | Advanced TMS Therapy in NJ</title>
-    <meta name="description" content="Dr. Ritesh Amin is a Board Certified Psychiatrist offering FDA-Approved TMS Therapy for Depression and Mental Wellness in New Jersey.">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Tailwind CSS Play CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            corePlugins: { preflight: false },
-            theme: {
-                extend: {
-                    colors: {
-                        midnight: { DEFAULT: '#0b192c', light: '#162b47' },
-                        gold:     { DEFAULT: '#256fa8', light: '#5dadee' },
-                        beige:    { DEFAULT: '#ffffff', dark: '#f4f7fb'  },
-                    },
-                    fontFamily: {
-                        serif: ['"Playfair Display"', 'serif'],
-                        sans:  ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style type="text/tailwindcss">
-        /* ── Component classes powered by Tailwind @apply ── */
-        .eyebrow {
-            @apply block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4;
-        }
-        .section-header        { @apply mb-16; }
-        .section-header.center { @apply text-center max-w-[800px] mx-auto; }
-        .section-title         { @apply text-[2.5rem] mb-4; }
-        .section-subtitle      { @apply text-[1.1rem] max-w-[600px] mx-auto; }
-
-        /* Responsive override for section-title — kept here so it wins over the base rule above */
-        @media (max-width: 991px) {
-            .section-title { font-size: 2.2rem; }
-        }
-
+<?php
+$page_title = 'Dr. Ritesh Amin | Advanced TMS Therapy in NJ';
+$page_desc = 'Dr. Ritesh Amin is a Board Certified Psychiatrist offering FDA-Approved TMS Therapy for Depression and Mental Wellness in New Jersey.';
+$body_class = 'bg-beige';
+$extra_css = '
         /* Hero Banner Styles */
         .banner-hero {
             position: relative;
@@ -102,85 +56,9 @@
             flex-direction: column;
             align-items: center;
         }
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <span class="logo-mark">
-                    <svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="3" fill="currentColor"/></svg>
-                </span>
-                <div class="logo-text">
-                    <span class="logo-name">Dr. Ritesh Amin</span>
-                    <span class="logo-tag">MD &middot; Psychiatry &amp; TMS</span>
-                </div>
-            </a>
-
-            <!-- Desktop nav links -->
-            <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <div class="dropdown">
-                    <a href="#" class="nav-link dropbtn">
-                        Services
-                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="/neurology-tms-therapy.php">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
-                            Neurology TMS
-                        </a>
-                        <a href="/psychiatry-tms-therapy.php">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
-                            Psychiatry TMS
-                        </a>
-                        <a href="/what-is-spravato.php">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
-                            Spravato (Esketamine)
-                        </a>
-                        <a href="/what-is-ketamine-therapy.php">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></span>
-                            Ketamine Therapy
-                        </a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <a href="#" class="nav-link dropbtn">
-                        Resources
-                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="/reviews">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
-                            Patient Testimonials
-                        </a>
-                        <a href="/faq">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
-                            FAQs
-                        </a>
-                        <a href="/blog">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
-                            Blog
-                        </a>
-                        <a href="/mental-health-resources">
-                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
-                            Resources
-                        </a>
-                    </div>
-                </div>
-                <a href="/contact" class="btn btn-primary btn-sm nav-cta">Schedule Consultation</a>
-            </div>
-
-            <!-- Mobile hamburger -->
-            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+';
+include 'header.php';
+?>
 
     <!-- Hero Section -->
     <!-- TMS Banner Hero Section -->
@@ -272,7 +150,7 @@
                 </a>
 
                 <!-- Bento Item 3 -->
-                <a href="/what-is-spravato.php" class="relative rounded-3xl overflow-hidden group h-80 block">
+                <a href="/what-is-spravato" class="relative rounded-3xl overflow-hidden group h-80 block">
                     <img src="assets/images/spravato_treatment.png" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Spravato">
                     <div class="absolute inset-0 bg-gradient-to-t from-midnight/95 via-midnight/40 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
@@ -570,7 +448,7 @@
             <div class="text-center mb-20 reveal">
                 <span class="text-gold font-bold tracking-[2px] uppercase text-sm mb-4 block">Process</span>
                 <h2 class="text-4xl md:text-5xl font-serif text-midnight font-bold mb-4">Your Path to Wellness</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A transparent, straightforward protocol designed to perfectly map to your neurological needs.</p>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A transparent, straightforward protocol designed to perfectamente map to your neurological needs.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal delay-1">
@@ -687,10 +565,6 @@
         </div>
     </section>
 
-
-
-
-
     <!-- Closing CTA -->
     <section class="closing-cta">
         <div class="container text-center reveal">
@@ -700,89 +574,4 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-
-
-        <div class="container">
-            <div class="footer-grid">
-                <!-- Brand Column -->
-                <div class="footer-brand">
-                    <a href="#" class="logo mb-6 inline-block">
-                        <span class="logo-dr text-white" style="font-size: 1.5rem; font-weight: 600; font-family: var(--font-serif); letter-spacing: -0.5px;">Dr. Ritesh Amin</span>
-                        <span class="logo-title text-gold block mt-1" style="font-size: 0.85rem; letter-spacing: 2px;">Psychiatry & TMS</span>
-                    </a>
-                    <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
-                    <div class="emergency-disclaimer mt-8">
-                        <div class="disclaimer-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                        </div>
-                        <p><strong>Emergency:</strong> If you are experiencing a medical crisis, call 911 or visit the nearest emergency room.</p>
-                    </div>
-                </div>
-
-                <!-- Links Columns -->
-                <div class="footer-links">
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/dr-ritesh-amin">About Dr. Amin</a></li>
-                        <li><a href="/dr-nalin-ranasinghe">About Dr. Ranasinghe</a></li>
-                        <li><a href="/our-approach">Our Approach</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4 class="footer-heading">Resources</h4>
-                    <ul>
-                        <li><a href="/insurance">Insurance & Financing</a></li>
-                        <li><a href="/faq">Patient FAQs</a></li>
-                        <li><a href="/refer">Physician Referral</a></li>
-                        <li><a href="/success-stories">Success Stories</a></li>
-                        <li><a href="/blog">Wellness Blog</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h4 class="footer-heading">Legal</h4>
-                    <ul>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
-                        <li><a href="/hipaa-notice">HIPAA Notice</a></li>
-                        <li><a href="/accessibility">Accessibility</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Premium Map Container -->
-            <div class="footer-map-section mt-16 mb-12">
-                <div class="footer-map-glass">
-                    <iframe src="https://maps.google.com/maps?q=New%20Jersey&t=&z=10&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            
-            <!-- Bottom Footer bar with Socials -->
-            <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 Dr. Ritesh Amin, MD. All Rights Reserved. Not acting as a substitute for medical advice.</p>
-                </div>
-                <div class="footer-socials">
-                    <a href="#" aria-label="LinkedIn" class="social-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                    </a>
-                    <a href="#" aria-label="Facebook" class="social-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                    </a>
-                    <a href="#" aria-label="Instagram" class="social-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-</body>
-</html>
+<?php include 'footer.php'; ?>

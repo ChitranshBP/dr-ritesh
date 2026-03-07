@@ -19,7 +19,7 @@
     
     /* Spacing & Layout */
     --container-max-width: 1200px;
-    --section-padding: 4rem 0; /* Reduced from 6rem */
+    --section-padding: 3rem 0; /* Reduced from 4rem */
     
     /* Effects */
     --shadow-soft: 0 10px 40px rgba(11, 25, 44, 0.08);
@@ -2314,7 +2314,7 @@ img {
     position: relative;
     background: linear-gradient(to bottom, #091220, var(--color-midnight));
     color: var(--color-white);
-    padding: 0 0 2rem;
+    padding: 4rem 0 2rem;
     overflow: hidden;
 }
 
