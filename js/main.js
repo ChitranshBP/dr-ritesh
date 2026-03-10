@@ -83,22 +83,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const navLinks = document.querySelector('.nav-links');
+    const mobileNav = document.getElementById('mobileNav');
     
-    if (mobileMenuBtn && navLinks) {
+    if (mobileMenuBtn && mobileNav) {
         mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            mobileNav.classList.toggle('active');
             mobileMenuBtn.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
         });
         
-        // Close menu when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
+        // Close menu when clicking a link (if not an accordion toggle)
+        mobileNav.querySelectorAll('.mobile-link:not(.accordion-toggle), .accordion-panel a').forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+                mobileNav.classList.remove('active');
                 mobileMenuBtn.classList.remove('active');
+                document.body.style.overflow = '';
             });
         });
     }
+
+    // 5. Mobile Accordion Toggles
+    const mobileAccordions = document.querySelectorAll('.mobile-accordion');
+    mobileAccordions.forEach(acc => {
+        const toggle = acc.querySelector('.accordion-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', () => {
+                acc.classList.toggle('active');
+            });
+        }
+    });
     // 5. TMS Accordion Interaction
     const accordionItems = document.querySelectorAll('.accordion-item');
 

@@ -17,6 +17,31 @@
                     </div>
                 </div>
 
+                <!-- Specialties Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Neurology TMS</h4>
+                    <ul>
+                        <li><a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a></li>
+                        <li><a href="#" class="pending-link">Movement Disorders</a></li>
+                        <li><a href="#" class="pending-link">Stroke Recovery</a></li>
+                        <li><a href="#" class="pending-link">Parkinson's Symptoms</a></li>
+                        <li><a href="#" class="pending-link">Alzheimer's & Dementia</a></li>
+                        <li><a href="#" class="pending-link">Chronic Migraine</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Psychiatry TMS</h4>
+                    <ul>
+                        <li><a href="#" class="pending-link">Major Depression</a></li>
+                        <li><a href="#" class="pending-link">Treatment-Resistant</a></li>
+                        <li><a href="#" class="pending-link">Generalized Anxiety</a></li>
+                        <li><a href="#" class="pending-link">PTSD</a></li>
+                        <li><a href="#" class="pending-link">OCD</a></li>
+                        <li><a href="#" class="pending-link">ADHD</a></li>
+                    </ul>
+                </div>
+
                 <!-- Links Columns -->
                 <div class="footer-links">
                     <h4 class="footer-heading">Quick Links</h4>
@@ -31,10 +56,10 @@
                 <div class="footer-links">
                     <h4 class="footer-heading">Resources</h4>
                     <ul>
-                        <li><a href="/insurance">Insurance & Financing</a></li>
-                        <li><a href="/faq">Patient FAQs</a></li>
+                        <li><a href="/insurance.php">Insurance & Financing</a></li>
+                        <li><a href="/faq.php">Patient FAQs</a></li>
                         <li><a href="/refer">Physician Referral</a></li>
-                        <li><a href="/reviews">Success Stories</a></li>
+                        <li><a href="/reviews.php">Patient Testimonials</a></li>
                         <li><a href="/blog">Wellness Blog</a></li>
                     </ul>
                 </div>
@@ -42,8 +67,8 @@
                 <div class="footer-links">
                     <h4 class="footer-heading">Legal</h4>
                     <ul>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
+                        <li><a href="/privacy-policy.php">Privacy Policy</a></li>
+                        <li><a href="/terms.php">Terms of Service</a></li>
                         <li><a href="/hipaa-notice">HIPAA Notice</a></li>
                         <li><a href="/accessibility">Accessibility</a></li>
                     </ul>
@@ -78,6 +103,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
