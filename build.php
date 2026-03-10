@@ -24,6 +24,11 @@ $pages = [
     'tms-for-depression.php'      => 'tms-for-depression.html',
     'what-is-ketamine-therapy.php'=> 'what-is-ketamine-therapy.html',
     'what-is-spravato.php'        => 'what-is-spravato.html',
+    'faq.php'                      => 'faq.html',
+    'insurance.php'                => 'insurance.html',
+    'privacy-policy.php'           => 'privacy-policy.html',
+    'reviews.php'                  => 'reviews.html',
+    'terms.php'                    => 'terms.html',
 ];
 
 // ── Static asset directories to copy ──

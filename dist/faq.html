@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Dr. Ritesh Amin – TMS Therapy &amp; Psychiatry in NJ</title>
+    <meta name="description" content="Find answers to common questions about TMS therapy, Spravato, Ketamine infusions, insurance coverage, and psychiatric care at Dr. Ritesh Amin&#039;s Edison, NJ clinic.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: { DEFAULT: '#0b192c', light: '#162b47' },
+                        gold:     { DEFAULT: '#256fa8', light: '#5dadee' },
+                        beige:    { DEFAULT: '#ffffff', dark: '#f4f7fb'  },
+                        sage:     { DEFAULT: '#E8F1F2', dark: '#D1E3E6' }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans:  ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* ── Component classes powered by Tailwind @apply ── */
+        .eyebrow {
+            @apply block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4;
+        }
+        .section-header        { @apply mb-16; }
+        .section-header.center { @apply text-center max-w-[800px] mx-auto; }
+        .section-title         { @apply text-[2.5rem] mb-4; }
+        .section-subtitle      { @apply text-[1.1rem] max-w-[600px] mx-auto; }
+
+        @media (max-width: 991px) {
+            .section-title { font-size: 2.2rem; }
+        }
+
+        
+    /* ══════════════════════════════════════════
+       FAQ PAGE STYLES
+       ══════════════════════════════════════════ */
+
+    /* ── Hero ── */
+    .faq-hero {
+        position: relative;
+        padding: 10rem 0 5rem;
+        background: var(--color-midnight);
+        overflow: hidden;
+    }
+    .faq-hero::before {
+        content: "";
+        position: absolute;
+        top: -40%;
+        right: -10%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(37,111,168,0.15) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+    .faq-hero::after {
+        content: "";
+        position: absolute;
+        bottom: -30%;
+        left: -5%;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(37,111,168,0.08) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    /* ── Dot-grid texture on hero ── */
+    .faq-hero-texture {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(rgba(37,111,168,0.06) 1px, transparent 1px);
+        background-size: 30px 30px;
+        pointer-events: none;
+    }
+
+    /* ── Gold top hairline ── */
+    .faq-hero-hairline {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg,
+            transparent 0%,
+            var(--color-gold) 22%,
+            var(--color-gold-light) 50%,
+            var(--color-gold) 78%,
+            transparent 100%);
+        pointer-events: none;
+    }
+
+    /* ── Category Tabs ── */
+    .faq-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 3rem;
+    }
+    .faq-tab {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.65rem 1.35rem;
+        border-radius: 999px;
+        font-family: var(--font-sans);
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: var(--color-midnight-light);
+        background: #fff;
+        border: 1.5px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        user-select: none;
+    }
+    .faq-tab:hover {
+        border-color: var(--color-gold);
+        color: var(--color-gold);
+        box-shadow: 0 4px 12px rgba(37,111,168,0.1);
+    }
+    .faq-tab.active {
+        background: var(--color-gold);
+        color: #fff;
+        border-color: var(--color-gold);
+        box-shadow: 0 4px 16px rgba(37,111,168,0.3);
+    }
+    .faq-tab svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    /* ── FAQ Category Blocks ── */
+    .faq-category-block {
+        margin-bottom: 3rem;
+    }
+    .faq-category-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(37,111,168,0.12);
+    }
+    .faq-category-icon {
+        width: 3rem;
+        height: 3rem;
+        min-width: 3rem;
+        background: linear-gradient(135deg, rgba(37,111,168,0.14), rgba(37,111,168,0.04));
+        border: 1px solid rgba(37,111,168,0.22);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-gold);
+        transition: all 0.3s ease;
+    }
+    .faq-category-icon svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .faq-category-title {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-midnight);
+        margin: 0;
+    }
+    .faq-category-count {
+        font-family: var(--font-sans);
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--color-gold);
+        margin-left: auto;
+        background: rgba(37,111,168,0.07);
+        border: 1px solid rgba(37,111,168,0.18);
+        padding: 0.3rem 0.75rem;
+        border-radius: 999px;
+    }
+
+    /* ── FAQ Accordion (enhanced) ── */
+    .faq-accordion {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-accordion-item {
+        border: 1px solid rgba(37,111,168,0.10);
+        border-radius: 1rem;
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+        background: #fff;
+        transition: all 0.35s ease;
+    }
+    .faq-accordion-item:hover {
+        border-color: rgba(37,111,168,0.22);
+        box-shadow: 0 4px 18px rgba(11,25,44,0.04);
+    }
+    .faq-accordion-item.active {
+        border-color: var(--color-gold);
+        box-shadow: 0 8px 30px rgba(37,111,168,0.08);
+    }
+    .faq-accordion-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .faq-accordion-header:hover {
+        background: rgba(37,111,168,0.02);
+    }
+    .faq-accordion-num {
+        font-family: var(--font-serif);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--color-gold);
+        min-width: 1.75rem;
+        opacity: 0.6;
+    }
+    .faq-accordion-item.active .faq-accordion-num {
+        opacity: 1;
+    }
+    .faq-accordion-question {
+        flex: 1;
+        font-family: var(--font-sans);
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--color-midnight);
+        line-height: 1.4;
+        margin: 0;
+        transition: color 0.3s ease;
+    }
+    .faq-accordion-item.active .faq-accordion-question {
+        color: var(--color-gold);
+    }
+    .faq-accordion-toggle {
+        width: 2rem;
+        height: 2rem;
+        min-width: 2rem;
+        border-radius: 50%;
+        background: rgba(37,111,168,0.07);
+        border: 1px solid rgba(37,111,168,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        color: var(--color-gold);
+    }
+    .faq-accordion-toggle svg {
+        width: 14px;
+        height: 14px;
+        transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .faq-accordion-item.active .faq-accordion-toggle {
+        background: var(--color-gold);
+        border-color: var(--color-gold);
+        color: #fff;
+    }
+    .faq-accordion-item.active .faq-accordion-toggle svg {
+        transform: rotate(45deg);
+    }
+    .faq-accordion-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.4s ease;
+        opacity: 0;
+    }
+    .faq-accordion-item.active .faq-accordion-answer {
+        max-height: 300px;
+        opacity: 1;
+    }
+    .faq-accordion-answer-inner {
+        padding: 0 1.5rem 1.5rem 4.25rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: var(--color-text-light);
+    }
+    .faq-accordion-answer-inner a {
+        color: var(--color-gold);
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    .faq-accordion-answer-inner a:hover {
+        color: var(--color-gold-light);
+    }
+
+    /* ── Still Have Questions Card ── */
+    .faq-cta-card {
+        background: var(--color-midnight);
+        border-radius: 2rem;
+        padding: 3.5rem;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 3rem;
+        align-items: center;
+    }
+    .faq-cta-card::before {
+        content: "";
+        position: absolute;
+        top: -80px;
+        right: -80px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(37,111,168,0.18) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+    .faq-cta-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        right: 2rem;
+        height: 2px;
+        background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent);
+        border-radius: 1px;
+    }
+    .faq-cta-methods {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    .faq-cta-method {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    .faq-cta-method-icon {
+        width: 2.75rem;
+        height: 2.75rem;
+        min-width: 2.75rem;
+        background: rgba(37,111,168,0.12);
+        border: 1px solid rgba(37,111,168,0.25);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-gold-light);
+    }
+    .faq-cta-method-icon svg {
+        width: 1.15rem;
+        height: 1.15rem;
+    }
+    .faq-cta-method-label {
+        font-family: var(--font-sans);
+        font-size: 0.68rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgba(255,255,255,0.45);
+    }
+    .faq-cta-method-value {
+        font-family: var(--font-sans);
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    /* ── Search Input ── */
+    .faq-search-wrapper {
+        position: relative;
+        max-width: 520px;
+        margin: 0 auto 2rem;
+    }
+    .faq-search-input {
+        width: 100%;
+        padding: 0.9rem 1.25rem 0.9rem 3rem;
+        border: 1.5px solid #e2e8f0;
+        border-radius: 999px;
+        font-family: var(--font-sans);
+        font-size: 0.95rem;
+        color: var(--color-midnight);
+        background: #fff;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+    .faq-search-input:focus {
+        border-color: var(--color-gold);
+        box-shadow: 0 0 0 3px rgba(37,111,168,0.08);
+    }
+    .faq-search-input::placeholder {
+        color: #94a3b8;
+    }
+    .faq-search-icon {
+        position: absolute;
+        left: 1.1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.1rem;
+        height: 1.1rem;
+        color: #94a3b8;
+        pointer-events: none;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+        .faq-hero { padding: 8rem 0 3rem; }
+        .faq-cta-card {
+            grid-template-columns: 1fr;
+            padding: 2rem;
+            text-align: center;
+        }
+        .faq-cta-methods {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        .faq-accordion-header { padding: 1rem 1.15rem; }
+        .faq-accordion-answer-inner { padding: 0 1.15rem 1.25rem 1.15rem; }
+        .faq-category-count { display: none; }
+        .faq-tabs { gap: 0.4rem; }
+        .faq-tab { font-size: 0.75rem; padding: 0.5rem 0.9rem; }
+        .faq-tab svg { display: none; }
+    }
+    </style>
+</head>
+<body class="bg-beige font-sans">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <span class="logo-mark">
+                    <svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="3" fill="currentColor"/></svg>
+                </span>
+                <div class="logo-text">
+                    <span class="logo-name">Dr. Ritesh Amin</span>
+                    <span class="logo-tag">MD &middot; Psychiatry &amp; TMS</span>
+                </div>
+            </a>
+
+            <!-- Desktop nav links -->
+            <div class="nav-links">
+                <a href="/dr-ritesh-amin.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        Services
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <div class="mega-menu">
+                        <!-- Neurology Column -->
+                        <div class="mega-column">
+                            <span class="mega-heading">Neurology TMS</span>
+                            <a href="/neurology-tms-therapy.html" class="!text-white font-semibold" style="margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.75rem !important;">
+                                <span class="dd-icon !bg-gold !border-none !text-white"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                                Therapy Overview
+                            </a>
+                            <a href="/neurology/tms-for-brain-injury-trauma.html"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Traumatic Brain Injury</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Movement Disorders</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Stroke Recovery</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Parkinson's Symptoms</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Alzheimer's & Dementia</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Chronic Migraine</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Neuropathic Pain</a>
+                        </div>
+                        
+                        <!-- Psychiatry Column -->
+                        <div class="mega-column">
+                            <span class="mega-heading">Psychiatry TMS</span>
+                            <a href="/psychiatry-tms-therapy.html" class="!text-white font-semibold" style="margin-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.75rem !important;">
+                                <span class="dd-icon !bg-gold !border-none !text-white"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+                                Therapy Overview
+                            </a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Major Depression</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Treatment-Resistant</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Generalized Anxiety</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> PTSD</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> OCD</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Panic Disorder</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Bipolar Depression</a>
+                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> ADHD</a>
+                        </div>
+                        
+                        <!-- Spravato Column -->
+                        <div class="mega-column">
+                            <span class="mega-heading">Spravato</span>
+                            <a href="/what-is-spravato.html" class="!text-white font-semibold">
+                                <span class="dd-icon !border-white/10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                                Esketamine Therapy
+                            </a>
+                            <p class="text-[0.8rem] text-white/50 mt-4 px-1 leading-relaxed">
+                                Fast-acting FDA-approved nasal spray for treatment-resistant depression in adults.
+                            </p>
+                            <a href="/what-is-spravato.html" class="text-gold mt-2 text-sm px-1 hover:text-white transition-colors">Learn More &rarr;</a>
+                        </div>
+                        
+                        <!-- Ketamine Column -->
+                        <div class="mega-column">
+                            <span class="mega-heading">Ketamine Therapy</span>
+                            <a href="/what-is-ketamine-therapy.html" class="!text-white font-semibold">
+                                <span class="dd-icon !border-white/10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></span>
+                                IV / IM Ketamine
+                            </a>
+                            <p class="text-[0.8rem] text-white/50 mt-4 px-1 leading-relaxed">
+                                Rapid relief infusion therapy tailored by Dr. Amin for severe depression and mood disorders.
+                            </p>
+                            <a href="/what-is-ketamine-therapy.html" class="text-gold mt-2 text-sm px-1 hover:text-white transition-colors">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        Resources
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/reviews.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                            Patient Testimonials
+                        </a>
+                        <a href="/faq.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                            FAQs
+                        </a>
+                        <a href="/insurance.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+                            Insurance & Financing
+                        </a>
+                        <a href="/blog">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+                            Blog
+                        </a>
+                        <a href="/mental-health-resources">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                            Resources
+                        </a>
+                    </div>
+                </div>
+                <a href="/contact.html" class="btn btn-primary btn-sm nav-cta">Schedule Consultation</a>
+            </div>
+
+            <!-- Mobile Navigation Overlay -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <div class="mobile-nav-links">
+                        <a href="/dr-ritesh-amin.html" class="mobile-link">About Dr. Amin</a>
+                        
+                        <!-- Services Accordion -->
+                        <div class="mobile-accordion">
+                            <button class="mobile-link accordion-toggle">
+                                Services
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-panel">
+                                <div class="mobile-sub-group">
+                                    <span class="sub-group-title">Neurology TMS</span>
+                                    <a href="/neurology-tms-therapy.html">Therapy Overview</a>
+                                    <a href="/neurology/tms-for-brain-injury-trauma.html">Traumatic Brain Injury</a>
+                                    <a href="#" class="pending-link">Movement Disorders</a>
+                                    <a href="#" class="pending-link">Stroke Recovery</a>
+                                    <a href="#" class="pending-link">Parkinson's Symptoms</a>
+                                    <a href="#" class="pending-link">Alzheimer's & Dementia</a>
+                                    <a href="#" class="pending-link">Chronic Migraine</a>
+                                    <a href="#" class="pending-link">Neuropathic Pain</a>
+                                </div>
+                                <div class="mobile-sub-group">
+                                    <span class="sub-group-title">Psychiatry TMS</span>
+                                    <a href="/psychiatry-tms-therapy.html">Therapy Overview</a>
+                                    <a href="#" class="pending-link">Major Depression</a>
+                                    <a href="#" class="pending-link">Treatment-Resistant</a>
+                                    <a href="#" class="pending-link">Generalized Anxiety</a>
+                                    <a href="#" class="pending-link">PTSD</a>
+                                    <a href="#" class="pending-link">OCD</a>
+                                    <a href="#" class="pending-link">Panic Disorder</a>
+                                    <a href="#" class="pending-link">Bipolar Depression</a>
+                                    <a href="#" class="pending-link">ADHD</a>
+                                </div>
+                                <div class="mobile-sub-group">
+                                    <span class="sub-group-title">Innovative Treatments</span>
+                                    <a href="/what-is-spravato.html">Spravato (Esketamine)</a>
+                                    <a href="/what-is-ketamine-therapy.html">Ketamine Therapy</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resources Accordion -->
+                        <div class="mobile-accordion">
+                            <button class="mobile-link accordion-toggle">
+                                Resources
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+                            <div class="accordion-panel">
+                                <a href="/reviews.html">Patient Testimonials</a>
+                                <a href="/faq.html">Patient FAQs</a>
+                                <a href="/insurance.html">Insurance & Financing</a>
+                                <a href="/blog">Wellness Blog</a>
+                                <a href="/mental-health-resources">Mental Health Resources</a>
+                            </div>
+                        </div>
+
+                        <a href="/contact.html" class="mobile-link">Contact</a>
+                    </div>
+                    
+                    <div class="mobile-nav-cta">
+                        <a href="/contact.html" class="btn btn-primary w-full">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero -->
+    <section class="faq-hero" id="faq-hero">
+        <div class="faq-hero-texture"></div>
+        <div class="faq-hero-hairline"></div>
+        <div class="container mx-auto px-4 max-w-7xl relative z-10">
+            <div class="max-w-3xl mx-auto text-center reveal">
+                <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Knowledge Base</span>
+                <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
+                    Frequently Asked <span class="text-gold-light">Questions</span>
+                </h1>
+                <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
+                <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
+                    Everything you need to know about TMS therapy, our treatments, insurance coverage, and what to expect when you visit our clinic.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Main Section -->
+    <section class="py-20 bg-beige-dark/50 relative" id="faq-main">
+        <div class="container mx-auto px-4 max-w-4xl">
+
+            <!-- Search -->
+            <div class="reveal">
+                <div class="faq-search-wrapper">
+                    <svg class="faq-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" class="faq-search-input" id="faqSearch" placeholder="Search for a question..." aria-label="Search FAQs">
+                </div>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="faq-tabs reveal" id="faqTabs">
+                <button class="faq-tab active" data-category="all">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    All Questions
+                </button>
+                <button class="faq-tab" data-category="general">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                    General
+                </button>
+                <button class="faq-tab" data-category="tms">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    TMS Therapy
+                </button>
+                <button class="faq-tab" data-category="insurance">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Insurance & Billing
+                </button>
+                <button class="faq-tab" data-category="treatment">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                    Treatment Process
+                </button>
+                <button class="faq-tab" data-category="safety">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Safety & Side Effects
+                </button>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div id="faqContainer">
+
+                <!-- General Questions -->
+                <div class="faq-category-block reveal" data-category="general">
+                    <div class="faq-category-header">
+                        <div class="faq-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <h2 class="faq-category-title">General Questions</h2>
+                        <span class="faq-category-count">5 Questions</span>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="faq-accordion-item active" data-category="general">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">01</span>
+                                <h3 class="faq-accordion-question">What conditions does Dr. Amin treat?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Dr. Amin specializes in treatment-resistant depression, generalized anxiety, OCD, PTSD, ADHD, bipolar depression, and panic disorder. He also treats neurological conditions including traumatic brain injury recovery, Parkinson's symptoms, chronic migraine, stroke recovery, and neuropathic pain through specialized TMS protocols.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="general">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">02</span>
+                                <h3 class="faq-accordion-question">Do I need a referral to see Dr. Amin?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    No referral is needed for general psychiatric consultations. However, some insurance plans may require a referral for TMS therapy or Spravato treatments. Our team will help you verify this during the scheduling process — just <a href="/contact.html">contact us</a> and we'll take care of the rest.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="general">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">03</span>
+                                <h3 class="faq-accordion-question">What should I bring to my first appointment?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Please bring a valid photo ID, your insurance card, a list of current medications (including dosages), and any relevant medical records or referral letters. If you've completed any prior psychiatric evaluations, those are helpful as well.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="general">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">04</span>
+                                <h3 class="faq-accordion-question">How long is the initial consultation?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Your first visit typically lasts 45–60 minutes. This allows Dr. Amin to conduct a thorough evaluation, discuss your history, understand your goals, and develop a personalized treatment plan tailored to your unique needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="general">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">05</span>
+                                <h3 class="faq-accordion-question">Do you offer telehealth / virtual appointments?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Yes, we offer telehealth consultations for general psychiatric evaluations and medication management follow-ups. In-person treatments like TMS, Spravato, and Ketamine must be administered at our Edison, NJ clinic for safety and supervision.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TMS Therapy -->
+                <div class="faq-category-block reveal" data-category="tms">
+                    <div class="faq-category-header">
+                        <div class="faq-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <h2 class="faq-category-title">TMS Therapy</h2>
+                        <span class="faq-category-count">5 Questions</span>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="faq-accordion-item" data-category="tms">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">01</span>
+                                <h3 class="faq-accordion-question">What is TMS therapy and how does it work?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Transcranial Magnetic Stimulation (TMS) is an FDA-approved, non-invasive treatment that uses gentle magnetic pulses — similar in strength to an MRI — to stimulate specific areas of the brain involved in mood regulation. It reactivates neural pathways that have become underactive in conditions like depression, helping restore normal brain function without medication.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="tms">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">02</span>
+                                <h3 class="faq-accordion-question">Is TMS therapy painful?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Most patients describe TMS as a gentle tapping sensation on the scalp. Some may experience mild discomfort during the first few sessions, which typically subsides quickly. No anesthesia or sedation is required, and you can drive yourself to and from each appointment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="tms">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">03</span>
+                                <h3 class="faq-accordion-question">How many TMS sessions will I need?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    A standard TMS treatment course consists of 36 sessions delivered over 4–6 weeks (5 sessions per week). Each session takes approximately 20–30 minutes. Dr. Amin will create a personalized protocol during your initial evaluation, and maintenance sessions may be recommended based on your response.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="tms">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">04</span>
+                                <h3 class="faq-accordion-question">When will I start noticing results from TMS?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Most patients begin to notice improvements within 2–3 weeks of starting treatment, with the full effects typically experienced after completing the entire course. Some patients may experience earlier improvements in sleep, energy, or concentration before a shift in overall mood.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="tms">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">05</span>
+                                <h3 class="faq-accordion-question">Can I continue my medications during TMS therapy?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Yes, in most cases. TMS is often used alongside existing medications. Dr. Amin will review your full medication list during your consultation and make recommendations. Some patients are able to reduce or discontinue certain medications after successful TMS treatment, but this is always done gradually under medical supervision.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Insurance & Billing -->
+                <div class="faq-category-block reveal" data-category="insurance">
+                    <div class="faq-category-header">
+                        <div class="faq-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h2 class="faq-category-title">Insurance & Billing</h2>
+                        <span class="faq-category-count">4 Questions</span>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="faq-accordion-item" data-category="insurance">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">01</span>
+                                <h3 class="faq-accordion-question">Does insurance cover TMS therapy?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Yes, most major insurance plans now cover TMS therapy for treatment-resistant depression, including Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Medicare, Horizon, and Oxford. Our billing team will verify your coverage and handle prior authorization before treatment begins — no surprises.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="insurance">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">02</span>
+                                <h3 class="faq-accordion-question">What if my insurance doesn't cover TMS?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    We offer competitive self-pay rates and flexible financing options to make TMS accessible. We also provide superbills for out-of-network reimbursement. Our team will work with you to find the best financial path forward — everyone deserves access to advanced care.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="insurance">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">03</span>
+                                <h3 class="faq-accordion-question">Is Spravato covered by insurance?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Spravato (esketamine) is FDA-approved and covered by most major insurance plans for treatment-resistant depression. Our team handles the entire prior authorization process. We'll verify your benefits and explain any out-of-pocket costs before starting treatment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="insurance">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">04</span>
+                                <h3 class="faq-accordion-question">Will I know the cost before treatment begins?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Absolutely. Transparency is a core value of our practice. After verifying your insurance, we'll provide a clear breakdown of estimated costs, co-pays, and any out-of-pocket expenses before your first treatment session. There are never hidden fees.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment Process -->
+                <div class="faq-category-block reveal" data-category="treatment">
+                    <div class="faq-category-header">
+                        <div class="faq-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+                        </div>
+                        <h2 class="faq-category-title">Treatment Process</h2>
+                        <span class="faq-category-count">4 Questions</span>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="faq-accordion-item" data-category="treatment">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">01</span>
+                                <h3 class="faq-accordion-question">What happens during a typical TMS session?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    You'll be comfortably seated in our treatment chair while a specialized coil is positioned on your head. The device delivers brief magnetic pulses to targeted brain areas. Sessions last 20–30 minutes and you can listen to music, watch TV, or simply relax. Afterwards, you go about your day normally — no recovery time needed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="treatment">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">02</span>
+                                <h3 class="faq-accordion-question">What is Spravato and how is it administered?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Spravato (esketamine) is an FDA-approved nasal spray for treatment-resistant depression. It's self-administered under medical supervision in our clinic. Each session lasts about 2 hours (including a mandatory 2-hour monitoring period). Treatment typically starts with twice-weekly visits, then transitions to weekly and eventually bi-weekly maintenance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="treatment">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">03</span>
+                                <h3 class="faq-accordion-question">How does ketamine infusion therapy work?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Ketamine is administered intravenously at a carefully controlled, sub-anesthetic dose over approximately 40 minutes. Many patients experience rapid relief from depressive symptoms — sometimes within hours. A typical course involves 6 infusions over 2–3 weeks. You'll be monitored throughout and will need someone to drive you home afterward.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="treatment">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">04</span>
+                                <h3 class="faq-accordion-question">How does Dr. Amin determine which treatment is right for me?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    During your initial consultation, Dr. Amin conducts a thorough evaluation of your symptoms, medical history, previous treatments, and personal goals. He takes a whole-person approach, considering all factors to recommend the most effective treatment pathway — whether that's TMS, Spravato, Ketamine, medication management, or a combination.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety & Side Effects -->
+                <div class="faq-category-block reveal" data-category="safety">
+                    <div class="faq-category-header">
+                        <div class="faq-category-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <h2 class="faq-category-title">Safety & Side Effects</h2>
+                        <span class="faq-category-count">4 Questions</span>
+                    </div>
+                    <div class="faq-accordion">
+                        <div class="faq-accordion-item" data-category="safety">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">01</span>
+                                <h3 class="faq-accordion-question">Is TMS therapy safe?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    Yes. TMS has been rigorously studied and is FDA-approved for the treatment of depression, OCD, and other conditions. It's non-invasive and non-systemic, meaning it doesn't circulate through your bloodstream like medications. The most common side effect is mild scalp discomfort during the first few sessions, which typically resolves quickly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="safety">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">02</span>
+                                <h3 class="faq-accordion-question">Are there any side effects of TMS?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    TMS side effects are generally mild and temporary. The most commonly reported include mild headache, scalp discomfort at the treatment site, and lightheadedness immediately after treatment. Unlike medications, TMS does not cause weight gain, sexual dysfunction, drowsiness, or gastrointestinal issues. Serious side effects are extremely rare.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="safety">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">03</span>
+                                <h3 class="faq-accordion-question">Who should NOT receive TMS therapy?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    TMS is not recommended for individuals with metallic implants in or near the head (excluding dental fillings or braces), cochlear implants, or implanted stimulators. Patients with a history of seizures or epilepsy may need additional evaluation. Dr. Amin will conduct a thorough screening during your consultation to ensure TMS is safe and appropriate for you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-accordion-item" data-category="safety">
+                            <div class="faq-accordion-header">
+                                <span class="faq-accordion-num">04</span>
+                                <h3 class="faq-accordion-question">Is ketamine therapy safe?</h3>
+                                <div class="faq-accordion-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+                            </div>
+                            <div class="faq-accordion-answer">
+                                <div class="faq-accordion-answer-inner">
+                                    When administered in a controlled clinical setting with proper medical supervision, ketamine therapy is considered safe. During infusion, you may experience temporary dissociation, dizziness, or nausea, which resolve shortly after the session. Our team monitors your vital signs throughout the entire treatment to ensure your safety and comfort.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /#faqContainer -->
+
+        </div>
+    </section>
+
+    <!-- Still Have Questions CTA -->
+    <section class="py-20 bg-white" id="still-questions">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="faq-cta-card reveal">
+                <div class="relative z-10">
+                    <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold-light mb-3">Still Have Questions?</span>
+                    <h2 class="text-3xl md:text-4xl font-serif text-white mb-3 leading-tight">We're Here to Help</h2>
+                    <p class="text-white/60 text-sm leading-relaxed max-w-md mb-0">Our team is ready to answer any questions and guide you through the process. Reach out — no pressure, just support.</p>
+                    <div class="faq-cta-methods">
+                        <div class="faq-cta-method">
+                            <div class="faq-cta-method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <div class="faq-cta-method-label">Call Us</div>
+                                <a href="tel:+17325551234" class="faq-cta-method-value hover:text-gold-light transition-colors">(732) 555-1234</a>
+                            </div>
+                        </div>
+                        <div class="faq-cta-method">
+                            <div class="faq-cta-method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <div class="faq-cta-method-label">Email</div>
+                                <a href="mailto:info@drriteshamin.com" class="faq-cta-method-value hover:text-gold-light transition-colors">info@drriteshamin.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center gap-4">
+                    <a href="/contact.html" class="btn btn-primary py-4 px-8 text-base shadow-[0_8px_24px_rgba(37,111,168,0.4)]">
+                        Schedule Consultation
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 ml-2 inline-block" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
+        <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
+            <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Ready to Begin?</span>
+            <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Take the First Step Toward Better Mental Health</h2>
+            <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">You don't have to navigate this journey alone. Dr. Amin and our dedicated team are here to help you regain your life.</p>
+            <a href="/contact.html" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+        </div>
+    </section>
+
+    <!-- FAQ JavaScript -->
+    <script>
+    (function() {
+        // ── Accordion Toggle ──
+        document.querySelectorAll('.faq-accordion-header').forEach(function(header) {
+            header.addEventListener('click', function() {
+                var item = this.parentElement;
+                var wasActive = item.classList.contains('active');
+
+                // Close all siblings in the same accordion
+                var accordion = item.closest('.faq-accordion');
+                accordion.querySelectorAll('.faq-accordion-item').forEach(function(sibling) {
+                    sibling.classList.remove('active');
+                });
+
+                // Toggle clicked item
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // ── Category Tab Filtering ──
+        var tabs = document.querySelectorAll('.faq-tab');
+        var categoryBlocks = document.querySelectorAll('.faq-category-block');
+
+        tabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                var category = this.getAttribute('data-category');
+
+                // Update active tab
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                this.classList.add('active');
+
+                // Show/hide category blocks
+                categoryBlocks.forEach(function(block) {
+                    if (category === 'all' || block.getAttribute('data-category') === category) {
+                        block.style.display = '';
+                        block.style.opacity = '1';
+                        block.style.transform = 'translateY(0)';
+                    } else {
+                        block.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ── Search Filtering ──
+        var searchInput = document.getElementById('faqSearch');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                var query = this.value.toLowerCase().trim();
+                var allItems = document.querySelectorAll('.faq-accordion-item');
+                var allBlocks = document.querySelectorAll('.faq-category-block');
+
+                // Reset tabs to "All"
+                tabs.forEach(function(t) { t.classList.remove('active'); });
+                document.querySelector('[data-category="all"]').classList.add('active');
+
+                // Show all blocks first
+                allBlocks.forEach(function(block) {
+                    block.style.display = '';
+                });
+
+                if (!query) {
+                    // Show all items
+                    allItems.forEach(function(item) {
+                        item.style.display = '';
+                    });
+                    // Show all blocks
+                    allBlocks.forEach(function(block) {
+                        block.style.display = '';
+                    });
+                    return;
+                }
+
+                // Filter items
+                allItems.forEach(function(item) {
+                    var question = item.querySelector('.faq-accordion-question').textContent.toLowerCase();
+                    var answer = item.querySelector('.faq-accordion-answer-inner').textContent.toLowerCase();
+                    if (question.indexOf(query) !== -1 || answer.indexOf(query) !== -1) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Hide blocks with no visible items
+                allBlocks.forEach(function(block) {
+                    var visibleItems = block.querySelectorAll('.faq-accordion-item:not([style*="display: none"])');
+                    if (visibleItems.length === 0) {
+                        block.style.display = 'none';
+                    }
+                });
+            });
+        }
+    })();
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#" class="logo mb-6 inline-block">
+                        <span class="logo-dr text-white" style="font-size: 1.5rem; font-weight: 600; font-family: var(--font-serif); letter-spacing: -0.5px;">Dr. Ritesh Amin</span>
+                        <span class="logo-title text-gold block mt-1" style="font-size: 0.85rem; letter-spacing: 2px;">Psychiatry & TMS</span>
+                    </a>
+                    <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
+                    <div class="emergency-disclaimer mt-8">
+                        <div class="disclaimer-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <p><strong>Emergency:</strong> If you are experiencing a medical crisis, call 911 or visit the nearest emergency room.</p>
+                    </div>
+                </div>
+
+                <!-- Specialties Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Neurology TMS</h4>
+                    <ul>
+                        <li><a href="/neurology/tms-for-brain-injury-trauma.html">Traumatic Brain Injury</a></li>
+                        <li><a href="#" class="pending-link">Movement Disorders</a></li>
+                        <li><a href="#" class="pending-link">Stroke Recovery</a></li>
+                        <li><a href="#" class="pending-link">Parkinson's Symptoms</a></li>
+                        <li><a href="#" class="pending-link">Alzheimer's & Dementia</a></li>
+                        <li><a href="#" class="pending-link">Chronic Migraine</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Psychiatry TMS</h4>
+                    <ul>
+                        <li><a href="#" class="pending-link">Major Depression</a></li>
+                        <li><a href="#" class="pending-link">Treatment-Resistant</a></li>
+                        <li><a href="#" class="pending-link">Generalized Anxiety</a></li>
+                        <li><a href="#" class="pending-link">PTSD</a></li>
+                        <li><a href="#" class="pending-link">OCD</a></li>
+                        <li><a href="#" class="pending-link">ADHD</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/dr-ritesh-amin.html">About Dr. Amin</a></li>
+                        <li><a href="/our-approach">Our Approach</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul>
+                        <li><a href="/insurance.html">Insurance & Financing</a></li>
+                        <li><a href="/faq.html">Patient FAQs</a></li>
+                        <li><a href="/refer">Physician Referral</a></li>
+                        <li><a href="/reviews.html">Patient Testimonials</a></li>
+                        <li><a href="/blog">Wellness Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Service</a></li>
+                        <li><a href="/hipaa-notice">HIPAA Notice</a></li>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Premium Map Container -->
+            <div class="footer-map-section mt-16 mb-12">
+                <div class="footer-map-glass">
+                    <iframe src="https://maps.google.com/maps?q=New%20Jersey&t=&z=10&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer bar with Socials -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Dr. Ritesh Amin, MD. All Rights Reserved. Not acting as a substitute for medical advice.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
