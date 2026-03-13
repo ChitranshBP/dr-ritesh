@@ -91,12 +91,12 @@ $extra_css = $extra_css ?? '';
                                 Therapy Overview
                             </a>
                             <a href="/neurology/tms-for-brain-injury-trauma.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Traumatic Brain Injury</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Movement Disorders</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Stroke Recovery</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Parkinson's Symptoms</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Alzheimer's & Dementia</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Chronic Migraine</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Neuropathic Pain</a>
+                            <a href="/neurology/tms-for-movement-disorders.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Movement Disorders</a>
+                            <a href="/neurology/tms-for-stroke-recovery.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Stroke Recovery</a>
+                            <a href="/neurology/tms-for-parkinsons-symptoms.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Parkinson's Symptoms</a>
+                            <a href="/neurology/tms-for-alzheimers-dementia.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Alzheimer's & Dementia</a>
+                            <a href="/neurology/tms-for-migraine.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Chronic Migraine</a>
+                            <a href="/neurology/tms-for-neuropathic-pain.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Neuropathic Pain</a>
                         </div>
                         
                         <!-- Psychiatry Column -->
@@ -106,14 +106,14 @@ $extra_css = $extra_css ?? '';
                                 <span class="dd-icon !bg-gold !border-none !text-white"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
                                 Therapy Overview
                             </a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Major Depression</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Treatment-Resistant</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Generalized Anxiety</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> PTSD</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> OCD</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Panic Disorder</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Bipolar Depression</a>
-                            <a href="#" class="pending-link"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> ADHD</a>
+                            <a href="/psychiatry/tms-for-major-depression.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Major Depression</a>
+                            <a href="/psychiatry/tms-for-treatment-resistant-depression.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Treatment-Resistant</a>
+                            <a href="/psychiatry/tms-for-generalized-anxiety.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Generalized Anxiety</a>
+                            <a href="/psychiatry/tms-for-ptsd.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> PTSD</a>
+                            <a href="/psychiatry/tms-for-ocd.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> OCD</a>
+                            <a href="/psychiatry/tms-for-panic-disorder.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Panic Disorder</a>
+                            <a href="/psychiatry/tms-for-bipolar-depression.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> Bipolar Depression</a>
+                            <a href="/psychiatry/tms-for-adhd.php"><span class="w-1.5 h-1.5 ml-3 mr-2 bg-white/20 rounded-full"></span> ADHD</a>
                         </div>
                         
                         <!-- Spravato Column -->
@@ -191,24 +191,24 @@ $extra_css = $extra_css ?? '';
                                     <span class="sub-group-title">Neurology TMS</span>
                                     <a href="/neurology-tms-therapy.php">Therapy Overview</a>
                                     <a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a>
-                                    <a href="#" class="pending-link">Movement Disorders</a>
-                                    <a href="#" class="pending-link">Stroke Recovery</a>
-                                    <a href="#" class="pending-link">Parkinson's Symptoms</a>
-                                    <a href="#" class="pending-link">Alzheimer's & Dementia</a>
-                                    <a href="#" class="pending-link">Chronic Migraine</a>
-                                    <a href="#" class="pending-link">Neuropathic Pain</a>
+                                    <a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a>
+                                    <a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a>
+                                    <a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a>
+                                    <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a>
+                                    <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
+                                    <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
                                 </div>
                                 <div class="mobile-sub-group">
                                     <span class="sub-group-title">Psychiatry TMS</span>
                                     <a href="/psychiatry-tms-therapy.php">Therapy Overview</a>
-                                    <a href="#" class="pending-link">Major Depression</a>
-                                    <a href="#" class="pending-link">Treatment-Resistant</a>
-                                    <a href="#" class="pending-link">Generalized Anxiety</a>
-                                    <a href="#" class="pending-link">PTSD</a>
-                                    <a href="#" class="pending-link">OCD</a>
-                                    <a href="#" class="pending-link">Panic Disorder</a>
-                                    <a href="#" class="pending-link">Bipolar Depression</a>
-                                    <a href="#" class="pending-link">ADHD</a>
+                                    <a href="/psychiatry/tms-for-major-depression.php">Major Depression</a>
+                                    <a href="/psychiatry/tms-for-treatment-resistant-depression.php">Treatment-Resistant</a>
+                                    <a href="/psychiatry/tms-for-generalized-anxiety.php">Generalized Anxiety</a>
+                                    <a href="/psychiatry/tms-for-ptsd.php">PTSD</a>
+                                    <a href="/psychiatry/tms-for-ocd.php">OCD</a>
+                                    <a href="/psychiatry/tms-for-panic-disorder.php">Panic Disorder</a>
+                                    <a href="/psychiatry/tms-for-bipolar-depression.php">Bipolar Depression</a>
+                                    <a href="/psychiatry/tms-for-adhd.php">ADHD</a>
                                 </div>
                                 <div class="mobile-sub-group">
                                     <span class="sub-group-title">Innovative Treatments</span>

@@ -24,7 +24,7 @@ Neurology,TMS for Head Trauma,/neurology/tms-for-head-trauma/,Head Injury Treatm
 ,,,,,
 🔹 Functional Neurological Disorders (FMD Focus),,,,,
 Parent,Page Name,URL Structure,Primary Keyword,Secondary Keywords,Page Type
-Neurology,TMS for Functional Movement Disorder,/neurology/tms-for-functional-movement-disorder/,FMD Treatment Edison NJ,Functional Movement Disorder Edison NJ,Service
+Neurology,TMS for Functional Movement Disorder,/neurology/tms-for-movement-disorders.php,FMD Treatment Edison NJ,Functional Movement Disorder Edison NJ,Service
 Neurology,TMS for FND,/neurology/tms-for-fnd/,FND Treatment Edison NJ,Functional Neurological Disorder Edison NJ,Service
 Neurology,TMS for Psychogenic Movement Disorder,/neurology/tms-for-psychogenic-movement-disorder/,Movement Disorder Treatment Edison NJ,Non Organic Movement Disorder,Service
 Neurology,TMS for Functional Tremor,/neurology/tms-for-functional-tremor/,Functional Tremor Treatment Edison NJ,Tremor Specialist Edison NJ,Service
@@ -32,7 +32,7 @@ Neurology,TMS for Functional Dystonia,/neurology/tms-for-functional-dystonia/,Fu
 ,,,,,
 🔹 Stroke & Motor Recovery,,,,,
 Parent,Page Name,URL Structure,Primary Keyword,Secondary Keywords,Page Type
-Neurology,TMS for Stroke Recovery,/neurology/tms-for-stroke-recovery/,Stroke Recovery Treatment Edison NJ,Post Stroke Rehabilitation Edison NJ,Service
+Neurology,TMS for Stroke Recovery,/neurology/tms-for-stroke-recovery.php,Stroke Recovery Treatment Edison NJ,Post Stroke Rehabilitation Edison NJ,Service
 Neurology,TMS for Paralysis,/neurology/tms-for-paralysis/,Paralysis Treatment Edison NJ,Motor Cortex Stimulation Edison NJ,Service
 Neurology,TMS for Motor Weakness,/neurology/tms-for-motor-weakness/,Motor Weakness Treatment Edison NJ,Neurological Weakness Edison NJ,Service
 Neurology,TMS for Aphasia,/neurology/tms-for-aphasia/,Aphasia Treatment Edison NJ,Speech Recovery Stroke Edison NJ,Service
@@ -40,35 +40,35 @@ Neurology,TMS for Aphasia,/neurology/tms-for-aphasia/,Aphasia Treatment Edison N
 🔹 Neurodegenerative Conditions,,,,,
 Parent,Page Name,URL Structure,Primary Keyword,Secondary Keywords,Page Type
 Neurology,TMS for Huntington’s Disease,/neurology/tms-for-huntingtons-disease/,Huntington’s Treatment Edison NJ,Neurodegenerative Treatment Edison NJ,Service
-Neurology,TMS for Parkinson’s Symptoms,/neurology/tms-for-parkinsons-symptoms/,Parkinson’s Treatment Edison NJ,Tremor Treatment Edison NJ,Service
-Neurology,TMS for Alzheimer’s,/neurology/tms-for-alzheimers/,Alzheimer’s Treatment Edison NJ,Memory Loss Therapy Edison NJ,Service
+Neurology,TMS for Parkinson’s Symptoms,/neurology/tms-for-parkinsons-symptoms.php,Parkinson’s Treatment Edison NJ,Tremor Treatment Edison NJ,Service
+Neurology,TMS for Alzheimer’s,/neurology/tms-for-alzheimers-dementia.php,Alzheimer’s Treatment Edison NJ,Memory Loss Therapy Edison NJ,Service
 Neurology,TMS for Mild Cognitive Impairment,/neurology/tms-for-mci/,MCI Treatment Edison NJ,Cognitive Decline Therapy Edison NJ,Service
 Neurology,TMS for Dementia,/neurology/tms-for-dementia/,Dementia Treatment Edison NJ,Memory Care Edison NJ,Service
 ,,,,,
 🔹 Pain & Migraine Cluster,,,,,
 Parent,Page Name,URL Structure,Primary Keyword,Secondary Keywords,Page Type
-Neurology,TMS for Migraine,/neurology/tms-for-migraine/,Migraine Treatment Edison NJ,Chronic Migraine Edison NJ,Service
+Neurology,TMS for Migraine,/neurology/tms-for-migraine.php,Migraine Treatment Edison NJ,Chronic Migraine Edison NJ,Service
 Neurology,TMS for Chronic Headache,/neurology/tms-for-chronic-headache/,Chronic Headache Treatment Edison NJ,Drug Resistant Migraine,Service
 Neurology,TMS for Fibromyalgia,/neurology/tms-for-fibromyalgia/,Fibromyalgia Treatment Edison NJ,Chronic Pain Therapy Edison NJ,Service
-Neurology,TMS for Neuropathic Pain,/neurology/tms-for-neuropathic-pain/,Nerve Pain Treatment Edison NJ,Central Pain Syndrome Edison NJ,Service
+Neurology,TMS for Neuropathic Pain,/neurology/tms-for-neuropathic-pain.php,Nerve Pain Treatment Edison NJ,Central Pain Syndrome Edison NJ,Service
 Neurology,TMS for CRPS,/neurology/tms-for-crps/,CRPS Treatment Edison NJ,Complex Regional Pain Syndrome,Service
 Neurology,TMS for Trigeminal Neuralgia,/neurology/tms-for-trigeminal-neuralgia/,Trigeminal Neuralgia Treatment Edison NJ,Facial Nerve Pain Edison NJ,Service
 ,,,,,
 🧠 PSYCHIATRY SILO,,,,,
 🔹 Depression Cluster,,,,,
 Parent,Page Name,URL Structure,Primary Keyword,Secondary Keywords,Page Type
-Psychiatry,TMS for Depression,/psychiatry/tms-for-depression/,TMS for Depression Edison NJ,Drug Resistant Depression Edison NJ,Service
-Psychiatry,TMS for Treatment Resistant Depression,/psychiatry/tms-for-trd/,TRD Treatment Edison NJ,Resistant Depression Edison NJ,Service
-Psychiatry,TMS for Major Depressive Disorder,/psychiatry/tms-for-mdd/,MDD Treatment Edison NJ,Clinical Depression Edison NJ,Service
+Psychiatry,TMS for Depression,/psychiatry/tms-for-major-depression.php,TMS for Depression Edison NJ,Drug Resistant Depression Edison NJ,Service
+Psychiatry,TMS for Treatment Resistant Depression,/psychiatry/tms-for-treatment-resistant-depression.php,TRD Treatment Edison NJ,Resistant Depression Edison NJ,Service
+Psychiatry,TMS for Major Depressive Disorder,/psychiatry/tms-for-major-depression.php,MDD Treatment Edison NJ,Clinical Depression Edison NJ,Service
 ,,,,,
 🔹 Anxiety & Trauma,,,,,
 Parent,Page Name,URL Structure,Primary Keyword,Secondary Keywords,Page Type
-Psychiatry,TMS for Anxiety,/psychiatry/tms-for-anxiety/,Anxiety Treatment Edison NJ,GAD Treatment Edison NJ,Service
-Psychiatry,TMS for PTSD,/psychiatry/tms-for-ptsd/,PTSD Treatment Edison NJ,Trauma Therapy Edison NJ,Service
-Psychiatry,TMS for OCD,/psychiatry/tms-for-ocd/,OCD Treatment Edison NJ,Obsessive Compulsive Disorder Edison NJ,Service
-Psychiatry,TMS for Panic Disorder,/psychiatry/tms-for-panic-disorder/,Panic Disorder Treatment Edison NJ,Anxiety Attack Treatment Edison NJ,Service
-Psychiatry,TMS for Bipolar Depression,/psychiatry/tms-for-bipolar-depression/,Bipolar Depression Treatment Edison NJ,Mood Disorder Edison NJ,Service
-Psychiatry,TMS for ADHD,/psychiatry/tms-for-adhd/,ADHD Treatment Edison NJ,Adult ADHD Edison NJ,Service
+Psychiatry,TMS for Anxiety,/psychiatry/tms-for-generalized-anxiety.php,Anxiety Treatment Edison NJ,GAD Treatment Edison NJ,Service
+Psychiatry,TMS for PTSD,/psychiatry/tms-for-ptsd.php,PTSD Treatment Edison NJ,Trauma Therapy Edison NJ,Service
+Psychiatry,TMS for OCD,/psychiatry/tms-for-ocd.php,OCD Treatment Edison NJ,Obsessive Compulsive Disorder Edison NJ,Service
+Psychiatry,TMS for Panic Disorder,/psychiatry/tms-for-panic-disorder.php,Panic Disorder Treatment Edison NJ,Anxiety Attack Treatment Edison NJ,Service
+Psychiatry,TMS for Bipolar Depression,/psychiatry/tms-for-bipolar-depression.php,Bipolar Depression Treatment Edison NJ,Mood Disorder Edison NJ,Service
+Psychiatry,TMS for ADHD,/psychiatry/tms-for-adhd.php,ADHD Treatment Edison NJ,Adult ADHD Edison NJ,Service
 ,,,,,
 OTHER SERVICES,,,,,
 SPRAVATO SILO,,,,,
