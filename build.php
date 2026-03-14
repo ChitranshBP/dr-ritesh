@@ -29,6 +29,25 @@ $pages = [
     'privacy-policy.php'           => 'privacy-policy.html',
     'reviews.php'                  => 'reviews.html',
     'terms.php'                    => 'terms.html',
+
+    // Neurology sub-pages
+    'neurology/tms-for-alzheimers-dementia.php'   => 'neurology/tms-for-alzheimers-dementia.html',
+    'neurology/tms-for-brain-injury-trauma.php'   => 'neurology/tms-for-brain-injury-trauma.html',
+    'neurology/tms-for-migraine.php'              => 'neurology/tms-for-migraine.html',
+    'neurology/tms-for-movement-disorders.php'    => 'neurology/tms-for-movement-disorders.html',
+    'neurology/tms-for-neuropathic-pain.php'      => 'neurology/tms-for-neuropathic-pain.html',
+    'neurology/tms-for-parkinsons-symptoms.php'   => 'neurology/tms-for-parkinsons-symptoms.html',
+    'neurology/tms-for-stroke-recovery.php'       => 'neurology/tms-for-stroke-recovery.html',
+
+    // Psychiatry sub-pages
+    'psychiatry/tms-for-adhd.php'                         => 'psychiatry/tms-for-adhd.html',
+    'psychiatry/tms-for-bipolar-depression.php'           => 'psychiatry/tms-for-bipolar-depression.html',
+    'psychiatry/tms-for-generalized-anxiety.php'          => 'psychiatry/tms-for-generalized-anxiety.html',
+    'psychiatry/tms-for-major-depression.php'             => 'psychiatry/tms-for-major-depression.html',
+    'psychiatry/tms-for-ocd.php'                          => 'psychiatry/tms-for-ocd.html',
+    'psychiatry/tms-for-panic-disorder.php'               => 'psychiatry/tms-for-panic-disorder.html',
+    'psychiatry/tms-for-ptsd.php'                         => 'psychiatry/tms-for-ptsd.html',
+    'psychiatry/tms-for-treatment-resistant-depression.php' => 'psychiatry/tms-for-treatment-resistant-depression.html',
 ];
 
 // ── Static asset directories to copy ──
@@ -91,6 +110,12 @@ $errors = 0;
 foreach ($pages as $phpFile => $htmlFile) {
     $srcPath = __DIR__ . '/' . $phpFile;
     $dstPath = $outputDir . '/' . $htmlFile;
+
+    // Ensure the output subdirectory exists (e.g. dist/neurology/, dist/psychiatry/)
+    $dstDirPath = dirname($dstPath);
+    if (!is_dir($dstDirPath)) {
+        mkdir($dstDirPath, 0755, true);
+    }
 
     if (!file_exists($srcPath)) {
         echo "      ✗ SKIP: {$phpFile} (not found)\n";
