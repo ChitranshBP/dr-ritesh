@@ -342,20 +342,18 @@ img {
     top: calc(100% + 14px);
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    min-width: 240px;
-    /* Dark midnight panel */
-    background: rgba(10,22,40,0.97);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(37,111,168,0.18);
-    border-radius: 14px;
-    padding: 0.5rem;
+    min-width: 260px;
+    background: rgba(8,18,34,0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(37,111,168,0.2);
+    border-radius: 16px;
+    padding: 0.6rem;
     z-index: 1001;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-    /* Gold top hairline */
+    box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.04);
     overflow: hidden;
 }
 
@@ -365,8 +363,8 @@ img {
     top: 0;
     left: 1rem;
     right: 1rem;
-    height: 1.5px;
-    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent);
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-gold), var(--color-gold-light), transparent);
 }
 
 .dropdown:hover .dropdown-content {
@@ -375,26 +373,28 @@ img {
     transform: translateX(-50%) translateY(0);
 }
 
-/* Dropdown items with icon */
+/* Dropdown items */
 .dropdown-content a {
     display: flex !important;
     align-items: center;
     gap: 0.75rem;
-    padding: 0.75rem 1rem !important;
-    color: rgba(255,255,255,0.72) !important;
-    font-size: 0.88rem !important;
+    padding: 0.7rem 0.85rem !important;
+    color: rgba(255,255,255,0.65) !important;
+    font-size: 0.85rem !important;
     font-weight: 500;
-    border-radius: 8px;
+    border-radius: 10px;
     text-transform: none !important;
     letter-spacing: 0 !important;
     text-decoration: none;
-    transition: background 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+    border-left: 2px solid transparent;
+    transition: all 0.18s ease;
 }
 
 .dropdown-content a:hover {
     background: rgba(37,111,168,0.10) !important;
-    color: var(--color-gold-light) !important;
-    padding-left: 1.25rem !important;
+    color: white !important;
+    border-left-color: var(--color-gold) !important;
+    padding-left: 1.1rem !important;
     transform: none !important;
 }
 
@@ -407,12 +407,18 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     background: rgba(37,111,168,0.10);
-    border: 1px solid rgba(37,111,168,0.20);
-    border-radius: 7px;
+    border: 1px solid rgba(37,111,168,0.22);
+    border-radius: 8px;
     flex-shrink: 0;
+    transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.dropdown-content a:hover .dd-icon {
+    background: rgba(37,111,168,0.22);
+    border-color: rgba(37,111,168,0.4);
 }
 
 .dd-icon svg {
@@ -421,29 +427,129 @@ img {
     color: var(--color-gold);
 }
 
+/* Dropdown item sub-label */
+.dd-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.dd-label-sub {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.3);
+    font-weight: 400;
+    line-height: 1;
+}
+
 /* ── Mega Menu panel ── */
 .mega-menu {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: 210px 1fr 1fr 190px;
+    gap: 0;
     position: absolute;
-    top: calc(100% + 14px);
+    top: calc(100% + 18px);
     left: 50%;
-    transform: translateX(-35%) translateY(10px);
-    width: max-content;
-    max-width: 900px;
-    /* Dark midnight panel matching dropdown */
-    background: rgba(10,22,40,0.97);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(37,111,168,0.18);
-    border-radius: 14px;
-    padding: 2.5rem;
+    transform: translateX(-28%) translateY(12px);
+    width: 860px;
+    background: rgba(8,18,34,0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(37,111,168,0.2);
+    border-radius: 18px;
+    overflow: hidden;
     z-index: 1001;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s ease;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+/* ── Mega Feature Sidebar ── */
+.mega-feature {
+    background: linear-gradient(160deg, #102236 0%, #060f1e 100%);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(37,111,168,0.14);
+    position: relative;
+    overflow: hidden;
+}
+
+.mega-feature::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(37,111,168,0.16) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.mega-feature::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-gold), var(--color-gold-light));
+}
+
+.mega-feature-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-gold);
+    margin-bottom: 0.9rem;
+    display: block;
+}
+
+.mega-feature-title {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    line-height: 1.25;
+    margin-bottom: 0.85rem;
+}
+
+.mega-feature-desc {
+    font-size: 0.77rem;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.45);
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.mega-feature-cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    font-size: 0.73rem !important;
+    font-weight: 600 !important;
+    color: var(--color-gold-light) !important;
+    padding: 0.5rem 0.9rem !important;
+    background: rgba(37,111,168,0.15) !important;
+    border: 1px solid rgba(37,111,168,0.28) !important;
+    border-radius: 999px !important;
+    transition: all 0.2s ease !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    width: fit-content;
+    border-left: 1px solid rgba(37,111,168,0.28) !important;
+    margin: 0 !important;
+}
+
+.mega-feature-cta:hover {
+    background: rgba(37,111,168,0.28) !important;
+    color: white !important;
+    padding-left: 0.9rem !important;
+    border-left-color: rgba(37,111,168,0.28) !important;
 }
 
 /* ── Mobile Navigation Overlay ── */
@@ -588,48 +694,72 @@ img {
     transform: translateY(-10px) rotate(-45deg);
 }
 
-.mega-menu::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 1.5rem;
-    right: 1.5rem;
-    height: 1.5px;
-    background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent);
-}
-
 .dropdown:hover .mega-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-35%) translateY(0);
+    transform: translateX(-28%) translateY(0);
 }
 
 .mega-column {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    padding: 1.75rem 1.25rem;
+    border-right: 1px solid rgba(255,255,255,0.04);
+}
+
+.mega-column:last-child {
+    border-right: none;
+    background: rgba(0,0,0,0.12);
+}
+
+/* Column header: icon + label */
+.mega-col-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.mega-col-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    background: rgba(37,111,168,0.12);
+    border: 1px solid rgba(37,111,168,0.22);
+    border-radius: 7px;
+    flex-shrink: 0;
+}
+
+.mega-col-icon svg {
+    width: 13px;
+    height: 13px;
+    stroke: var(--color-gold);
+    fill: none;
 }
 
 .mega-heading {
-    display: block;
     font-family: var(--font-sans);
-    font-size: 0.75rem;
+    font-size: 0.68rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--color-gold);
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
 }
 
 /* ── Pending / Coming Soon Links ── */
 .pending-link {
-    opacity: 0.45 !important;
+    opacity: 0.4 !important;
     cursor: default !important;
     pointer-events: none !important;
-    filter: grayscale(0.8);
-    position: relative;
+    filter: grayscale(0.6);
 }
 
 .pending-link:hover {
@@ -641,26 +771,81 @@ img {
 .mega-menu a {
     display: flex !important;
     align-items: center;
-    gap: 0.65rem;
-    padding: 0.5rem 0.5rem 0.5rem 0 !important;
-    color: rgba(255,255,255,0.72) !important;
-    font-size: 0.88rem !important;
+    gap: 0.55rem;
+    padding: 0.42rem 0.65rem !important;
+    margin: 0 -0.65rem !important;
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 0.83rem !important;
     font-weight: 500;
     border-radius: 8px;
     text-transform: none !important;
     letter-spacing: 0 !important;
     text-decoration: none;
-    transition: all 0.2s ease;
+    border-left: 2px solid transparent;
+    transition: all 0.18s ease;
 }
 
 .mega-menu a:hover {
-    color: var(--color-gold-light) !important;
-    padding-left: 0.75rem !important;
-    background: transparent !important;
+    color: white !important;
+    background: rgba(37,111,168,0.1) !important;
+    padding-left: 1rem !important;
+    border-left-color: var(--color-gold) !important;
 }
 
 .mega-menu a::after {
     display: none !important;
+}
+
+/* Overview link pinned at top of a column */
+.mega-link-overview {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.35rem !important;
+    padding-bottom: 0.6rem !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+    border-left: 2px solid var(--color-gold) !important;
+    border-radius: 0 !important;
+    padding-left: 0.65rem !important;
+}
+
+.mega-link-overview:hover {
+    padding-left: 0.85rem !important;
+    background: rgba(37,111,168,0.08) !important;
+}
+
+/* Treatment cards (Spravato / Ketamine) */
+.mega-treatment-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.25rem !important;
+    padding: 0.85rem 0.9rem !important;
+    margin: 0 0 0.5rem !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(37,111,168,0.14) !important;
+    background: rgba(37,111,168,0.05) !important;
+    border-left: 2px solid transparent !important;
+    transition: all 0.2s ease !important;
+}
+
+.mega-treatment-card:hover {
+    background: rgba(37,111,168,0.12) !important;
+    border-left-color: var(--color-gold) !important;
+    padding-left: 1rem !important;
+}
+
+.mega-treatment-title {
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: white;
+    display: block;
+}
+
+.mega-treatment-desc {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.38);
+    display: block;
+    line-height: 1.45;
+    font-weight: 400;
 }
 
 /* ── Nav CTA button ── */
