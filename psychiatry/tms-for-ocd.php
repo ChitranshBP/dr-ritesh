@@ -151,7 +151,7 @@ include __DIR__ . '/../header.php';
                     </div>
                 </div>
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/depression-brain-activity.png" alt="Brain mapping of OCD circuitry">
+                    <img src="/assets/neurology-tms/tms_for_ocd_brain.png" alt="Brain mapping of OCD circuitry">
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@ include __DIR__ . '/../header.php';
 
             <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/tms-device-patient.png" alt="Patient receiving Deep TMS">
+                    <img src="/assets/neurology-tms/tms_for_ocd_patient.png" alt="Patient receiving Deep TMS">
                 </div>
                 <div>
                     <p>To treat OCD effectively, we utilize FDA-cleared Deep TMS (dTMS) technology. Unlike standard figure-8 TMS coils used for depression, dTMS uses a modified helmet design that projects the magnetic field deeper and broader into the anterior cingulate cortex and medial prefrontal cortex.</p>
