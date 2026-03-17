@@ -94,7 +94,7 @@ include 'header.php';
             <!-- Bio Image Card -->
             <div class="md:w-5/12 reveal shrink-0">
                 <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 group bg-midnight-light p-2">
-                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[3/4] object-cover rounded-2xl">
+                    <img src="/assets/images/dr-ritesh-hero.webp" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[3/4] object-cover rounded-2xl">
                     
                     <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-lg border border-white/20 flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold">

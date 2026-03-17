@@ -4,9 +4,8 @@
             <div class="footer-grid">
                 <!-- Brand Column -->
                 <div class="footer-brand">
-                    <a href="#" class="logo mb-6 inline-block">
-                        <span class="logo-dr text-white" style="font-size: 1.5rem; font-weight: 600; font-family: var(--font-serif); letter-spacing: -0.5px;">Dr. Ritesh Amin</span>
-                        <span class="logo-title text-gold block mt-1" style="font-size: 0.85rem; letter-spacing: 2px;">Psychiatry & TMS</span>
+                    <a href="/" class="logo mb-6 inline-block">
+                        <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="footer-logo">
                     </a>
                     <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
                     <div class="emergency-disclaimer mt-8">

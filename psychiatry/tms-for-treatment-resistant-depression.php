@@ -240,7 +240,7 @@ include __DIR__ . '/../header.php';
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-5/12 reveal shrink-0">
                     <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-2 bg-[#0d1a2d]">
-                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[4/5] object-cover rounded-2xl">
+                        <img src="/assets/images/dr-ritesh-hero.webp" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[4/5] object-cover rounded-2xl">
                     </div>
                 </div>
                 <div class="lg:w-7/12 reveal delay-1">

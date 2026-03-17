@@ -71,20 +71,31 @@ $extra_css = $extra_css ?? '';
         <div class="container nav-container">
             <!-- Logo -->
             <a href="/" class="logo">
-                <span class="logo-mark">
-                    <svg viewBox="0 0 10 10" fill="none">
-                        <circle cx="5" cy="5" r="3" fill="currentColor" />
-                    </svg>
-                </span>
-                <div class="logo-text">
-                    <span class="logo-name">Dr. Ritesh Amin</span>
-                    <span class="logo-tag">MD &middot; Psychiatry &amp; TMS</span>
-                </div>
+                <img src="/assets/logo/Dr.-Ritesh-Amin-main.png" alt="Dr. Ritesh Amin" class="logo-main hidden">
+                <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="logo-white block">
             </a>
 
             <!-- Desktop nav links -->
             <div class="nav-links">
-                <a href="/dr-ritesh-amin.php" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        About
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/dr-ritesh-amin.php">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <span class="dd-label">Dr. Ritesh Amin<span class="dd-label-sub">MD &middot; Psychiatry &amp; TMS</span></span>
+                        </a>
+                        <a href="/dr-nalin-ranasinghe.php">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <span class="dd-label">Dr. Nalin E. Ranasinghe<span class="dd-label-sub">MD &middot; Psychiatry Specialist</span></span>
+                        </a>
+                    </div>
+                </div>
                 <div class="dropdown">
                     <a href="#" class="nav-link dropbtn">
                         Services
@@ -225,7 +236,20 @@ $extra_css = $extra_css ?? '';
             <div class="mobile-nav" id="mobileNav">
                 <div class="mobile-nav-content">
                     <div class="mobile-nav-links">
-                        <a href="/dr-ritesh-amin.php" class="mobile-link">About Dr. Amin</a>
+                        <!-- About Accordion -->
+                        <div class="mobile-accordion">
+                            <button class="mobile-link accordion-toggle">
+                                About Us
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="accordion-panel">
+                                <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>
+                                <a href="/dr-nalin-ranasinghe.php">Dr. Nalin E. Ranasinghe</a>
+                            </div>
+                        </div>
 
                         <!-- Services Accordion -->
                         <div class="mobile-accordion">
