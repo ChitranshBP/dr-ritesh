@@ -13,7 +13,11 @@ include 'header.php';
 
     <!-- Hero Section -->
     <header class="hero" id="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-bg">
+            <video class="hero-bg-video" autoplay muted loop playsinline>
+                <source src="assets/hero-video/dr-ritesh-hero.mp4" type="video/mp4">
+            </video>
+        </div>
 
         <!-- Two-column editorial split -->
         <div class="hero-split">
@@ -21,7 +25,6 @@ include 'header.php';
             <!-- ── Left: Content ── -->
             <div class="hero-left">
                 <div class="hero-content reveal">
-                    <p class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Board-Certified Psychiatrist &middot; New Jersey</p>
                     <h1 class="hero-title">
                         Advanced TMS<br>
                         Therapy for<br>
@@ -57,25 +60,7 @@ include 'header.php';
 
             <!-- ── Right: TMS Chair portrait ── -->
             <div class="hero-right reveal delay-1">
-                <div class="hero-img-frame">
-                    <img src="assets/images/tms_brain_banner.png" alt="Advanced TMS Therapy Chair" class="hero-img">
-                    <div class="hero-img-overlay"></div>
-                </div>
-                <!-- Floating glass credential card -->
-                <div class="hero-cred-card">
-                    <div class="hero-cred-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    </div>
-                    <div class="hero-cred-info">
-                        <span class="hero-cred-title">Board Certified</span>
-                        <span class="hero-cred-sub">American Board of Psychiatry &amp; Neurology</span>
-                    </div>
-                </div>
-                <!-- FDA pill tag -->
-                <div class="hero-fda-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    FDA Approved
-                </div>
+
                 <!-- Vertical name — editorial detail -->
                 <p class="hero-name-vert">Dr. Ritesh Amin &middot; MD &middot; Psychiatrist</p>
             </div>
