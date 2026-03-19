@@ -536,20 +536,20 @@ include 'header.php';
 
                 <!-- Column 2 – Video Testimonials -->
                 <div class="wol-col wol-col-videos">
-                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=true&loop=false&disable_player_controls=false')">
-                        <div class="video-thumb-inner">
+                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=true&loop=false&disable_player_controls=false')" style="background-image:url('https://video.gumlet.io/69bba3d6554f0fb510f67044/thumbnail-1-0.png')">
+                        <div class="video-thumb-overlay">
                             <div class="video-play-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
                             </div>
-                            <p class="video-thumb-label">Patient Story</p>
+                            <p class="video-thumb-label">Watch Patient Story</p>
                         </div>
                     </div>
-                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=true&loop=false&disable_player_controls=false')">
-                        <div class="video-thumb-inner">
+                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=true&loop=false&disable_player_controls=false')" style="background-image:url('https://video.gumlet.io/69bba3d6baa7d9f8a4d6f9eb/thumbnail-1-0.png')">
+                        <div class="video-thumb-overlay">
                             <div class="video-play-btn">
                                 <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
                             </div>
-                            <p class="video-thumb-label">Patient Story</p>
+                            <p class="video-thumb-label">Watch Patient Story</p>
                         </div>
                     </div>
                 </div>
