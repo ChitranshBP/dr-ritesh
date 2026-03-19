@@ -2484,10 +2484,14 @@ img {
 }
 
 .wol-stars {
-    margin-left: auto;
     color: var(--color-gold);
     font-size: 0.9rem;
     letter-spacing: 2px;
+}
+
+.google-icon {
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 /* Text */
