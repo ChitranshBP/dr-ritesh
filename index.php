@@ -536,24 +536,20 @@ include 'header.php';
 
                 <!-- Column 2 – Video Testimonials -->
                 <div class="wol-col wol-col-videos">
-                    <div class="video-testimonial-item">
-                        <div style="position:relative;aspect-ratio:9/16;">
-                            <iframe loading="lazy" title="Gumlet video player"
-                                src="https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=false&loop=false&disable_player_controls=false"
-                                style="border:none; position:absolute; top:0; left:0; height:100%; width:100%;"
-                                referrerpolicy="origin"
-                                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
-                            </iframe>
+                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=true&loop=false&disable_player_controls=false')">
+                        <div class="video-thumb-inner">
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <p class="video-thumb-label">Patient Story</p>
                         </div>
                     </div>
-                    <div class="video-testimonial-item">
-                        <div style="position:relative;aspect-ratio:9/16;">
-                            <iframe loading="lazy" title="Gumlet video player"
-                                src="https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=false&loop=false&disable_player_controls=false"
-                                style="border:none; position:absolute; top:0; left:0; height:100%; width:100%;"
-                                referrerpolicy="origin"
-                                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
-                            </iframe>
+                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=true&loop=false&disable_player_controls=false')">
+                        <div class="video-thumb-inner">
+                            <div class="video-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                            <p class="video-thumb-label">Patient Story</p>
                         </div>
                     </div>
                 </div>
@@ -606,6 +602,36 @@ include 'header.php';
 
 
 
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal-overlay" onclick="closeVideoModal()">
+        <div class="video-modal-box" onclick="event.stopPropagation()">
+            <button class="video-modal-close" onclick="closeVideoModal()">&#10005;</button>
+            <div style="position:relative;aspect-ratio:9/16;height:80vh;max-width:calc(80vh * 9/16);">
+                <iframe id="videoModalIframe" title="Gumlet video player" src=""
+                    style="border:none;position:absolute;top:0;left:0;height:100%;width:100%;"
+                    referrerpolicy="origin"
+                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openVideoModal(src) {
+            document.getElementById('videoModalIframe').src = src;
+            document.getElementById('videoModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeVideoModal() {
+            document.getElementById('videoModal').classList.remove('active');
+            document.getElementById('videoModalIframe').src = '';
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeVideoModal();
+        });
+    </script>
 
     <!-- Closing CTA -->
     <section class="closing-cta">
