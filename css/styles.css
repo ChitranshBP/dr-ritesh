@@ -2505,16 +2505,15 @@ img {
 /* Thumbnail card – matches wol-card size */
 .video-thumb-card {
     flex: 1;
+    position: relative;
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
-    background-color: #0f2744;
-    background-size: cover;
-    background-position: center;
+    background: #0f2744;
     box-shadow: 0 10px 30px rgba(0,0,0,0.04);
     border: 1px solid rgba(0,0,0,0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-height: 160px;
+    min-height: 180px;
 }
 
 .video-thumb-card:hover {
@@ -2522,11 +2521,21 @@ img {
     box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
-.video-thumb-overlay {
+/* Iframe fills card as thumbnail (not interactive) */
+.video-thumb-iframe {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    min-height: 160px;
-    background: rgba(0,0,0,0.38);
+    border: none;
+    pointer-events: none;
+}
+
+/* Clickable overlay on top of iframe */
+.video-thumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.28);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2537,7 +2546,7 @@ img {
 }
 
 .video-thumb-card:hover .video-thumb-overlay {
-    background: rgba(0,0,0,0.22);
+    background: rgba(0,0,0,0.15);
 }
 
 .video-play-btn {
