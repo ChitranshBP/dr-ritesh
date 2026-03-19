@@ -332,54 +332,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Success</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Breaking the Loop</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients whose lives were transformed by Deep TMS for OCD.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">S</div>
-                        <div>
-                            <h4 class="review-name">Sarah P.</h4>
-                            <span class="review-condition">Severe Contamination OCD</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        I was washing my hands 40 times a day and couldn't leave my house. ERP therapy was just too terrifying. Dr. Amin recommended Deep TMS. By week three, the internal 'alarm siren' warning me of germs just... quieted down. It didn't disappear instantly, but the volume was low enough that I could finally resist the compulsions.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">M</div>
-                        <div>
-                            <h4 class="review-name">Mark T.</h4>
-                            <span class="review-condition">Pure-O (Intrusive Thoughts)</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        My compulsions were entirely mental, making it invisible to others but a living hell for me. High doses of Fluvoxamine made me feel dead inside. BrainsWay Deep TMS with Dr. Amin gave me my mind back. The thoughts still occasionally pop up, but they no longer bring the crushing panic that forces me to analyze them.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- Closing CTA -->
     <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">

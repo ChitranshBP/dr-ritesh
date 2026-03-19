@@ -333,6 +333,8 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- Closing CTA -->
+    <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
+
     <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Quiet Your Mind</span>

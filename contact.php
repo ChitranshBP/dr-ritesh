@@ -289,7 +289,7 @@ include 'header.php';
                             <div class="flex items-start gap-3 mb-6">
                                 <input type="checkbox" id="hipaa" name="hipaa" class="mt-1 accent-[#256fa8] w-4 h-4 cursor-pointer" required>
                                 <label for="hipaa" class="!text-xs !normal-case !tracking-normal !font-normal text-gray-500 leading-relaxed cursor-pointer" style="margin-bottom:0;">
-                                    I understand that this form is not a secure means of communication and that my information will be kept confidential per our <a href="/privacy-policy" class="text-gold underline hover:no-underline">Privacy Policy</a>.
+                                    I understand that this form is not a secure means of communication and that my information will be kept confidential per our <a href="/privacy-policy.php" class="text-gold underline hover:no-underline">Privacy Policy</a>.
                                 </label>
                             </div>
 

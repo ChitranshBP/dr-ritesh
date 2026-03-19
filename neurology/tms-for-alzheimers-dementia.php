@@ -368,46 +368,7 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- Patient Stories (Caregiver perspective) -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Perspectives</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Hope &amp; Stability</h2>
-                <p class="section-subtitle text-gray-600">Hear from family members who observed the impact of TMS on their loved ones.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">S</div>
-                        <div>
-                            <h4 class="review-name">Sarah T.</h4>
-                            <span class="review-condition">Caregiver for Spouse (MCI)</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        When my husband was diagnosed with early cognitive impairment, we wanted to do everything possible to slow it down. Dr. Amin recommended TMS. While I know it's not a cure, we've noticed he is more conversant, remembers names a bit faster, and most importantly, his severe anxiety has almost disappeared. We are so grateful for the extra quality time.
-                    </div>
-                    
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">D</div>
-                        <div>
-                            <h4 class="review-name">David L.</h4>
-                            <span class="review-condition">Caregiver for Parent</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        My mother's dementia brought on horrible mood swings and depression. She didn't tolerate the psychiatric meds well. Seeking an alternative led us to TMS. It was gentle enough for her, and it truly lifted the fog of depression. She smiles more now and interacts with the grandkids, which is all we could ask for.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">

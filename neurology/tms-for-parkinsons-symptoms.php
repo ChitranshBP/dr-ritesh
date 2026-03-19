@@ -367,59 +367,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Stories</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Real Recoveries</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients who improved their motor control and mood through targeted Parkinson's TMS.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">M</div>
-                        <div>
-                            <h4 class="review-name">Michael B.</h4>
-                            <span class="review-condition">Parkinson's Disease</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        My Parkinson's tremor made it almost impossible to enjoy my hobbies. After working with Dr. Amin and starting TMS, I've noticed a significant reduction in my hand shaking. More importantly, my 'off' periods aren't as severe as they used to be. It has made a huge difference in my daily life.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">A</div>
-                        <div>
-                            <h4 class="review-name">Alice G.</h4>
-                            <span class="review-condition">Parkinson's Mood &amp; Mobility</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        The depression that came with my Parkinson's was just as bad as the stiffness. TMS improved my mood and seemed to 'unstick' my walking a bit. I feel more motivated and move a lot more freely now. I'm thankful to have found such a caring specialist like Dr. Amin.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12 reveal delay-2">
-                <a href="/reviews.php" class="inline-flex items-center text-gold font-semibold hover:text-midnight transition-colors gap-2">
-                    Read More Patient Reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">

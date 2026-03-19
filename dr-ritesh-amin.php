@@ -272,7 +272,7 @@ include 'header.php';
                     <p class="text-white/70 mb-8 leading-relaxed">
                         When you arrive for your TMS or Infusion sessions, you'll enter a serene, spa-like environment featuring private suites, state-of-the-art comfortable recliners, and a dedicated care technician to ensure your absolute comfort during treatment.
                     </p>
-                    <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 font-semibold text-midnight transition-all duration-200 bg-white border border-transparent rounded-full hover:bg-gold hover:text-white hover:shadow-lg">Schedule a Clinic Tour</a>
+                    <a href="/contact.php" class="inline-flex items-center justify-center px-8 py-4 font-semibold text-midnight transition-all duration-200 bg-white border border-transparent rounded-full hover:bg-gold hover:text-white hover:shadow-lg">Schedule a Clinic Tour</a>
                 </div>
                 <!-- Image -->
                 <div class="lg:w-1/2 reveal delay-1">
@@ -291,7 +291,7 @@ include 'header.php';
         <div class="container mx-auto px-4 max-w-4xl text-center relative z-10 reveal">
             <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Reclaim Your Quality of Life</h2>
             <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">Don't let depression or anxiety dictate your future. Schedule an evaluation with Dr. Amin to discover if advanced neuromodulation is right for you.</p>
-            <a href="/contact" class="inline-block bg-white text-midnight font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all">Request Your Consultation</a>
+            <a href="/contact.php" class="inline-block bg-white text-midnight font-bold py-4 px-10 rounded-full text-lg shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all">Request Your Consultation</a>
         </div>
     </section>
 

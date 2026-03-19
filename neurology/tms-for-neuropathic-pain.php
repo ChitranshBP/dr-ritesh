@@ -317,59 +317,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Success</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Relief Found Here</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients who reduced their chronic pain burden through TMS.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">K</div>
-                        <div>
-                            <h4 class="review-name">Karen P.</h4>
-                            <span class="review-condition">Fibromyalgia Syndrome</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        For 8 years, my body felt like it was on fire. The pain meds made me so tired I couldn't function anyway. Finding Dr. Amin and TMS was a blessing. By week three, the constant aching started to recede. By the end of treatment, my pain went from a daily 8 to a manageable 3, and my mood is better than it has been in a decade.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">M</div>
-                        <div>
-                            <h4 class="review-name">Mark T.</h4>
-                            <span class="review-condition">Neuropathic Leg Pain</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        I had severe neuropathy in my leg following a back injury. Nothing touched the electric shock sensations. The idea of brain stimulation for leg pain sounded strange, but Dr. Amin explained how it targets the source. It works. The shocks are gone, and the baseline pain is incredibly diminished.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12 reveal delay-2">
-                <a href="/reviews.php" class="inline-flex items-center text-gold font-semibold hover:text-midnight transition-colors gap-2">
-                    Read More Patient Reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">

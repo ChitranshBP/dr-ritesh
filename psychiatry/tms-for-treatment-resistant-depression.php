@@ -299,54 +299,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Success</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Beating the Odds</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients whose lives were transformed after accepting TRD.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">D</div>
-                        <div>
-                            <h4 class="review-name">David L.</h4>
-                            <span class="review-condition">Severe TRD</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        I had officially given up. I tried Lexapro, Zoloft, Wellbutrin, Effexor—you name it. Nothing dented the depression. Dr. Amin suggested TMS, and frankly I was skeptical. But mid-way through my second week, I woke up and the crushing physical weight on my chest was gone. It was a miracle.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">R</div>
-                        <div>
-                            <h4 class="review-name">Rachel M.</h4>
-                            <span class="review-condition">TRD & Anxiety</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        For 8 years I bounced from psychiatrist to psychiatrist. Dr. Amin was the first to offer an actionable alternative to more pills. The TMS sessions were incredibly easy, and for the first time in nearly a decade, my depression is in remission.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- Closing CTA -->
     <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">

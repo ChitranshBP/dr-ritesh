@@ -90,7 +90,7 @@ $extra_css = $extra_css ?? '';
                             <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
                             <span class="dd-label">Dr. Ritesh Amin<span class="dd-label-sub">MD &middot; Psychiatry &amp; TMS</span></span>
                         </a>
-                        <a href="/dr-nalin-ranasinghe.php">
+                        <a href="/contact.php">
                             <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
                             <span class="dd-label">Dr. Nalin E. Ranasinghe<span class="dd-label-sub">MD &middot; Psychiatry Specialist</span></span>
                         </a>
@@ -116,29 +116,6 @@ $extra_css = $extra_css ?? '';
                             </a>
                         </div>
 
-                        <!-- Neurology Column -->
-                        <div class="mega-column">
-                            <div class="mega-col-header">
-                                <span class="mega-col-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                                    </svg>
-                                </span>
-                                <span class="mega-heading">Neurology TMS</span>
-                            </div>
-                            <a href="/neurology-tms-therapy.php" class="mega-link-overview">
-                                Therapy Overview
-                            </a>
-                            <a href="/neurology/tms-for-brain-injury-trauma.php">Brain Injury &amp; Trauma</a>
-                            <a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a>
-                            <a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a>
-                            <a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a>
-                            <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's &amp; Dementia</a>
-                            <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
-                            <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
-                        </div>
-
                         <!-- Psychiatry Column -->
                         <div class="mega-column">
                             <div class="mega-col-header">
@@ -162,6 +139,29 @@ $extra_css = $extra_css ?? '';
                             <a href="/psychiatry/tms-for-panic-disorder.php">Panic Disorder</a>
                             <a href="/psychiatry/tms-for-bipolar-depression.php">Bipolar Depression</a>
                             <a href="/psychiatry/tms-for-adhd.php">ADHD</a>
+                        </div>
+
+                        <!-- Neurology Column -->
+                        <div class="mega-column">
+                            <div class="mega-col-header">
+                                <span class="mega-col-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+                                </span>
+                                <span class="mega-heading">Neurology TMS</span>
+                            </div>
+                            <a href="/neurology-tms-therapy.php" class="mega-link-overview">
+                                Therapy Overview
+                            </a>
+                            <a href="/neurology/tms-for-brain-injury-trauma.php">Brain Injury &amp; Trauma</a>
+                            <a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a>
+                            <a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a>
+                            <a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a>
+                            <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's &amp; Dementia</a>
+                            <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
+                            <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
                         </div>
 
                         <!-- Other Treatments Column -->
@@ -217,12 +217,12 @@ $extra_css = $extra_css ?? '';
                                 </svg></span>
                             <span class="dd-label">Insurance &amp; Financing<span class="dd-label-sub">Coverage &amp; payment options</span></span>
                         </a>
-                        <a href="/blog">
+                        <a href="/reviews.php">
                             <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
                             <span class="dd-label">Blog<span class="dd-label-sub">Mental health &amp; TMS insights</span></span>
                         </a>
-                        <a href="/mental-health-resources">
+                        <a href="/faq.php">
                             <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
                             <span class="dd-label">Mental Health Resources<span class="dd-label-sub">Guides, tools &amp; support links</span></span>
@@ -247,7 +247,7 @@ $extra_css = $extra_css ?? '';
                             </button>
                             <div class="accordion-panel">
                                 <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>
-                                <a href="/dr-nalin-ranasinghe.php">Dr. Nalin E. Ranasinghe</a>
+                                <a href="/contact.php">Dr. Nalin E. Ranasinghe</a>
                             </div>
                         </div>
 
@@ -306,8 +306,8 @@ $extra_css = $extra_css ?? '';
                                 <a href="/reviews.php">Patient Testimonials</a>
                                 <a href="/faq.php">Patient FAQs</a>
                                 <a href="/insurance.php">Insurance & Financing</a>
-                                <a href="/blog">Wellness Blog</a>
-                                <a href="/mental-health-resources">Mental Health Resources</a>
+                                <a href="/reviews.php">Wellness Blog</a>
+                                <a href="/faq.php">Mental Health Resources</a>
                             </div>
                         </div>
 

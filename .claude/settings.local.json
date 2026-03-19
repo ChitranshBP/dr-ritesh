@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(find . -type f -exec ls -lh {} ;)",
-      "Read(//d/download/ritesh/**)"
+      "Read(//d/download/ritesh/**)",
+      "WebFetch(domain:backend.leadconnectorhq.com)",
+      "Bash(curl -s \"https://backend.leadconnectorhq.com/appengine/reviews/get_widget/ryTgBIK926zqS9D9aIEu\")",
+      "Bash(python3 -c \":*)",
+      "Bash(python -c \":*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Bash(done)",
+      "Bash(find /d/download/ritesh -type f -name \"*.php\" -exec grep -ho 'href=[\"\"\"\"\\\\x27]\\\\\\(/[^\"\"\"\"\\\\x27]*\\\\\\)\\\\|href=[\"\"\"\"\\\\x27]\\\\\\([^\"\"\"\"\\\\x27]*\\\\.php\\\\\\)[\"\"\"\"\\\\x27]' {})",
+      "Bash(grep -n href=\"\"/accessibility\"\" /d/download/ritesh/*.php /d/download/ritesh/*/*.php)"
     ]
   }
 }

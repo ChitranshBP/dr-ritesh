@@ -150,7 +150,7 @@ include 'header.php';
                 </a>
 
                 <!-- Bento Item 3 -->
-                <a href="/what-is-spravato" class="relative rounded-3xl overflow-hidden group h-80 block">
+                <a href="/what-is-spravato.php" class="relative rounded-3xl overflow-hidden group h-80 block">
                     <img src="assets/images/spravato_treatment.png" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Spravato">
                     <div class="absolute inset-0 bg-gradient-to-t from-midnight/95 via-midnight/40 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
@@ -166,7 +166,7 @@ include 'header.php';
                 </a>
                 
                 <!-- Bento Item 4 -->
-                <a href="/what-is-ketamine-therapy" class="relative rounded-3xl overflow-hidden group h-80 block">
+                <a href="/what-is-ketamine-therapy.php" class="relative rounded-3xl overflow-hidden group h-80 block">
                     <img src="assets/images/ketamine_therapy.png" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Ketamine">
                     <div class="absolute inset-0 bg-gradient-to-t from-midnight/95 via-midnight/40 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
@@ -201,7 +201,7 @@ include 'header.php';
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3">Treatment-Resistant Depression</h3>
                     <p class="text-gray-600 mb-4">When traditional antidepressants fail, TMS provides a proven pathway to remission by targeting underactive brain regions.</p>
-                    <a href="/psychiatry/tms-for-trd/" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="/psychiatry/tms-for-treatment-resistant-depression.php" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
                 <!-- Condition 2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
@@ -210,7 +210,7 @@ include 'header.php';
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3">Severe Anxiety & PTSD</h3>
                     <p class="text-gray-600 mb-4">Calm overactive neural pathways associated with generalized anxiety, panic disorder, and severe trauma.</p>
-                    <a href="/psychiatry/tms-for-anxiety/" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="/psychiatry/tms-for-generalized-anxiety.php" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
                 <!-- Condition 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
@@ -219,7 +219,7 @@ include 'header.php';
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3">Obsessions & Compulsions (OCD)</h3>
                     <p class="text-gray-600 mb-4">FDA-cleared deep TMS protocols to disrupt compulsive behavioral loops and radically restore cognitive control.</p>
-                    <a href="/psychiatry/tms-for-ocd/" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="/psychiatry/tms-for-ocd.php" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
                 <!-- Condition 4 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
@@ -228,7 +228,7 @@ include 'header.php';
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3">Cognitive Decline & Alzheimer's</h3>
                     <p class="text-gray-600 mb-4">Neuromodulation approaches designed to powerfully stimulate memory centers and support structural neuroplasticity.</p>
-                    <a href="/neurology/tms-for-alzheimers/" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="/neurology/tms-for-alzheimers-dementia.php" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
                 <!-- Condition 5 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
@@ -237,7 +237,7 @@ include 'header.php';
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3">Traumatic Brain Injury (TBI)</h3>
                     <p class="text-gray-600 mb-4">Accelerate functional recovery from post-concussive syndrome by enhancing targeted neuronal firing.</p>
-                    <a href="/neurology/tms-for-traumatic-brain-injury/" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="/neurology/tms-for-brain-injury-trauma.php" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
                 <!-- Condition 6 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100">
@@ -246,7 +246,7 @@ include 'header.php';
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3">Neuropathic Pain & Migraines</h3>
                     <p class="text-gray-600 mb-4">Non-pharmacological relief for debilitating chronic pain syndromes by modulating deep sensory processing networks.</p>
-                    <a href="/neurology/tms-for-neuropathic-pain/" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                    <a href="/neurology/tms-for-neuropathic-pain.php" class="text-gold font-semibold flex items-center gap-2 hover:gap-3 transition-all">Learn More <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg></a>
                 </div>
             </div>
         </div>
@@ -495,75 +495,7 @@ include 'header.php';
         </div>
     </section>
 
-    <!-- Patient Transformations (Testimonials Redesign) -->
-    <section class="py-24 bg-beige-light" id="testimonials">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="flex flex-col lg:flex-row gap-16 items-center">
-                <!-- Featured Video Testimonial -->
-                <div class="lg:w-5/12 reveal">
-                    <span class="text-gold font-bold tracking-[2px] uppercase text-sm mb-4 block">Success Stories</span>
-                    <h2 class="text-4xl md:text-5xl font-serif text-midnight font-bold mb-6">Real Results from Real Patients</h2>
-                    <p class="text-lg text-gray-600 mb-8">Hear directly from those who have regained control of their lives through our personalized neuromodulation therapies.</p>
-                    
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group cursor-pointer">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Patient Video" class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-midnight/30 group-hover:bg-midnight/40 transition-colors"></div>
-                        <div class="absolute inset-0 flex flex-col items-center justify-center">
-                            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 ml-1"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                            <span class="text-white font-medium text-lg drop-shadow-md">Watch Mark's Journey</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Text Testimonials Grid -->
-                <div class="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-6 reveal delay-1">
-                    <!-- Review 1 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between h-full">
-                        <div>
-                            <div class="flex text-gold mb-4">
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            </div>
-                            <p class="text-gray-700 italic mb-6">"After years of trying different medications with profound side effects, TMS with Dr. Amin fundamentally changed my life. Within weeks, the heavy cloud lifted completely."</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-midnight/5 flex items-center justify-center font-bold text-midnight">SM</div>
-                            <div>
-                                <h4 class="font-bold text-midnight">Sarah M.</h4>
-                                <span class="text-sm text-gray-500">Depression Recovery</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Review 2 -->
-                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between h-full">
-                        <div>
-                            <div class="flex text-gold mb-4">
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                                <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                            </div>
-                            <p class="text-gray-700 italic mb-6">"I was skeptical initially, but the results speak for themselves. The intrusive thoughts have properly faded into the background for the first time in what feels like forever."</p>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-midnight/5 flex items-center justify-center font-bold text-midnight">DK</div>
-                            <div>
-                                <h4 class="font-bold text-midnight">David K.</h4>
-                                <span class="text-sm text-gray-500">OCD Treatment</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include __DIR__ . '/_reviews-partial.php'; ?>
 
     <!-- Closing CTA -->
     <section class="closing-cta">

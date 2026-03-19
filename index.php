@@ -28,8 +28,58 @@ include 'header.php';
                     <h1 class="hero-title">
                         Advanced TMS<br>
                         Therapy for<br>
-                        <em class="text-[#5dadee] not-italic">Mental Clarity.</em>
+                        <a href="/psychiatry/tms-for-major-depression.php" id="hero-condition" class="text-[#5dadee] not-italic hero-condition-link">Depression.</a>
                     </h1>
+                    <script>
+                    (function(){
+                        var conditions = [
+                            { label: 'Depression.',        url: '/psychiatry/tms-for-major-depression.php' },
+                            { label: 'Anxiety.',           url: '/psychiatry/tms-for-generalized-anxiety.php' },
+                            { label: 'OCD.',               url: '/psychiatry/tms-for-ocd.php' },
+                            { label: 'PTSD.',              url: '/psychiatry/tms-for-ptsd.php' },
+                            { label: 'Bipolar Depression.',url: '/psychiatry/tms-for-bipolar-depression.php' },
+                            { label: 'Panic Disorder.',    url: '/psychiatry/tms-for-panic-disorder.php' },
+                            { label: 'ADHD.',              url: '/psychiatry/tms-for-adhd.php' },
+                            { label: 'Chronic Migraine.',  url: '/neurology/tms-for-migraine.php' },
+                            { label: 'Neuropathic Pain.',  url: '/neurology/tms-for-neuropathic-pain.php' },
+                            { label: 'Stroke Recovery.',   url: '/neurology/tms-for-stroke-recovery.php' },
+                        ];
+                        var el = document.getElementById('hero-condition');
+                        var idx = 0;
+
+                        function erase(cb) {
+                            var text = el.textContent;
+                            if (text.length === 0) { cb(); return; }
+                            el.textContent = text.slice(0, -1);
+                            setTimeout(function(){ erase(cb); }, 45);
+                        }
+
+                        function type(item, cb) {
+                            var pos = 0;
+                            el.textContent = '';
+                            el.href = item.url;
+                            (function tick(){
+                                if (pos > item.label.length) { cb(); return; }
+                                el.textContent = item.label.slice(0, pos);
+                                pos++;
+                                setTimeout(tick, 70);
+                            })();
+                        }
+
+                        function cycle() {
+                            erase(function(){
+                                idx = (idx + 1) % conditions.length;
+                                setTimeout(function(){
+                                    type(conditions[idx], function(){
+                                        setTimeout(cycle, 2200);
+                                    });
+                                }, 150);
+                            });
+                        }
+
+                        setTimeout(cycle, 2200);
+                    })();
+                    </script>
                     <div class="hero-rule"></div>
                     <p class="hero-subtitle">FDA-approved, non-invasive brain stimulation therapy tailored by Dr. Ritesh Amin for treatment-resistant depression, anxiety, and complex psychiatric conditions.</p>
                     <div class="hero-actions">
@@ -149,7 +199,7 @@ include 'header.php';
                                 <h3>Spravato</h3>
                                 <p class="service-desc">Fast-acting esketamine nasal spray treatment</p>
                             </div>
-                            <a href="/what-is-spravato" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/what-is-spravato.php" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </div>
 
@@ -164,7 +214,7 @@ include 'header.php';
                                 <h3>Ketamine Therapy</h3>
                                 <p class="service-desc">Rapid relief for treatment-resistant depression</p>
                             </div>
-                            <a href="/what-is-ketamine-therapy" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a href="/what-is-ketamine-therapy.php" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -537,21 +587,13 @@ include 'header.php';
                 <!-- Column 2 – Video Testimonials -->
                 <div class="wol-col wol-col-videos">
                     <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=true&loop=false&disable_player_controls=false')">
-                        <iframe src="https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=false&loop=false&disable_player_controls=false&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
+                        <iframe src="https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=false&loop=false&disable_player_controls=true&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
                         <div class="video-thumb-overlay">
-                            <div class="video-play-btn">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                            <p class="video-thumb-label">Watch Patient Story</p>
                         </div>
                     </div>
                     <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=true&loop=false&disable_player_controls=false')">
-                        <iframe src="https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=false&loop=false&disable_player_controls=false&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
+                        <iframe src="https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=false&loop=false&disable_player_controls=true&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
                         <div class="video-thumb-overlay">
-                            <div class="video-play-btn">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                            <p class="video-thumb-label">Watch Patient Story</p>
                         </div>
                     </div>
                 </div>

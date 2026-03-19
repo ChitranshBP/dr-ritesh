@@ -52,7 +52,7 @@ include 'header.php';
                     <?php endif; ?>
                     
                     <div class="flex flex-wrap gap-4">
-                        <a href="/contact" class="btn btn-primary shadow-lg shadow-gold/20">Schedule Consultation</a>
+                        <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule Consultation</a>
                         <a href="#overview" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Learn More</a>
                     </div>
                 </div>
@@ -256,105 +256,7 @@ include 'header.php';
     </section>
     <?php endif; ?>
 
-    <!-- Testimonials -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="container">
-            <div class="section-header center reveal">
-                <span class="eyebrow">Patient Stories</span>
-                <h2 class="section-title">Real Transformations</h2>
-                <p class="section-subtitle">Hear from patients who have regained their lives through our advanced treatments.</p>
-            </div>
-            <div class="wall-of-love-grid">
-                <!-- Column 1 -->
-                <div class="wol-col">
-                    <!-- Card 1 -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">S</div>
-                            <div class="wol-meta">
-                                <h4>Sarah M.</h4>
-                                <span>Depression Patient</span>
-                            </div>
-                            <div class="wol-stars">★★★★★</div>
-                        </div>
-                        <p class="wol-text">"After years of trying different medications with little relief and profound side effects, TMS with Dr. Amin changed my life. Within weeks, the heavy cloud lifted."</p>
-                    </div>
-                    
-                    <!-- Card 2 -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">D</div>
-                            <div class="wol-meta">
-                                <h4>David K.</h4>
-                                <span>OCD Treatment</span>
-                            </div>
-                            <div class="wol-stars">★★★★★</div>
-                        </div>
-                        <p class="wol-text">"I was skeptical at first, but the results speak for themselves. The intrusive thoughts have properly faded into the background for the first time in forever."</p>
-                    </div>
-                </div>
-
-                <!-- Column 2 (Central Feature) -->
-                <div class="wol-col">
-                    <!-- Video/Feature Card -->
-                    <div class="wol-card video-card">
-                        <div class="video-overlay">
-                            <div class="play-btn">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                            </div>
-                            <div class="video-text" style="text-shadow: 0 2px 6px rgba(0,0,0,0.8);">
-                                <h4 style="color: #ffffff;">Mark's Journey</h4>
-                                <span style="color: rgba(255,255,255,0.9);">Overcoming 10 Years of Anxiety</span>
-                            </div>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Patient Video Thumbnail">
-                    </div>
-                    
-                    <!-- Card 3 -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">E</div>
-                            <div class="wol-meta">
-                                <h4>Emily R.</h4>
-                                <span>Postpartum Support</span>
-                            </div>
-                            <div class="wol-stars">★★★★★</div>
-                        </div>
-                        <p class="wol-text">"Dr. Amin is incredibly compassionate. He took the time to explain everything to me and my husband. I finally feel like myself again."</p>
-                    </div>
-                </div>
-
-                <!-- Column 3 -->
-                <div class="wol-col">
-                    <!-- Card 4 -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">M</div>
-                            <div class="wol-meta">
-                                <h4>Michael T.</h4>
-                                <span>TMS Patient</span>
-                            </div>
-                            <div class="wol-stars">★★★★★</div>
-                        </div>
-                        <p class="wol-text">"The clinic environment is so soothing and professional. It doesn't feel like a typical doctor's office. Highly recommend Dr. Amin for anyone struggling."</p>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">J</div>
-                            <div class="wol-meta">
-                                <h4>Jessica L.</h4>
-                                <span>Anxiety Relief</span>
-                            </div>
-                            <div class="wol-stars">★★★★★</div>
-                        </div>
-                        <p class="wol-text">"TMS was a game changer. I have my energy and motivation back. The team at Dr. Amin's practice is simply wonderful."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php include dirname(__FILE__) . '/_reviews-partial.php'; ?>
 
 
     <!-- FAQ Section (Dynamic based on $faqs array) -->
@@ -396,7 +298,7 @@ include 'header.php';
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3 drop-shadow-sm">Take Action</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-midnight mb-6 drop-shadow-sm">Return to the Life You Deserve</h2>
             <p class="text-xl text-gray-800 mb-10 max-w-2xl mx-auto drop-shadow-sm font-medium">Contact Dr. Amin's clinic today. Schedule an in-depth consultation to see if this treatment is right for you, and begin your journey to recovery.</p>
-            <a href="/contact" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform border border-white/20">Book Your Evaluation</a>
+            <a href="/contact.php" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform border border-white/20">Book Your Evaluation</a>
         </div>
     </section>
 

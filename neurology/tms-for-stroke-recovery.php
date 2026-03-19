@@ -303,35 +303,7 @@ include __DIR__ . '/../header.php';
     </div>
 </section>
 
-<section class="py-20 bg-beige-dark/50" id="patient-stories">
-    <div class="container mx-auto px-4 max-w-6xl">
-        <div class="section-header center reveal mb-12">
-            <span class="eyebrow">Patient Stories</span>
-            <h2 class="section-title text-midnight font-serif font-bold">Real Recoveries</h2>
-            <p class="section-subtitle text-gray-600">Stroke survivors who regained motor function and communication through TMS.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-            <div class="review-card featured">
-                <div class="review-header">
-                    <div class="review-avatar">L</div>
-                    <div><h4 class="review-name">Linda T.</h4><span class="review-condition">Post-Stroke Motor Recovery</span></div>
-                    <div class="review-stars">★★★★★</div>
-                </div>
-                <div class="review-text"><span class="review-quote-icon">"</span>After my stroke, my right arm was almost completely non-functional. Physical therapy helped but I reached a plateau. Dr. Amin's TMS program broke through that plateau. After six weeks, I was able to button my shirt again. That might sound small, but it was everything to me.</div>
-                <div class="review-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified Patient</div>
-            </div>
-            <div class="review-card">
-                <div class="review-header">
-                    <div class="review-avatar">D</div>
-                    <div><h4 class="review-name">David R.</h4><span class="review-condition">Aphasia &amp; Speech Recovery</span></div>
-                    <div class="review-stars">★★★★★</div>
-                </div>
-                <div class="review-text"><span class="review-quote-icon">"</span>My stroke left me unable to find words. I went from being a college professor to barely completing a sentence. Dr. Amin combined TMS with speech therapy. My vocabulary started coming back within weeks. I'm now giving lectures again.</div>
-                <div class="review-verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg> Verified Patient</div>
-            </div>
-        </div>
-    </div>
-</section>
+    <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
 <section class="py-12 bg-white" id="get-evaluated">
     <div class="container mx-auto px-4 max-w-4xl">

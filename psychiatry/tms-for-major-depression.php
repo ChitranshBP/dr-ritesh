@@ -345,54 +345,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Success</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Lifting the Fog</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients whose lives were transformed by finding relief from severe depression.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">M</div>
-                        <div>
-                            <h4 class="review-name">Michael D.</h4>
-                            <span class="review-condition">Major Depression</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        I had struggled with depression for a decade. The medications barely helped and left me feeling numb. TMS was a game changer. By week three, my wife said it was like a light switched back on in my eyes. I have energy again, and the heavy sadness is simply gone.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">S</div>
-                        <div>
-                            <h4 class="review-name">Sarah P.</h4>
-                            <span class="review-condition">Depression</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        Dr. Amin and his team are incredible. I was nervous about starting TMS, but it was so easy. I just sat back and listened to music. Now, two months post-treatment, I feel like my old self from 15 years ago. The persistent dark cloud has finally lifted. Highly recommended.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">

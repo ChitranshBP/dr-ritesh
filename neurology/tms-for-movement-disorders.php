@@ -520,59 +520,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Stories</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Real Recoveries</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients who regained motor control and quality of life after functional neurological disorders.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">S</div>
-                        <div>
-                            <h4 class="review-name">Sarah K.</h4>
-                            <span class="review-condition">Functional Movement Disorder</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        For two years my leg would give out without warning and my gait was completely abnormal. No neurologist could find a cause on imaging. Dr. Amin diagnosed me with FMD and started TMS. Within a month, I was walking normally for the first time in years. I feel like I got my life back.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">R</div>
-                        <div>
-                            <h4 class="review-name">Robert M.</h4>
-                            <span class="review-condition">Functional Tremor &amp; FND</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        My hand tremor was so severe I couldn't write or type. I had tried multiple medications with no success. After a full TMS course with Dr. Amin, my tremor is almost entirely gone. I'm back at work full-time. The level of detail he puts into understanding each patient's specific presentation is remarkable.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12 reveal delay-2">
-                <a href="/reviews.php" class="inline-flex items-center text-gold font-semibold hover:text-midnight transition-colors gap-2">
-                    Read More Patient Reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">

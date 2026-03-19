@@ -974,67 +974,7 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- Patient Stories Section -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Stories</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Real Recoveries</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients who reclaimed their cognitive function and mood after severe brain injuries and concussions.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <!-- Concussion Testimonial (Featured) -->
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">J</div>
-                        <div>
-                            <h4 class="review-name">Jason P.</h4>
-                            <span class="review-condition">Post-Concussion Syndrome</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        A sports concussion left me with severe brain fog, intense light sensitivity, and unpredictable mood swings for over two years. Traditional therapies weren't working. After doing deep TMS with Dr. Amin, my cognitive clarity returned and the constant headaches disappeared. I literally got my life and career back. It's nothing short of a miracle.
-                    </div>
-                    <div class="flex items-center justify-between flex-wrap gap-2">
-                        <div class="review-verified">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Verified Patient
-                        </div>
-                    </div>
-                </div>
-
-                <!-- TBI Testimonial -->
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">M</div>
-                        <div>
-                            <h4 class="review-name">Maria G.</h4>
-                            <span class="review-condition">Traumatic Brain Injury (TBI)</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        Following an auto accident, I struggled with severe depression and memory deficits that no medication could touch. A neurologist referred me to Dr. Amin for targeted neuromodulation. The mapping process was incredibly thorough, and halfway through my TMS protocol, the dark cloud lifted. I'm focusing better at work and finally feel like myself again.
-                    </div>
-                    <div class="flex items-center justify-between flex-wrap gap-2 mt-auto">
-                        <div class="review-verified">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Verified Patient
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12 reveal delay-2">
-                <a href="/reviews.php" class="inline-flex items-center text-gold font-semibold hover:text-midnight transition-colors gap-2">
-                    Read More Patient Reviews <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA Section -->
     <section class="py-12 bg-white" id="get-evaluated">

@@ -21,23 +21,23 @@
                     <h4 class="footer-heading">Neurology TMS</h4>
                     <ul>
                         <li><a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a></li>
-                        <li><a href="#" class="pending-link">Movement Disorders</a></li>
-                        <li><a href="#" class="pending-link">Stroke Recovery</a></li>
-                        <li><a href="#" class="pending-link">Parkinson's Symptoms</a></li>
-                        <li><a href="#" class="pending-link">Alzheimer's & Dementia</a></li>
-                        <li><a href="#" class="pending-link">Chronic Migraine</a></li>
+                        <li><a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a></li>
+                        <li><a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a></li>
+                        <li><a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a></li>
+                        <li><a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a></li>
+                        <li><a href="/neurology/tms-for-migraine.php">Chronic Migraine</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
                     <h4 class="footer-heading">Psychiatry TMS</h4>
                     <ul>
-                        <li><a href="#" class="pending-link">Major Depression</a></li>
-                        <li><a href="#" class="pending-link">Treatment-Resistant</a></li>
-                        <li><a href="#" class="pending-link">Generalized Anxiety</a></li>
-                        <li><a href="#" class="pending-link">PTSD</a></li>
-                        <li><a href="#" class="pending-link">OCD</a></li>
-                        <li><a href="#" class="pending-link">ADHD</a></li>
+                        <li><a href="/psychiatry/tms-for-major-depression.php">Major Depression</a></li>
+                        <li><a href="/psychiatry/tms-for-treatment-resistant-depression.php">Treatment-Resistant</a></li>
+                        <li><a href="/psychiatry/tms-for-generalized-anxiety.php">Generalized Anxiety</a></li>
+                        <li><a href="/psychiatry/tms-for-ptsd.php">PTSD</a></li>
+                        <li><a href="/psychiatry/tms-for-ocd.php">OCD</a></li>
+                        <li><a href="/psychiatry/tms-for-adhd.php">ADHD</a></li>
                     </ul>
                 </div>
 
@@ -47,7 +47,7 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/dr-ritesh-amin.php">About Dr. Amin</a></li>
-                        <li><a href="/our-approach">Our Approach</a></li>
+                        <li><a href="/dr-ritesh-amin.php">Our Approach</a></li>
                         <li><a href="/contact.php">Contact Us</a></li>
                     </ul>
                 </div>
@@ -57,9 +57,8 @@
                     <ul>
                         <li><a href="/insurance.php">Insurance & Financing</a></li>
                         <li><a href="/faq.php">Patient FAQs</a></li>
-                        <li><a href="/refer">Physician Referral</a></li>
+                        <li><a href="/contact.php">Physician Referral</a></li>
                         <li><a href="/reviews.php">Patient Testimonials</a></li>
-                        <li><a href="/blog">Wellness Blog</a></li>
                     </ul>
                 </div>
 
@@ -68,8 +67,8 @@
                     <ul>
                         <li><a href="/privacy-policy.php">Privacy Policy</a></li>
                         <li><a href="/terms.php">Terms of Service</a></li>
-                        <li><a href="/hipaa-notice">HIPAA Notice</a></li>
-                        <li><a href="/accessibility">Accessibility</a></li>
+                        <li><a href="/privacy-policy.php">HIPAA Notice</a></li>
+                        <li><a href="/contact.php">Accessibility</a></li>
                     </ul>
                 </div>
             </div>

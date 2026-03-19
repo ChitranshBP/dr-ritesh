@@ -367,54 +367,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Stories</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Days Reclaimed</h2>
-                <p class="section-subtitle text-gray-600">Discover how TMS has broken the cycle of chronic pain for these individuals.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">J</div>
-                        <div>
-                            <h4 class="review-name">Jessica R.</h4>
-                            <span class="review-condition">Chronic Migraine</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        I was losing 15 days a month to severe head pain and nausea. The preventative medications made me feel like a zombie. After a course of TMS with Dr. Amin, my migraine frequency dropped by 70%. When I do get one now, it's easily managed with Tylenol. I finally have my life back.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">E</div>
-                        <div>
-                            <h4 class="review-name">Elena K.</h4>
-                            <span class="review-condition">Migraine &amp; Depression</span>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        The constant pain had sent me into a deep depression. Dr. Amin explained how TMS could target both. It was amazing. As my mood lifted over the weeks of treatment, my headaches also became less frequent and less severe. It's the most effective treatment I've tried in 10 years.
-                    </div>
-                    <div class="review-verified">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        Verified Patient
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">
