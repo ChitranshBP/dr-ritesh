@@ -2494,6 +2494,26 @@ img {
     flex-shrink: 0;
 }
 
+/* Video testimonials row */
+.video-testimonials-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.video-testimonial-item {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 768px) {
+    .video-testimonials-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Text */
 .wol-text {
     font-size: 0.95rem;

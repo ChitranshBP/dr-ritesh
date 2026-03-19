@@ -579,6 +579,30 @@ include 'header.php';
                     </div>
                 </div>
             </div>
+
+            <!-- Video Testimonials -->
+            <div class="video-testimonials-row reveal delay-2">
+                <div class="video-testimonial-item">
+                    <div style="position:relative;aspect-ratio:53/30;">
+                        <iframe loading="lazy" title="Gumlet video player"
+                            src="https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=false&loop=false&disable_player_controls=false"
+                            style="border:none; position:absolute; top:0; left:0; height:100%; width:100%;"
+                            referrerpolicy="origin"
+                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="video-testimonial-item">
+                    <div style="position:relative;aspect-ratio:53/30;">
+                        <iframe loading="lazy" title="Gumlet video player"
+                            src="https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=false&loop=false&disable_player_controls=false"
+                            style="border:none; position:absolute; top:0; left:0; height:100%; width:100%;"
+                            referrerpolicy="origin"
+                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
