@@ -18,18 +18,6 @@
 
                 <!-- Specialties Columns -->
                 <div class="footer-links">
-                    <h4 class="footer-heading">Neurology TMS</h4>
-                    <ul>
-                        <li><a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a></li>
-                        <li><a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a></li>
-                        <li><a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a></li>
-                        <li><a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a></li>
-                        <li><a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a></li>
-                        <li><a href="/neurology/tms-for-migraine.php">Chronic Migraine</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
                     <h4 class="footer-heading">Psychiatry TMS</h4>
                     <ul>
                         <li><a href="/psychiatry/tms-for-major-depression.php">Major Depression</a></li>
@@ -38,6 +26,18 @@
                         <li><a href="/psychiatry/tms-for-ptsd.php">PTSD</a></li>
                         <li><a href="/psychiatry/tms-for-ocd.php">OCD</a></li>
                         <li><a href="/psychiatry/tms-for-adhd.php">ADHD</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Neurology TMS</h4>
+                    <ul>
+                        <li><a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a></li>
+                        <li><a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a></li>
+                        <li><a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a></li>
+                        <li><a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a></li>
+                        <li><a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a></li>
+                        <li><a href="/neurology/tms-for-migraine.php">Chronic Migraine</a></li>
                     </ul>
                 </div>
 

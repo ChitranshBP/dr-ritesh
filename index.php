@@ -146,7 +146,7 @@ include 'header.php';
         <div class="container services-container">
             <div class="services-header reveal">
                 <div class="services-title-wrapper">
-                    <span class="eyebrow">Our Services</span>
+                    <span class="eyebrow">Our Treatments</span>
                     <h2 class="section-title">Advanced Treatments,<br>Exceptional Outcomes</h2>
                     <p class="services-header-desc">Cutting-edge, evidence-based therapies tailored to your unique mental health journey.</p>
                 </div>
@@ -160,31 +160,31 @@ include 'header.php';
                 <div class="services-track" id="servicesTrack">
                     <!-- Service Card 1 -->
                     <div class="service-card">
-                        <img src="assets/images/neurology_tms_therapy.png" alt="Neurology TMS Therapy" class="service-img">
-                        <div class="service-overlay"></div>
-                        <span class="service-tag">Neuromodulation</span>
-                        <div class="service-content">
-                            <div class="service-text">
-                                <span class="service-card-idx">01 / 04</span>
-                                <h3>Neurology TMS</h3>
-                                <p class="service-desc">Brain stimulation for neurological recovery</p>
-                            </div>
-                            <a href="/neurology-tms-therapy.php" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 2 -->
-                    <div class="service-card">
                         <img src="assets/images/psychiatry_tms_therapy.png" alt="Psychiatry TMS Therapy" class="service-img">
                         <div class="service-overlay"></div>
                         <span class="service-tag">Psychiatry</span>
                         <div class="service-content">
                             <div class="service-text">
-                                <span class="service-card-idx">02 / 04</span>
+                                <span class="service-card-idx">01 / 04</span>
                                 <h3>Psychiatry TMS</h3>
                                 <p class="service-desc">FDA-approved for depression, OCD & anxiety</p>
                             </div>
                             <a href="/psychiatry-tms-therapy.php" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <img src="assets/images/neurology_tms_therapy.png" alt="Neurology TMS Therapy" class="service-img">
+                        <div class="service-overlay"></div>
+                        <span class="service-tag">Neuromodulation</span>
+                        <div class="service-content">
+                            <div class="service-text">
+                                <span class="service-card-idx">02 / 04</span>
+                                <h3>Neurology TMS</h3>
+                                <p class="service-desc">Brain stimulation for neurological recovery</p>
+                            </div>
+                            <a href="/neurology-tms-therapy.php" class="service-link-btn" aria-label="Learn more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </div>
 
@@ -228,43 +228,14 @@ include 'header.php';
             <div class="section-header center reveal">
                 <span class="eyebrow">Expert Care</span>
                 <h2 class="section-title">Targeted Conditions</h2>
-                <p class="section-subtitle">We offer specialized, advanced treatments across Neurology and Psychiatry to address complex mental and neurological health challenges.</p>
+                <p class="section-subtitle">We offer specialized, advanced treatments across Psychiatry and Neurology to address complex mental and neurological health challenges.</p>
             </div>
             
             <div class="silo-container">
-                <!-- Neurology Silo -->
+                <!-- Psychiatry Silo -->
                 <div class="silo-block reveal">
                     <div class="silo-header">
                         <span class="silo-num">01</span>
-                        <div class="silo-title-group">
-                            <div class="silo-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
-                            </div>
-                            <h3>Neurology</h3>
-                        </div>
-                    </div>
-                    <div class="silo-chips">
-                        <!-- Brain wave / ECG — represents neural activity disruption from TBI -->
-                        <a href="/neurology/tms-for-brain-injury-trauma.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Traumatic Brain Injury <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                        <!-- 4-way move arrows — represents motor/movement dysfunction -->
-                        <a href="/neurology/tms-for-movement-disorders.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg></span>Functional Movement Disorders <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                        <!-- Refresh / recovery arrows — represents rehabilitation & regaining function -->
-                        <a href="/neurology/tms-for-stroke-recovery.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>Stroke Recovery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                        <!-- Open hand — represents tremor & motor control loss -->
-                        <a href="/neurology/tms-for-parkinsons-symptoms.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M6 14v0a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-2.5"/></svg></span>Parkinson's Symptoms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                        <!-- CPU chip — represents cognitive/memory processing decline -->
-                        <a href="/neurology/tms-for-alzheimers-dementia.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6"/><path d="M15 9V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v2"/><path d="M9 15v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"/><line x1="20" y1="13" x2="22" y2="13"/><line x1="2" y1="13" x2="4" y2="13"/><line x1="13" y1="2" x2="13" y2="4"/><line x1="13" y1="20" x2="13" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/></svg></span>Alzheimer's &amp; Dementia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                        <!-- Lightning bolt — represents sudden, intense head pain -->
-                        <a href="/neurology/tms-for-migraine.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Chronic Migraine <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                        <!-- Signal/wifi arcs — represents nerve signal disruption -->
-                        <a href="/neurology/tms-for-neuropathic-pain.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>Neuropathic Pain <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
-                    </div>
-                </div>
-                
-                <!-- Psychiatry Silo -->
-                <div class="silo-block reveal delay-1">
-                    <div class="silo-header">
-                        <span class="silo-num">02</span>
                         <div class="silo-title-group">
                             <div class="silo-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
@@ -289,6 +260,35 @@ include 'header.php';
                         <a href="/psychiatry/tms-for-bipolar-depression.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>Bipolar Depression <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
                         <!-- Target / crosshair — represents attention focus deficit -->
                         <a href="/psychiatry/tms-for-adhd.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>ADHD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                    </div>
+                </div>
+
+                <!-- Neurology Silo -->
+                <div class="silo-block reveal delay-1">
+                    <div class="silo-header">
+                        <span class="silo-num">02</span>
+                        <div class="silo-title-group">
+                            <div class="silo-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"></path></svg>
+                            </div>
+                            <h3>Neurology</h3>
+                        </div>
+                    </div>
+                    <div class="silo-chips">
+                        <!-- Brain wave / ECG — represents neural activity disruption from TBI -->
+                        <a href="/neurology/tms-for-brain-injury-trauma.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>Traumatic Brain Injury <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- 4-way move arrows — represents motor/movement dysfunction -->
+                        <a href="/neurology/tms-for-movement-disorders.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg></span>Functional Movement Disorders <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Refresh / recovery arrows — represents rehabilitation & regaining function -->
+                        <a href="/neurology/tms-for-stroke-recovery.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span>Stroke Recovery <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Open hand — represents tremor & motor control loss -->
+                        <a href="/neurology/tms-for-parkinsons-symptoms.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M6 14v0a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4v-2.5"/></svg></span>Parkinson's Symptoms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- CPU chip — represents cognitive/memory processing decline -->
+                        <a href="/neurology/tms-for-alzheimers-dementia.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="6" height="6"/><path d="M15 9V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v2"/><path d="M9 15v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2"/><line x1="20" y1="13" x2="22" y2="13"/><line x1="2" y1="13" x2="4" y2="13"/><line x1="13" y1="2" x2="13" y2="4"/><line x1="13" y1="20" x2="13" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/></svg></span>Alzheimer's &amp; Dementia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Lightning bolt — represents sudden, intense head pain -->
+                        <a href="/neurology/tms-for-migraine.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>Chronic Migraine <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+                        <!-- Signal/wifi arcs — represents nerve signal disruption -->
+                        <a href="/neurology/tms-for-neuropathic-pain.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></span>Neuropathic Pain <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
                     </div>
                 </div>
             </div>
