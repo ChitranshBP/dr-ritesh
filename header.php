@@ -165,6 +165,9 @@ $extra_css = $extra_css ?? '';
                             <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's &amp; Dementia</a>
                             <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
                             <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
+                            <a href="/neurology/tms-for-fibromyalgia.php">Fibromyalgia</a>
+                            <a href="/neurology/tms-for-huntingtons-disease.php">Huntington's Disease</a>
+                            <a href="/neurology/tms-for-fibromuscular-dysplasia.php">Fibromuscular Dysplasia</a>
                         </div>
 
                         <!-- Other Treatments Column -->
@@ -287,6 +290,9 @@ $extra_css = $extra_css ?? '';
                                     <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a>
                                     <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
                                     <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
+                                    <a href="/neurology/tms-for-fibromyalgia.php">Fibromyalgia</a>
+                                    <a href="/neurology/tms-for-huntingtons-disease.php">Huntington's Disease</a>
+                                    <a href="/neurology/tms-for-fibromuscular-dysplasia.php">Fibromuscular Dysplasia</a>
                                 </div>
                                 <div class="mobile-sub-group">
                                     <span class="sub-group-title">Innovative Treatments</span>
