@@ -31,13 +31,16 @@ $pages = [
     'terms.php'                    => 'terms.html',
 
     // Neurology sub-pages
-    'neurology/tms-for-alzheimers-dementia.php'   => 'neurology/tms-for-alzheimers-dementia.html',
-    'neurology/tms-for-brain-injury-trauma.php'   => 'neurology/tms-for-brain-injury-trauma.html',
-    'neurology/tms-for-migraine.php'              => 'neurology/tms-for-migraine.html',
-    'neurology/tms-for-movement-disorders.php'    => 'neurology/tms-for-movement-disorders.html',
-    'neurology/tms-for-neuropathic-pain.php'      => 'neurology/tms-for-neuropathic-pain.html',
-    'neurology/tms-for-parkinsons-symptoms.php'   => 'neurology/tms-for-parkinsons-symptoms.html',
-    'neurology/tms-for-stroke-recovery.php'       => 'neurology/tms-for-stroke-recovery.html',
+    'neurology/tms-for-alzheimers-dementia.php'    => 'neurology/tms-for-alzheimers-dementia.html',
+    'neurology/tms-for-brain-injury-trauma.php'    => 'neurology/tms-for-brain-injury-trauma.html',
+    'neurology/tms-for-fibromyalgia.php'           => 'neurology/tms-for-fibromyalgia.html',
+    'neurology/tms-for-fibromuscular-dysplasia.php'=> 'neurology/tms-for-fibromuscular-dysplasia.html',
+    'neurology/tms-for-huntingtons-disease.php'    => 'neurology/tms-for-huntingtons-disease.html',
+    'neurology/tms-for-migraine.php'               => 'neurology/tms-for-migraine.html',
+    'neurology/tms-for-movement-disorders.php'     => 'neurology/tms-for-movement-disorders.html',
+    'neurology/tms-for-neuropathic-pain.php'       => 'neurology/tms-for-neuropathic-pain.html',
+    'neurology/tms-for-parkinsons-symptoms.php'    => 'neurology/tms-for-parkinsons-symptoms.html',
+    'neurology/tms-for-stroke-recovery.php'        => 'neurology/tms-for-stroke-recovery.html',
 
     // Psychiatry sub-pages
     'psychiatry/tms-for-adhd.php'                         => 'psychiatry/tms-for-adhd.html',
