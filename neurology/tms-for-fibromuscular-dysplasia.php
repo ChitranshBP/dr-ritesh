@@ -151,7 +151,7 @@ include __DIR__ . '/../header.php';
                     </div>
                 </div>
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/fmd-vascular.png" alt="Illustration of fibromuscular dysplasia affecting arterial walls">
+                    <img src="/assets/neurology-tms/fmd-clinical.png" alt="Compassionate doctor consulting with a patient about Fibromuscular Dysplasia (FMD)">
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@ include __DIR__ . '/../header.php';
 
             <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/fmd-tms-treatment.png" alt="TMS treatment targeting neurological symptoms of FMD">
+                    <img src="/assets/neurology-tms/fmd-clinical.png" alt="Clinical consultation for Fibromuscular Dysplasia">
                 </div>
                 <div>
                     <p>While TMS does not treat the arterial abnormalities of FMD directly, it offers powerful relief for the neurological consequences. Chronic headaches related to FMD share mechanisms with migraine and tension-type headaches—both of which respond well to TMS targeting the prefrontal and motor cortex regions.</p>

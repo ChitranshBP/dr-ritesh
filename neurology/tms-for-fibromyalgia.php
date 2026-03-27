@@ -151,7 +151,7 @@ include __DIR__ . '/../header.php';
                     </div>
                 </div>
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/fibromyalgia-pain.png" alt="Patient seeking relief from fibromyalgia pain">
+                    <img src="/assets/neurology-tms/fibromyalgia-clinical.png" alt="Doctor gently consulting a patient experiencing widespread pain from Fibromyalgia">
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@ include __DIR__ . '/../header.php';
 
             <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/fibromyalgia-tms.png" alt="TMS treatment for fibromyalgia central sensitization">
+                    <img src="/assets/neurology-tms/fibromyalgia-clinical.png" alt="Clinical consultation for Fibromyalgia symptoms">
                 </div>
                 <div>
                     <p>TMS for fibromyalgia primarily targets the <strong>Primary Motor Cortex (M1)</strong>. High-frequency stimulation of M1 activates descending pain inhibitory pathways in the spinal cord—the body's built-in "pain brake system." In fibromyalgia, these inhibitory pathways are dysfunctional. TMS essentially restores their function, "dialing down" the amplified pain signals.</p>

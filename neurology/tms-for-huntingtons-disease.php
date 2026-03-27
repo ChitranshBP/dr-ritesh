@@ -151,7 +151,7 @@ include __DIR__ . '/../header.php';
                     </div>
                 </div>
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/huntingtons-brain.png" alt="Illustration showing basal ganglia degeneration in Huntington's Disease">
+                    <img src="/assets/neurology-tms/huntingtons-clinical.png" alt="Neurologist providing empathetic support to a Huntington's disease patient">
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@ include __DIR__ . '/../header.php';
 
             <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
                 <div class="bi-image-wrapper">
-                    <img src="/assets/neurology-tms/huntingtons-tms.png" alt="TMS treatment targeting cortical circuits in Huntington's Disease">
+                    <img src="/assets/neurology-tms/huntingtons-clinical.png" alt="Clinical consultation for Huntington's Disease symptoms">
                 </div>
                 <div>
                     <p>In Huntington's Disease, the cortex attempts to compensate for the failing basal ganglia by reorganizing its own circuits. TMS can support this compensatory process by strengthening cortical activity in regions that are still functional, particularly the dorsolateral prefrontal cortex (DLPFC) for depression and executive function, and the supplementary motor area (SMA) for motor control.</p>
