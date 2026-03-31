@@ -11,7 +11,20 @@
       "Bash(do echo:*)",
       "Bash(done)",
       "Bash(find /d/download/ritesh -type f -name \"*.php\" -exec grep -ho 'href=[\"\"\"\"\\\\x27]\\\\\\(/[^\"\"\"\"\\\\x27]*\\\\\\)\\\\|href=[\"\"\"\"\\\\x27]\\\\\\([^\"\"\"\"\\\\x27]*\\\\.php\\\\\\)[\"\"\"\"\\\\x27]' {})",
-      "Bash(grep -n href=\"\"/accessibility\"\" /d/download/ritesh/*.php /d/download/ritesh/*/*.php)"
+      "Bash(grep -n href=\"\"/accessibility\"\" /d/download/ritesh/*.php /d/download/ritesh/*/*.php)",
+      "Bash(ls -d /d/download/ritesh/*/)",
+      "WebSearch",
+      "WebFetch(domain:providencemedandinfusion.com)",
+      "WebFetch(domain:npiprofile.com)",
+      "WebFetch(domain:www.healthgrades.com)",
+      "WebFetch(domain:doctor.webmd.com)",
+      "WebFetch(domain:www.doximity.com)",
+      "WebFetch(domain:carepointhealth.org)",
+      "WebFetch(domain:shp.rutgers.edu)",
+      "WebFetch(domain:www.zocdoc.com)",
+      "WebFetch(domain:www.vitals.com)",
+      "WebFetch(domain:www.healthcare6.com)",
+      "WebFetch(domain:www.everydayhealth.care)"
     ]
   }
 }

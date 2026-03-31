@@ -18,6 +18,7 @@ $pages = [
     'index.php'                   => 'index.html',
     'index2.php'                  => 'index2.html',
     'dr-ritesh-amin.php'          => 'dr-ritesh-amin.html',
+    'dr-nalin-ranasinghe.php'     => 'dr-nalin-ranasinghe.html',
     'contact.php'                 => 'contact.html',
     'neurology-tms-therapy.php'   => 'neurology-tms-therapy.html',
     'psychiatry-tms-therapy.php'  => 'psychiatry-tms-therapy.html',
