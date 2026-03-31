@@ -491,11 +491,10 @@ include 'header.php';
                     </div>
                     <a href="/contact.php" class="inline-flex items-center justify-center px-8 py-4 font-semibold text-midnight transition-all duration-200 bg-white border border-transparent rounded-full hover:bg-gold hover:text-white hover:shadow-lg">Schedule a Visit</a>
                 </div>
-                <!-- Image -->
+                <!-- Map -->
                 <div class="lg:w-1/2 reveal delay-1">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl group border border-white/10">
-                        <img src="assets/images/tms_clinic_banner.png" alt="Providence Medical and Infusion Center" class="w-full h-auto object-cover aspect-video transition-transform duration-1000 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-midnight/20"></div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.4649038986363!2d-74.35920228816407!3d40.59756527129183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b76e5e714edd%3A0x54ca677c2f217b65!2sDr.%20Ritesh%20Amin%20-%20Psychiatrist!5e0!3m2!1sen!2sin!4v1774940619468!5m2!1sen!2sin" class="w-full aspect-video" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

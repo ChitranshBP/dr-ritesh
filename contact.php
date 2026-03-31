@@ -381,7 +381,7 @@ include 'header.php';
                 <p class="text-gray-500 leading-relaxed">Our modern clinic is easily accessible with free on-site parking. Located near major highways for your convenience.</p>
             </div>
             <div class="contact-map-wrapper reveal delay-1">
-                <iframe src="https://maps.google.com/maps?q=Edison,+New+Jersey&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.4649038986363!2d-74.35920228816407!3d40.59756527129183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b76e5e714edd%3A0x54ca677c2f217b65!2sDr.%20Ritesh%20Amin%20-%20Psychiatrist!5e0!3m2!1sen!2sin!4v1774940619468!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
