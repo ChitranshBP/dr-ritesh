@@ -86,7 +86,7 @@ include __DIR__ . '/../header.php';
                     Addressing the psychiatric and cognitive symptoms of Huntington's Disease through targeted, non-invasive brain stimulation to improve quality of life.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mt-10">
-                    <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule Consultation</a>
+                    <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule a Consultation</a>
                     <a href="#conditions" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore HD Therapy</a>
                 </div>
             </div>

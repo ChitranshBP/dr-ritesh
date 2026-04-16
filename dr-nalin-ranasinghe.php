@@ -156,7 +156,7 @@ include 'header.php';
                 </div>
 
                 <div class="flex gap-4">
-                    <a href="/contact.php" class="btn btn-primary" style="padding: 1rem 2rem;">Schedule Consultation</a>
+                    <a href="/contact.php" class="btn btn-primary" style="padding: 1rem 2rem;">Schedule a Consultation</a>
                 </div>
             </div>
 
@@ -502,8 +502,7 @@ include 'header.php';
     </section>
 
     <!-- Closing CTA -->
-    <section class="closing-cta py-24 bg-gold relative overflow-hidden" id="take-action">
-        <div class="absolute inset-0 opacity-10 bg-[url('assets/images/tms_brain_banner.png')] bg-cover bg-center"></div>
+    <section class="closing-cta py-24 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center relative z-10 reveal">
             <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Take Charge of Your Health</h2>
             <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">Don't wait for a health emergency. Schedule a consultation with Dr. Ranasinghe for personalized, proactive medical care tailored to your needs.</p>

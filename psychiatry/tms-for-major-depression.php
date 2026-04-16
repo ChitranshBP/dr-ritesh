@@ -86,7 +86,7 @@ include __DIR__ . '/../header.php';
                     FDA-cleared, non-medication therapy for Major Depressive Disorder. Gently stimulating the brain's mood centers to restore emotional balance naturally.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mt-10">
-                    <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule Consultation</a>
+                    <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule a Consultation</a>
                     <a href="#conditions" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Therapy</a>
                 </div>
             </div>

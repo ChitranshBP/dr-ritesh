@@ -235,7 +235,7 @@ $extra_css = $extra_css ?? '';
                         </a>
                     </div>
                 </div>
-                <a href="/contact.php" class="btn btn-primary btn-sm nav-cta">Schedule Consultation</a>
+                <a href="/contact.php" class="btn btn-primary btn-sm nav-cta">Schedule a Consultation</a>
             </div>
 
             <!-- Mobile Navigation Overlay -->
@@ -324,7 +324,7 @@ $extra_css = $extra_css ?? '';
                     </div>
 
                     <div class="mobile-nav-cta">
-                        <a href="/contact.php" class="btn btn-primary w-full">Schedule Consultation</a>
+                        <a href="/contact.php" class="btn btn-primary w-full">Schedule a Consultation</a>
                     </div>
                 </div>
             </div>

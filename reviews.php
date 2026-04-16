@@ -702,7 +702,7 @@ include 'header.php';
                     <p class="text-white/60 text-base leading-relaxed max-w-lg mx-auto mb-8">If you're ready to explore TMS therapy, Spravato, or Ketamine treatments, we'd love to hear from you. Every patient's path to wellness begins with a single step.</p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a href="/contact.php" class="btn btn-primary py-4 px-8 text-base shadow-[0_8px_24px_rgba(37,111,168,0.4)]">
-                            Schedule Consultation
+                            Schedule a Consultation
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 ml-2 inline-block" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
                         <a href="tel:+17325551234" class="btn btn-ghost py-4 px-8 text-base">

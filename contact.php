@@ -536,12 +536,11 @@ include 'header.php';
     </section>
 
     <!-- Closing CTA -->
-    <section class="closing-cta py-16 lg:py-20 relative overflow-hidden bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('assets/images/cta_bg_clean.png');" id="take-action">
-        <div class="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
+    <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
-            <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3 drop-shadow-sm">Ready to Begin?</span>
-            <h2 class="text-4xl lg:text-5xl font-serif text-midnight mb-6 drop-shadow-sm">Your Wellness Starts Here</h2>
-            <p class="text-xl text-gray-800 mb-10 max-w-2xl mx-auto drop-shadow-sm font-medium">Don't wait any longer to take the first step toward better mental health. Our team is ready to support you every step of the way.</p>
+            <span class="block text-sm font-semibold tracking-widest text-gold-light uppercase mb-3">Ready to Begin?</span>
+            <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Your Wellness Starts Here</h2>
+            <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">Don't wait any longer to take the first step toward better mental health. Our team is ready to support you every step of the way.</p>
             <a href="tel:+17325551234" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform border border-white/20">
                 Call (732) 555-1234
             </a>

@@ -117,29 +117,29 @@ include 'header.php';
 
         </div>
 
-        <!-- Scrolling marquee strip -->
-        <div class="hero-marquee" aria-hidden="true">
-            <div class="hero-marquee-track">
-                <span>TMS Therapy</span><span class="mq-dot">◆</span>
-                <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
-                <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
-                <span>OCD</span><span class="mq-dot">◆</span>
-                <span>FDA-Approved</span><span class="mq-dot">◆</span>
-                <span>NJ Licensed</span><span class="mq-dot">◆</span>
-                <span>Non-Invasive</span><span class="mq-dot">◆</span>
-                <span>ABPN Certified</span><span class="mq-dot">◆</span>
-                <span>TMS Therapy</span><span class="mq-dot">◆</span>
-                <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
-                <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
-                <span>OCD</span><span class="mq-dot">◆</span>
-                <span>FDA-Approved</span><span class="mq-dot">◆</span>
-                <span>NJ Licensed</span><span class="mq-dot">◆</span>
-                <span>Non-Invasive</span><span class="mq-dot">◆</span>
-                <span>ABPN Certified</span><span class="mq-dot">◆</span>
-            </div>
-        </div>
-
     </header>
+
+    <!-- Scrolling marquee strip -->
+    <div class="hero-marquee" aria-hidden="true">
+        <div class="hero-marquee-track">
+            <span>TMS Therapy</span><span class="mq-dot">◆</span>
+            <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
+            <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
+            <span>OCD</span><span class="mq-dot">◆</span>
+            <span>FDA-Approved</span><span class="mq-dot">◆</span>
+            <span>NJ Licensed</span><span class="mq-dot">◆</span>
+            <span>Non-Invasive</span><span class="mq-dot">◆</span>
+            <span>ABPN Certified</span><span class="mq-dot">◆</span>
+            <span>TMS Therapy</span><span class="mq-dot">◆</span>
+            <span>Treatment-Resistant Depression</span><span class="mq-dot">◆</span>
+            <span>Anxiety &amp; PTSD</span><span class="mq-dot">◆</span>
+            <span>OCD</span><span class="mq-dot">◆</span>
+            <span>FDA-Approved</span><span class="mq-dot">◆</span>
+            <span>NJ Licensed</span><span class="mq-dot">◆</span>
+            <span>Non-Invasive</span><span class="mq-dot">◆</span>
+            <span>ABPN Certified</span><span class="mq-dot">◆</span>
+        </div>
+    </div>
 
     <!-- Our Main Service Section -->
     <section class="services-section" id="conditions">
@@ -381,10 +381,6 @@ include 'header.php';
                     <div class="about-img-frame">
                         <img src="/assets/images/dr-ritesh-hero.webp" alt="Dr. Ritesh Amin Providing Care" class="portrait-img">
                     </div>
-                    <div class="experience-badge">
-                        <span class="exp-number">15+</span>
-                        <span class="exp-text">Years of<br>Experience</span>
-                    </div>
                 </div>
                 <div class="about-content reveal delay-1">
                     <span class="eyebrow">Meet Your Doctor</span>
@@ -471,7 +467,7 @@ include 'header.php';
 
                 <!-- Right: Large Clean Image -->
                 <div class="tms-image-col reveal delay-1">
-                    <img src="assets/images/tms-therapy.png" alt="Dr. Amin TMS Therapy" class="tms-oak-image">
+                    <img src="assets/images/TMS-new.jpg" alt="TMS Therapy" class="tms-oak-image">
                 </div>
 
             </div>
@@ -487,53 +483,30 @@ include 'header.php';
                 <h2 class="section-title">How TMS Therapy Works</h2>
                 <p class="section-subtitle">A straightforward, transparent process designed to get you on the road to recovery as quickly as possible.</p>
             </div>
-            <div class="journey-timeline">
-                <!-- Step 1: Left -->
-                <div class="timeline-row reveal">
-                    <div class="timeline-content content-left">
-                        <h3>Initial Consultation</h3>
-                        <p>Discuss your symptoms, medical history, and treatment goals with Dr. Amin to determine if TMS is right for you, or if other psychiatric solutions fit better.</p>
-                    </div>
-                    <div class="timeline-center">
-                        <div class="timeline-marker">01</div>
-                    </div>
-                    <div class="timeline-content content-right empty"></div>
+            <div class="journey-steps-grid">
+                <div class="journey-step-card reveal">
+                    <div class="journey-step-num">01</div>
+                    <div class="journey-step-connector"></div>
+                    <h3>Initial Consultation</h3>
+                    <p>Discuss your symptoms, medical history, and treatment goals with Dr. Amin to determine if TMS is right for you, or if other psychiatric solutions fit better.</p>
                 </div>
-
-                <!-- Step 2: Right -->
-                <div class="timeline-row reveal delay-1">
-                    <div class="timeline-content content-left empty"></div>
-                    <div class="timeline-center">
-                        <div class="timeline-marker">02</div>
-                    </div>
-                    <div class="timeline-content content-right">
-                        <h3>Personalized Evaluation</h3>
-                        <p>A comprehensive assessment to map out your specific treatment protocol and pinpoint the exact location for stimulation (motor threshold mapping).</p>
-                    </div>
+                <div class="journey-step-card reveal delay-1">
+                    <div class="journey-step-num">02</div>
+                    <div class="journey-step-connector"></div>
+                    <h3>Personalized Evaluation</h3>
+                    <p>A comprehensive assessment to map out your specific treatment protocol and pinpoint the exact location for stimulation (motor threshold mapping).</p>
                 </div>
-
-                <!-- Step 3: Left -->
-                <div class="timeline-row reveal delay-2">
-                    <div class="timeline-content content-left">
-                        <h3>TMS Sessions</h3>
-                        <p>Brief, 20-30 minute daily sessions over a period of 4-6 weeks while you relax in a comfortable chair. You can return to normal activities immediately.</p>
-                    </div>
-                    <div class="timeline-center">
-                        <div class="timeline-marker">03</div>
-                    </div>
-                    <div class="timeline-content content-right empty"></div>
+                <div class="journey-step-card reveal delay-2">
+                    <div class="journey-step-num">03</div>
+                    <div class="journey-step-connector"></div>
+                    <h3>TMS Sessions</h3>
+                    <p>Brief, 20-30 minute daily sessions over a period of 4-6 weeks while you relax in a comfortable chair. You can return to normal activities immediately.</p>
                 </div>
-
-                <!-- Step 4: Right -->
-                <div class="timeline-row reveal delay-3">
-                    <div class="timeline-content content-left empty"></div>
-                    <div class="timeline-center">
-                        <div class="timeline-marker">04</div>
-                    </div>
-                    <div class="timeline-content content-right">
-                        <h3>Measurable Improvement</h3>
-                        <p>Track your progress with structured assessments and experience a return to your best self. Most patients notice changes within a few weeks.</p>
-                    </div>
+                <div class="journey-step-card reveal delay-3">
+                    <div class="journey-step-num">04</div>
+                    <div class="journey-step-connector"></div>
+                    <h3>Measurable Improvement</h3>
+                    <p>Track your progress with structured assessments and experience a return to your best self. Most patients notice changes within a few weeks.</p>
                 </div>
             </div>
         </div>
@@ -547,103 +520,96 @@ include 'header.php';
                 <h2 class="section-title">Real Transformations</h2>
                 <p class="section-subtitle">Hear from patients who have regained their lives through our advanced treatments.</p>
             </div>
-            <div class="wall-of-love-grid reveal delay-1">
-                <!-- Column 1 -->
-                <div class="wol-col">
-                    <!-- Card 1 – Ganesh -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">G</div>
-                            <div class="wol-meta">
-                                <h4>Ganesh</h4>
-                                <div class="wol-stars">★★★★★</div>
-                            </div>
-                            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
-                        </div>
-                        <p class="wol-text">"Dr Amin helped me a lot with my persistent depression, anxiety and attention deficit issues. He is excellent at establishing a good relationship with the patient and helped understand more about these conditions and what he was looking to achieve through the treatment. Would highly recommend him."</p>
-                    </div>
+            <!-- Video Testimonials – Side by Side -->
+            <div class="wol-videos-row reveal delay-1">
+                <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=true&loop=false&disable_player_controls=false')">
+                    <iframe src="https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=false&loop=false&disable_player_controls=true&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
+                    <div class="video-thumb-overlay"></div>
+                </div>
+                <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=true&loop=false&disable_player_controls=false')">
+                    <iframe src="https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=false&loop=false&disable_player_controls=true&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
+                    <div class="video-thumb-overlay"></div>
+                </div>
+            </div>
 
-                    <!-- Card 2 – Kavita Ingle -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">K</div>
-                            <div class="wol-meta">
-                                <h4>Kavita Ingle</h4>
-                                <div class="wol-stars">★★★★★</div>
-                            </div>
-                            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            <!-- Written Reviews – Grid Below -->
+            <div class="wol-reviews-grid reveal delay-2">
+                <!-- Card 1 – Ganesh -->
+                <div class="wol-card">
+                    <div class="wol-header">
+                        <div class="wol-avatar">G</div>
+                        <div class="wol-meta">
+                            <h4>Ganesh</h4>
+                            <div class="wol-stars">★★★★★</div>
                         </div>
-                        <p class="wol-text">"Amazing experience with Dr. Amin. He helped me get out of my anxiety in just 2 months. He is very responsive, follows up personally, and is always available when you need to talk. I had a wonderful experience with Nurse Melissa. She genuinely cares about her patients, and it shows in how she handles them. Thank You Dr Amin."</p>
+                        <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
                     </div>
-
-                    <!-- Card 3 – Marietta Baranca -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">M</div>
-                            <div class="wol-meta">
-                                <h4>Marietta Baranca</h4>
-                                <div class="wol-stars">★★★★★</div>
-                            </div>
-                            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
-                        </div>
-                        <p class="wol-text">"I've been dealing with depression and PTSD for years and Dr. Amin's TMS Therapy has honestly saved my life. I went from crying for no reason almost every day to feeling more stable and even optimistic. Dr. Amin is really invested in my mental health and Charlie, the TMS technician, is very helpful in making the treatments go by quickly and swiftly."</p>
-                    </div>
+                    <p class="wol-text">"Dr Amin helped me a lot with my persistent depression, anxiety and attention deficit issues. He is excellent at establishing a good relationship with the patient and helped understand more about these conditions and what he was looking to achieve through the treatment. Would highly recommend him."</p>
                 </div>
 
-                <!-- Column 2 – Video Testimonials -->
-                <div class="wol-col wol-col-videos">
-                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=true&loop=false&disable_player_controls=false')">
-                        <iframe src="https://play.gumlet.io/embed/69bba3d6554f0fb510f67044?background=false&autoplay=false&loop=false&disable_player_controls=true&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
-                        <div class="video-thumb-overlay">
+                <!-- Card 2 – Kavita Ingle -->
+                <div class="wol-card">
+                    <div class="wol-header">
+                        <div class="wol-avatar">K</div>
+                        <div class="wol-meta">
+                            <h4>Kavita Ingle</h4>
+                            <div class="wol-stars">★★★★★</div>
                         </div>
+                        <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
                     </div>
-                    <div class="video-thumb-card" onclick="openVideoModal('https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=true&loop=false&disable_player_controls=false')">
-                        <iframe src="https://play.gumlet.io/embed/69bba3d6baa7d9f8a4d6f9eb?background=false&autoplay=false&loop=false&disable_player_controls=true&preload=true" class="video-thumb-iframe" tabindex="-1" title="Patient Story" referrerpolicy="origin" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"></iframe>
-                        <div class="video-thumb-overlay">
-                        </div>
-                    </div>
+                    <p class="wol-text">"Amazing experience with Dr. Amin. He helped me get out of my anxiety in just 2 months. He is very responsive, follows up personally, and is always available when you need to talk. I had a wonderful experience with Nurse Melissa. She genuinely cares about her patients, and it shows in how she handles them. Thank You Dr Amin."</p>
                 </div>
 
-                <!-- Column 3 -->
-                <div class="wol-col">
-                    <!-- Card 4 – Jeanne Hambrecht -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">J</div>
-                            <div class="wol-meta">
-                                <h4>Jeanne Hambrecht</h4>
-                                <div class="wol-stars">★★★★★</div>
-                            </div>
-                            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+                <!-- Card 3 – Marietta Baranca -->
+                <div class="wol-card">
+                    <div class="wol-header">
+                        <div class="wol-avatar">M</div>
+                        <div class="wol-meta">
+                            <h4>Marietta Baranca</h4>
+                            <div class="wol-stars">★★★★★</div>
                         </div>
-                        <p class="wol-text">"I called Dr Amin immediately and he called me back right away. He told me he could help me. He came up with a medical plan with his diagnosis and that's what we're doing now. Dr. Amin is not aggressive and started very cautious with treatment because of my family history. Dr. Amin calls me to follow up on how I'm feeling. I highly recommend his practice."</p>
+                        <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
                     </div>
+                    <p class="wol-text">"I've been dealing with depression and PTSD for years and Dr. Amin's TMS Therapy has honestly saved my life. I went from crying for no reason almost every day to feeling more stable and even optimistic. Dr. Amin is really invested in my mental health and Charlie, the TMS technician, is very helpful in making the treatments go by quickly and swiftly."</p>
+                </div>
 
-                    <!-- Card 5 – Athena Xipolias -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">A</div>
-                            <div class="wol-meta">
-                                <h4>Athena Xipolias</h4>
-                                <div class="wol-stars">★★★★★</div>
-                            </div>
-                            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+                <!-- Card 4 – Jeanne Hambrecht -->
+                <div class="wol-card">
+                    <div class="wol-header">
+                        <div class="wol-avatar">J</div>
+                        <div class="wol-meta">
+                            <h4>Jeanne Hambrecht</h4>
+                            <div class="wol-stars">★★★★★</div>
                         </div>
-                        <p class="wol-text">"Dr. Amin saved me from my horrible OCD. I decided to take a leap of faith and start TMS after I had a bad OCD episode. I'm just about half way through and I see so many benefits already. I have my life back. I feel such relief — I can rationalize my thoughts and emotions so much better now. Thank you x1000 Dr. Amin!!!"</p>
+                        <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
                     </div>
+                    <p class="wol-text">"I called Dr Amin immediately and he called me back right away. He told me he could help me. He came up with a medical plan with his diagnosis and that's what we're doing now. Dr. Amin is not aggressive and started very cautious with treatment because of my family history. Dr. Amin calls me to follow up on how I'm feeling. I highly recommend his practice."</p>
+                </div>
 
-                    <!-- Card 6 – Deolinda Amaral -->
-                    <div class="wol-card">
-                        <div class="wol-header">
-                            <div class="wol-avatar">D</div>
-                            <div class="wol-meta">
-                                <h4>Deolinda Amaral</h4>
-                                <div class="wol-stars">★★★★★</div>
-                            </div>
-                            <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+                <!-- Card 5 – Athena Xipolias -->
+                <div class="wol-card">
+                    <div class="wol-header">
+                        <div class="wol-avatar">A</div>
+                        <div class="wol-meta">
+                            <h4>Athena Xipolias</h4>
+                            <div class="wol-stars">★★★★★</div>
                         </div>
-                        <p class="wol-text">"Thank you for the help. After the stroke, my husband improved in his speech, walking and memory with TMS for his Depression. Best doctor ever."</p>
+                        <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
                     </div>
+                    <p class="wol-text">"Dr. Amin saved me from my horrible OCD. I decided to take a leap of faith and start TMS after I had a bad OCD episode. I'm just about half way through and I see so many benefits already. I have my life back. I feel such relief — I can rationalize my thoughts and emotions so much better now. Thank you x1000 Dr. Amin!!!"</p>
+                </div>
+
+                <!-- Card 6 – Deolinda Amaral -->
+                <div class="wol-card">
+                    <div class="wol-header">
+                        <div class="wol-avatar">D</div>
+                        <div class="wol-meta">
+                            <h4>Deolinda Amaral</h4>
+                            <div class="wol-stars">★★★★★</div>
+                        </div>
+                        <svg class="google-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+                    </div>
+                    <p class="wol-text">"Thank you for the help. After the stroke, my husband improved in his speech, walking and memory with TMS for his Depression. Best doctor ever."</p>
                 </div>
             </div>
         </div>

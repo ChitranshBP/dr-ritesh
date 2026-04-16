@@ -80,7 +80,7 @@ include __DIR__ . '/../header.php';
             <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
             <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">Rebuilding neural pathways damaged by stroke — restoring motor control, speech, and quality of life through precision magnetic stimulation.</p>
             <div class="flex flex-wrap justify-center gap-4 mt-10">
-                <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule Consultation</a>
+                <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule a Consultation</a>
                 <a href="#conditions" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Conditions</a>
             </div>
         </div>

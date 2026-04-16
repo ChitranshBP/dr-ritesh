@@ -822,7 +822,7 @@ include 'header.php';
                 </div>
                 <div class="relative z-10 flex flex-col items-center gap-4">
                     <a href="/contact.php" class="btn btn-primary py-4 px-8 text-base shadow-[0_8px_24px_rgba(37,111,168,0.4)]">
-                        Schedule Consultation
+                        Schedule a Consultation
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 ml-2 inline-block" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -836,7 +836,7 @@ include 'header.php';
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Ready to Begin?</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Take the First Step Toward Better Mental Health</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">You don't have to navigate this journey alone. Dr. Amin and our dedicated team are here to help you regain your life.</p>
-            <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Schedule a Consultation</a>
         </div>
     </section>
 
