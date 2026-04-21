@@ -15,7 +15,7 @@ include 'header.php';
     <header class="hero" id="hero">
         <div class="hero-bg">
             <video class="hero-bg-video" autoplay muted loop playsinline>
-                <source src="assets/hero-video/dr-ritesh-hero.mp4" type="video/mp4">
+                <source src="assets/hero-video/ritesh-bg-video.mp4" type="video/mp4">
             </video>
         </div>
 
