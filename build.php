@@ -30,6 +30,7 @@ $pages = [
     'privacy-policy.php'           => 'privacy-policy.html',
     'reviews.php'                  => 'reviews.html',
     'terms.php'                    => 'terms.html',
+    'thank-you.php'                => 'thank-you.html',
 
     // Neurology sub-pages
     'neurology/tms-for-alzheimers-dementia.php'    => 'neurology/tms-for-alzheimers-dementia.html',
