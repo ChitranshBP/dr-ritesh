@@ -245,7 +245,7 @@ include 'header.php';
                         <h2 class="text-3xl font-serif text-midnight mb-2">Send Us a Message</h2>
                         <p class="text-gray-500 text-sm mb-8 leading-relaxed">Fill out the form below and our team will get back to you within one business day. All information is kept strictly confidential.</p>
 
-                        <form id="contactForm" novalidate>
+                        <form id="contactForm" accept-charset='UTF-8' action='https://app.formester.com/forms/1vAuqpcLb/submissions' method='POST' novalidate>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="firstName">First Name *</label>
@@ -558,8 +558,6 @@ include 'header.php';
     <script>
     // Form submission handler
     document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
         // Basic validation
         const required = this.querySelectorAll('[required]');
         let valid = true;
@@ -574,15 +572,17 @@ include 'header.php';
             }
         });
 
-        if (!valid) return;
+        if (!valid) {
+            e.preventDefault();
+            return;
+        }
 
         // Show toast
         const toast = document.getElementById('formToast');
         toast.classList.add('show');
         setTimeout(() => toast.classList.remove('show'), 4000);
-
-        // Reset form
-        this.reset();
+        
+        // Let the form submit naturally to Formester
     });
 
     // Remove error styling on input
