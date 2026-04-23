@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | Dr. Ritesh Amin, MD — Edison, NJ Psychiatrist</title>
+    <meta name="description" content="Thank you for reaching out to Dr. Ritesh Amin. We'll be in touch within 24 hours." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600&family=Nunito:wght@300;400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0a1628', mid: '#112240', light: '#1a3a5c', deep: '#060e1c' },
+                        teal: { DEFAULT: '#0ea5a0', light: '#14b8b3', dark: '#0c8f8a' },
+                        gold: { DEFAULT: '#c9a96e', light: '#d4b87e', dark: '#b8944f' },
+                        cream: { DEFAULT: '#f8f5f0', dark: '#ede8e0' },
+                    },
+                    fontFamily: {
+                        heading: ['Urbanist', 'system-ui', 'sans-serif'],
+                        sans: ['Nunito', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Nunito', system-ui, sans-serif; font-weight: 300; background-color: #0a1628; color: #f8f5f0; overflow-x: hidden; position: relative; margin: 0; }
+        body::before { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 1000; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E"); background-size: 256px 256px; }
+        h1, h2, h3, h4, h5 { font-family: 'Urbanist', system-ui, sans-serif; font-weight: 400; letter-spacing: 0.01em; line-height: 1.2; }
+        p { font-weight: 300; line-height: 1.65; margin-bottom: 0.75rem; }
+        p:last-child { margin-bottom: 0; }
+
+        #nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; transition: all 0.3s ease; padding: 1.1rem 0; }
+        #nav.scrolled { background: rgba(10,22,40,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid rgba(14,165,160,0.15); padding: 0.75rem 0; }
+
+        .nav-link { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 400; color: rgba(248,245,240,0.7); letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; transition: color 0.2s; }
+        .nav-link:hover { color: #0ea5a0; }
+
+        .footer-link { font-family: 'Nunito', sans-serif; font-size: 0.84rem; font-weight: 300; color: rgba(248,245,240,0.55); text-decoration: none; transition: color 0.2s; }
+        .footer-link:hover { color: #f8f5f0; }
+
+        .badge { display: inline-flex; align-items: center; padding: 0.25rem 0.75rem; border: 1px solid rgba(14,165,160,0.4); border-radius: 100px; font-size: 0.72rem; font-family: 'Nunito', sans-serif; font-weight: 400; color: #0ea5a0; white-space: nowrap; }
+
+        .btn-teal { background: #0ea5a0; color: white; border: 2px solid #0ea5a0; padding: 0.75rem 1.75rem; font-family: 'Nunito', sans-serif; font-weight: 400; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.3s ease; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .btn-teal:hover { background: #0c8f8a; border-color: #0c8f8a; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(14,165,160,0.3); }
+
+        .btn-outline-white { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.5); padding: 0.75rem 1.75rem; font-family: 'Nunito', sans-serif; font-weight: 400; font-size: 0.82rem; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.3s ease; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        .btn-outline-white:hover { border-color: white; background: rgba(255,255,255,0.08); transform: translateY(-1px); }
+
+        .thin-rule { border: none; border-top: 1px solid rgba(14,165,160,0.2); }
+
+        /* Mobile menu */
+        #mobile-menu { visibility: hidden; opacity: 0; pointer-events: none; position: fixed; inset: 0; z-index: 899; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(7,14,28,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); transform: translateY(-10px) scale(0.99); transition: opacity 0.32s ease, transform 0.32s ease, visibility 0s linear 0.32s; padding: 2rem 1.5rem; gap: 0; }
+        #mobile-menu::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, #0ea5a0 35%, #c9a96e 65%, transparent 100%); }
+        #mobile-menu.open { visibility: visible; opacity: 1; pointer-events: auto; transform: translateY(0) scale(1); transition: opacity 0.32s ease, transform 0.32s ease, visibility 0s linear 0s; }
+        #mobile-menu .mob-brand { text-align: center; margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(14,165,160,0.15); width: 100%; }
+        #mobile-menu .mob-brand-name { display: block; font-family: 'Urbanist', sans-serif; font-size: 1.15rem; font-weight: 600; color: #f8f5f0; letter-spacing: 0.01em; }
+        #mobile-menu .mob-brand-sub { display: block; font-family: 'Nunito', sans-serif; font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: #0ea5a0; margin-top: 0.2rem; }
+        #mobile-menu .mob-links { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 260px; gap: 0; }
+        #mobile-menu .mob-links a { font-family: 'Urbanist', sans-serif; font-size: 1.5rem; font-weight: 300; color: rgba(248,245,240,0.65); text-decoration: none; padding: 0.85rem 0; width: 100%; text-align: center; border-bottom: 1px solid rgba(14,165,160,0.1); letter-spacing: 0.02em; transition: color 0.2s ease, letter-spacing 0.2s ease; }
+        #mobile-menu .mob-links a:last-child { border-bottom: none; }
+        #mobile-menu .mob-links a:hover { color: #0ea5a0; letter-spacing: 0.06em; }
+        #mobile-menu .mob-cta { margin-top: 2.25rem; width: 100%; max-width: 260px; display: flex; flex-direction: column; gap: 0.75rem; }
+        #mobile-menu .mob-cta .btn-teal { justify-content: center; font-size: 0.82rem !important; padding: 0.875rem 1.5rem !important; letter-spacing: 0.1em; border-radius: 0; }
+        #mobile-menu .mob-close { position: absolute; top: 1.25rem; right: 1.25rem; width: 36px; height: 36px; border-radius: 50%; background: rgba(14,165,160,0.08); border: 1px solid rgba(14,165,160,0.2); color: rgba(248,245,240,0.7); font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, color 0.2s; line-height: 1; }
+        #mobile-menu .mob-close:hover { background: rgba(14,165,160,0.18); color: #f8f5f0; }
+
+        /* Checkmark animation */
+        @keyframes checkDraw {
+            from { stroke-dashoffset: 24; }
+            to   { stroke-dashoffset: 0; }
+        }
+        @keyframes ringPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(14,165,160,0.3); }
+            50%      { box-shadow: 0 0 0 12px rgba(14,165,160,0); }
+        }
+        .check-ring { animation: ringPulse 2s ease-in-out 0.6s 1; }
+        .check-path { stroke-dasharray: 24; stroke-dashoffset: 24; animation: checkDraw 0.5s ease 0.3s forwards; }
+
+        @media (max-width: 640px) {
+            .footer-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <a href="index.html" class="flex flex-col leading-tight">
+            <img src="logo.png" alt="logo" class="w-auto h-16">
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html#treatments" class="nav-link">Treatments</a>
+            <a href="index.html#why" class="nav-link">About</a>
+            <a href="index.html#insurance" class="nav-link">Insurance</a>
+            <a href="index.html#faq" class="nav-link">FAQ</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="index.html#contact-form" class="hidden md:inline-flex btn-teal !py-[0.55rem] !px-5 !text-[0.72rem]">Schedule Consultation</a>
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()">
+                <span class="block w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+                <span class="block w-[16px] h-[2px] bg-cream transition-all duration-300"></span>
+                <span class="block w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="mobile-menu">
+    <button class="mob-close" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+    <div class="mob-brand">
+        <span class="mob-brand-name">Dr. Ritesh Amin · MD</span>
+        <span class="mob-brand-sub">Board-Certified Psychiatrist · Edison, NJ</span>
+    </div>
+    <nav class="mob-links">
+        <a href="index.html#treatments" onclick="toggleMenu()">Treatments</a>
+        <a href="index.html#why" onclick="toggleMenu()">About</a>
+        <a href="index.html#insurance" onclick="toggleMenu()">Insurance</a>
+        <a href="index.html#faq" onclick="toggleMenu()">FAQ</a>
+    </nav>
+    <div class="mob-cta">
+        <a href="index.html#contact-form" class="btn-teal" onclick="toggleMenu()">Book Free Consultation</a>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="min-h-[70vh] flex items-center justify-center relative pt-24 pb-16">
+    <!-- Background ambience -->
+    <div class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_50%_at_50%_40%,rgba(14,165,160,0.08)_0%,transparent_70%)]"></div>
+    <div class="absolute inset-0 pointer-events-none [background-image:linear-gradient(rgba(14,165,160,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(14,165,160,0.03)_1px,transparent_1px)] [background-size:60px_60px]"></div>
+
+    <div class="relative z-10 text-center px-6 max-w-lg mx-auto">
+        <!-- Animated checkmark -->
+        <div class="check-ring w-20 h-20 rounded-full bg-teal/[0.12] border-2 border-teal flex items-center justify-center mx-auto mb-8">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0ea5a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path class="check-path" d="M20 6L9 17l-5-5" />
+            </svg>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="font-heading text-[clamp(1.8rem,4vw,2.8rem)] font-normal text-cream mb-3 leading-[1.15]">
+            Thank You!
+        </h1>
+        <p class="font-heading text-[1.05rem] italic font-light text-teal mb-6 leading-[1.4]">
+            Your consultation request has been received.
+        </p>
+
+        <hr class="thin-rule max-w-[120px] mx-auto mb-6" />
+
+        <!-- Details -->
+        <p class="text-[0.93rem] text-cream/65 leading-[1.7] font-light max-w-[400px] mx-auto mb-2">
+            Our team will review your information and reach out within <span class="text-teal font-normal">24 hours</span> to confirm your appointment and verify your insurance coverage.
+        </p>
+        <p class="text-[0.82rem] text-cream/45 leading-[1.6] font-light max-w-[380px] mx-auto mb-8">
+            If you need immediate assistance, please call us directly.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="index.html" class="btn-teal">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M19 12H5M5 12l6-6M5 12l6 6"/></svg>
+                Back to Homepage
+            </a>
+            <a href="tel:+17325551234" class="btn-outline-white">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call 732-555-1234
+            </a>
+        </div>
+
+        <!-- Trust note -->
+        <div class="mt-10 flex items-center justify-center gap-[0.35rem]">
+            <span class="text-gold text-[0.6rem]">✦</span>
+            <span class="text-[0.72rem] font-light text-cream/40">Your information is HIPAA-compliant and never shared</span>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-navy-deep text-cream py-10 pb-6 border-t border-teal/[0.12]">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="footer-grid grid [grid-template-columns:1.5fr_1fr_1fr_1.25fr] gap-10 mb-8">
+            <!-- Logo + Tagline -->
+            <div>
+                <div class="mb-[0.875rem]">
+                    <img src="logo.png" alt="Dr. Ritesh Amin" class="w-auto h-16">
+                </div>
+                <p class="text-[0.82rem] text-cream/45 leading-[1.65] max-w-[240px] font-light mb-[0.875rem]">
+                    Advanced depression treatment in Edison, NJ — restoring quality of life through evidence-based, FDA-approved therapies.
+                </p>
+                <div class="flex gap-2 flex-wrap">
+                    <span class="badge !text-[0.6rem]">ABPN Certified</span>
+                    <span class="badge !text-[0.6rem]">NJ Licensed</span>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Quick Links</h5>
+                <ul class="list-none p-0 m-0 flex flex-col gap-[0.6rem]">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="index.html#why" class="footer-link">About Dr. Amin</a></li>
+                    <li><a href="index.html#insurance" class="footer-link">Insurance</a></li>
+                    <li><a href="index.html#faq" class="footer-link">FAQ</a></li>
+                    <li><a href="index.html#contact-form" class="footer-link">Book Consultation</a></li>
+                </ul>
+            </div>
+            <!-- Treatments -->
+            <div>
+                <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Treatments</h5>
+                <ul class="list-none p-0 m-0 flex flex-col gap-[0.6rem]">
+                    <li><a href="index.html#treatments" class="footer-link">TMS Therapy</a></li>
+                    <li><a href="index.html#treatments" class="footer-link">Spravato® (Esketamine)</a></li>
+                    <li><a href="index.html#treatments" class="footer-link">Ketamine Therapy</a></li>
+                    <li><a href="index.html#treatments" class="footer-link">Psychiatric Care</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div>
+                <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Contact</h5>
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-start gap-[0.65rem]">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)" stroke-width="1.5" class="mt-[0.2rem] shrink-0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span class="text-[0.82rem] font-light text-cream/55 leading-[1.55]">35-37 Progress St suite aa5,<br />Edison, NJ 08820, United States</span>
+                    </div>
+                    <div class="flex items-center gap-[0.65rem]">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <a href="tel:+17325551234" class="footer-link">732-555-1234</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-teal/10 pt-5 flex flex-wrap justify-between items-center gap-3">
+            <p class="text-[0.72rem] font-light text-cream/30 m-0">© 2025 Dr. Ritesh Amin, MD · All rights reserved</p>
+            <p class="text-[0.7rem] font-light text-cream/[0.28] m-0 max-w-[460px] text-right leading-[1.5]">
+                This website is for informational purposes only and is not a substitute for emergency medical care. If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or 911 immediately.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Sticky Nav
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // Mobile Menu
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    }
+</script>
+</body>
+</html>

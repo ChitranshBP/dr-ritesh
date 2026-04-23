@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Ritesh Amin, MD | Advanced Depression Treatment — TMS, Spravato® & Ketamine Therapy in Edison, NJ</title>
+    <meta name="description"
+        content="Board-Certified Psychiatrist Dr. Ritesh Amin offers FDA-approved depression treatments in Edison, New Jersey — including TMS Therapy, Spravato® (Esketamine), and Ketamine Therapy. Most insurance accepted." />
+    <meta name="keywords"
+        content="TMS therapy Edison NJ, Spravato esketamine New Jersey, ketamine therapy psychiatrist, treatment-resistant depression, Dr Ritesh Amin psychiatrist" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600&family=Nunito:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0a1628', mid: '#112240', light: '#1a3a5c', deep: '#060e1c' },
+                        teal: { DEFAULT: '#0ea5a0', light: '#14b8b3', dark: '#0c8f8a' },
+                        gold: { DEFAULT: '#c9a96e', light: '#d4b87e', dark: '#b8944f' },
+                        cream: { DEFAULT: '#f8f5f0', dark: '#ede8e0' },
+                    },
+                    fontFamily: {
+                        heading: ['Urbanist', 'system-ui', 'sans-serif'],
+                        sans: ['Nunito', 'system-ui', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'hero': ['clamp(2.2rem,5vw,3.8rem)', { lineHeight: '1.1' }],
+                        'h2': ['clamp(1.8rem,4vw,3rem)', { lineHeight: '1.15' }],
+                        'h2-sm': ['clamp(1.6rem,3.5vw,2.5rem)', { lineHeight: '1.15' }],
+                        'h2-form': ['clamp(1.75rem,3.5vw,2.75rem)', { lineHeight: '1.15' }],
+                        'pullquote': ['clamp(1.4rem,2.5vw,2rem)', { lineHeight: '1.35' }],
+                        'banner': ['clamp(1.2rem,3vw,2rem)', { lineHeight: '1.4' }],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito', system-ui, sans-serif;
+            font-weight: 300;
+            background-color: #0a1628;
+            color: #f8f5f0;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0.035;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            background-size: 256px 256px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Urbanist', system-ui, sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.01em;
+            line-height: 1.2;
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.65;
+            margin-bottom: 0.75rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        #nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 900;
+            transition: all 0.3s ease;
+            padding: 1.1rem 0;
+        }
+
+        #nav.scrolled {
+            background: rgba(10, 22, 40, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(14, 165, 160, 0.15);
+            padding: 0.75rem 0;
+        }
+
+        .glow-teal-tr::after {
+            content: '';
+            position: absolute;
+            top: -120px;
+            right: -120px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(14, 165, 160, 0.18) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .glow-teal-center::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(14, 165, 160, 0.14) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .grid-lines {
+            background-image: linear-gradient(rgba(14, 165, 160, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14, 165, 160, 0.04) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .ghost-number {
+            font-family: 'Urbanist', sans-serif;
+            font-size: clamp(80px, 12vw, 160px);
+            font-weight: 600;
+            line-height: 1;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(14, 165, 160, 0.12);
+            position: absolute;
+            top: -0.15em;
+            right: -0.1em;
+            pointer-events: none;
+            user-select: none;
+            z-index: 0;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-up-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .fade-up-delay-2 {
+            transition-delay: 0.2s;
+        }
+
+        .fade-up-delay-3 {
+            transition-delay: 0.3s;
+        }
+
+        .fade-up-delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        .thin-rule {
+            border: none;
+            border-top: 1px solid rgba(14, 165, 160, 0.2);
+        }
+
+        .thin-rule-gold {
+            border: none;
+            border-top: 1px solid rgba(201, 169, 110, 0.3);
+        }
+
+        .hero-card {
+            background: linear-gradient(135deg, rgba(17, 34, 64, 0.95) 0%, rgba(10, 22, 40, 0.98) 100%);
+            border: 1px solid rgba(14, 165, 160, 0.25);
+            border-top: 3px solid #0ea5a0;
+            border-radius: 2px;
+            backdrop-filter: blur(12px);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border: 1px solid rgba(14, 165, 160, 0.4);
+            border-radius: 100px;
+            font-size: 0.72rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            color: #0ea5a0;
+            white-space: nowrap;
+        }
+
+        .treatment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid rgba(14, 165, 160, 0.15);
+        }
+
+        .treatment-cell {
+            position: relative;
+            padding: 1.6rem 1.6rem 2rem;
+            border: 1px solid rgba(14, 165, 160, 0.15);
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+
+        .treatment-cell::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 1.6rem;
+            right: 1.6rem;
+            height: 2px;
+            background: #0ea5a0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.35s ease;
+        }
+
+        .treatment-cell:hover::after {
+            transform: scaleX(1);
+        }
+
+        .treatment-cell:hover {
+            background: rgba(14, 165, 160, 0.04);
+        }
+
+        @media (max-width: 768px) {
+            .treatment-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(10, 22, 40, 0.1);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-answer.open {
+            max-height: 300px;
+            padding-bottom: 1rem;
+        }
+
+        .faq-toggle {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-toggle.open {
+            transform: rotate(45deg);
+        }
+
+        .stat-box-teal {
+            background: linear-gradient(135deg, #0ea5a0 0%, #0c8f8a 100%);
+        }
+
+        .insurance-section {
+            background: linear-gradient(135deg, #0ea5a0 0%, #0a2a5a 60%, #0a1628 100%);
+        }
+
+        .btn-teal {
+            background: #0ea5a0;
+            color: white;
+            border: 2px solid #0ea5a0;
+            padding: 0.75rem 1.75rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-teal:hover {
+            background: #0c8f8a;
+            border-color: #0c8f8a;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(14, 165, 160, 0.3);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            padding: 0.75rem 1.75rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-outline-white:hover {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline-gold {
+            background: transparent;
+            color: #c9a96e;
+            border: 2px solid rgba(201, 169, 110, 0.6);
+            padding: 0.75rem 1.75rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 0.82rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-outline-gold:hover {
+            border-color: #c9a96e;
+            background: rgba(201, 169, 110, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .btn-white-navy {
+            background: white;
+            color: #0a1628;
+            border: 2px solid white;
+            padding: 0.875rem 2.25rem;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 500;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-white-navy:hover {
+            background: #0ea5a0;
+            border-color: #0ea5a0;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(14, 165, 160, 0.3);
+        }
+
+        .form-input {
+            width: 100%;
+            background: rgba(10, 22, 40, 0.7);
+            border: 1px solid rgba(14, 165, 160, 0.2);
+            color: #f8f5f0;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
+            font-size: 0.875rem;
+            padding: 0.7rem 1rem;
+            border-radius: 2px;
+            outline: none;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .form-input::placeholder {
+            color: rgba(248, 245, 240, 0.35);
+        }
+
+        .form-input:focus {
+            border-color: #0ea5a0;
+            box-shadow: 0 0 0 3px rgba(14, 165, 160, 0.12);
+        }
+
+        .form-input option {
+            background: #112240;
+            color: #f8f5f0;
+        }
+
+        .form-label {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            font-size: 0.78rem;
+            color: rgba(248, 245, 240, 0.6);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
+
+        /* ── Mobile menu ── */
+        #mobile-menu {
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
+            inset: 0;
+            z-index: 899;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(7, 14, 28, 0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            transform: translateY(-10px) scale(0.99);
+            transition:
+                opacity 0.32s ease,
+                transform 0.32s ease,
+                visibility 0s linear 0.32s;
+            padding: 2rem 1.5rem;
+            gap: 0;
+        }
+
+        #mobile-menu::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #0ea5a0 35%, #c9a96e 65%, transparent 100%);
+        }
+
+        #mobile-menu::after {
+            content: '';
+            position: absolute;
+            bottom: 60px; left: 50%; transform: translateX(-50%);
+            width: 120px; height: 120px;
+            background: radial-gradient(circle, rgba(14,165,160,0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        #mobile-menu.open {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+            transition:
+                opacity 0.32s ease,
+                transform 0.32s ease,
+                visibility 0s linear 0s;
+        }
+
+        #mobile-menu .mob-brand {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(14,165,160,0.15);
+            width: 100%;
+        }
+
+        #mobile-menu .mob-brand-name {
+            display: block;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #f8f5f0;
+            letter-spacing: 0.01em;
+        }
+
+        #mobile-menu .mob-brand-sub {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.6rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #0ea5a0;
+            margin-top: 0.2rem;
+        }
+
+        #mobile-menu .mob-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 260px;
+            gap: 0;
+        }
+
+        #mobile-menu .mob-links a {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.65);
+            text-decoration: none;
+            padding: 0.85rem 0;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid rgba(14, 165, 160, 0.1);
+            letter-spacing: 0.02em;
+            transition: color 0.2s ease, letter-spacing 0.2s ease;
+        }
+
+        #mobile-menu .mob-links a:last-child {
+            border-bottom: none;
+        }
+
+        #mobile-menu .mob-links a:hover {
+            color: #0ea5a0;
+            letter-spacing: 0.06em;
+        }
+
+        #mobile-menu .mob-cta {
+            margin-top: 2.25rem;
+            width: 100%;
+            max-width: 260px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        #mobile-menu .mob-cta .btn-teal {
+            justify-content: center;
+            font-size: 0.82rem !important;
+            padding: 0.875rem 1.5rem !important;
+            letter-spacing: 0.1em;
+            border-radius: 0;
+        }
+
+        #mobile-menu .mob-contact {
+            margin-top: 2.25rem;
+            text-align: center;
+            border-top: 1px solid rgba(14,165,160,0.1);
+            padding-top: 1.5rem;
+            width: 100%;
+        }
+
+        #mobile-menu .mob-contact a {
+            display: block;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.4);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        #mobile-menu .mob-contact a:hover { color: #0ea5a0; }
+
+        #mobile-menu .mob-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            background: rgba(14,165,160,0.08);
+            border: 1px solid rgba(14,165,160,0.2);
+            color: rgba(248,245,240,0.7);
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s, color 0.2s;
+            line-height: 1;
+        }
+
+        #mobile-menu .mob-close:hover {
+            background: rgba(14,165,160,0.18);
+            color: #f8f5f0;
+        }
+
+        .pull-quote {
+            font-family: 'Urbanist', sans-serif;
+            font-size: clamp(1.4rem, 2.5vw, 2rem);
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.35;
+            color: #f8f5f0;
+        }
+
+        .stars {
+            color: #c9a96e;
+            letter-spacing: 2px;
+        }
+
+        .eyebrow {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 400;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #0ea5a0;
+        }
+
+        .nav-link {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 400;
+            color: rgba(248, 245, 240, 0.7);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #0ea5a0;
+        }
+
+        .footer-link {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.84rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.55);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: #f8f5f0;
+        }
+
+        @media (max-width: 1024px) {
+            .hero-split {
+                grid-template-columns: 1fr !important;
+            }
+
+            .hero-card-col {
+                display: none;
+            }
+
+            .pain-split {
+                grid-template-columns: 1fr !important;
+            }
+
+            .why-split {
+                grid-template-columns: 1fr !important;
+            }
+
+            .faq-split {
+                grid-template-columns: 1fr !important;
+            }
+
+            .form-split {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .steps-row {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .cta-buttons a, .cta-buttons button {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .trust-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.5rem;
+            }
+
+            .trust-row .trust-sep {
+                display: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            #hero {
+                padding-bottom: calc(3rem + 38px);
+            }
+
+            .hero-urgency {
+                white-space: normal !important;
+                font-size: 0.68rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trust-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .stats-band {
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            .photo-strip {
+                grid-template-columns: 1fr 1fr !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <a href="#" class="flex flex-col leading-tight">
+                <img src="logo.png" alt="logo" class="w-auto h-16">
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#treatments" class="nav-link">Treatments</a>
+                <a href="#why" class="nav-link">About</a>
+                <a href="#insurance" class="nav-link">Insurance</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#contact-form"
+                    class="hidden md:inline-flex btn-teal !py-[0.55rem] !px-5 !text-[0.72rem]">Schedule Consultation</a>
+                <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" onclick="toggleMenu()">
+                    <span class="block w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+                    <span class="block w-[16px] h-[2px] bg-cream transition-all duration-300"></span>
+                    <span class="block w-[22px] h-[2px] bg-cream transition-all duration-300"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="mobile-menu">
+        <button class="mob-close" onclick="toggleMenu()" aria-label="Close menu">✕</button>
+
+        <div class="mob-brand">
+            <span class="mob-brand-name">Dr. Ritesh Amin · MD</span>
+            <span class="mob-brand-sub">Board-Certified Psychiatrist · Edison, NJ</span>
+        </div>
+
+        <nav class="mob-links">
+            <a href="#treatments" onclick="toggleMenu()">Treatments</a>
+            <a href="#why" onclick="toggleMenu()">About</a>
+            <a href="#insurance" onclick="toggleMenu()">Insurance</a>
+            <a href="#faq" onclick="toggleMenu()">FAQ</a>
+        </nav>
+
+        <div class="mob-cta">
+            <a href="#contact-form" class="btn-teal" onclick="toggleMenu()">
+                Book Free Consultation
+            </a>
+            <a href="tel:+17325550100" class="btn-outline-white" onclick="toggleMenu()" style="justify-content:center;font-size:0.82rem;padding:0.75rem 1.5rem;letter-spacing:0.1em;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call (732) 555-1234
+            </a>
+        </div>
+
+        <div class="mob-contact">
+            <a href="mailto:info@drriteshamin.com">info@drriteshamin.com</a>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ═══ SECTION 1: HERO ═══ -->
+        <section id="hero"
+            class="bg-navy relative overflow-hidden flex items-center pt-20 pb-12 grid-lines glow-teal-tr">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=60"
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.06] z-0" />
+            <div
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_80%_60%_at_70%_30%,rgba(14,165,160,0.12)_0%,transparent_60%),radial-gradient(ellipse_60%_80%_at_20%_80%,rgba(10,42,90,0.4)_0%,transparent_60%)]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 w-full relative z-10 py-10">
+                <div class="hero-split grid gap-12 items-center [grid-template-columns:1fr_0.85fr]">
+
+                    <!-- LEFT -->
+                    <div class="fade-up">
+                        <div class="eyebrow mb-4 flex items-center gap-3">
+                            <span class="inline-block w-7 h-px bg-teal"></span>
+                            Edison, New Jersey · Psychiatry
+                        </div>
+                        <h1 class="text-hero font-semibold text-cream mb-[0.6rem] tracking-[0.01em]">
+                            Advanced Depression<br />Treatment in Edison,<br />New Jersey
+                        </h1>
+                        <p
+                            class="font-heading text-[clamp(1.1rem,2.2vw,1.5rem)] italic font-light text-teal mb-[1.2rem] leading-[1.3]">
+                            TMS, Spravato® &amp; Ketamine Therapy
+                        </p>
+                        <p class="text-[0.97rem] leading-[1.65] text-cream/70 max-w-[500px] mb-[1.6rem] font-light">
+                            Find relief from treatment-resistant depression with safe, FDA-approved and evidence-based
+                            therapies — personalized to your unique neurological profile.
+                        </p>
+                        <!-- Urgency bar -->
+                        <a href="#contact-form"
+                            class="hero-urgency inline-flex flex-wrap items-center gap-2 bg-teal/[0.08] border border-teal/30 text-teal text-[0.72rem] font-normal tracking-[0.06em] uppercase px-3 py-[0.3rem] mb-4 hover:bg-teal/[0.14] transition-colors duration-200 no-underline">
+                            <span class="inline-block w-[6px] h-[6px] rounded-full bg-teal animate-pulse shrink-0"></span>
+                            Limited consultation spots this week — reserve yours
+                        </a>
+                        <div class="cta-buttons flex flex-wrap gap-3 mb-5">
+                            <a href="#contact-form" class="btn-teal">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 1v7m0 0l-2.5-2.5M8 8l2.5-2.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M3 11.5a8 8 0 005 1.5 8 8 0 005-1.5" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                                Book a Free Consultation
+                            </a>
+                            <a href="tel:+17325550100" class="btn-outline-white">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                                </svg>
+                                Call (732) 555-1234
+                            </a>
+                        </div>
+                        <!-- Social proof strip directly under CTAs -->
+                        <div class="flex items-center gap-3 mb-5 p-3 bg-navy-mid/60 border border-teal/[0.12]">
+                            <img src="https://images.unsplash.com/photo-1702579451557-42f707b4a434?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Sarah M."
+                                class="w-9 h-9 rounded-full object-cover border-2 border-teal shrink-0" />
+                            <div class="min-w-0">
+                                <div class="stars text-[0.65rem] leading-none mb-[0.2rem]">★★★★★</div>
+                                <p class="text-[0.78rem] italic font-light text-cream/75 m-0 leading-[1.4] truncate">
+                                    "After 4 failed medications, TMS with Dr. Amin changed my life."</p>
+                                <p class="text-[0.63rem] font-normal text-teal/70 m-0 mt-[0.15rem]">— Sarah M., Verified
+                                    TMS Patient</p>
+                            </div>
+                        </div>
+                        <hr class="thin-rule mb-4" />
+                        <div class="trust-row flex items-center flex-wrap gap-3">
+                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
+                                    class="text-gold text-[0.6rem]">✦</span> Board-Certified Psychiatrist</span>
+                            <span class="trust-sep text-teal/30 text-[0.8rem]">|</span>
+                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
+                                    class="text-gold text-[0.6rem]">✦</span> Covered by Most Insurance</span>
+                            <span class="trust-sep text-teal/30 text-[0.8rem]">|</span>
+                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
+                                    class="text-gold text-[0.6rem]">✦</span> 500+ Patients Treated</span>
+                            <span class="trust-sep text-teal/30 text-[0.8rem]">|</span>
+                            <span class="text-[0.76rem] font-light text-cream/60 flex items-center gap-[0.35rem]"><span
+                                    class="text-gold text-[0.6rem]">✦</span> 4.9★ Rating</span>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT — Floating Card -->
+                    <div class="hero-card-col fade-up fade-up-delay-2 relative">
+                        <div
+                            class="hero-card p-[1.6rem] relative shadow-[0_40px_80px_rgba(0,0,0,0.4),0_0_0_1px_rgba(14,165,160,0.1)]">
+                            <!-- Testimonial -->
+                            <div class="mb-5">
+                                <div class="stars mb-2 text-[0.9rem]">★★★★★</div>
+                                <p class="text-[0.9rem] italic font-light leading-[1.6] text-cream mb-[0.875rem]">
+                                    "After trying 4 different medications with no success, TMS therapy with Dr. Amin
+                                    completely changed my life. I finally feel like myself again."
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://images.unsplash.com/photo-1702579451557-42f707b4a434?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="Verified patient"
+                                        class="w-11 h-11 rounded-full object-cover border-2 border-teal shrink-0" />
+                                    <div>
+                                        <p class="text-[0.82rem] font-normal text-cream m-0">Sarah M.</p>
+                                        <p class="text-[0.68rem] font-light text-cream/50 m-0">Verified Patient ·
+                                            Edison, NJ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="thin-rule mb-4" />
+                            <!-- Credential Badge -->
+                            <div class="flex items-center gap-3 mb-5">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-teal/[0.12] border-2 border-teal/40 flex items-center justify-center shrink-0">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0ea5a0"
+                                        stroke-width="1.5">
+                                        <path
+                                            d="M12 15l-2 5-3-1 1-5M12 15l2 5 3-1-1-5M12 3C8.7 3 6 5.7 6 9s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p
+                                        class="text-[0.65rem] tracking-[0.1em] uppercase text-teal m-0 mb-[0.15rem] font-normal">
+                                        ABPN Certified</p>
+                                    <p class="text-[0.78rem] font-normal text-cream m-0">American Board of Psychiatry
+                                        &amp; Neurology</p>
+                                </div>
+                            </div>
+                            <hr class="thin-rule mb-4" />
+                            <!-- Mini Stats -->
+                            <div class="grid grid-cols-3 gap-2 text-center">
+                                <div>
+                                    <p class="font-heading text-2xl font-semibold text-teal m-0 leading-none">500+</p>
+                                    <p
+                                        class="text-[0.6rem] tracking-[0.07em] uppercase text-cream/50 mt-[0.2rem] m-0 font-light">
+                                        Patients</p>
+                                </div>
+                                <div class="border-l border-r border-teal/20">
+                                    <p class="font-heading text-2xl font-semibold text-teal m-0 leading-none">15+</p>
+                                    <p
+                                        class="text-[0.6rem] tracking-[0.07em] uppercase text-cream/50 mt-[0.2rem] m-0 font-light">
+                                        Years</p>
+                                </div>
+                                <div>
+                                    <p class="font-heading text-2xl font-semibold text-teal m-0 leading-none">4.9★</p>
+                                    <p
+                                        class="text-[0.6rem] tracking-[0.07em] uppercase text-cream/50 mt-[0.2rem] m-0 font-light">
+                                        Rating</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -top-4 -right-4 w-[70px] h-[70px] border border-teal/[0.18] rounded-full pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute -bottom-6 -left-6 w-[50px] h-[50px] border border-gold/[0.12] rounded-full pointer-events-none">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 2: PAIN POINT ═══ -->
+        <section id="pain" class="bg-cream text-navy relative overflow-hidden py-14">
+            <div
+                class="absolute top-0 left-0 right-0 h-px [background:linear-gradient(90deg,transparent,rgba(14,165,160,0.3),transparent)]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="pain-split grid gap-10 items-start [grid-template-columns:1fr_0.85fr]">
+
+                    <!-- LEFT -->
+                    <div class="fade-up">
+                        <div class="eyebrow mb-4">The Reality of Depression</div>
+                        <h2 class="text-h2 font-normal text-navy mb-[1.2rem]">
+                            Still Struggling with Depression<br />Despite Medication?
+                        </h2>
+                        <div class="mb-[1.6rem]">
+                            <div class="border-t border-navy/10 py-[0.9rem] flex items-start gap-[0.875rem]">
+                                <div class="w-[7px] h-[7px] rounded-full bg-teal mt-[0.4rem] shrink-0"></div>
+                                <p class="text-[0.93rem] text-navy/75 leading-[1.6] m-0 font-light">Tried multiple
+                                    medications with no lasting relief?</p>
+                            </div>
+                            <div class="border-t border-navy/10 py-[0.9rem] flex items-start gap-[0.875rem]">
+                                <div class="w-[7px] h-[7px] rounded-full bg-teal mt-[0.4rem] shrink-0"></div>
+                                <p class="text-[0.93rem] text-navy/75 leading-[1.6] m-0 font-light">Dealing with
+                                    intolerable side effects from antidepressants?</p>
+                            </div>
+                            <div class="border-t border-b border-navy/10 py-[0.9rem] flex items-start gap-[0.875rem]">
+                                <div class="w-[7px] h-[7px] rounded-full bg-teal mt-[0.4rem] shrink-0"></div>
+                                <p class="text-[0.93rem] text-navy/75 leading-[1.6] m-0 font-light">Feeling stuck,
+                                    hopeless, or exhausted by it all?</p>
+                            </div>
+                        </div>
+                        <div class="bg-navy border-l-[3px] border-l-teal px-6 py-5">
+                            <p class="font-heading text-[1.05rem] italic font-light text-cream leading-[1.6] m-0">
+                                "You're not alone — and there are advanced treatment options available right here in New
+                                Jersey."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT — Stat Boxes -->
+                    <div class="fade-up fade-up-delay-2 relative">
+                        <div class="absolute inset-0 rounded-[4px] overflow-hidden z-0">
+                            <img src="https://images.unsplash.com/photo-1527137342181-19aab11a8ee8?auto=format&fit=crop&w=700&q=80"
+                                alt="" class="w-full h-full object-cover [filter:saturate(0.3)]" />
+                            <div class="absolute inset-0 bg-cream/[0.82]"></div>
+                        </div>
+                        <div class="relative z-10">
+                            <div class="stat-box-teal p-[1.6rem] mb-3 relative overflow-hidden">
+                                <div
+                                    class="absolute -top-5 -right-2.5 font-heading text-[7rem] font-semibold text-white/[0.08] leading-none select-none">
+                                    1/3</div>
+                                <p
+                                    class="font-heading text-[clamp(2.5rem,5vw,3.8rem)] font-semibold text-white leading-none m-0 mb-[0.4rem]">
+                                    1 in 3</p>
+                                <p class="text-[0.9rem] text-white/85 font-light m-0">Antidepressants don't work for
+                                    patients with treatment-resistant depression</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3">
+                                <div
+                                    class="bg-white border border-navy/[0.08] p-5 shadow-[0_4px_24px_rgba(10,22,40,0.06)]">
+                                    <p
+                                        class="font-heading text-[2.2rem] font-semibold text-teal leading-none m-0 mb-[0.35rem]">
+                                        30%</p>
+                                    <p class="text-[0.78rem] text-navy/65 leading-[1.5] m-0 font-light">of depression
+                                        patients are classified as treatment-resistant</p>
+                                </div>
+                                <div
+                                    class="bg-white border border-navy/[0.08] p-5 shadow-[0_4px_24px_rgba(10,22,40,0.06)]">
+                                    <p
+                                        class="font-heading text-[2.2rem] font-semibold text-teal leading-none m-0 mb-[0.35rem]">
+                                        60–80%</p>
+                                    <p class="text-[0.78rem] text-navy/65 leading-[1.5] m-0 font-light">response rates
+                                        with advanced neuromodulation therapies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Clinic Photo Strip -->
+                <div class="fade-up photo-strip grid [grid-template-columns:repeat(4,1fr)] gap-2 mt-10">
+                    <div class="relative h-[250px] overflow-hidden rounded-[2px]">
+                        <img src="tms-machine.jpg" alt="Neurology equipment" class="w-full h-full object-cover " />
+                        <div class="absolute inset-0 bg-navy/30"></div>
+                    </div>
+                    <div class="relative h-[250px] overflow-hidden rounded-[2px]">
+                        <img src="interior.jpg" alt="Treatment room" class="w-full h-full object-cover " />
+                        <div class="absolute inset-0 bg-navy/30"></div>
+                    </div>
+                    <div class="relative h-[250px] overflow-hidden rounded-[2px]">
+                        <img src="clinic-interior.jpg" alt="Doctor consultation" class="w-full h-full object-cover " />
+                        <div class="absolute inset-0 bg-navy/30"></div>
+                    </div>
+                    <div class="relative h-[250px] overflow-hidden rounded-[2px]">
+                        <img src="treatment.jpg" alt="Clinic interior" class="w-full h-full object-cover " />
+                        <div class="absolute inset-0 bg-navy/30"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 3: TREATMENTS ═══ -->
+        <section id="treatments" class="bg-navy-mid text-cream py-14 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.04] z-0" />
+            <div
+                class="absolute inset-0 pointer-events-none z-0 [background:radial-gradient(ellipse_70%_50%_at_50%_50%,rgba(14,165,160,0.06)_0%,transparent_70%)]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="fade-up text-center mb-10">
+                    <div class="eyebrow mb-3">Evidence-Based Therapies</div>
+                    <h2 class="text-h2 font-normal text-cream">Four Pathways to Recovery</h2>
+                    <div class="w-10 h-0.5 bg-teal mx-auto mt-4"></div>
+                </div>
+
+                <div class="treatment-grid fade-up fade-up-delay-1">
+                    <!-- 01 TMS -->
+                    <div class="treatment-cell">
+                        <span class="ghost-number">01</span>
+                        <div class="absolute bottom-0 right-0 w-[160px] h-[110px] z-0 overflow-hidden">
+                            <!-- <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=400&q=70"
+                                alt="" class="w-full h-full object-cover opacity-[0.18]" /> -->
+                            <div
+                                class="absolute inset-0 [background:linear-gradient(to_right,#112240_0%,transparent_55%),linear-gradient(to_top,#112240_0%,transparent_55%)]">
+                            </div>
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="inline-block bg-teal/[0.12] border border-teal/30 text-teal text-[0.64rem] font-normal tracking-[0.1em] uppercase px-[0.65rem] py-[0.25rem] mb-4">FDA
+                                Approved</span>
+                            <h3 class="text-2xl font-normal text-cream mb-[0.875rem] leading-[1.2]">TMS Therapy</h3>
+                            <ul class="list-none p-0 m-0 mb-5 flex flex-col gap-[0.6rem]">
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-teal text-[0.65rem]">▸</span> Non-invasive brain stimulation
+                                    treatment</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-teal text-[0.65rem]">▸</span> No medication side effects or systemic
+                                    impact</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-teal text-[0.65rem]">▸</span> No downtime · 20–30 minute sessions
+                                </li>
+                            </ul>
+                            <a href="#contact-form"
+                                class="text-[0.78rem] font-normal text-teal no-underline inline-flex items-center gap-[0.35rem]">Learn
+                                More →</a>
+                        </div>
+                    </div>
+                    <!-- 02 Spravato -->
+                    <div class="treatment-cell border-l border-l-teal/[0.15]">
+                        <span class="ghost-number">02</span>
+                        <div class="absolute bottom-0 right-0 w-[160px] h-[110px] z-0 overflow-hidden">
+                            <!-- <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=400&q=70"
+                                alt="" class="w-full h-full object-cover opacity-[0.18]" /> -->
+                            <div
+                                class="absolute inset-0 [background:linear-gradient(to_right,#112240_0%,transparent_55%),linear-gradient(to_top,#112240_0%,transparent_55%)]">
+                            </div>
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="inline-block bg-gold/[0.10] border border-gold/35 text-gold text-[0.64rem] font-normal tracking-[0.1em] uppercase px-[0.65rem] py-[0.25rem] mb-4">Insurance
+                                Covered</span>
+                            <h3 class="text-2xl font-normal text-cream mb-[0.875rem] leading-[1.2]">Spravato®
+                                (Esketamine)</h3>
+                            <ul class="list-none p-0 m-0 mb-5 flex flex-col gap-[0.6rem]">
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-gold text-[0.65rem]">▸</span> Breakthrough for treatment-resistant
+                                    depression</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-gold text-[0.65rem]">▸</span> Fast-acting nasal spray — results
+                                    within hours</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-gold text-[0.65rem]">▸</span> Supervised in-office administration
+                                </li>
+                            </ul>
+                            <a href="#contact-form"
+                                class="text-[0.78rem] font-normal text-gold no-underline inline-flex items-center gap-[0.35rem]">Learn
+                                More →</a>
+                        </div>
+                    </div>
+                    <!-- 03 Ketamine -->
+                    <div class="treatment-cell border-t border-t-teal/[0.15]">
+                        <span class="ghost-number">03</span>
+                        <div class="absolute bottom-0 right-0 w-[160px] h-[110px] z-0 overflow-hidden">
+                            <!-- <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=400&q=70"
+                                alt="" class="w-full h-full object-cover opacity-[0.18]" /> -->
+                            <div
+                                class="absolute inset-0 [background:linear-gradient(to_right,#112240_0%,transparent_55%),linear-gradient(to_top,#112240_0%,transparent_55%)]">
+                            </div>
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="inline-block bg-teal/[0.12] border border-teal/30 text-teal text-[0.64rem] font-normal tracking-[0.1em] uppercase px-[0.65rem] py-[0.25rem] mb-4">Rapid
+                                Relief</span>
+                            <h3 class="text-2xl font-normal text-cream mb-[0.875rem] leading-[1.2]">Ketamine Therapy
+                            </h3>
+                            <ul class="list-none p-0 m-0 mb-5 flex flex-col gap-[0.6rem]">
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-teal text-[0.65rem]">▸</span> Rapid symptom relief for severe
+                                    depression &amp; anxiety</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-teal text-[0.65rem]">▸</span> Same-day effect reported by many
+                                    patients</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-teal text-[0.65rem]">▸</span> IV infusion protocol in a comfortable
+                                    setting</li>
+                            </ul>
+                            <a href="#contact-form"
+                                class="text-[0.78rem] font-normal text-teal no-underline inline-flex items-center gap-[0.35rem]">Learn
+                                More →</a>
+                        </div>
+                    </div>
+                    <!-- 04 Psychiatric Care -->
+                    <div class="treatment-cell border-t border-t-teal/[0.15] border-l border-l-teal/[0.15]">
+                        <span class="ghost-number">04</span>
+                        <div class="absolute bottom-0 right-0 w-[160px] h-[110px] z-0 overflow-hidden">
+                            <!-- <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=70"
+                                alt="" class="w-full h-full object-cover opacity-[0.18]" /> -->
+                            <div
+                                class="absolute inset-0 [background:linear-gradient(to_right,#112240_0%,transparent_55%),linear-gradient(to_top,#112240_0%,transparent_55%)]">
+                            </div>
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="inline-block bg-gold/[0.10] border border-gold/35 text-gold text-[0.64rem] font-normal tracking-[0.1em] uppercase px-[0.65rem] py-[0.25rem] mb-4">Personalized
+                                Care</span>
+                            <h3 class="text-2xl font-normal text-cream mb-[0.875rem] leading-[1.2]">Psychiatric Care
+                            </h3>
+                            <ul class="list-none p-0 m-0 mb-5 flex flex-col gap-[0.6rem]">
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-gold text-[0.65rem]">▸</span> Personalized treatment plans &amp;
+                                    medication management</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-gold text-[0.65rem]">▸</span> Integrated therapy approaches</li>
+                                <li class="text-[0.84rem] font-light text-cream/70 flex items-center gap-2"><span
+                                        class="text-gold text-[0.65rem]">▸</span> Ongoing long-term support &amp;
+                                    monitoring</li>
+                            </ul>
+                            <a href="#contact-form"
+                                class="text-[0.78rem] font-normal text-gold no-underline inline-flex items-center gap-[0.35rem]">Learn
+                                More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 4: WHY DR. RITESH ═══ -->
+        <section id="why" class="bg-cream text-navy py-14 relative overflow-hidden">
+            <div
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_70%_at_10%_50%,rgba(14,165,160,0.05)_0%,transparent_60%)]">
+            </div>
+            <div
+                class="absolute top-12 right-8 font-heading text-[clamp(100px,14vw,180px)] font-semibold text-transparent [--tw-text-opacity:1] select-none pointer-events-none leading-none [-webkit-text-stroke:1px_rgba(10,22,40,0.06)]">
+                04</div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="fade-up mb-10">
+                    <div class="eyebrow mb-3">Board-Certified · 15+ Years Experience</div>
+                    <h2 class="text-h2 font-normal text-navy max-w-[620px]">
+                        A Psychiatrist Who Stays at the Frontier of Care
+                    </h2>
+                </div>
+
+                <div class="why-split grid gap-14 items-start [grid-template-columns:1fr_1fr]">
+
+                    <!-- LEFT -->
+                    <div class="fade-up">
+                        <div class="relative mb-7 max-w-2xl">
+                            <img src="dr-ritesh.png" alt="Dr. Ritesh Amin, MD"
+                                class="w-full max-w-2xl h-[640px] object-cover object-top rounded-[4px] block shadow-[0_20px_60px_rgba(0,0,0,0.4)]" />
+                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-teal rounded-b-[4px]"></div>
+                        </div>
+                        <div class="border-l-2 border-l-teal pl-6 mb-7">
+                            <p class="pull-quote text-navy">"My goal is not just to treat symptoms — it is to restore
+                                your quality of life."</p>
+                            <p class="text-[0.75rem] tracking-[0.08em] uppercase text-teal mt-3 font-normal m-0">— Dr.
+                                Ritesh Amin, MD</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge">ABPN Board Certified</span>
+                            <span class="badge">15+ Years Experience</span>
+                            <span class="badge">NJ Licensed</span>
+                            <span class="badge">TMS Specialist</span>
+                            <span class="badge">Spravato® Certified</span>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT — Authority Points -->
+                    <div class="fade-up fade-up-delay-2">
+                        <div class="flex flex-col">
+                            <div class="flex items-start gap-6 py-[1.4rem] border-b border-navy/10">
+                                <span
+                                    class="font-heading text-[1.75rem] font-semibold text-teal shrink-0 leading-none mt-[0.1rem]">01</span>
+                                <div>
+                                    <h4 class="text-base font-normal text-navy m-0 mb-[0.35rem]">Board-Certified by the
+                                        ABPN</h4>
+                                    <p class="text-[0.84rem] text-navy/60 leading-[1.6] m-0 font-light">Certified by the
+                                        American Board of Psychiatry &amp; Neurology — the gold standard for psychiatric
+                                        excellence.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6 py-[1.4rem] border-b border-navy/10">
+                                <span
+                                    class="font-heading text-[1.75rem] font-semibold text-teal shrink-0 leading-none mt-[0.1rem]">02</span>
+                                <div>
+                                    <h4 class="text-base font-normal text-navy m-0 mb-[0.35rem]">Advanced
+                                        Neuromodulation Specialist</h4>
+                                    <p class="text-[0.84rem] text-navy/60 leading-[1.6] m-0 font-light">Specialized in
+                                        treatment-resistant depression and the latest neuromodulation therapies
+                                        including TMS and Spravato®.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6 py-[1.4rem] border-b border-navy/10">
+                                <span
+                                    class="font-heading text-[1.75rem] font-semibold text-teal shrink-0 leading-none mt-[0.1rem]">03</span>
+                                <div>
+                                    <h4 class="text-base font-normal text-navy m-0 mb-[0.35rem]">Individually Tailored
+                                        Patient Care</h4>
+                                    <p class="text-[0.84rem] text-navy/60 leading-[1.6] m-0 font-light">No two patients
+                                        are alike. Every treatment plan is built from scratch around your unique
+                                        neurological profile and life circumstances.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-6 py-[1.4rem]">
+                                <span
+                                    class="font-heading text-[1.75rem] font-semibold text-teal shrink-0 leading-none mt-[0.1rem]">04</span>
+                                <div>
+                                    <h4 class="text-base font-normal text-navy m-0 mb-[0.35rem]">Evidence-Based,
+                                        FDA-Approved Only</h4>
+                                    <p class="text-[0.84rem] text-navy/60 leading-[1.6] m-0 font-light">Every therapy
+                                        offered has been clinically validated and FDA-approved — so you can trust what
+                                        you're receiving.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-5 text-[0.88rem] leading-[1.65] text-navy/60 max-w-[400px] font-light">
+                            Dr. Amin combines clinical precision with genuine compassion — ensuring every patient
+                            receives the most advanced, evidence-based care available in New Jersey.
+                        </p>
+                        <div class="grid grid-cols-2 gap-2 mt-6 max-w-xs">
+                            <div class="relative h-20 overflow-hidden rounded-[2px]">
+                                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=300&q=80"
+                                    alt="Clinic interior" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-navy/35"></div>
+                                <span
+                                    class="absolute bottom-[0.4rem] left-2 text-[0.58rem] font-normal text-white/70 tracking-[0.06em] uppercase">Our
+                                    Clinic</span>
+                            </div>
+                            <div class="relative h-20 overflow-hidden rounded-[2px]">
+                                <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=300&q=80"
+                                    alt="TMS equipment" class="w-full h-full object-cover" />
+                                <div class="absolute inset-0 bg-navy/35"></div>
+                                <span
+                                    class="absolute bottom-[0.4rem] left-2 text-[0.58rem] font-normal text-white/70 tracking-[0.06em] uppercase">Equipment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ IMAGE BANNER DIVIDER ═══ -->
+        <div class="relative h-[220px] overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&q=70"
+                alt="" class="absolute inset-0 w-full h-full object-cover object-[center_40%]" />
+            <div
+                class="absolute inset-0 [background:linear-gradient(135deg,rgba(10,22,40,0.88)_0%,rgba(14,165,160,0.3)_50%,rgba(10,22,40,0.88)_100%)]">
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center flex-col text-center px-8">
+                <p class="text-banner italic font-light text-white leading-[1.4] max-w-[700px] m-0 mb-3">"Depression is
+                    treatable. With the right care, most patients see meaningful, lasting improvement."</p>
+                <span class="text-[0.72rem] font-normal text-white/70 tracking-[0.12em] uppercase">Dr. Ritesh Amin, MD —
+                    Board-Certified Psychiatrist</span>
+            </div>
+        </div>
+
+        <!-- ═══ SECTION 5: HOW IT WORKS ═══ -->
+        <section id="process" class="bg-cream text-navy py-14 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=1400&q=60"
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.05] z-0" />
+            <div
+                class="absolute top-0 left-0 right-0 h-px z-10 [background:linear-gradient(90deg,transparent,rgba(14,165,160,0.25),transparent)]">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 right-0 h-px z-10 [background:linear-gradient(90deg,transparent,rgba(14,165,160,0.25),transparent)]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="fade-up text-center mb-12">
+                    <div class="eyebrow mb-3">Simple. Compassionate. Effective.</div>
+                    <h2 class="text-h2 font-normal text-navy">Your Path to Relief Starts Here</h2>
+                </div>
+
+                <div
+                    class="steps-row flex items-start justify-center gap-0 relative fade-up fade-up-delay-1 max-w-[860px] mx-auto mb-10">
+                    <!-- Step 1 -->
+                    <div class="flex-1 text-center px-6 relative">
+                        <div
+                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#0ea5a0,#0c8f8a)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(14,165,160,0.28)]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="1.5" stroke-linecap="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" />
+                                <path d="M16 2v4M8 2v4M3 10h18" />
+                            </svg>
+                        </div>
+                        <div
+                            class="absolute top-8 left-[calc(50%+2rem)] right-0 border-t-2 border-dashed border-teal/[0.28]">
+                        </div>
+                        <div
+                            class="inline-block bg-teal/10 border border-teal/25 px-2 py-[0.15rem] text-[0.6rem] font-normal tracking-[0.1em] uppercase text-teal mb-[0.6rem]">
+                            Step 01</div>
+                        <h3 class="text-[1.2rem] font-normal text-navy mb-2">Book Consultation</h3>
+                        <p class="text-[0.83rem] text-navy/60 leading-[1.6] font-light m-0">Schedule a free,
+                            no-obligation consultation online or by phone — we'll find a time that works for you.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex-1 text-center px-6 relative">
+                        <div
+                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#0ea5a0,#0c8f8a)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(14,165,160,0.28)]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="1.5" stroke-linecap="round">
+                                <circle cx="12" cy="12" r="4" />
+                                <path
+                                    d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                            </svg>
+                        </div>
+                        <div
+                            class="absolute top-8 left-[calc(50%+2rem)] right-0 border-t-2 border-dashed border-teal/[0.28]">
+                        </div>
+                        <div
+                            class="inline-block bg-teal/10 border border-teal/25 px-2 py-[0.15rem] text-[0.6rem] font-normal tracking-[0.1em] uppercase text-teal mb-[0.6rem]">
+                            Step 02</div>
+                        <h3 class="text-[1.2rem] font-normal text-navy mb-2">Get Evaluated</h3>
+                        <p class="text-[0.83rem] text-navy/60 leading-[1.6] font-light m-0">Comprehensive psychiatric
+                            assessment to identify your ideal treatment path and understand your unique needs.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex-1 text-center px-6 relative">
+                        <div
+                            class="w-16 h-16 rounded-full [background:linear-gradient(135deg,#0ea5a0,#0c8f8a)] flex items-center justify-center mx-auto mb-[1.1rem] shadow-[0_8px_28px_rgba(14,165,160,0.28)]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white"
+                                stroke-width="1.5" stroke-linecap="round">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <div
+                            class="inline-block bg-teal/10 border border-teal/25 px-2 py-[0.15rem] text-[0.6rem] font-normal tracking-[0.1em] uppercase text-teal mb-[0.6rem]">
+                            Step 03</div>
+                        <h3 class="text-[1.2rem] font-normal text-navy mb-2">Start Treatment</h3>
+                        <p class="text-[0.83rem] text-navy/60 leading-[1.6] font-light m-0">Begin your personalized
+                            treatment plan and start tracking measurable improvement in your mood and wellbeing.</p>
+                    </div>
+                </div>
+
+                <div class="fade-up text-center">
+                    <a href="#contact-form" class="btn-teal !text-[0.88rem] !py-[0.875rem] !px-9">Book Your Free
+                        Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TESTIMONIALS STRIP ═══ -->
+        <section id="testimonials" class="bg-cream-dark text-navy py-14 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=1600&q=60"
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.04] z-0" />
+            <div
+                class="absolute inset-0 pointer-events-none z-0 [background:radial-gradient(ellipse_70%_60%_at_50%_50%,rgba(14,165,160,0.06)_0%,transparent_65%)]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="fade-up flex items-end justify-between mb-10 flex-wrap gap-4">
+                    <div>
+                        <div class="eyebrow mb-2">Real Patient Outcomes</div>
+                        <h2 class="text-h2-sm font-normal text-navy m-0">What Our Patients Say</h2>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="stars text-base">★★★★★</div>
+                        <span class="text-[0.82rem] font-light text-navy/50">4.9 avg · 200+ verified reviews</span>
+                    </div>
+                </div>
+
+                <div class="fade-up fade-up-delay-1 testimonials-grid grid grid-cols-3 gap-4">
+                    <!-- Card 1 -->
+                    <div class="bg-white border border-navy/10 border-t-2 border-t-teal p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 overflow-hidden opacity-[0.08]">
+                            <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=200&q=60"
+                                alt="" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="stars mb-3 text-[0.8rem]">★★★★★</div>
+                        <p class="text-[0.88rem] italic font-light leading-[1.65] text-navy/75 mb-5">"TMS therapy gave
+                            me my life back. After 18 months of failed medications, I noticed improvement within the
+                            first 2 weeks. Dr. Amin genuinely cares."</p>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                                alt="Patient"
+                                class="w-[38px] h-[38px] rounded-full object-cover border-2 border-teal/40 shrink-0" />
+                            <div>
+                                <p class="text-[0.8rem] font-normal text-navy m-0">Amanda R.</p>
+                                <p class="text-[0.65rem] font-light text-navy/45 m-0">TMS Patient · New Brunswick, NJ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white border border-navy/10 border-t-2 border-t-gold p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 overflow-hidden opacity-[0.08]">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=200&q=60"
+                                alt="" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="stars mb-3 text-[0.8rem]">★★★★★</div>
+                        <p class="text-[0.88rem] italic font-light leading-[1.65] text-navy/75 mb-5">"Spravato worked
+                            faster than anything I've tried. The office staff are incredible — they made the whole
+                            process comfortable and stress-free."</p>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                                alt="Patient"
+                                class="w-[38px] h-[38px] rounded-full object-cover border-2 border-gold/40 shrink-0" />
+                            <div>
+                                <p class="text-[0.8rem] font-normal text-navy m-0">Marcus L.</p>
+                                <p class="text-[0.65rem] font-light text-navy/45 m-0">Spravato® Patient · Edison, NJ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white border border-navy/10 border-t-2 border-t-teal p-6 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-20 h-20 overflow-hidden opacity-[0.08]">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=200&q=60"
+                                alt="" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="stars mb-3 text-[0.8rem]">★★★★★</div>
+                        <p class="text-[0.88rem] italic font-light leading-[1.65] text-navy/75 mb-5">"I was skeptical
+                            about ketamine therapy but Dr. Amin explained everything clearly. Three sessions in, my
+                            depression lifted significantly. Highly recommend."</p>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80"
+                                alt="Patient"
+                                class="w-[38px] h-[38px] rounded-full object-cover border-2 border-teal/40 shrink-0" />
+                            <div>
+                                <p class="text-[0.8rem] font-normal text-navy m-0">Jennifer K.</p>
+                                <p class="text-[0.65rem] font-light text-navy/45 m-0">Ketamine Patient · Woodbridge, NJ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Band -->
+                <div
+                    class="fade-up fade-up-delay-2 stats-band grid grid-cols-4 gap-0 mt-8 border border-navy/[0.12] bg-white">
+                    <div class="p-5 text-center border-r border-navy/[0.12]">
+                        <p class="font-heading text-[2rem] font-semibold text-teal m-0 leading-none">68%</p>
+                        <p class="text-[0.72rem] font-light text-navy/50 mt-[0.3rem] m-0 tracking-[0.04em]">TMS Response
+                            Rate</p>
+                    </div>
+                    <div class="p-5 text-center border-r border-navy/[0.12]">
+                        <p class="font-heading text-[2rem] font-semibold text-teal m-0 leading-none">72%</p>
+                        <p class="text-[0.72rem] font-light text-navy/50 mt-[0.3rem] m-0 tracking-[0.04em]">Spravato®
+                            Remission</p>
+                    </div>
+                    <div class="p-5 text-center border-r border-navy/[0.12]">
+                        <p class="font-heading text-[2rem] font-semibold text-teal m-0 leading-none">500+</p>
+                        <p class="text-[0.72rem] font-light text-navy/50 mt-[0.3rem] m-0 tracking-[0.04em]">Patients
+                            Treated</p>
+                    </div>
+                    <div class="p-5 text-center">
+                        <p class="font-heading text-[2rem] font-semibold text-teal m-0 leading-none">4.9★</p>
+                        <p class="text-[0.72rem] font-light text-navy/50 mt-[0.3rem] m-0 tracking-[0.04em]">Average
+                            Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 6: INSURANCE ═══ -->
+        <section id="insurance" class="insurance-section text-white py-14 relative overflow-hidden">
+            <div
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_70%_60%_at_20%_50%,rgba(255,255,255,0.05)_0%,transparent_60%)]">
+            </div>
+
+            <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+                <div class="fade-up">
+                    <div class="flex items-center justify-center gap-4 mb-[0.6rem]">
+                        <img src="https://images.unsplash.com/photo-1767878903625-aa90ac9ebef1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="w-[52px] h-[52px] rounded-full object-cover shrink-0" />
+                        <h2 class="text-h2 font-normal text-white m-0">Most Insurance Plans Accepted</h2>
+                    </div>
+                    <div class="eyebrow text-white/60 mb-3">No Financial Barriers to Getting Better</div>
+                    <p class="text-[0.93rem] text-white/68 leading-[1.65] max-w-[500px] mx-auto mt-4 mb-8 font-light">
+                        We work with a wide range of insurance providers to ensure advanced psychiatric care is
+                        accessible — without surprise bills or coverage gaps.
+                    </p>
+                </div>
+
+                <div class="fade-up fade-up-delay-1 flex flex-wrap justify-center gap-3 mt-4 mb-8">
+                    <span class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">Major
+                        PPOs</span>
+                    <span
+                        class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">Medicare</span>
+                    <span
+                        class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">Medicaid</span>
+                    <span class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">Blue
+                        Cross Blue Shield</span>
+                    <span
+                        class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">Aetna</span>
+                    <span class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">United
+                        Healthcare</span>
+                    <span
+                        class="bg-white/10 border border-white/20 px-4 py-[0.4rem] text-[0.82rem] font-normal">Cigna</span>
+                </div>
+
+                <div class="fade-up fade-up-delay-2 flex flex-wrap justify-center gap-8 mb-8">
+                    <div class="flex items-center gap-2">
+                        <svg width="17" height="17" viewBox="0 0 18 18" fill="none">
+                            <circle cx="9" cy="9" r="9" fill="rgba(255,255,255,0.15)" />
+                            <path d="M5 9l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="text-[0.87rem] font-normal">Free Insurance Verification</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg width="17" height="17" viewBox="0 0 18 18" fill="none">
+                            <circle cx="9" cy="9" r="9" fill="rgba(255,255,255,0.15)" />
+                            <path d="M5 9l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="text-[0.87rem] font-normal">Flexible Financing Available</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg width="17" height="17" viewBox="0 0 18 18" fill="none">
+                            <circle cx="9" cy="9" r="9" fill="rgba(255,255,255,0.15)" />
+                            <path d="M5 9l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="text-[0.87rem] font-normal">No Surprise Billing</span>
+                    </div>
+                </div>
+
+                <div class="fade-up fade-up-delay-3">
+                    <a href="#contact-form" class="btn-white-navy">Check Your Coverage Now — It's Free</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ CONTACT FORM SECTION ═══ -->
+        <section id="contact-form" class="bg-cream text-navy py-14 relative overflow-hidden">
+            <div
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_60%_70%_at_80%_40%,rgba(14,165,160,0.05)_0%,transparent_60%),radial-gradient(ellipse_50%_50%_at_20%_80%,rgba(14,165,160,0.04)_0%,transparent_60%)]">
+            </div>
+            <div
+                class="absolute inset-0 pointer-events-none [background-image:linear-gradient(rgba(10,22,40,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(10,22,40,0.03)_1px,transparent_1px)] [background-size:60px_60px]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="form-split grid gap-12 items-start [grid-template-columns:1fr_1.15fr]">
+
+                    <!-- LEFT — Copy -->
+                    <div class="fade-up pt-2">
+                        <div class="eyebrow mb-4">Start Your Journey</div>
+                        <h2 class="text-h2-form font-normal text-navy mb-[0.875rem]">Book Your Free<br />Consultation
+                        </h2>
+                        <p class="text-[0.9rem] leading-[1.65] text-navy/60 max-w-[380px] mb-8 font-light">
+                            Fill out the form and our team will reach out within 24 hours to confirm your appointment
+                            and verify your insurance.
+                        </p>
+                        <div class="flex flex-col gap-[0.875rem]">
+                            <div class="flex items-center gap-3">
+                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+                                    <circle cx="9" cy="9" r="9" fill="rgba(14,165,160,0.15)" />
+                                    <path d="M5 9l3 3 5-5" stroke="#0ea5a0" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="text-[0.87rem] font-light text-navy/70">No obligation — free to book and
+                                    cancel</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+                                    <circle cx="9" cy="9" r="9" fill="rgba(14,165,160,0.15)" />
+                                    <path d="M5 9l3 3 5-5" stroke="#0ea5a0" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="text-[0.87rem] font-light text-navy/70">Insurance verified free before your
+                                    visit</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
+                                    <circle cx="9" cy="9" r="9" fill="rgba(14,165,160,0.15)" />
+                                    <path d="M5 9l3 3 5-5" stroke="#0ea5a0" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="text-[0.87rem] font-light text-navy/70">Response within 24 hours
+                                    guaranteed</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 relative overflow-hidden rounded-[2px]">
+                            <img src="https://images.unsplash.com/photo-1586974175094-0a7259238613?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Patient recovery"
+                                class="w-full h-[140px] object-cover object-center block object-[center_30%]" />
+                            <div
+                                class="absolute inset-0 [background:linear-gradient(to_bottom,transparent_40%,rgba(10,22,40,0.85)_100%)]">
+                            </div>
+                            <div class="absolute bottom-3 left-4 right-4">
+                                <p class="text-[0.72rem] font-light text-white/70 m-0 italic">"Recovery is possible.
+                                    Take the first step."</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 p-5 pl-6 bg-white border border-navy/10 border-l-[3px] border-l-teal">
+                            <div class="stars mb-2 text-[0.8rem]">★★★★★</div>
+                            <p class="text-[0.83rem] italic font-light text-navy/65 leading-[1.6] m-0 mb-[0.6rem]">"The
+                                intake process was simple and the team responded within a few hours. Booking was
+                                stress-free."</p>
+                            <p class="text-[0.7rem] font-normal text-teal m-0 tracking-[0.04em]">— James T., TMS Patient
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT — Form -->
+                    <div class="fade-up fade-up-delay-1">
+                        <div
+                            class="bg-[rgba(17,34,64,0.8)] border border-teal/20 border-t-[3px] border-t-teal rounded-[4px] p-[1.8rem]">
+                            <p class="text-[0.78rem] font-light text-cream/50 m-0 mb-5 leading-[1.5]">Takes 30 seconds.
+                                We'll handle the rest — including insurance verification.</p>
+                            <form accept-charset="UTF-8" action="https://app.formester.com/forms/xk27PIpuV/submissions" method="POST">
+                                <div class="mb-4">
+                                    <label class="form-label" for="full_name">Your Name</label>
+                                    <input type="text" id="full_name" name="full_name" class="form-input" placeholder="First and last name" required />
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="phone">Best Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="(732) 555-1234" required />
+                                </div>
+                                <div class="mb-[1.4rem]">
+                                    <label class="form-label" for="message">What are you struggling with?</label>
+                                    <textarea id="message" name="message" class="form-input resize-none" rows="3"
+                                        placeholder="e.g. depression that isn't responding to medication, anxiety, hopelessness…"
+                                        required></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="btn-teal w-full justify-center !text-[0.82rem] !py-[0.875rem] tracking-[0.08em]">
+                                    Request My Free Consultation →
+                                </button>
+                                <p
+                                    class="text-[0.68rem] font-light text-cream/35 text-center mt-[0.875rem] leading-[1.5] m-0">
+                                    HIPAA-compliant · We never share your data · Response within 24 hrs
+                                </p>
+                            </form>
+                            <div id="form-success" class="hidden text-center py-8 px-4">
+                                <div
+                                    class="w-[52px] h-[52px] rounded-full bg-teal/[0.15] border-2 border-teal flex items-center justify-center mx-auto mb-4">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0ea5a0"
+                                        stroke-width="2">
+                                        <path d="M20 6L9 17l-5-5" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-[1.3rem] font-normal text-cream mb-2">Request Received!</h3>
+                                <p class="text-[0.87rem] text-cream/55 font-light m-0">We'll reach out within 24 hours
+                                    to confirm your appointment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 7: FAQ ═══ -->
+        <section id="faq" class="bg-cream text-navy py-14 relative overflow-hidden">
+            <div
+                class="absolute inset-0 pointer-events-none [background:radial-gradient(ellipse_50%_60%_at_80%_30%,rgba(14,165,160,0.05)_0%,transparent_60%)]">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="faq-split grid gap-14 items-start [grid-template-columns:1fr_1.2fr]">
+
+                    <!-- LEFT -->
+                    <div class="fade-up sticky top-24">
+                        <div class="eyebrow mb-4">Common Questions</div>
+                        <h2 class="text-h2-form font-normal text-navy mb-4">
+                            Answers to What<br />You're Wondering
+                        </h2>
+                        <p class="text-[0.88rem] text-navy/60 leading-[1.65] max-w-[300px] mb-7 font-light">
+                            We know you have questions before starting a new treatment. Here are the ones we hear most
+                            often.
+                        </p>
+                        <a href="#contact-form" class="btn-teal !text-[0.76rem] !py-[0.65rem] !px-5">Ask Dr. Amin
+                            Directly →</a>
+
+                        <div class="mt-8 relative overflow-hidden rounded-[2px] max-w-[300px]">
+                            <img src="interior.jpg" alt="Modern clinic interior"
+                                class="w-full h-[160px] object-cover block" />
+                            <div class="absolute inset-0 bg-navy/45"></div>
+                            <div class="absolute bottom-0 left-0 right-0 px-3 py-3 ">
+                                <p class="text-[0.7rem] font-normal text-white/85 m-0 tracking-[0.05em] uppercase">
+                                    Edison, NJ Clinic</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT — Accordion -->
+                    <div class="fade-up fade-up-delay-1">
+                        <div class="faq-item py-5">
+                            <button onclick="toggleFaq(this)"
+                                class="w-full flex justify-between items-center bg-transparent border-none cursor-pointer text-left p-0 gap-4">
+                                <span class="font-heading text-[1.05rem] font-normal text-navy">Is TMS therapy
+                                    safe?</span>
+                                <span
+                                    class="faq-toggle text-teal text-[1.3rem] font-light shrink-0 leading-none">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[0.84rem] font-light text-navy/65 leading-[1.7] pt-[0.875rem] m-0">Yes.
+                                    TMS (Transcranial Magnetic Stimulation) is FDA-approved and has been used safely for
+                                    over a decade. It is non-invasive, drug-free, and does not require sedation. Most
+                                    patients experience no side effects beyond mild scalp discomfort during the initial
+                                    sessions.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item py-5">
+                            <button onclick="toggleFaq(this)"
+                                class="w-full flex justify-between items-center bg-transparent border-none cursor-pointer text-left p-0 gap-4">
+                                <span class="font-heading text-[1.05rem] font-normal text-navy">How quickly does
+                                    Spravato® work?</span>
+                                <span
+                                    class="faq-toggle text-teal text-[1.3rem] font-light shrink-0 leading-none">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[0.84rem] font-light text-navy/65 leading-[1.7] pt-[0.875rem] m-0">Many
+                                    patients experience measurable improvement within hours to days of their first
+                                    Spravato® session — significantly faster than traditional antidepressants which can
+                                    take 4–8 weeks. This rapid onset is one of the key advantages for patients with
+                                    severe or treatment-resistant depression.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item py-5">
+                            <button onclick="toggleFaq(this)"
+                                class="w-full flex justify-between items-center bg-transparent border-none cursor-pointer text-left p-0 gap-4">
+                                <span class="font-heading text-[1.05rem] font-normal text-navy">Is ketamine therapy
+                                    covered by insurance?</span>
+                                <span
+                                    class="faq-toggle text-teal text-[1.3rem] font-light shrink-0 leading-none">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[0.84rem] font-light text-navy/65 leading-[1.7] pt-[0.875rem] m-0">
+                                    Coverage varies by plan. Spravato® (esketamine nasal spray) is FDA-approved and
+                                    frequently covered by major insurance plans. IV ketamine infusions may require prior
+                                    authorization or out-of-pocket payment. We provide free insurance verification to
+                                    clarify your specific benefits before you commit to anything.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item py-5">
+                            <button onclick="toggleFaq(this)"
+                                class="w-full flex justify-between items-center bg-transparent border-none cursor-pointer text-left p-0 gap-4">
+                                <span class="font-heading text-[1.05rem] font-normal text-navy">How long do treatment
+                                    sessions take?</span>
+                                <span
+                                    class="faq-toggle text-teal text-[1.3rem] font-light shrink-0 leading-none">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[0.84rem] font-light text-navy/65 leading-[1.7] pt-[0.875rem] m-0">TMS
+                                    sessions are typically 20–30 minutes and require no recovery time — patients often
+                                    return to work immediately after. Spravato® sessions are approximately 2 hours
+                                    including a mandatory observation period. Ketamine IV infusions typically last 40–60
+                                    minutes in a relaxed clinical setting.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item py-5">
+                            <button onclick="toggleFaq(this)"
+                                class="w-full flex justify-between items-center bg-transparent border-none cursor-pointer text-left p-0 gap-4">
+                                <span class="font-heading text-[1.05rem] font-normal text-navy">Who is eligible for
+                                    these treatments?</span>
+                                <span
+                                    class="faq-toggle text-teal text-[1.3rem] font-light shrink-0 leading-none">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[0.84rem] font-light text-navy/65 leading-[1.7] pt-[0.875rem] m-0">Most
+                                    adults with a diagnosis of major depressive disorder or treatment-resistant
+                                    depression are eligible. Dr. Amin will conduct a thorough evaluation during your
+                                    consultation to determine which treatment is best suited for your specific history,
+                                    symptoms, and medical background. No prior psychiatrist is required.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item !border-b-0 py-5">
+                            <button onclick="toggleFaq(this)"
+                                class="w-full flex justify-between items-center bg-transparent border-none cursor-pointer text-left p-0 gap-4">
+                                <span class="font-heading text-[1.05rem] font-normal text-navy">What makes Dr. Amin
+                                    different from a regular psychiatrist?</span>
+                                <span
+                                    class="faq-toggle text-teal text-[1.3rem] font-light shrink-0 leading-none">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p class="text-[0.84rem] font-light text-navy/65 leading-[1.7] pt-[0.875rem] m-0">Dr.
+                                    Amin specializes exclusively in advanced and treatment-resistant depression —
+                                    offering TMS, Spravato®, and Ketamine therapies that most general psychiatrists
+                                    don't provide. He is board-certified by the ABPN, has 15+ years of experience, and
+                                    maintains a small patient panel to ensure deeply personalized care for every
+                                    individual.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ SECTION 8: FINAL CTA ═══ -->
+        <section id="contact" class="bg-navy text-cream py-14 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1400&q=80"
+                alt="" class="absolute inset-0 w-full h-full object-cover opacity-[0.12] z-0" />
+            <div class="absolute inset-0 bg-navy/[0.88] z-0"></div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] [background:radial-gradient(circle,rgba(14,165,160,0.12)_0%,transparent_65%)] pointer-events-none z-0">
+            </div>
+            <div
+                class="absolute inset-0 pointer-events-none z-0 [background-image:linear-gradient(rgba(14,165,160,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(14,165,160,0.03)_1px,transparent_1px)] [background-size:60px_60px]">
+            </div>
+
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                <div class="fade-up mb-5">
+                    <span
+                        class="inline-flex items-center gap-2 bg-teal/[0.12] border border-teal/35 text-teal text-[0.68rem] font-normal tracking-[0.1em] uppercase px-[0.875rem] py-[0.3rem] rounded-full">
+                        <span class="text-[0.75rem]">⚡</span> Limited Slots This Week
+                    </span>
+                </div>
+                <div class="fade-up fade-up-delay-1">
+                    <h2 class="text-hero font-normal text-cream mb-[0.6rem]">
+                        Ready to Feel Like<br />Yourself Again?
+                    </h2>
+                    <p class="text-[0.8rem] text-teal font-normal tracking-[0.06em] mt-4 uppercase mb-8">
+                        Limited consultation slots available. Take the first step today.
+                    </p>
+                </div>
+                <div class="fade-up mt-6 fade-up-delay-2 cta-buttons flex flex-wrap justify-center gap-[0.875rem] mb-8">
+                    <a href="#contact-form" class="btn-teal !text-[0.85rem] !py-[0.875rem] !px-7">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                        </svg>
+                        Book Appointment
+                    </a>
+                    <a href="tel:+17325551234" class="btn-outline-white !text-[0.85rem] !py-[0.875rem] !px-7">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                        Call Now
+                    </a>
+                    <a href="#contact-form" class="btn-outline-gold !text-[0.85rem] !py-[0.875rem] !px-7">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                        Verify Insurance
+                    </a>
+                </div>
+                <div class="fade-up fade-up-delay-3">
+                    <hr class="thin-rule mb-6" />
+                    <div class="flex flex-wrap justify-center gap-7">
+                        <div class="flex items-center gap-[0.4rem] text-[0.82rem] font-light text-cream/50">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            Edison, New Jersey
+                        </div>
+                        <div class="flex items-center gap-[0.4rem] text-[0.82rem] font-light text-cream/50">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            732-555-1234
+                        </div>
+                        <!-- <div class="flex items-center gap-[0.4rem] text-[0.82rem] font-light text-cream/50">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            info@drriteshamin.com
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-deep text-cream py-10 pb-6 border-t border-teal/[0.12]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="footer-grid grid [grid-template-columns:1.5fr_1fr_1fr_1.25fr] gap-10 mb-8">
+                <!-- Logo + Tagline -->
+                <div>
+                    <div class="mb-[0.875rem]">
+                        <img src="logo.png" alt="Dr. Ritesh Amin" class="w-auto h-16">
+                    </div>
+                    <p class="text-[0.82rem] text-cream/45 leading-[1.65] max-w-[240px] font-light mb-[0.875rem]">
+                        Advanced depression treatment in Edison, NJ — restoring quality of life through evidence-based,
+                        FDA-approved therapies.
+                    </p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="badge !text-[0.6rem]">ABPN Certified</span>
+                        <span class="badge !text-[0.6rem]">NJ Licensed</span>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Quick Links</h5>
+                    <ul class="list-none p-0 m-0 flex flex-col gap-[0.6rem]">
+                        <li><a href="#hero" class="footer-link">Home</a></li>
+                        <li><a href="#why" class="footer-link">About Dr. Amin</a></li>
+                        <li><a href="#insurance" class="footer-link">Insurance</a></li>
+                        <li><a href="#faq" class="footer-link">FAQ</a></li>
+                        <li><a href="#contact-form" class="footer-link">Book Consultation</a></li>
+                    </ul>
+                </div>
+                <!-- Treatments -->
+                <div>
+                    <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Treatments</h5>
+                    <ul class="list-none p-0 m-0 flex flex-col gap-[0.6rem]">
+                        <li><a href="#treatments" class="footer-link">TMS Therapy</a></li>
+                        <li><a href="#treatments" class="footer-link">Spravato® (Esketamine)</a></li>
+                        <li><a href="#treatments" class="footer-link">Ketamine Therapy</a></li>
+                        <li><a href="#treatments" class="footer-link">Psychiatric Care</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div>
+                    <h5 class="text-[0.65rem] font-normal tracking-[0.12em] uppercase text-teal mb-4">Contact</h5>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex items-start gap-[0.65rem]">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)"
+                                stroke-width="1.5" class="mt-[0.2rem] shrink-0">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="text-[0.82rem] font-light text-cream/55 leading-[1.55]">35-37 Progress St suite
+                                aa5, <br />Edison, NJ 08820, United States</span>
+                        </div>
+                        <div class="flex items-center gap-[0.65rem]">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)"
+                                stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            <a href="tel:+17325551234" class="footer-link">732-555-1234</a>
+                        </div>
+                        <!-- <div class="flex items-center gap-[0.65rem]">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(14,165,160,0.6)"
+                                stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:info@drriteshamin.com" class="footer-link">info@drriteshamin.com</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-teal/10 pt-5 flex flex-wrap justify-between items-center gap-3">
+                <p class="text-[0.72rem] font-light text-cream/30 m-0">© 2025 Dr. Ritesh Amin, MD · All rights reserved
+                </p>
+                <p class="text-[0.7rem] font-light text-cream/[0.28] m-0 max-w-[460px] text-right leading-[1.5]">
+                    This website is for informational purposes only and is not a substitute for emergency medical care.
+                    If you are in crisis, call 988 (Suicide &amp; Crisis Lifeline) or 911 immediately.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky Nav
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        // Mobile Menu
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        }
+
+        // FAQ Accordion
+        function toggleFaq(btn) {
+            const toggle = btn.querySelector('.faq-toggle');
+            const answer = btn.nextElementSibling;
+            const isOpen = answer.classList.contains('open');
+            document.querySelectorAll('.faq-answer.open').forEach(el => el.classList.remove('open'));
+            document.querySelectorAll('.faq-toggle.open').forEach(el => el.classList.remove('open'));
+            if (!isOpen) {
+                answer.classList.add('open');
+                toggle.classList.add('open');
+            }
+        }
+
+        // Scroll Animations
+        const fadeEls = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+        fadeEls.forEach(el => observer.observe(el));
+
+        // Footer responsive grid
+        function handleFooterGrid() {
+            const grid = document.querySelector('.footer-grid');
+            if (!grid) return;
+            grid.style.gridTemplateColumns = window.innerWidth < 768 ? '1fr 1fr' : '1.5fr 1fr 1fr 1.25fr';
+        }
+        handleFooterGrid();
+        window.addEventListener('resize', handleFooterGrid, { passive: true });
+    </script>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+17325550100" id="float-call" aria-label="Call Dr. Ritesh Amin" title="Call (732) 555-1234">
+        <span id="float-call-label">Call Us</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.7 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.08 6.08l.96-.96a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+    </a>
+
+    <style>
+        #float-call {
+            position: fixed;
+            bottom: 1.75rem;
+            right: 1.75rem;
+            z-index: 990;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #0ea5a0;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem 0.75rem 1rem;
+            border-radius: 100px;
+            box-shadow: 0 8px 32px rgba(14, 165, 160, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        #float-call::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 100px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            animation: float-ring 2s ease-out infinite;
+        }
+
+        @keyframes float-ring {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: scale(1.35);
+                opacity: 0;
+            }
+        }
+
+        #float-call:hover {
+            background: #0c8f8a;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(14, 165, 160, 0.55), 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        #float-call svg {
+            flex-shrink: 0;
+        }
+
+        /* Collapse to icon-only on mobile */
+        @media (max-width: 480px) {
+            #float-call {
+                padding: 0.875rem;
+                border-radius: 50%;
+            }
+
+            #float-call-label {
+                display: none;
+            }
+        }
+    </style>
+
+<!-- Sticky Bottom Strip -->
+<div id="bottom-strip">
+    <div id="bottom-strip-inner">
+        <div id="bottom-strip-shimmer"></div>
+        <div id="bottom-strip-content">
+            <span id="bottom-strip-dot"></span>
+            <span id="bottom-strip-text">
+                <span id="bottom-strip-highlight">Limited appointments available this week</span>
+                <span id="bottom-strip-divider">·</span>
+                Consultations fill fast — don't miss your chance to start healing.
+            </span>
+            <a href="#contact-form" id="bottom-strip-cta">Claim Your Spot →</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    #bottom-strip {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 980;
+        height: 38px;
+        background: #0a1628;
+        border-top: 1px solid rgba(14, 165, 160, 0.2);
+        overflow: hidden;
+    }
+
+    #bottom-strip-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Base iridescent wash */
+    #bottom-strip {
+        background: linear-gradient(90deg, #0a1628 0%, #0d1f3c 40%, #0a1f35 60%, #0a1628 100%);
+    }
+
+    /* Shimmer layer */
+    #bottom-strip-shimmer {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+    }
+
+    /* Primary beam — bright teal-white lance */
+    #bottom-strip-shimmer::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -60%;
+        width: 40%;
+        height: 100%;
+        background: linear-gradient(
+            105deg,
+            transparent        0%,
+            rgba(14,165,160,0.04)  20%,
+            rgba(14,165,160,0.22)  45%,
+            rgba(255,255,255,0.18) 50%,
+            rgba(201,169,110,0.18) 55%,
+            rgba(14,165,160,0.06)  75%,
+            transparent        100%
+        );
+        filter: blur(1px);
+        animation: beam-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    /* Secondary softer halo — trails behind */
+    #bottom-strip-shimmer::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -80%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+            105deg,
+            transparent            0%,
+            rgba(14,165,160,0.03)  30%,
+            rgba(201,169,110,0.09) 50%,
+            rgba(14,165,160,0.03)  70%,
+            transparent            100%
+        );
+        filter: blur(4px);
+        animation: beam-sweep 3s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.08s;
+    }
+
+    @keyframes beam-sweep {
+        0%   { left: -60%;  opacity: 0; }
+        5%   { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { left: 120%;  opacity: 0; }
+    }
+
+    #bottom-strip-content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        padding: 0 1.25rem;
+    }
+
+    #bottom-strip-dot {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #0ea5a0;
+        flex-shrink: 0;
+        animation: dot-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes dot-pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.4; transform: scale(0.75); }
+    }
+
+    #bottom-strip-text {
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.72rem;
+        font-weight: 300;
+        color: rgba(248, 245, 240, 0.55);
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    #bottom-strip-highlight {
+        font-weight: 400;
+        color: rgba(248, 245, 240, 0.82);
+    }
+
+    #bottom-strip-divider {
+        color: rgba(14, 165, 160, 0.4);
+    }
+
+    #bottom-strip-cta {
+        font-family: 'Nunito', sans-serif;
+        font-size: 0.68rem;
+        font-weight: 400;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #0ea5a0;
+        text-decoration: none;
+        border: 1px solid rgba(14, 165, 160, 0.35);
+        padding: 0.2rem 0.65rem;
+        border-radius: 2px;
+        white-space: nowrap;
+        flex-shrink: 0;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    #bottom-strip-cta:hover {
+        background: rgba(14, 165, 160, 0.1);
+        color: #14b8b3;
+    }
+
+    /* Nudge the floating call button up so it clears the strip */
+    #float-call {
+        bottom: calc(1.75rem + 38px);
+    }
+
+    @media (max-width: 560px) {
+        #bottom-strip-divider,
+        #bottom-strip-text > span:last-of-type {
+            display: none;
+        }
+    }
+</style>
+</body>
+
+</html>
