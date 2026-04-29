@@ -1,0 +1,167 @@
+# ==========================================================
+#  Dr. Ritesh Amin — Apache configuration (Hostinger)
+# ==========================================================
+
+# ---- Default document ----
+DirectoryIndex index.php index.html
+
+# ---- Disable directory listing ----
+Options -Indexes
+
+# ---- Default charset ----
+AddDefaultCharset UTF-8
+
+# ==========================================================
+#  REWRITES — HTTPS, www, clean URLs
+# ==========================================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Force HTTPS
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # OPTIONAL: force non-www (uncomment if your canonical host has no www)
+    # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    # RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+    # OPTIONAL: force www (uncomment instead if canonical is www)
+    # RewriteCond %{HTTP_HOST} !^www\. [NC]
+    # RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    # Redirect /index or /index.php to /
+    RewriteCond %{THE_REQUEST} \s/+(?:index)(?:\.php)?[\s?] [NC]
+    RewriteRule ^ / [R=301,L]
+
+    # Strip trailing .php from URLs (301 to clean URL)
+    RewriteCond %{THE_REQUEST} \s/+([^\s?]+?)\.php[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # Strip trailing slash from non-directory requests
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+    # Internally rewrite /foo -> /foo.php when the .php file exists
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+    RewriteRule ^(.+?)/?$ /$1.php [L]
+</IfModule>
+
+# ==========================================================
+#  PROTECT SENSITIVE FILES
+# ==========================================================
+# PHP partials (included from other pages, never served directly)
+<FilesMatch "^(header|footer|_reviews-partial|service-template|build|generate_pages|move_about|reorder_sections|fix_colors|copy_images)\.(php|py)$">
+    Require all denied
+</FilesMatch>
+
+# Dotfiles, env, logs, configs
+<FilesMatch "(^\.|\.(env|ini|log|sh|bak|swp|sql|md|ods|csv)$)">
+    Require all denied
+</FilesMatch>
+
+# Block access to .git directory if it ever ends up on server
+RedirectMatch 404 /\.git
+
+# ==========================================================
+#  COMPRESSION (gzip via mod_deflate)
+# ==========================================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE application/xml application/rss+xml application/atom+xml
+    AddOutputFilterByType DEFLATE image/svg+xml application/xhtml+xml
+    AddOutputFilterByType DEFLATE font/ttf font/otf application/font-woff application/font-woff2 font/woff font/woff2
+</IfModule>
+
+# ==========================================================
+#  BROWSER CACHING (mod_expires)
+# ==========================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # HTML — short cache so updates ship quickly
+    ExpiresByType text/html                          "access plus 1 hour"
+
+    # CSS / JS
+    ExpiresByType text/css                           "access plus 1 month"
+    ExpiresByType application/javascript             "access plus 1 month"
+    ExpiresByType application/x-javascript           "access plus 1 month"
+    ExpiresByType text/javascript                    "access plus 1 month"
+
+    # Images
+    ExpiresByType image/jpeg                         "access plus 6 months"
+    ExpiresByType image/png                          "access plus 6 months"
+    ExpiresByType image/gif                          "access plus 6 months"
+    ExpiresByType image/webp                         "access plus 6 months"
+    ExpiresByType image/avif                         "access plus 6 months"
+    ExpiresByType image/svg+xml                      "access plus 6 months"
+    ExpiresByType image/x-icon                       "access plus 1 year"
+
+    # Video / audio
+    ExpiresByType video/mp4                          "access plus 6 months"
+    ExpiresByType video/webm                         "access plus 6 months"
+    ExpiresByType audio/mpeg                         "access plus 6 months"
+
+    # Fonts
+    ExpiresByType font/ttf                           "access plus 1 year"
+    ExpiresByType font/otf                           "access plus 1 year"
+    ExpiresByType font/woff                          "access plus 1 year"
+    ExpiresByType font/woff2                         "access plus 1 year"
+    ExpiresByType application/font-woff              "access plus 1 year"
+    ExpiresByType application/font-woff2             "access plus 1 year"
+
+    # Manifests / data
+    ExpiresByType application/manifest+json          "access plus 1 week"
+    ExpiresByType application/json                   "access plus 0 seconds"
+    ExpiresByType application/xml                    "access plus 0 seconds"
+    ExpiresByType text/xml                           "access plus 0 seconds"
+
+    ExpiresDefault                                   "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Long-lived cache for hashed/static assets
+    <FilesMatch "\.(css|js|jpg|jpeg|png|gif|webp|avif|svg|ico|woff|woff2|ttf|otf|mp4|webm)$">
+        Header set Cache-Control "public, max-age=15552000"
+    </FilesMatch>
+
+    # Short cache for HTML
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "public, max-age=3600, must-revalidate"
+    </FilesMatch>
+
+    # ---- Security headers ----
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+    # Remove server fingerprinting where possible
+    Header unset X-Powered-By
+    Header unset Server
+</IfModule>
+
+# ==========================================================
+#  MIME types (fallbacks)
+# ==========================================================
+<IfModule mod_mime.c>
+    AddType image/webp                          .webp
+    AddType image/avif                          .avif
+    AddType image/svg+xml                       .svg .svgz
+    AddType application/font-woff               .woff
+    AddType application/font-woff2              .woff2
+    AddType font/ttf                            .ttf
+    AddType font/otf                            .otf
+    AddType video/mp4                           .mp4
+    AddType video/webm                          .webm
+    AddType application/manifest+json           .webmanifest
+</IfModule>
+
+# ==========================================================
+#  CUSTOM ERROR PAGES
+# ==========================================================
+ErrorDocument 404 /index.php
