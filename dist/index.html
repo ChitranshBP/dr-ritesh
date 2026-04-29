@@ -56,10 +56,93 @@
             .section-title { font-size: 2.2rem; }
         }
 
-        
+
         /* Responsive override for section-title — kept here so it wins over the base rule above */
         @media (max-width: 991px) {
             .section-title { font-size: 2.2rem; }
+        }
+
+        /* ──────────────────────────────────────────────
+           HERO — guarantee navbar clearance + responsive title
+           Floating navbar bottom edge sits ~106px from top
+           (top:1.25rem + 70px logo + 0.5rem padding x2)
+           ────────────────────────────────────────────── */
+        .hero {
+            padding-top: 8rem !important;
+            min-height: 640px !important;
+        }
+        .hero-split {
+            min-height: calc(100vh - 8rem - 3.5rem) !important;
+        }
+        .hero-left {
+            align-items: flex-start !important;
+            padding-top: 0.5rem !important;
+            padding-bottom: 3rem !important;
+        }
+        .hero-content {
+            width: 100%;
+            min-width: 0;
+        }
+        .hero-title {
+            font-size: clamp(1.9rem, 3.6vw + 0.6rem, 4.6rem) !important;
+            line-height: 1.08 !important;
+            letter-spacing: -0.5px !important;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+        }
+        #hero-condition {
+            display: inline-block;
+            max-width: 100%;
+            overflow-wrap: anywhere;
+        }
+        .hero-subtitle {
+            font-size: clamp(0.92rem, 0.9vw + 0.65rem, 1.05rem) !important;
+            line-height: 1.7 !important;
+        }
+
+        /* Tablet / small-laptop */
+        @media (max-width: 1200px) {
+            .hero { padding-top: 7.5rem !important; }
+            .hero-split { min-height: calc(100vh - 7.5rem - 3.5rem) !important; }
+            .hero-title { font-size: clamp(1.85rem, 3vw + 0.7rem, 3.2rem) !important; }
+            .hero-left { padding-left: clamp(1.5rem, 4vw, 3rem) !important; padding-right: clamp(1.5rem, 4vw, 3rem) !important; }
+        }
+
+        /* Short-viewport laptops — the exact case in the screenshot
+           (e.g. 1366×768 or 1280×720 — the laptop class with limited height) */
+        @media (min-width: 992px) and (max-height: 820px) {
+            .hero { height: auto !important; min-height: 0 !important; padding-top: 7.5rem !important; }
+            .hero-split { min-height: 0 !important; }
+            .hero-left { padding-top: 0.25rem !important; padding-bottom: 2.5rem !important; }
+            .hero-right { min-height: 480px; }
+            .hero-title { font-size: clamp(1.85rem, 2.8vw + 0.6rem, 2.7rem) !important; margin-bottom: 1rem !important; }
+            .hero-rule { margin-bottom: 1.25rem !important; }
+            .hero-subtitle { margin-bottom: 1.75rem !important; }
+            .hero-actions { margin-bottom: 1.5rem !important; }
+            .hero-stats { padding-top: 1.25rem !important; }
+        }
+
+        /* Tablet & mobile — stacked layout */
+        @media (max-width: 991px) {
+            .hero { padding-top: 7rem !important; height: auto !important; min-height: 0 !important; }
+            .hero-split { min-height: 0 !important; }
+            .hero-left { align-items: flex-start !important; padding-top: 1rem !important; }
+            .hero-title { font-size: clamp(1.85rem, 4.2vw + 0.5rem, 2.6rem) !important; }
+        }
+
+        /* Phone */
+        @media (max-width: 600px) {
+            .hero { padding-top: 6.5rem !important; }
+            .hero-title { font-size: clamp(1.6rem, 5vw + 0.5rem, 2.1rem) !important; line-height: 1.15 !important; }
+            .hero-subtitle { font-size: clamp(0.88rem, 1vw + 0.7rem, 0.98rem) !important; line-height: 1.65 !important; }
+        }
+
+        /* Small phone */
+        @media (max-width: 400px) {
+            .hero { padding-top: 6rem !important; }
+            .hero-title { font-size: 1.5rem !important; }
+            .hero-subtitle { font-size: 0.88rem !important; }
         }
     </style>
 </head>
