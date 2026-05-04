@@ -15,6 +15,7 @@ $extra_css = $extra_css ?? '';
         <?= htmlspecialchars($page_title)?>
     </title>
     <meta name="description" content="<?= htmlspecialchars($page_desc)?>">
+    <meta name="google-site-verification" content="9HecL4ym_tUaWhSbVauZyiMzwAtQX-ZT_fxwIyscC6k">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

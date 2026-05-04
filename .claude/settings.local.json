@@ -26,7 +26,8 @@
       "WebFetch(domain:www.healthcare6.com)",
       "WebFetch(domain:www.everydayhealth.care)",
       "Bash(grep -n \"Oneonta\" /d/download/ritesh/*.php /d/download/ritesh/*/*.php)",
-      "Bash(grep -n \"Edison\" /d/download/ritesh/*.php)"
+      "Bash(grep -n \"Edison\" /d/download/ritesh/*.php)",
+      "Bash(git checkout *)"
     ]
   }
 }
