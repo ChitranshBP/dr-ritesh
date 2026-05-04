@@ -7,11 +7,11 @@ $title      = 'Does TMS Help with Anxiety? A Complete Guide';
 $category   = 'TMS Therapy';
 $date       = '2026-04-13';
 $author     = 'Dr. Ritesh Amin | Edison, NJ';
-$hero_image = 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=80'; // Keeping standard hero or maybe a related one. Let's use standard for consistency
-$excerpt    = 'Anxiety can feel overwhelming. If you’ve tried therapy or medications and still don’t feel like yourself, you may have come across Transcranial Magnetic Stimulation (TMS) as a treatment option.';
+$hero_image = 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=80';
+$excerpt    = 'Anxiety can feel overwhelming. If you have tried therapy or medications and still do not feel like yourself, you may have come across Transcranial Magnetic Stimulation (TMS) as a treatment option.';
 $read_time  = 6;
 
-$content = '
+$content = <<<'HTML'
 <h2 id="what-is-tms">What Is TMS Therapy?</h2>
 <p>
     <a href="/psychiatry/tms-for-major-depression.php">Transcranial Magnetic Stimulation (TMS)</a> is a non-invasive, FDA-cleared brain stimulation treatment that uses magnetic pulses to activate specific areas of the brain involved in mood regulation.
@@ -38,13 +38,13 @@ $content = '
     <li>Improving emotional processing and resilience</li>
 </ul>
 <p>
-    Essentially, it helps your brain “reset” how it responds to anxiety triggers.
+    Essentially, it helps your brain reset how it responds to anxiety triggers.
 </p>
 
 <h2 id="does-it-help">Does TMS Help with Anxiety Disorders?</h2>
 <p><strong>The Short Answer:</strong></p>
 <p>
-    Yes—TMS can help reduce anxiety symptoms, but results vary and research is still evolving. If you're also dealing with <a href="/psychiatry/tms-for-major-depression.php">depression alongside your anxiety</a>, TMS may be an especially good fit.
+    Yes - TMS can help reduce anxiety symptoms, but results vary and research is still evolving. If you are also dealing with <a href="/psychiatry/tms-for-major-depression.php">depression alongside your anxiety</a>, TMS may be an especially good fit.
 </p>
 <h3 id="what-research-says">What Research Says:</h3>
 <p>
@@ -59,7 +59,7 @@ $content = '
     Some studies show reduced anxiety symptoms when targeting specific brain regions (like the right prefrontal cortex), though results can be mixed. It is most strongly proven for depression, but many patients experience dual benefits (depression + anxiety relief).
 </p>
 <blockquote>
-    <p>👉 <strong>Translation for patients:</strong> Even if TMS is prescribed primarily for depression, many people notice their anxiety improves significantly as well.</p>
+    <p><strong>Translation for patients:</strong> Even if TMS is prescribed primarily for depression, many people notice their anxiety improves significantly as well.</p>
 </blockquote>
 
 <h2 id="good-candidate">Who Is a Good Candidate for TMS for Anxiety?</h2>
@@ -68,9 +68,9 @@ $content = '
 </p>
 <ul>
     <li>You have chronic or severe anxiety</li>
-    <li>Medications caused side effects or didn’t work</li>
-    <li>Therapy alone hasn’t been enough</li>
-    <li>You have anxiety + depression together — <a href="/psychiatry/tms-for-ptsd.php">co-occurring PTSD</a> is also common</li>
+    <li>Medications caused side effects or did not work</li>
+    <li>Therapy alone has not been enough</li>
+    <li>You have anxiety + depression together - <a href="/psychiatry/tms-for-ptsd.php">co-occurring PTSD</a> is also common</li>
     <li>You want a non-medication treatment option</li>
 </ul>
 
@@ -86,16 +86,16 @@ $content = '
 
 <h2 id="limitations">Limitations You Should Know</h2>
 <p>
-    Let’s be clear—TMS is not a magic cure.
+    Let us be clear - TMS is not a magic cure.
 </p>
 <ul>
     <li>Not officially FDA-approved specifically for anxiety (yet)</li>
     <li>Results vary from person to person</li>
     <li>Some studies show modest or short-term improvements</li>
-    <li>May require multiple sessions (4–6 weeks or longer)</li>
+    <li>May require multiple sessions (4-6 weeks or longer)</li>
 </ul>
 <blockquote>
-    <p>👉 This is why a personalized evaluation is essential.</p>
+    <p>This is why a personalized evaluation is essential.</p>
 </blockquote>
 
 <h2 id="what-to-expect">What to Expect During Treatment</h2>
@@ -104,8 +104,8 @@ $content = '
 </p>
 <ul>
     <li><strong>Sessions:</strong> 5 days/week</li>
-    <li><strong>Duration:</strong> 4–6 weeks</li>
-    <li><strong>Each session:</strong> ~20–40 minutes</li>
+    <li><strong>Duration:</strong> 4-6 weeks</li>
+    <li><strong>Each session:</strong> ~20-40 minutes</li>
 </ul>
 <p>
     You remain awake, alert, and can return to normal activities immediately after.
@@ -144,7 +144,7 @@ $content = '
     </tbody>
 </table>
 <p>
-    👉 Many patients choose TMS when medications haven’t worked or caused unwanted effects.
+    Many patients choose TMS when medications have not worked or caused unwanted effects.
 </p>
 
 <h2 id="can-it-make-anxiety-worse">Can TMS Make Anxiety Worse?</h2>
@@ -161,7 +161,7 @@ $content = '
 
 <h2 id="why-choose-dr-amin">Why Choose Dr. Ritesh Amin for TMS in Edison, NJ?</h2>
 <p>
-    Choosing the right provider matters just as much as the treatment itself. At Dr. Ritesh Amin’s practice, patients benefit from:
+    Choosing the right provider matters just as much as the treatment itself. At Dr. Ritesh Amin's practice, patients benefit from:
 </p>
 <ul>
     <li>Comprehensive mental health evaluation</li>
@@ -175,27 +175,27 @@ $content = '
     You should consider TMS if:
 </p>
 <ul>
-    <li>You feel “stuck” despite trying treatments</li>
+    <li>You feel stuck despite trying treatments</li>
     <li>Anxiety is affecting your daily life or relationships</li>
     <li>You want a modern, science-backed alternative</li>
 </ul>
 
 <h2 id="take-the-next-step">Take the Next Step</h2>
 <p>
-    If anxiety is interfering with your life, you don’t have to keep pushing through it alone.
+    If anxiety is interfering with your life, you do not have to keep pushing through it alone.
 </p>
 <p>
-    👉 <a href="/contact.php">Schedule a consultation with Dr. Ritesh Amin in Edison, NJ today</a> to see if TMS therapy is right for you.
+    <a href="/contact.php">Schedule a consultation with Dr. Ritesh Amin in Edison, NJ today</a> to see if TMS therapy is right for you.
 </p>
 
 <h2 id="final-thoughts">Final Thoughts</h2>
 <p>
-    TMS is an exciting advancement in mental health care. While it’s not a one-size-fits-all solution, it offers real hope for people struggling with anxiety—especially when other treatments haven’t worked.
+    TMS is an exciting advancement in mental health care. While it is not a one-size-fits-all solution, it offers real hope for people struggling with anxiety - especially when other treatments have not worked.
 </p>
 <p>
-    If you’re exploring options in Edison, NJ, connecting with an experienced provider like <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> can help you determine the right path forward.
+    If you are exploring options in Edison, NJ, connecting with an experienced provider like <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> can help you determine the right path forward.
 </p>
-';
+HTML;
 
 // ──────────────────────────────────────────────────────
 //  DO NOT EDIT BELOW — renders the page automatically
@@ -455,7 +455,7 @@ include dirname(__DIR__) . '/header.php';
         <!-- Author row -->
         <div class="post-hero-author flex items-center justify-center gap-3">
             <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--color-gold),var(--color-gold-light));display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                <span style="color:#fff;font-weight:700;font-size:.95rem;" >RA</span>
+                <span style="color:#fff;font-weight:700;font-size:.95rem;">RA</span>
             </div>
             <div style="text-align:left;">
                 <p style="font-family:var(--font-sans);font-size:.82rem;font-weight:600;color:#fff;margin:0;"><?= htmlspecialchars($author) ?></p>
@@ -527,7 +527,7 @@ include dirname(__DIR__) . '/header.php';
                         <span class="text-white text-xl font-bold" style="font-family:var(--font-serif);">RA</span>
                     </div>
                     <div>
-                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);"><?= htmlspecialchars('Dr. Ritesh Amin') ?></p>
+                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);">Dr. Ritesh Amin</p>
                         <p class="text-sm leading-relaxed mb-3" style="color:var(--color-text-light);">
                             Dr. Ritesh Amin is a Board-Certified Psychiatrist specializing in TMS therapy, Spravato, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
                         </p>
@@ -560,7 +560,7 @@ include dirname(__DIR__) . '/header.php';
                             </button>
                             <div class="post-faq-body">
                                 <div class="post-faq-answer">
-                                    <p>Some patients notice improvement within 2–3 weeks, while others may take the full course.</p>
+                                    <p>Some patients notice improvement within 2-3 weeks, while others may take the full course.</p>
                                 </div>
                             </div>
                         </div>
@@ -571,7 +571,7 @@ include dirname(__DIR__) . '/header.php';
                             </button>
                             <div class="post-faq-body">
                                 <div class="post-faq-answer">
-                                    <p>No. You may feel a tapping sensation on the scalp, but it’s generally well tolerated.</p>
+                                    <p>No. You may feel a tapping sensation on the scalp, but it is generally well tolerated.</p>
                                 </div>
                             </div>
                         </div>
@@ -582,7 +582,7 @@ include dirname(__DIR__) . '/header.php';
                             </button>
                             <div class="post-faq-body">
                                 <div class="post-faq-answer">
-                                    <p>It’s not a cure, but it can provide long-lasting symptom relief, especially when combined with therapy.</p>
+                                    <p>It is not a cure, but it can provide long-lasting symptom relief, especially when combined with therapy.</p>
                                 </div>
                             </div>
                         </div>
@@ -593,7 +593,7 @@ include dirname(__DIR__) . '/header.php';
                             </button>
                             <div class="post-faq-body">
                                 <div class="post-faq-answer">
-                                    <p>Coverage is more common for depression. Coverage for anxiety alone varies—consult your provider.</p>
+                                    <p>Coverage is more common for depression. Coverage for anxiety alone varies - consult your provider.</p>
                                 </div>
                             </div>
                         </div>
@@ -604,7 +604,7 @@ include dirname(__DIR__) . '/header.php';
                             </button>
                             <div class="post-faq-body">
                                 <div class="post-faq-answer">
-                                    <p>Yes—and it often works best as part of a comprehensive treatment plan.</p>
+                                    <p>Yes - and it often works best as part of a comprehensive treatment plan.</p>
                                 </div>
                             </div>
                         </div>
