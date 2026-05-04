@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Psychiatry &amp; Neuromodulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for <span class="text-gold-light">OCD</span>
+                    TMS for <span class="text-gold-light">OCD</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -174,7 +174,7 @@ include __DIR__ . '/../header.php';
                     <img src="/assets/psychiatry-tms/ocd-recovery.png" alt="Patient receiving Deep TMS">
                 </div>
                 <div>
-                    <p>To treat OCD effectively, we utilize FDA-cleared Deep TMS (dTMS) technology. Unlike standard figure-8 TMS coils used for depression, dTMS uses a modified helmet design that projects the magnetic field deeper and broader into the anterior cingulate cortex and medial prefrontal cortex.</p>
+                    <p>To treat OCD effectively, we utilize FDA-cleared <a href="/psychiatry-tms-therapy.php" class="text-gold underline">Deep TMS (dTMS)</a> technology. Unlike standard figure-8 TMS coils used for depression, dTMS uses a modified helmet design that projects the magnetic field deeper and broader into the anterior cingulate cortex and medial prefrontal cortex.</p>
                     <p>By delivering high-frequency magnetic pulses to these specific structures, dTMS regulates the abnormal activity within the CSTC loop, turning down the volume of the "false alarms" and diminishing the intense urge to perform compulsions.</p>
                 </div>
             </div>
@@ -254,7 +254,7 @@ include __DIR__ . '/../header.php';
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">A Catalyst for ERP</h3>
-                    <p class="text-gray-600 leading-relaxed text-sm">Exposure and Response Prevention (ERP) is the gold standard therapy for OCD, but it can be too terrifying for severe cases. TMS turns the volume down, making ERP tolerable and effective.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm"><a href="/psychiatry/tms-for-ptsd.php" class="text-gold underline">Exposure and Response Prevention (ERP)</a> is the gold standard therapy for OCD, but it can be too terrifying for severe cases. TMS turns the volume down, making ERP tolerable and effective.</p>
                 </div>
                 <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
@@ -324,7 +324,7 @@ include __DIR__ . '/../header.php';
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Depression TMS uses a figure-8 coil to activate a shallow area on the surface of the prefrontal cortex. OCD TMS uses a specialized Deep TMS helmet that projects a magnetic field deep down the midline of the brain to reach the Anterior Cingulate Cortex.
+                            Depression TMS uses a figure-8 coil to activate a shallow area on the surface of the prefrontal cortex. <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">OCD TMS</a> uses a specialized Deep TMS helmet that projects a magnetic field deep down the midline of the brain to reach the Anterior Cingulate Cortex.
                         </div>
                     </div>
                 </div>
@@ -341,6 +341,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Break Free from Compulsions</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Discover how Deep TMS can penetrate the specific circuits of OCD and give you back your peace of mind.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also learn about <a href="/psychiatry/tms-for-generalized-anxiety.php" class="underline hover:text-white">TMS for Anxiety</a> and <a href="/psychiatry/tms-for-ptsd.php" class="underline hover:text-white">TMS for PTSD</a>.
         </div>
     </section>
 

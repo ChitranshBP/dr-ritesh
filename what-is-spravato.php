@@ -12,7 +12,7 @@ $hero_image = 'assets/images/spravato_hero.png';
 // Introduction Section
 $intro_title = 'Breaking Through Chronic Depression';
 $intro_paragraphs = [
-    'For many, traditional oral antidepressants simply aren\'t enough. When two or more medications have failed to provide relief, you may be suffering from Treatment-Resistant Depression (TRD). Spravato® (esketamine) offers a revolutionary new path forward.',
+    'For many, traditional oral antidepressants simply aren\'t enough. When two or more medications have failed to provide relief, you may be suffering from Treatment-Resistant Depression (TRD). <a href="/what-is-ketamine-therapy.php" class="text-gold underline">Spravato® (esketamine)</a> offers a revolutionary new path forward.',
     'Spravato is the first FDA-approved nasal spray for TRD. Unlike traditional antidepressants that target serotonin or norepinephrine, Spravato targets the glutamate system to rapidly repair damaged neural connections and restore brain function.'
 ];
 $intro_image = 'assets/images/spravato_intro.png';

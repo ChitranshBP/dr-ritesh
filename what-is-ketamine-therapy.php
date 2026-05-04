@@ -13,7 +13,7 @@ $hero_image = 'assets/images/ketamine_hero.png';
 $intro_title = 'Rewiring the Brain for Hope';
 $intro_paragraphs = [
     'Ketamine is a dissociative anesthetic that, when administered in precise sub-anesthetic doses via IV infusion, has been shown to produce rapid and robust antidepressant effects. It works by targeting NMDA receptors, promoting the growth of new neural connections in areas of the brain affected by depression.',
-    'Our Edison clinic provides a luxury, medically-monitored environment for Ketamine infusions. We combine medical expertise with a compassionate, spa-like atmosphere to ensure your journey toward wellness is safe, comfortable, and effective.'
+    'Our Edison clinic provides a luxury, medically-monitored environment for Ketamine infusions. If you\'re also considering alternative treatments, learn more about <a href="/psychiatry-tms-therapy.php" class="text-gold underline">TMS therapy for depression</a> or <a href="/what-is-spravato.php" class="text-gold underline">Spravato</a>.'
 ];
 $intro_image = 'assets/images/ketamine_intro.png';
 

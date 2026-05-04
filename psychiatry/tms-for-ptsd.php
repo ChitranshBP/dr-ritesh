@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Psychiatry &amp; Neuromodulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for <span class="text-gold-light">PTSD</span>
+                    TMS for <span class="text-gold-light">PTSD</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -261,7 +261,7 @@ include __DIR__ . '/../header.php';
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Synergistic Outcomes</h3>
-                    <p class="text-gray-600 leading-relaxed text-sm">By restoring prefrontal control, patients consistently find they are far more capable of engaging in traditional EMDR or exposure-based therapies.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm">By restoring prefrontal control, patients consistently find they are far more capable of engaging in traditional <a href="/psychiatry/tms-for-ocd.php" class="text-gold underline">EMDR or exposure-based therapies</a>.</p>
                 </div>
             </div>
         </div>
@@ -311,7 +311,7 @@ include __DIR__ . '/../header.php';
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            While the primary FDA clearance for TMS is Major Depressive Disorder, applying it "off-label" for PTSD is highly common and supported by numerous clinical studies. Often, PTSD is comorbid with depression, allowing treatment under standard MDD insurance protocols.
+                            While the primary FDA clearance for TMS is Major Depressive Disorder, applying it "off-label" for PTSD is highly common and supported by numerous clinical studies. Often, PTSD is comorbid with depression, allowing treatment under standard MDD insurance protocols. <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">Learn more about TMS for depression</a>.
                         </div>
                     </div>
                 </div>
@@ -341,6 +341,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Break Free from the Past</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Take control of your body\'s trauma response. Learn if targeted magnetic stimulation is the missing link in your PTSD recovery.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/psychiatry/tms-for-major-depression.php" class="underline hover:text-white">TMS for Depression</a> and <a href="/psychiatry/tms-for-ocd.php" class="underline hover:text-white">TMS for OCD</a>.
         </div>
     </section>
 

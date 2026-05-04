@@ -828,7 +828,7 @@ include 'header.php';
                     </div>
                     <div class="ins-faq-answer">
                         <div class="ins-faq-answer-inner">
-                            Most major insurance plans cover TMS therapy for treatment-resistant depression. Our billing team will verify your specific coverage, including co-pays, deductibles, and prior authorization requirements, before treatment begins. Just provide your insurance details when you contact us.
+                            Most major insurance plans cover <a href="/psychiatry-tms-therapy.php" class="text-gold underline">TMS therapy for treatment-resistant depression</a>. Our billing team will verify your specific coverage, including co-pays, deductibles, and prior authorization requirements, before treatment begins. Just provide your insurance details when you contact us.
                         </div>
                     </div>
                 </div>

@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Psychiatry &amp; Neuromodulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for <span class="text-gold-light">ADHD</span>
+                    TMS for <span class="text-gold-light">ADHD</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -261,7 +261,7 @@ include __DIR__ . '/../header.php';
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">No Anxiety Spikes</h3>
-                    <p class="text-gray-600 leading-relaxed text-sm">Stimulants famously exacerbate anxiety. For patients with co-occurring ADHD and anxiety disorders, Dr. Amin can use TMS to activate focus while concurrently soothing hyper-arousal.</p>
+                    <p class="text-gray-600 leading-relaxed text-sm">Stimulants famously exacerbate anxiety. For patients with co-occurring ADHD and <a href="/psychiatry/tms-for-generalized-anxiety.php" class="text-gold underline">anxiety disorders</a>, Dr. Amin can use TMS to activate focus while concurrently soothing hyper-arousal.</p>
                 </div>
             </div>
         </div>
@@ -284,7 +284,7 @@ include __DIR__ . '/../header.php';
                     <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
                     <h3 class="text-xl text-[#c1d9f8] mb-8 font-light border-b border-white/10 pb-6">Board Certified Psychiatrist</h3>
                     <p class="text-lg text-white/80 leading-relaxed mb-6">
-                        As a thought leader in neuromodulation, Dr. Amin applies TMS beyond basic depression protocols. Recognizing that many adults suffer from devastating executive dysfunction without viable medication options, he utilizes specialized right-sided mapping to naturally "wake up" the prefrontal cortex—improving focus safely and sustainably.
+                        As a thought leader in neuromodulation, Dr. Amin applies <a href="/psychiatry-tms-therapy.php" class="text-gold underline">TMS beyond basic depression protocols</a>. Recognizing that many adults suffer from devastating executive dysfunction without viable medication options, he utilizes specialized right-sided mapping to naturally "wake up" the prefrontal cortex—improving focus safely and sustainably.
                     </p>
                     <a href="/dr-ritesh-amin.php" class="inline-flex items-center text-gold font-semibold hover:text-white transition-colors gap-2">
                         Read Full Biography <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -311,7 +311,7 @@ include __DIR__ . '/../header.php';
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Currently, TMS for ADHD is considered an "off-label" application by most insurers if ADHD is the primary diagnosis. However, a significant portion of our ADHD patients also suffer from Major Depressive Disorder (MDD). In these cases, insurance frequently covers the TMS treatment for the depression, which concurrently stimulates the areas of the brain that improve executive function.
+                            Currently, TMS for ADHD is considered an "off-label" application by most insurers if ADHD is the primary diagnosis. However, a significant portion of our ADHD patients also suffer from <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">Major Depressive Disorder (MDD)</a>. In these cases, insurance frequently covers the TMS treatment for the depression, which concurrently stimulates the areas of the brain that improve executive function.
                         </div>
                     </div>
                 </div>
@@ -341,6 +341,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">A Powerful Alternative to Pills</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">See if you are a candidate for safely stimulating your executive function without the use of systemic stimulants.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Learn more about <a href="/psychiatry/tms-for-major-depression.php" class="underline hover:text-white">TMS for Depression</a> or <a href="/psychiatry/tms-for-generalized-anxiety.php" class="underline hover:text-white">TMS for Anxiety</a>.
         </div>
     </section>
 

@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology &amp; Brain Stimulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for Centralized <span class="text-gold-light">Pain Syndromes</span>
+                    TMS for Centralized <span class="text-gold-light">Pain Syndromes</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -345,6 +345,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Target Pain at its Source</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Non-invasive. Non-systemic. Discover how TMS can 'rewire' your brain's pain matrix.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/neurology/tms-for-fibromyalgia.php" class="underline hover:text-white">TMS for Fibromyalgia</a> and <a href="/neurology/tms-for-migraine.php" class="underline hover:text-white">TMS for Migraines</a>.
         </div>
     </section>
 

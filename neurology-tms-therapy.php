@@ -13,7 +13,7 @@ $hero_image = 'assets/images/tms_neurology_hero.png'; // We will generate this n
 $intro_title = 'Redefining Neurological Recovery';
 $intro_paragraphs = [
     'Traditional neurological treatments often rely heavily on systemic medications that can cause widespread side effects. For many patients dealing with the aftermath of a stroke, traumatic brain injuries, or movement disorders, progress can plateau, leaving them searching for alternative solutions.',
-    'Transcranial Magnetic Stimulation (TMS) is emerging as a groundbreaking intervention in neurology. By delivering highly focused magnetic pulses to specific motor and cognitive centers of the brain, TMS directly stimulates neural pathways, encouraging the brain\'s natural ability to rewire and heal itself (neuroplasticity).',
+    '<a href="/neurology-tms-therapy.php" class="text-gold underline">Transcranial Magnetic Stimulation (TMS)</a> is emerging as a groundbreaking intervention in neurology. By delivering highly focused magnetic pulses to specific motor and cognitive centers of the brain, TMS directly stimulates neural pathways, encouraging the brain\'s natural ability to rewire and heal itself (neuroplasticity).',
     'Dr. Ritesh Amin utilizes cutting-edge TMS protocols to target specialized neurological conditions. This non-invasive, outpatient therapy offers new hope for patients seeking to regain motor function, reduce neuro-inflammation, and manage chronic neurological symptoms.'
 ];
 $intro_image = 'assets/images/tms_neurology_intro.png';

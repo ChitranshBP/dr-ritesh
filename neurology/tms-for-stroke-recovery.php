@@ -76,7 +76,7 @@ include __DIR__ . '/../header.php';
     <div class="container mx-auto px-4 max-w-7xl relative z-10">
         <div class="max-w-3xl mx-auto text-center reveal">
             <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology &amp; Brain Stimulation</span>
-            <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">TMS for Stroke <span class="text-gold-light">Recovery</span></h1>
+            <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">TMS for Stroke <span class="text-gold-light">Recovery</span> in Edison, NJ</h1>
             <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
             <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">Rebuilding neural pathways damaged by stroke — restoring motor control, speech, and quality of life through precision magnetic stimulation.</p>
             <div class="flex flex-wrap justify-center gap-4 mt-10">
@@ -153,7 +153,7 @@ include __DIR__ . '/../header.php';
                 <div class="bi-card">
                     <div class="bi-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
                     <h4>Post-Stroke Depression</h4>
-                    <p>Up to 33% of stroke survivors develop major depression. TMS is FDA-cleared for depression and highly effective here.</p>
+                    <p>Up to 33% of stroke survivors develop major depression. <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">TMS is FDA-cleared for depression</a> and highly effective here.</p>
                 </div>
             </div>
         </div>
@@ -326,6 +326,7 @@ include __DIR__ . '/../header.php';
         <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Reclaim Life After Stroke</h2>
         <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Advanced TMS therapy can help you move past the plateau. Dr. Amin is ready to guide your recovery.</p>
         <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/neurology/tms-for-brain-injury-trauma.php" class="underline hover:text-white">TMS for Brain Injury</a> and <a href="/neurology/tms-for-parkinsons-symptoms.php" class="underline hover:text-white">TMS for Parkinson's</a>.
     </div>
 </section>
 

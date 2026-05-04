@@ -13,7 +13,7 @@ $hero_image = 'assets/images/tms_psychiatry_hero.png'; // Will generate
 $intro_title = 'A New Era in Mental Health Care';
 $intro_paragraphs = [
     'For decades, the standard of care in psychiatry has relied heavily on systemic medications and talk therapy. While effective for many, a significant portion of patients experience inadequate relief or intolerable side effects, leading to a frustrating cycle of trial and error.',
-    'Transcranial Magnetic Stimulation (TMS) represents a paradigm shift. By using precise magnetic fields to stimulate underactive networks in the brain—such as the prefrontal cortex in depression—TMS offers a targeted, biological intervention without the systemic effects of medication.',
+    '<a href="/psychiatry-tms-therapy.php" class="text-gold underline">Transcranial Magnetic Stimulation (TMS)</a> represents a paradigm shift. By using precise magnetic fields to stimulate underactive networks in the brain—such as the prefrontal cortex in depression—TMS offers a targeted, biological intervention without the systemic effects of medication.',
     'At our Edison, NJ clinic, Dr. Ritesh Amin provides specialized TMS protocols for a range of psychiatric conditions, including Major Depressive Disorder (MDD), Generalized Anxiety Disorder (GAD), Obsessive-Compulsive Disorder (OCD), and PTSD. We are committed to offering the most advanced, evidence-based tools available to achieve lasting remission.'
 ];
 $intro_image = 'assets/images/tms_psychiatry_intro.png'; // Will generate

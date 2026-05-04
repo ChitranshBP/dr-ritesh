@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Psychiatry &amp; Neuromodulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for Major <span class="text-gold-light">Depression</span>
+                    TMS for Major <span class="text-gold-light">Depression</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -337,7 +337,7 @@ include __DIR__ . '/../header.php';
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes, TMS therapy for Major Depressive Disorder is covered by most major commercial insurances, as well as Medicare, provided you meet their specific medical necessity criteria (usually involving a history of trying and failing a certain number of antidepressants).
+                            Yes, <a href="/psychiatry-tms-therapy.php" class="text-gold underline">TMS therapy for Major Depressive Disorder</a> is covered by most major commercial insurances, as well as Medicare, provided you meet their specific medical necessity criteria (usually involving a history of trying and failing a certain number of antidepressants).
                         </div>
                     </div>
                 </div>
@@ -373,6 +373,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Take the Next Step Toward Joy</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Innovative, non-invasive technology to restore your emotional well-being without systemic side effects.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/psychiatry/tms-for-generalized-anxiety.php" class="underline hover:text-white">TMS for Anxiety</a> and <a href="/psychiatry/tms-for-treatment-resistant-depression.php" class="underline hover:text-white">TMS for TRD</a>.
         </div>
     </section>
 

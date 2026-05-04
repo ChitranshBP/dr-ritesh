@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Psychiatry &amp; Neuromodulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for <span class="text-gold-light">Treatment-Resistant</span> Depression
+                    TMS for <span class="text-gold-light">Treatment-Resistant</span> Depression in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -175,7 +175,7 @@ include __DIR__ . '/../header.php';
                 </div>
                 <div>
                     <p>Medications work chemically, traveling through the bloodstream to bathe the entire brain (and body) in neurotransmitters. If a patient’s specific depressive neuro-circuitry isn't responsive to these global chemical shifts, the patient won't get better.</p>
-                    <p>TMS works electromagnetically. It bypasses the digestive system and the blood-brain barrier completely. By using focused magnetic pulses, TMS directly stimulates the neurons in the prefrontal cortex—the exact physical location where depression is rooted. This direct stimulation forces the sluggish neural networks to become active again, frequently succeeding where chemistry alone could not.</p>
+                    <p><a href="/psychiatry-tms-therapy.php" class="text-gold underline">TMS works electromagnetically</a>. It bypasses the digestive system and the blood-brain barrier completely. By using focused magnetic pulses, TMS directly stimulates the neurons in the prefrontal cortex—the exact physical location where depression is rooted.</p>
                 </div>
             </div>
 
@@ -308,6 +308,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Find Your Breakthrough</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">It's time to try a treatment that works differently. Contact Dr. Ritesh Amin to discover if TMS is the right path forward for your TRD.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also learn about <a href="/psychiatry/tms-for-ocd.php" class="underline hover:text-white">TMS for OCD</a> and <a href="/psychiatry/tms-for-bipolar-depression.php" class="underline hover:text-white">TMS for Bipolar Depression</a>.
         </div>
     </section>
 

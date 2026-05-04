@@ -11,11 +11,20 @@
 
 $posts = [
     [
+        'title'       => 'Does TMS Help with Anxiety? A Complete Guide',
+        'date'        => '2026-04-13',
+        'category'    => 'TMS Therapy',
+        'excerpt'     => 'Anxiety can feel overwhelming. If you’ve tried therapy or medications and still don’t feel like yourself, you may have come across Transcranial Magnetic Stimulation (TMS) as a treatment option.',
+        'image'       => 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80',
+        'slug'        => 'does-tms-help-with-anxiety',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works',
         'date'        => '2026-04-15',
         'category'    => 'TMS Therapy',
         'excerpt'     => 'A deep dive into the science behind TMS — how magnetic pulses target specific areas of the brain, what to expect during a session, and why it is effective for treatment-resistant depression.',
-        'image'       => 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80',
+        'image'       => 'https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=800&q=80',
         'slug'        => 'how-tms-therapy-works',
         'featured'    => true,
     ],
@@ -44,42 +53,6 @@ $posts = [
         'excerpt'     => 'Curious about trying TMS but not sure what happens on day one? We walk you through every step — from the consultation and mapping process to what the actual stimulation feels like.',
         'image'       => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
         'slug'        => 'first-tms-session',
-        'featured'    => false,
-    ],
-    [
-        'title'       => 'Ketamine Infusion Therapy: Breaking Down the Science',
-        'date'        => '2026-02-05',
-        'category'    => 'Ketamine',
-        'excerpt'     => 'Ketamine has been used as an anesthetic for decades. Discover how low-dose ketamine infusions are now transforming outcomes for severe depression, PTSD, and chronic pain conditions.',
-        'image'       => 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'ketamine-infusion-science',
-        'featured'    => false,
-    ],
-    [
-        'title'       => 'PTSD and the Brain: How Neuromodulation Offers New Hope',
-        'date'        => '2026-01-18',
-        'category'    => 'PTSD',
-        'excerpt'     => 'Post-traumatic stress disorder reshapes neural circuits in measurable ways. Learn how targeted brain stimulation is showing remarkable results for patients who have exhausted traditional therapies.',
-        'image'       => 'https://images.unsplash.com/photo-1508672019048-593c2000cb80?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'ptsd-neuromodulation',
-        'featured'    => false,
-    ],
-    [
-        'title'       => 'Insurance Coverage for TMS Therapy: What You Need to Know',
-        'date'        => '2026-01-05',
-        'category'    => 'Insurance',
-        'excerpt'     => 'Most major insurance plans cover TMS therapy for treatment-resistant depression. Learn what criteria insurers typically require and how our team helps navigate the prior authorization process.',
-        'image'       => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'tms-insurance-coverage',
-        'featured'    => false,
-    ],
-    [
-        'title'       => 'The Role of Neuromodulation in Treating Chronic Migraine',
-        'date'        => '2025-12-10',
-        'category'    => 'Neurology',
-        'excerpt'     => 'For patients suffering from chronic migraine who have tried prophylactic medications with limited success, TMS offers a non-invasive, non-pharmacological alternative backed by FDA clearance.',
-        'image'       => 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'tms-chronic-migraine',
         'featured'    => false,
     ],
 ];
@@ -149,7 +122,7 @@ include dirname(__DIR__) . '/header.php';
 <section class="blog-hero" style="min-height:540px;display:flex;align-items:center;">
     <!-- Background image -->
     <div class="blog-hero-bg">
-        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1600&q=80" alt="" />
+        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1600&q=80" alt="" />
         <div class="blog-hero-overlay"></div>
     </div>
     <!-- Geometric accents -->
@@ -220,6 +193,7 @@ include dirname(__DIR__) . '/header.php';
                               style="font-family:var(--font-sans);">
                             <?= htmlspecialchars($p['category']) ?>
                         </span>
+                        <span class="text-xs" style="color:var(--color-text-light);font-family:var(--font-sans);"><?= $dateFmt ?></span>
                         <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· <?= $readTime ?> min read</span>
                     </div>
                     <h3 class="font-serif text-2xl font-bold text-navy mb-3 leading-snug group-hover:text-gold transition-colors"
@@ -229,7 +203,6 @@ include dirname(__DIR__) . '/header.php';
                     <p class="text-sm leading-relaxed mb-5" style="color:var(--color-text-light);"><?= htmlspecialchars($p['excerpt']) ?></p>
                     <div class="flex items-center justify-between">
                         <span class="text-xs font-medium tracking-wide" style="color:var(--color-gold);">Read Article →</span>
-                        <span class="text-xs" style="color:rgba(0,0,0,0.3);"><?= $dateFmt ?></span>
                     </div>
                 </div>
             </a>
@@ -246,6 +219,21 @@ include dirname(__DIR__) . '/header.php';
         <div class="flex items-center gap-4 mb-10">
             <div class="blog-rule"></div>
             <h2 class="text-xl font-semibold tracking-wide uppercase" style="color:var(--color-gold);">All Articles</h2>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-8">
+            <div class="relative max-w-md">
+                <input type="text" id="blog-search" placeholder="Search articles..."
+                       class="w-full px-5 py-3 pl-12 rounded-full text-sm outline-none"
+                       style="background:var(--color-white);color:var(--color-midnight);border:1.5px solid rgba(37,111,168,0.2);font-family:var(--font-sans);"
+                       onfocus="this.style.borderColor='var(--color-gold)'"
+                       onblur="this.style.borderColor='rgba(37,111,168,0.2)'" />
+                <svg class="absolute left-4 top-1/2 -translate-y-1/2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-gold);">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
         </div>
 
         <!-- Category Filter -->
@@ -353,10 +341,34 @@ include dirname(__DIR__) . '/header.php';
 </section>
 
 <script>
+// ── Search functionality ──
+const searchInput = document.getElementById('blog-search');
+const allCards = document.querySelectorAll('#blog-grid article');
+const emptyState = document.getElementById('blog-empty');
+let currentCategory = 'all';
+
+function filterCards() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+
+    allCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const excerpt = card.querySelector('p').textContent.toLowerCase();
+        const category = card.dataset.category;
+        const matchesSearch = title.includes(query) || excerpt.includes(query);
+        const matchesCategory = currentCategory === 'all' || category === currentCategory;
+
+        card.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
+        if (matchesSearch && matchesCategory) visible++;
+    });
+
+    emptyState.classList.toggle('hidden', visible > 0);
+}
+
+searchInput.addEventListener('input', filterCards);
+
 // ── Category filter ──
 const filterBtns = document.querySelectorAll('.blog-filter-btn');
-const cards      = document.querySelectorAll('#blog-grid article');
-const emptyState = document.getElementById('blog-empty');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -369,16 +381,8 @@ filterBtns.forEach(btn => {
         btn.style.background = 'var(--color-gold)';
         btn.style.color = '#fff';
 
-        const filter = btn.dataset.filter;
-        let visible = 0;
-
-        cards.forEach(card => {
-            const match = filter === 'all' || card.dataset.category === filter;
-            card.style.display = match ? '' : 'none';
-            if (match) visible++;
-        });
-
-        emptyState.classList.toggle('hidden', visible > 0);
+        currentCategory = btn.dataset.filter;
+        filterCards();
     });
 });
 </script>

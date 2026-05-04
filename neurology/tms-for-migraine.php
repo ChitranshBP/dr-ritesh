@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology &amp; Brain Stimulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for Chronic <span class="text-gold-light">Migraines</span>
+                    TMS for Chronic <span class="text-gold-light">Migraines</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -234,7 +234,7 @@ include __DIR__ . '/../header.php';
 
             <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
                 <div>
-                    <p>There is a powerful, bidirectional link between chronic migraine and mood disorders. Living with unpredictable, severe pain frequently leads to clinical depression and anxiety. Furthermore, anxiety itself is a potent trigger for tension and migraine headaches, creating an exhausting cycle.</p>
+                    <p>There is a powerful, bidirectional link between chronic migraine and mood disorders. Living with unpredictable, severe pain frequently leads to clinical depression and <a href="/psychiatry/tms-for-generalized-anxiety.php" class="text-gold underline">anxiety</a>. Furthermore, anxiety itself is a potent trigger for tension and migraine headaches, creating an exhausting cycle.</p>
                     <p>Dr. Amin's dual expertise in psychiatry and neuromodulation allows for a holistic approach. By targeting specific areas like the Dorsolateral Prefrontal Cortex (DLPFC), TMS can simultaneously regulate mood circuits while also impacting downstream pain perception networks. This allows us to lift the burden of depression while concurrently raising the migraine threshold.</p>
                 </div>
                 <div class="bi-image-wrapper">
@@ -395,6 +395,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Reclaim Your Days From Migraines</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Advanced magnetic stimulation can raise your migraine threshold safely and effectively.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/neurology/tms-for-stroke-recovery.php" class="underline hover:text-white">TMS for Stroke Recovery</a> and <a href="/neurology/tms-for-parkinsons-symptoms.php" class="underline hover:text-white">TMS for Parkinson's</a>.
         </div>
     </section>
 

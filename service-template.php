@@ -288,6 +288,7 @@ include 'header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Return to the Life You Deserve</h2>
             <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">Contact Dr. Amin's clinic today. Schedule an in-depth consultation to see if this treatment is right for you, and begin your journey to recovery.</p>
             <a href="/contact.php" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform border border-white/20">Book Your Evaluation</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/psychiatry-tms-therapy.php" class="underline hover:text-white">TMS for Psychiatry</a> and <a href="/neurology-tms-therapy.php" class="underline hover:text-white">TMS for Neurology</a>.</p>
         </div>
     </section>
 

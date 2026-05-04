@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology &amp; Brain Stimulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for Alzheimer's <span class="text-gold-light">&amp; Memory Loss</span>
+                    TMS for Alzheimer's <span class="text-gold-light">&amp; Memory Loss</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -234,7 +234,7 @@ include __DIR__ . '/../header.php';
 
             <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
                 <div>
-                    <p>Cognitive decline is only one aspect of dementia. Up to 90% of patients will experience Behavioral and Psychological Symptoms of Dementia (BPSD), which include severe depression, agitation, anxiety, and apathy. These symptoms are often the primary cause of caregiver burnout and nursing home placement.</p>
+                    <p>Cognitive decline is only one aspect of dementia. Up to 90% of patients will experience Behavioral and Psychological Symptoms of Dementia (BPSD), which include severe <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">depression</a>, agitation, anxiety, and apathy. These symptoms are often the primary cause of caregiver burnout and nursing home placement.</p>
                     <p>Traditional psychiatric medications (like antipsychotics) often carry significant risks for elderly dementia patients, including increased confusion and fall risk. TMS offers a powerful, localized alternative. Because TMS is FDA-cleared for Depression and Anxiety, we can adapt these protocols to target the mood-regulating circuits in dementia patients, <strong>calming agitation and lifting mood without systemic side effects.</strong></p>
                 </div>
                 <div class="bi-image-wrapper">
@@ -396,6 +396,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Taking a Proactive Step Forward</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Learn how targeted electromagnetic stimulation can support your brain health during times of cognitive change.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/neurology/tms-for-stroke-recovery.php" class="underline hover:text-white">TMS for Stroke Recovery</a> and <a href="/neurology/tms-for-fibromyalgia.php" class="underline hover:text-white">TMS for Fibromyalgia</a>.
         </div>
     </section>
 

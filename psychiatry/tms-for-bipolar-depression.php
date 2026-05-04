@@ -79,7 +79,7 @@ include __DIR__ . '/../header.php';
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Psychiatry &amp; Neuromodulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
-                    TMS for <span class="text-gold-light">Bipolar Depression</span>
+                    TMS for <span class="text-gold-light">Bipolar Depression</span> in Edison, NJ
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
@@ -175,7 +175,7 @@ include __DIR__ . '/../header.php';
                 </div>
                 <div>
                     <p>Standard SSRI antidepressants are notoriously risky for bipolar patients. Because they systemically flood the brain with serotonin, they frequently trigger "affective switching"—throwing the patient violently from depression directly into a manic or hypomanic episode.</p>
-                    <p>TMS is non-systemic. It uses focal magnetic pulses targeted only at the specific sluggish regions of the prefrontal cortex while the patient remains on their mood stabilizers. This localized approach allows Dr. Amin to gently elevate the depression without destabilizing the patient's entire neurochemistry.</p>
+                    <p>TMS is non-systemic. It uses focal magnetic pulses targeted only at the specific sluggish regions of the prefrontal cortex while the patient remains on their mood stabilizers. <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">This localized approach</a> allows Dr. Amin to gently elevate the depression without destabilizing the patient's entire neurochemistry.</p>
                 </div>
             </div>
 
@@ -303,6 +303,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">A Safer Path Out of Depression</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Discover how targeted magnetic stimulation can effectively treat bipolar depression without the systemic risks of traditional antidepressants.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
+            <p class="text-sm text-white/50 mt-6">Also learn about <a href="/psychiatry/tms-for-major-depression.php" class="underline hover:text-white">TMS for Depression</a> or <a href="/psychiatry/tms-for-generalized-anxiety.php" class="underline hover:text-white">TMS for Anxiety</a>.
         </div>
     </section>
 
