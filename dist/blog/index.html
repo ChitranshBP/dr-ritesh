@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Blog — Advanced Psychiatry &amp; TMS Therapy | Dr. Ritesh Amin, MD    </title>
+    <meta name="description" content="Expert insights on TMS therapy, Spravato, ketamine, depression, anxiety, and psychiatric care from Dr. Ritesh Amin, MD — Edison, NJ.">
+    <meta name="google-site-verification" content="9HecL4ym_tUaWhSbVauZyiMzwAtQX-ZT_fxwIyscC6k">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/Dr.-Ritesh-Amin-favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: { DEFAULT: '#0b192c', light: '#162b47' },
+                        gold: { DEFAULT: '#256fa8', light: '#5dadee' },
+                        beige: { DEFAULT: '#ffffff', dark: '#f4f7fb' },
+                        sage: { DEFAULT: '#E8F1F2', dark: '#D1E3E6' }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* ── Component classes powered by Tailwind @apply ── */
+        .eyebrow {
+            @apply block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4;
+        }
+        .section-header        { @apply mb-16; }
+        .section-header.center { @apply text-center max-w-[800px] mx-auto; }
+        .section-title         { @apply text-[2.5rem] mb-4; }
+        .section-subtitle      { @apply text-[1.1rem] max-w-[600px] mx-auto; }
+
+        @media (max-width: 991px) {
+            .section-title { font-size: 2.2rem; }
+        }
+
+        
+    .blog-hero {
+        background: var(--color-midnight);
+        padding-top: 5.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .blog-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+    }
+    .blog-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+    .blog-hero-overlay {
+        position: absolute; inset: 0;
+        background: linear-gradient(175deg, rgba(11,25,44,.88) 0%, rgba(11,25,44,.72) 50%, rgba(11,25,44,.92) 100%);
+    }
+    .blog-hero-geo {
+        position: absolute; border-radius: 50%;
+        border: 1px solid rgba(37,111,168,.12);
+        pointer-events: none; z-index: 1;
+    }
+    .blog-hero-geo-1 { top: -70px; right: -70px; width: 320px; height: 320px; }
+    .blog-hero-geo-2 { bottom: -50px; left: -50px; width: 200px; height: 200px; border-color: rgba(37,111,168,.09); }
+    .blog-hero-geo-3 { top: 30%; right: 10%; width: 8px; height: 8px; border-radius: 50%; background: rgba(37,111,168,.3); border: none; }
+    .blog-hero-geo-4 { top: 20%; left: 8%; width: 5px; height: 5px; border-radius: 50%; background: rgba(37,111,168,.2); border: none; }
+    .blog-hero-geo-5 { bottom: 25%; right: 15%; width: 4px; height: 4px; border-radius: 50%; background: rgba(37,111,168,.2); border: none; }
+    .blog-hero-topline {
+        position: absolute; top: 0; left: 0; right: 0; height: 3px;
+        background: linear-gradient(90deg, transparent, var(--color-gold), var(--color-gold-light), transparent);
+        opacity: .6; z-index: 2;
+    }
+    .blog-hero-title { text-shadow: 0 2px 20px rgba(0,0,0,.35); letter-spacing: -.02em; }
+    .blog-card-img { height: 220px; }
+    .blog-card-img img { width:100%;height:100%;object-fit:cover;transition:transform .5s ease; }
+    .blog-card:hover .blog-card-img img { transform: scale(1.04); }
+    .blog-category-chip { background: rgba(37,111,168,0.1); color: var(--color-gold); border: 1px solid rgba(37,111,168,0.2); }
+    .blog-featured-img { height: 420px; }
+    .blog-featured-img img { width:100%;height:100%;object-fit:cover; }
+    .blog-rule { width:48px;height:2px;background:linear-gradient(90deg,var(--color-gold),var(--color-gold-light),transparent);border-radius:1px; }
+    .blog-card { transition: transform .35s ease, box-shadow .35s ease; }
+    .blog-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(11,25,44,0.12); }
+    .blog-read-time { color: var(--color-text-light); }
+    .blog-scroll-hint {
+        position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+        display: flex; flex-direction: column; align-items: center; gap: 5px;
+        opacity: .4; z-index: 3;
+    }
+    @media (max-width: 768px) {
+        .blog-hero-geo-1, .blog-hero-geo-2, .blog-hero-geo-3, .blog-hero-geo-4, .blog-hero-geo-5 { display: none; }
+    }
+    </style>
+</head>
+
+<body class="bg-beige-dark">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <img src="/assets/logo/Dr.-Ritesh-Amin-main.png" alt="Dr. Ritesh Amin" class="logo-main hidden">
+                <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="logo-white block">
+            </a>
+
+            <!-- Desktop nav links -->
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        About
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/dr-ritesh-amin.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <span class="dd-label">Dr. Ritesh Amin<span class="dd-label-sub">MD &middot; Psychiatry &amp; TMS</span></span>
+                        </a>
+                        <a href="/dr-nalin-ranasinghe.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <span class="dd-label">Dr. Nalin E. Ranasinghe<span class="dd-label-sub">MD &middot; Emergency &amp; General Medicine</span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        Treatments
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <div class="mega-menu">
+                        <!-- Feature Sidebar -->
+                        <div class="mega-feature">
+                            <span class="mega-feature-eyebrow">Our Treatments</span>
+                            <h3 class="mega-feature-title">Advanced TMS<br>Therapy</h3>
+                            <p class="mega-feature-desc">Non-invasive brain stimulation tailored by Dr. Amin for
+                                neurology &amp; psychiatry conditions.</p>
+                            <a href="/neurology-tms-therapy.html" class="mega-feature-cta">
+                                Explore All →
+                            </a>
+                        </div>
+
+                        <!-- Psychiatry Column -->
+                        <div class="mega-column">
+                            <div class="mega-col-header">
+                                <span class="mega-col-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                    </svg>
+                                </span>
+                                <span class="mega-heading">Psychiatry TMS</span>
+                            </div>
+                            <a href="/psychiatry-tms-therapy.html" class="mega-link-overview">
+                                Therapy Overview
+                            </a>
+                            <a href="/psychiatry/tms-for-major-depression.html">Major Depression</a>
+                            <a href="/psychiatry/tms-for-treatment-resistant-depression.html">Treatment-Resistant</a>
+                            <a href="/psychiatry/tms-for-generalized-anxiety.html">Generalized Anxiety</a>
+                            <a href="/psychiatry/tms-for-ptsd.html">PTSD</a>
+                            <a href="/psychiatry/tms-for-ocd.html">OCD</a>
+                            <a href="/psychiatry/tms-for-panic-disorder.html">Panic Disorder</a>
+                            <a href="/psychiatry/tms-for-bipolar-depression.html">Bipolar Depression</a>
+                            <a href="/psychiatry/tms-for-adhd.html">ADHD</a>
+                        </div>
+
+                        <!-- Neurology Column -->
+                        <div class="mega-column">
+                            <div class="mega-col-header">
+                                <span class="mega-col-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+                                </span>
+                                <span class="mega-heading">Neurology TMS</span>
+                            </div>
+                            <a href="/neurology-tms-therapy.html" class="mega-link-overview">
+                                Therapy Overview
+                            </a>
+                            <a href="/neurology/tms-for-brain-injury-trauma.html">Brain Injury &amp; Trauma</a>
+                            <a href="/neurology/tms-for-movement-disorders.html">Movement Disorders</a>
+                            <a href="/neurology/tms-for-stroke-recovery.html">Stroke Recovery</a>
+                            <a href="/neurology/tms-for-parkinsons-symptoms.html">Parkinson's Symptoms</a>
+                            <a href="/neurology/tms-for-alzheimers-dementia.html">Alzheimer's &amp; Dementia</a>
+                            <a href="/neurology/tms-for-migraine.html">Chronic Migraine</a>
+                            <a href="/neurology/tms-for-neuropathic-pain.html">Neuropathic Pain</a>
+                            <a href="/neurology/tms-for-fibromyalgia.html">Fibromyalgia</a>
+                            <a href="/neurology/tms-for-huntingtons-disease.html">Huntington's Disease</a>
+                            <a href="/neurology/tms-for-fibromuscular-dysplasia.html">Fibromuscular Dysplasia</a>
+                        </div>
+
+                        <!-- Other Treatments Column -->
+                        <div class="mega-column">
+                            <div class="mega-col-header">
+                                <span class="mega-col-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                    </svg>
+                                </span>
+                                <span class="mega-heading">Other Treatments</span>
+                            </div>
+                            <a href="/what-is-spravato.html" class="mega-treatment-card">
+                                <span class="mega-treatment-title">Spravato (Esketamine)</span>
+                                <span class="mega-treatment-desc">FDA-approved nasal spray for treatment-resistant
+                                    depression.</span>
+                            </a>
+                            <a href="/what-is-ketamine-therapy.html" class="mega-treatment-card">
+                                <span class="mega-treatment-title">Ketamine Therapy</span>
+                                <span class="mega-treatment-desc">Rapid-relief IV infusions for severe depression &amp;
+                                    mood disorders.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-link dropbtn">
+                        Resources
+                        <svg class="drop-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="/reviews.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+                            <span class="dd-label">Patient Testimonials<span class="dd-label-sub">Real stories from our patients</span></span>
+                        </a>
+                        <a href="/faq.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                            <span class="dd-label">FAQs<span class="dd-label-sub">Common TMS questions answered</span></span>
+                        </a>
+                        <a href="/insurance.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg></span>
+                            <span class="dd-label">Insurance &amp; Financing<span class="dd-label-sub">Coverage &amp; payment options</span></span>
+                        </a>
+                        <a href="/reviews.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+                            <span class="dd-label">Blog<span class="dd-label-sub">Mental health &amp; TMS insights</span></span>
+                        </a>
+                        <a href="/faq.html">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+                            <span class="dd-label">Mental Health Resources<span class="dd-label-sub">Guides, tools &amp; support links</span></span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/contact.html" class="btn btn-primary btn-sm nav-cta">Schedule a Consultation</a>
+            </div>
+
+            <!-- Mobile Navigation Overlay -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <div class="mobile-nav-links">
+                        <!-- About Accordion -->
+                        <div class="mobile-accordion">
+                            <button class="mobile-link accordion-toggle">
+                                About Us
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="accordion-panel">
+                                <a href="/dr-ritesh-amin.html">Dr. Ritesh Amin</a>
+                                <a href="/dr-nalin-ranasinghe.html">Dr. Nalin E. Ranasinghe</a>
+                            </div>
+                        </div>
+
+                        <!-- Treatments Accordion -->
+                        <div class="mobile-accordion">
+                            <button class="mobile-link accordion-toggle">
+                                Treatments
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="accordion-panel">
+                                <div class="mobile-sub-group">
+                                    <span class="sub-group-title">Psychiatry TMS</span>
+                                    <a href="/psychiatry-tms-therapy.html">Therapy Overview</a>
+                                    <a href="/psychiatry/tms-for-major-depression.html">Major Depression</a>
+                                    <a
+                                        href="/psychiatry/tms-for-treatment-resistant-depression.html">Treatment-Resistant</a>
+                                    <a href="/psychiatry/tms-for-generalized-anxiety.html">Generalized Anxiety</a>
+                                    <a href="/psychiatry/tms-for-ptsd.html">PTSD</a>
+                                    <a href="/psychiatry/tms-for-ocd.html">OCD</a>
+                                    <a href="/psychiatry/tms-for-panic-disorder.html">Panic Disorder</a>
+                                    <a href="/psychiatry/tms-for-bipolar-depression.html">Bipolar Depression</a>
+                                    <a href="/psychiatry/tms-for-adhd.html">ADHD</a>
+                                </div>
+                                <div class="mobile-sub-group">
+                                    <span class="sub-group-title">Neurology TMS</span>
+                                    <a href="/neurology-tms-therapy.html">Therapy Overview</a>
+                                    <a href="/neurology/tms-for-brain-injury-trauma.html">Traumatic Brain Injury</a>
+                                    <a href="/neurology/tms-for-movement-disorders.html">Movement Disorders</a>
+                                    <a href="/neurology/tms-for-stroke-recovery.html">Stroke Recovery</a>
+                                    <a href="/neurology/tms-for-parkinsons-symptoms.html">Parkinson's Symptoms</a>
+                                    <a href="/neurology/tms-for-alzheimers-dementia.html">Alzheimer's & Dementia</a>
+                                    <a href="/neurology/tms-for-migraine.html">Chronic Migraine</a>
+                                    <a href="/neurology/tms-for-neuropathic-pain.html">Neuropathic Pain</a>
+                                    <a href="/neurology/tms-for-fibromyalgia.html">Fibromyalgia</a>
+                                    <a href="/neurology/tms-for-huntingtons-disease.html">Huntington's Disease</a>
+                                    <a href="/neurology/tms-for-fibromuscular-dysplasia.html">Fibromuscular Dysplasia</a>
+                                </div>
+                                <div class="mobile-sub-group">
+                                    <span class="sub-group-title">Innovative Treatments</span>
+                                    <a href="/what-is-spravato.html">Spravato (Esketamine)</a>
+                                    <a href="/what-is-ketamine-therapy.html">Ketamine Therapy</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resources Accordion -->
+                        <div class="mobile-accordion">
+                            <button class="mobile-link accordion-toggle">
+                                Resources
+                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="accordion-panel">
+                                <a href="/reviews.html">Patient Testimonials</a>
+                                <a href="/faq.html">Patient FAQs</a>
+                                <a href="/insurance.html">Insurance & Financing</a>
+                                <a href="/reviews.html">Wellness Blog</a>
+                                <a href="/faq.html">Mental Health Resources</a>
+                            </div>
+                        </div>
+
+                        <a href="/contact.html" class="mobile-link">Contact</a>
+                    </div>
+
+                    <div class="mobile-nav-cta">
+                        <a href="/contact.html" class="btn btn-primary w-full">Schedule a Consultation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+<!-- ── Blog Hero ── -->
+<section class="blog-hero" style="min-height:540px;display:flex;align-items:center;">
+    <!-- Background image -->
+    <div class="blog-hero-bg">
+        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1600&q=80" alt="" />
+        <div class="blog-hero-overlay"></div>
+    </div>
+    <!-- Geometric accents -->
+    <div class="blog-hero-geo blog-hero-geo-1"></div>
+    <div class="blog-hero-geo blog-hero-geo-2"></div>
+    <div class="blog-hero-geo blog-hero-geo-3"></div>
+    <div class="blog-hero-geo blog-hero-geo-4"></div>
+    <div class="blog-hero-geo blog-hero-geo-5"></div>
+    <div class="blog-hero-topline"></div>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-6 text-center" style="position:relative;z-index:3;">
+        <!-- Eyebrow -->
+        <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(37,111,168,.15);border:1px solid rgba(37,111,168,.3);border-radius:100px;padding:.35rem 1rem;margin-bottom:1.5rem;">
+            <span style="width:6px;height:6px;border-radius:50%;background:var(--color-gold);flex-shrink:0;"></span>
+            <span style="font-family:var(--font-sans);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--color-gold);">Insights &amp; Education</span>
+        </div>
+        <!-- Rule -->
+        <div style="width:48px;height:2px;background:linear-gradient(90deg,var(--color-gold),var(--color-gold-light));border-radius:1px;margin:0 auto 1.75rem;"></div>
+        <!-- Title -->
+        <h1 class="blog-hero-title font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight"
+            style="font-family:var(--font-serif);">
+            The Psychiatry &amp; TMS Blog
+        </h1>
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
+           style="color:rgba(255,255,255,.5);">
+            Evidence-based articles on brain stimulation therapy, psychiatric care, and mental wellness — written by Dr. Ritesh Amin and his clinical team.
+        </p>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="blog-scroll-hint">
+        <span style="font-family:var(--font-sans);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;">Scroll</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+</section>
+
+<!-- ── Featured Posts ── -->
+<section class="py-16 px-6" style="background:var(--color-beige);">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="flex items-center gap-4 mb-10">
+            <div class="blog-rule"></div>
+            <h2 class="text-xl font-semibold tracking-wide uppercase" style="color:var(--color-gold);">Featured Articles</h2>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+                        <a href="/blog/how-tms-therapy-works.html" class="blog-card group block rounded-2xl overflow-hidden shadow-md"
+               style="background:var(--color-white);">
+                                <div class="blog-featured-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works"
+                         loading="lazy" />
+                </div>
+                                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            TMS Therapy                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min read</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-navy mb-3 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works                    </h3>
+                    <p class="text-sm leading-relaxed mb-5" style="color:var(--color-text-light);">A deep dive into the science behind TMS — how magnetic pulses target specific areas of the brain, what to expect during a session, and why it is effective for treatment-resistant depression.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-medium tracking-wide" style="color:var(--color-gold);">Read Article →</span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.3);">April 15, 2026</span>
+                    </div>
+                </div>
+            </a>
+                        <a href="/blog/spravato-vs-tms.html" class="blog-card group block rounded-2xl overflow-hidden shadow-md"
+               style="background:var(--color-white);">
+                                <div class="blog-featured-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Spravato vs. TMS: Which Treatment Is Right for You?"
+                         loading="lazy" />
+                </div>
+                                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Treatment Options                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min read</span>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-navy mb-3 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        Spravato vs. TMS: Which Treatment Is Right for You?                    </h3>
+                    <p class="text-sm leading-relaxed mb-5" style="color:var(--color-text-light);">Both Spravato and TMS are FDA-approved breakthrough treatments for treatment-resistant depression. Here is how they compare — from mechanism of action to side effects to treatment timelines.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-medium tracking-wide" style="color:var(--color-gold);">Read Article →</span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.3);">March 28, 2026</span>
+                    </div>
+                </div>
+            </a>
+                    </div>
+    </div>
+</section>
+
+<!-- ── All Posts Grid ── -->
+<section class="py-16 px-6" style="background:var(--color-beige-dark);">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="flex items-center gap-4 mb-10">
+            <div class="blog-rule"></div>
+            <h2 class="text-xl font-semibold tracking-wide uppercase" style="color:var(--color-gold);">All Articles</h2>
+        </div>
+
+        <!-- Category Filter -->
+                <div class="flex flex-wrap gap-3 mb-12" id="blog-filter">
+            <button class="blog-filter-btn active text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="all" style="background:var(--color-gold);color:#fff;">
+                All
+            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="Depression"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                Depression            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="Insurance"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                Insurance            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="Ketamine"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                Ketamine            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="Neurology"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                Neurology            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="PTSD"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                PTSD            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="Patient Guide"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                Patient Guide            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="TMS Therapy"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                TMS Therapy            </button>
+                        <button class="blog-filter-btn text-xs font-semibold tracking-widest uppercase px-4 py-2 rounded-full transition-all"
+                    data-filter="Treatment Options"
+                    style="background:transparent;color:var(--color-gold);border:1.5px solid rgba(37,111,168,0.35);">
+                Treatment Options            </button>
+                    </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" id="blog-grid">
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="TMS Therapy">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            TMS Therapy                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/how-tms-therapy-works.html" class="hover:no-underline">
+                            Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        A deep dive into the science behind TMS — how magnetic pulses target specific areas of the brain, what to expect during a session, and why it is effective for treatment-resistant depression.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/how-tms-therapy-works.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">April 15, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="Treatment Options">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Spravato vs. TMS: Which Treatment Is Right for You?"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Treatment Options                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/spravato-vs-tms.html" class="hover:no-underline">
+                            Spravato vs. TMS: Which Treatment Is Right for You?                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        Both Spravato and TMS are FDA-approved breakthrough treatments for treatment-resistant depression. Here is how they compare — from mechanism of action to side effects to treatment timelines.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/spravato-vs-tms.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">March 28, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="Depression">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="5 Signs You May Have Treatment-Resistant Depression"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Depression                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/signs-of-treatment-resistant-depression.html" class="hover:no-underline">
+                            5 Signs You May Have Treatment-Resistant Depression                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        If you have tried multiple medications without adequate relief, you are not alone — and you are not out of options. Learn the key indicators of treatment-resistant depression and what evidence-based treatments exist.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/signs-of-treatment-resistant-depression.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">March 10, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="Patient Guide">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="What to Expect During Your First TMS Session"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Patient Guide                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/first-tms-session.html" class="hover:no-underline">
+                            What to Expect During Your First TMS Session                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        Curious about trying TMS but not sure what happens on day one? We walk you through every step — from the consultation and mapping process to what the actual stimulation feels like.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/first-tms-session.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">February 20, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="Ketamine">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Ketamine Infusion Therapy: Breaking Down the Science"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Ketamine                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/ketamine-infusion-science.html" class="hover:no-underline">
+                            Ketamine Infusion Therapy: Breaking Down the Science                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        Ketamine has been used as an anesthetic for decades. Discover how low-dose ketamine infusions are now transforming outcomes for severe depression, PTSD, and chronic pain conditions.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/ketamine-infusion-science.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">February 5, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="PTSD">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1508672019048-593c2000cb80?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="PTSD and the Brain: How Neuromodulation Offers New Hope"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            PTSD                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/ptsd-neuromodulation.html" class="hover:no-underline">
+                            PTSD and the Brain: How Neuromodulation Offers New Hope                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        Post-traumatic stress disorder reshapes neural circuits in measurable ways. Learn how targeted brain stimulation is showing remarkable results for patients who have exhausted traditional therapies.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/ptsd-neuromodulation.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">January 18, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="Insurance">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Insurance Coverage for TMS Therapy: What You Need to Know"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Insurance                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/tms-insurance-coverage.html" class="hover:no-underline">
+                            Insurance Coverage for TMS Therapy: What You Need to Know                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        Most major insurance plans cover TMS therapy for treatment-resistant depression. Learn what criteria insurers typically require and how our team helps navigate the prior authorization process.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/tms-insurance-coverage.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">January 5, 2026</span>
+                    </div>
+                </div>
+            </article>
+                        <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"
+                     style="background:var(--color-white);"
+                     data-category="Neurology">
+                                <div class="blog-card-img overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="The Role of Neuromodulation in Treating Chronic Migraine"
+                         loading="lazy" />
+                </div>
+                                <div class="p-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="blog-category-chip text-xs font-semibold tracking-widest uppercase px-2 py-0.5 rounded-full"
+                              style="font-family:var(--font-sans);">
+                            Neurology                        </span>
+                        <span class="blog-read-time text-xs" style="font-family:var(--font-sans);">· 4 min</span>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 leading-snug group-hover:text-gold transition-colors"
+                        style="font-family:var(--font-serif); color:var(--color-midnight);">
+                        <a href="/blog/tms-chronic-migraine.html" class="hover:no-underline">
+                            The Role of Neuromodulation in Treating Chronic Migraine                        </a>
+                    </h3>
+                    <p class="text-sm leading-relaxed mb-4" style="color:var(--color-text-light);">
+                        For patients suffering from chronic migraine who have tried prophylactic medications with limited success, TMS offers a non-invasive, non-pharmacological alternative backed by FDA clearance.                    </p>
+                    <div class="flex items-center justify-between pt-4 border-t"
+                         style="border-color:rgba(11,25,44,0.07);">
+                        <span class="text-xs font-medium" style="color:var(--color-gold);">
+                            <a href="/blog/tms-chronic-migraine.html">Read →</a>
+                        </span>
+                        <span class="text-xs" style="color:rgba(0,0,0,0.28);">December 10, 2025</span>
+                    </div>
+                </div>
+            </article>
+                    </div>
+
+        <!-- Empty state (hidden by default, shown via JS when filter yields nothing) -->
+        <div id="blog-empty" class="hidden text-center py-16">
+            <p class="text-lg font-medium" style="color:var(--color-text-light);">No articles in this category yet.</p>
+            <p class="text-sm mt-2" style="color:rgba(0,0,0,0.3);">Check back soon — new articles are published regularly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ── Newsletter CTA ── -->
+<section class="py-20 px-6" style="background:var(--color-midnight);">
+    <div class="max-w-2xl mx-auto text-center">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-6"
+             style="background:rgba(37,111,168,0.15);border:1px solid rgba(37,111,168,0.3);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                 style="color:var(--color-gold-light);">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+        </div>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4" style="font-family:var(--font-serif);">
+            Stay Informed
+        </h2>
+        <p class="text-white/50 mb-8 leading-relaxed" style="color:rgba(255,255,255,0.5);">
+            Get evidence-based articles on psychiatric treatments, TMS research, and mental wellness — delivered to your inbox. No spam, unsubscribe anytime.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed ✓'; this.querySelector('input').disabled=true; this.querySelector('button').disabled=true;">
+            <input type="email" required placeholder="Your email address"
+                   class="flex-1 px-5 py-3.5 rounded-full text-sm outline-none"
+                   style="background:rgba(255,255,255,0.08);color:#fff;border:1.5px solid rgba(255,255,255,0.15);font-family:var(--font-sans);"
+                   onfocus="this.style.borderColor='var(--color-gold-light)'"
+                   onblur="this.style.borderColor='rgba(255,255,255,0.15)'" />
+            <button type="submit"
+                    class="px-8 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white whitespace-nowrap transition-all hover:-translate-y-0.5 hover:shadow-lg"
+                    style="background:var(--color-gold);font-family:var(--font-sans);">
+                Subscribe
+            </button>
+        </form>
+    </div>
+</section>
+
+<script>
+// ── Category filter ──
+const filterBtns = document.querySelectorAll('.blog-filter-btn');
+const cards      = document.querySelectorAll('#blog-grid article');
+const emptyState = document.getElementById('blog-empty');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.style.background = 'transparent';
+            b.style.color = 'var(--color-gold)';
+        });
+        btn.classList.add('active');
+        btn.style.background = 'var(--color-gold)';
+        btn.style.color = '#fff';
+
+        const filter = btn.dataset.filter;
+        let visible = 0;
+
+        cards.forEach(card => {
+            const match = filter === 'all' || card.dataset.category === filter;
+            card.style.display = match ? '' : 'none';
+            if (match) visible++;
+        });
+
+        emptyState.classList.toggle('hidden', visible > 0);
+    });
+});
+</script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="/" class="logo mb-6 inline-block">
+                        <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="footer-logo">
+                    </a>
+                    <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
+                    <div class="emergency-disclaimer mt-8">
+                        <div class="disclaimer-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        </div>
+                        <p><strong>Emergency:</strong> If you are experiencing a medical crisis, call 911 or visit the nearest emergency room.</p>
+                    </div>
+                </div>
+
+                <!-- Specialties Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Psychiatry TMS</h4>
+                    <ul>
+                        <li><a href="/psychiatry/tms-for-major-depression.html">Major Depression</a></li>
+                        <li><a href="/psychiatry/tms-for-treatment-resistant-depression.html">Treatment-Resistant</a></li>
+                        <li><a href="/psychiatry/tms-for-generalized-anxiety.html">Generalized Anxiety</a></li>
+                        <li><a href="/psychiatry/tms-for-ptsd.html">PTSD</a></li>
+                        <li><a href="/psychiatry/tms-for-ocd.html">OCD</a></li>
+                        <li><a href="/psychiatry/tms-for-adhd.html">ADHD</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Neurology TMS</h4>
+                    <ul>
+                        <li><a href="/neurology/tms-for-brain-injury-trauma.html">Traumatic Brain Injury</a></li>
+                        <li><a href="/neurology/tms-for-movement-disorders.html">Movement Disorders</a></li>
+                        <li><a href="/neurology/tms-for-stroke-recovery.html">Stroke Recovery</a></li>
+                        <li><a href="/neurology/tms-for-parkinsons-symptoms.html">Parkinson's Symptoms</a></li>
+                        <li><a href="/neurology/tms-for-alzheimers-dementia.html">Alzheimer's & Dementia</a></li>
+                        <li><a href="/neurology/tms-for-migraine.html">Chronic Migraine</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Columns -->
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/dr-ritesh-amin.html">About Dr. Amin</a></li>
+                        <li><a href="/dr-ritesh-amin.html">Our Approach</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul>
+                        <li><a href="/insurance.html">Insurance & Financing</a></li>
+                        <li><a href="/faq.html">Patient FAQs</a></li>
+                        <li><a href="/contact.html">Physician Referral</a></li>
+                        <li><a href="/reviews.html">Patient Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul>
+                        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Service</a></li>
+                        <li><a href="/privacy-policy.html">HIPAA Notice</a></li>
+                        <li><a href="/contact.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Premium Map Container -->
+            <div class="footer-map-section mt-16 mb-12">
+                <div class="footer-map-glass">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.4649038986363!2d-74.35920228816407!3d40.59756527129183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b76e5e714edd%3A0x54ca677c2f217b65!2sDr.%20Ritesh%20Amin%20-%20Psychiatrist!5e0!3m2!1sen!2sin!4v1774940619468!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer bar with Socials -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Dr. Ritesh Amin, MD. All Rights Reserved. Not acting as a substitute for medical advice.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

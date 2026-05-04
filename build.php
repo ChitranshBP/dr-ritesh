@@ -53,6 +53,10 @@ $pages = [
     'psychiatry/tms-for-panic-disorder.php'               => 'psychiatry/tms-for-panic-disorder.html',
     'psychiatry/tms-for-ptsd.php'                         => 'psychiatry/tms-for-ptsd.html',
     'psychiatry/tms-for-treatment-resistant-depression.php' => 'psychiatry/tms-for-treatment-resistant-depression.html',
+
+    // Blog
+    'blog/index.php'                      => 'blog/index.html',
+    'blog/how-tms-therapy-works.php'      => 'blog/how-tms-therapy-works.html',
 ];
 
 // ── Static asset directories to copy ──
