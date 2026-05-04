@@ -14,7 +14,7 @@ $read_time  = 6;
 $content = '
 <h2 id="what-is-tms">What Is TMS Therapy?</h2>
 <p>
-    <a href="/tms-for-depression.php">Transcranial Magnetic Stimulation (TMS)</a> is a non-invasive, FDA-cleared brain stimulation treatment that uses magnetic pulses to activate specific areas of the brain involved in mood regulation.
+    <a href="/psychiatry/tms-for-major-depression.php">Transcranial Magnetic Stimulation (TMS)</a> is a non-invasive, FDA-cleared brain stimulation treatment that uses magnetic pulses to activate specific areas of the brain involved in mood regulation.
 </p>
 <ul>
     <li>No surgery</li>
