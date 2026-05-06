@@ -19,42 +19,6 @@ $posts = [
         'slug'        => 'does-tms-help-with-anxiety',
         'featured'    => true,
     ],
-    [
-        'title'       => 'Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works',
-        'date'        => '2026-04-15',
-        'category'    => 'TMS Therapy',
-        'excerpt'     => 'A deep dive into the science behind TMS — how magnetic pulses target specific areas of the brain, what to expect during a session, and why it is effective for treatment-resistant depression.',
-        'image'       => 'https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'how-tms-therapy-works',
-        'featured'    => true,
-    ],
-    [
-        'title'       => 'Spravato vs. TMS: Which Treatment Is Right for You?',
-        'date'        => '2026-03-28',
-        'category'    => 'Treatment Options',
-        'excerpt'     => 'Both Spravato and TMS are FDA-approved breakthrough treatments for treatment-resistant depression. Here is how they compare — from mechanism of action to side effects to treatment timelines.',
-        'image'       => 'https://images.unsplash.com/photo-1576671081837-49000212a370?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'spravato-vs-tms',
-        'featured'    => true,
-    ],
-    [
-        'title'       => '5 Signs You May Have Treatment-Resistant Depression',
-        'date'        => '2026-03-10',
-        'category'    => 'Depression',
-        'excerpt'     => 'If you have tried multiple medications without adequate relief, you are not alone — and you are not out of options. Learn the key indicators of treatment-resistant depression and what evidence-based treatments exist.',
-        'image'       => 'https://images.unsplash.com/photo-1493836512294-502baa1986e2?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'signs-of-treatment-resistant-depression',
-        'featured'    => false,
-    ],
-    [
-        'title'       => 'What to Expect During Your First TMS Session',
-        'date'        => '2026-02-20',
-        'category'    => 'Patient Guide',
-        'excerpt'     => 'Curious about trying TMS but not sure what happens on day one? We walk you through every step — from the consultation and mapping process to what the actual stimulation feels like.',
-        'image'       => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
-        'slug'        => 'first-tms-session',
-        'featured'    => false,
-    ],
 ];
 
 // ─────────────────────────────────────────────

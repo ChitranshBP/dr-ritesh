@@ -56,7 +56,6 @@ $pages = [
 
     // Blog
     'blog/index.php'                      => 'blog/index.html',
-    'blog/how-tms-therapy-works.php'      => 'blog/how-tms-therapy-works.html',
 ];
 
 // ── Static asset directories to copy ──
