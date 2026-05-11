@@ -814,7 +814,7 @@ include 'header.php';
 
             <!-- Right: Large Clean Image -->
             <div class="tms-image-col reveal delay-1">
-                <img src="assets/images/TMS-new.jpg" alt="TMS Therapy" class="tms-oak-image">
+                <img src="assets/images/magstim device.jpg" alt="TMS Therapy" class="tms-oak-image">
             </div>
 
         </div>
