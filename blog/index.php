@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'How Much Does TMS Cost With Insurance? A Complete Guide',
+        'date'        => '2026-05-19',
+        'category'    => 'TMS Therapy',
+        'excerpt'     => 'Wondering about the cost of Transcranial Magnetic Stimulation (TMS)? Understand how insurance coverage works, out-of-pocket costs, and financing options for TMS therapy.',
+        'image'       => '/assets/images/blog-tms-cost.png',
+        'slug'        => 'how-much-does-tms-cost-with-insurance',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'Does TMS Help with Anxiety? A Complete Guide',
         'date'        => '2026-04-13',
         'category'    => 'TMS Therapy',
