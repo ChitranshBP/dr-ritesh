@@ -168,7 +168,7 @@ include 'header.php';
                 <p class="hero-subtitle">FDA-approved, non-invasive brain stimulation therapy tailored by Dr. Ritesh
                     Amin for treatment-resistant depression, anxiety, and complex psychiatric conditions.</p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+                    <a href="contact.php" class="btn btn-primary">Schedule a Consultation</a>
                     <a href="#tms-therapy" class="btn btn-ghost">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -730,7 +730,7 @@ include 'header.php';
                             <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg> Specialized expertise in Neuromodulation</li>
                 </ul>
-                <a href="#contact" class="btn btn-primary mt-6">Book an Appointment</a>
+                <a href="contact.php" class="btn btn-primary mt-6">Book an Appointment</a>
             </div>
         </div>
     </div>
@@ -809,7 +809,7 @@ include 'header.php';
                     </div>
                 </div>
 
-                <a href="#contact" class="btn btn-primary mt-12">Book Your Consultation</a>
+                <a href="contact.php" class="btn btn-primary mt-12">Book Your Consultation</a>
             </div>
 
             <!-- Right: Large Clean Image -->
@@ -1091,7 +1091,7 @@ include 'header.php';
         <h2 class="section-title text-white">Take the First Step Toward Better Mental Health</h2>
         <p class="section-subtitle text-white/70 mb-8">You don't have to navigate this journey alone. Dr. Amin and our
             dedicated team are here to help you regain your life.</p>
-        <a href="#contact" class="btn btn-primary py-5 px-12 text-lg mt-6">Book Your Consultation Today</a>
+        <a href="contact.php" class="btn btn-primary py-5 px-12 text-lg mt-6">Book Your Consultation Today</a>
     </div>
 </section>
 
