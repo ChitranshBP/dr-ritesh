@@ -709,4 +709,93 @@ include dirname(__DIR__) . '/header.php';
 })();
 </script>
 
+<?php
+$img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drriteshamin.com" . $hero_image;
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://drriteshamin.com/blog/<?= basename(__FILE__) ?>"
+  },
+  "headline": <?= json_encode($title) ?>,
+  "description": <?= json_encode($excerpt) ?>,
+  "image": <?= json_encode($img_url) ?>,
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Ritesh Amin",
+    "url": "https://drriteshamin.com/dr-ritesh-amin.php"
+  },
+  "publisher": {
+    "@type": "MedicalOrganization",
+    "name": "Dr. Ritesh Amin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png"
+    }
+  },
+  "datePublished": <?= json_encode($date . 'T08:00:00+00:00') ?>,
+  "dateModified": <?= json_encode($date . 'T08:00:00+00:00') ?>
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is TMS FDA-approved for anxiety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TMS is FDA-approved for depression and OCD, but its use for anxiety is considered off-label, though supported by growing research."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to see results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients notice improvement within 2-3 weeks, while others may take the full course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is TMS painful?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You may feel a tapping sensation on the scalp, but it is generally well tolerated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can TMS cure anxiety permanently?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is not a cure, but it can provide long-lasting symptom relief, especially when combined with therapy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will insurance cover TMS for anxiety?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coverage is more common for depression. Coverage for anxiety alone varies - consult your provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can TMS be combined with therapy or medication?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes - and it often works best as part of a comprehensive treatment plan."
+      }
+    }
+  ]
+}
+</script>
+
 <?php include dirname(__DIR__) . '/footer.php'; ?>

@@ -623,4 +623,93 @@ include dirname(__DIR__) . '/header.php';
 })();
 </script>
 
+<?php
+$img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drriteshamin.com" . $hero_image;
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://drriteshamin.com/blog/<?= basename(__FILE__) ?>"
+  },
+  "headline": <?= json_encode($title) ?>,
+  "description": <?= json_encode($excerpt) ?>,
+  "image": <?= json_encode($img_url) ?>,
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Ritesh Amin",
+    "url": "https://drriteshamin.com/dr-ritesh-amin.php"
+  },
+  "publisher": {
+    "@type": "MedicalOrganization",
+    "name": "Dr. Ritesh Amin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png"
+    }
+  },
+  "datePublished": <?= json_encode($date . 'T08:00:00+00:00') ?>,
+  "dateModified": <?= json_encode($date . 'T08:00:00+00:00') ?>
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to be diagnosed with depression for TMS coverage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most insurance policies require a formal diagnosis of Major Depressive Disorder (MDD) to cover TMS therapy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the prior authorization process take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies by insurance provider but typically takes between 1 to 3 weeks. Our team manages this process to expedite your approval."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I can't afford the out-of-pocket costs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer flexible financing options and work with CareCredit so that you can break up your payments over time without interest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover TMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Medicare generally covers TMS therapy for patients diagnosed with severe Major Depressive Disorder who have not responded to antidepressant medications, provided specific criteria are met."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use my FSA or HSA to pay for TMS therapy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! TMS therapy is considered a qualified medical expense, meaning you can use funds from your Flexible Spending Account (FSA) or Health Savings Account (HSA) to cover copays, deductibles, or out-of-pocket costs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my insurance initially denies coverage for TMS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Denials can happen, often due to missing documentation. If this occurs, our clinic can initiate an appeals process, providing additional medical records or conducting a peer-to-peer review with the insurance company's medical director to advocate for your coverage."
+      }
+    }
+  ]
+}
+</script>
+
 <?php include dirname(__DIR__) . '/footer.php'; ?>

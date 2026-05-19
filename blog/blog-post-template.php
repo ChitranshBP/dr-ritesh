@@ -603,4 +603,36 @@ include dirname(__DIR__) . '/header.php';
 })();
 </script>
 
+<?php
+$img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drriteshamin.com" . $hero_image;
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://drriteshamin.com/blog/<?= basename(__FILE__) ?>"
+  },
+  "headline": <?= json_encode($title) ?>,
+  "description": <?= json_encode($excerpt) ?>,
+  "image": <?= json_encode($img_url) ?>,
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Ritesh Amin",
+    "url": "https://drriteshamin.com/dr-ritesh-amin.php"
+  },
+  "publisher": {
+    "@type": "MedicalOrganization",
+    "name": "Dr. Ritesh Amin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png"
+    }
+  },
+  "datePublished": <?= json_encode($date . 'T08:00:00+00:00') ?>,
+  "dateModified": <?= json_encode($date . 'T08:00:00+00:00') ?>
+}
+</script>
+
 <?php include dirname(__DIR__) . '/footer.php'; ?>
