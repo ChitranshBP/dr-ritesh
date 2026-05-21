@@ -304,31 +304,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is this widely used for Panic Disorder?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS calm panic attacks?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            While primary FDA clearances focus on depression, treating hyper-arousal conditions (like Panic and GAD) with inhibitory right-sided TMS protocols is very common in specialized interventional psychiatry practices, demonstrating significant efficacy in clinical settings.
+                            TMS uses low-frequency (inhibitory) magnetic pulses to calm hyperactive regions of the brain, specifically the right prefrontal cortex, which modulates the amygdala's fear and panic responses.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Could the machine trigger a panic attack?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS replace my panic medication?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Because you suffer from Panic Disorder, new experiences can naturally trigger anticipatory anxiety. The TMS pulses themselves are *inhibitory* and meant to calm the brain, not excite it. Our clinic is deeply experienced in managing anxious patients, and we take the first few sessions very slowly to ensure you feel entirely safe and relaxed.
+                            Many patients are able to reduce or eliminate their reliance on fast-acting, potentially habit-forming medications (like benzodiazepines) after a successful course of TMS.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Will the TMS pulses trigger a panic attack?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            The environment is calm and controlled. The inhibitory frequencies used for anxiety and panic are actually designed to soothe neural activity, making it highly unlikely to trigger a panic attack.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How soon will my panic attacks stop?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            While individual results vary, many patients notice a decrease in the intensity and frequency of panic attacks within the first 3 weeks of daily treatment.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is this a permanent fix for panic disorder?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            TMS promotes long-term neuroplasticity, offering durable relief. If symptoms return months or years later, brief maintenance sessions can quickly restore balance.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

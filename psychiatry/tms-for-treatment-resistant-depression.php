@@ -271,31 +271,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Do I have to stop my current medications?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">What exactly defines Treatment-Resistant Depression (TRD)?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            No. In fact, most patients continue to take their current antidepressant regimen while undergoing TMS. TMS acts as a compliment, altering the neural environment so that your brain can finally emerge from depression without the risk of additional drug-drug interactions.
+                            TRD is generally defined as major depressive disorder that has not responded adequately to at least two different antidepressant medications of adequate dose and duration.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">I've tried 5 medications. Will insurance cover this?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Why does TMS work when medications fail?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes. The defining criteria for insurance coverage of TMS is usually failing 2-4 antidepressant trials in the current episode. Because you have a clear history of Treatment-Resistant Depression, you are precisely the candidate that modern insurance policies approve for TMS.
+                            Medications rely on systemic chemical changes that may not cross the blood-brain barrier effectively or target the right receptors. TMS uses magnetic energy to directly physically stimulate dormant brain cells.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS my last resort for TRD?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            While it is for complex cases, it shouldn't be viewed as a "last resort." It is a highly effective, frontline interventional therapy that many wish they had tried before enduring years of medication trials.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can I receive Spravato and TMS together?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, in severe cases of TRD, Dr. Amin may utilize both modalities. TMS builds long-term neural pathways, while Spravato (esketamine) can provide rapid, acute relief from severe depressive symptoms.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Will I need to stay on medications after TMS?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Many patients can reduce their medication load, and some may taper off completely under Dr. Amin's supervision. However, some choose to maintain a low-dose medication regimen to support the TMS results.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

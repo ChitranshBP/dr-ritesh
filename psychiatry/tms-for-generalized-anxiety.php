@@ -304,31 +304,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS FDA-cleared for Anxiety?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS treat both anxiety and depression simultaneously?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            TMS is FDA-cleared as a treatment for Anxious Depression, meaning it is officially recognized for treating anxiety symptoms that co-occur with Major Depressive Disorder. While off-label for pure GAD (without depression), the clinical protocols are widely used by experts with highly successful outcomes.
+                            Yes. Dr. Amin often uses specialized dual-targeting protocols that stimulate the left hemisphere for depression while applying inhibitory frequencies to the right hemisphere to calm severe anxiety.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Will TMS make me anxious during treatment?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">What does TMS for anxiety feel like?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Some patients feel nervous before their first session simply due to the unknown. However, the treatment itself is comfortable. You sit in a reclining chair, and the pulses feel like a tapping sensation on your scalp. In fact, many patients find the sessions relaxing and use the time to meditate or listen to soothing music.
+                            You will feel a tapping sensation on your scalp. For anxiety protocols, the frequency is often lower (inhibitory), which many patients describe as a rhythmic, calming tapping.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Will TMS make me feel sedated like anti-anxiety meds?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            No. Unlike benzodiazepines or other anxiety medications, TMS does not cause sedation, grogginess, or cognitive dulling. You can drive and work immediately after treatment.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How many sessions are required for generalized anxiety?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            A full course typically consists of 30-36 sessions over 6 weeks. Consistency is key to retraining the hyperactive neural circuits associated with anxiety.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Are the results for anxiety long-lasting?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, by promoting neuroplasticity, TMS helps "rewire" the anxious brain, providing durable relief that lasts long after the final session for many patients.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

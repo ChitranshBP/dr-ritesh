@@ -307,7 +307,86 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-slate-50" id="faq">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="section-header center reveal mb-8">
+                <span class="eyebrow">Frequently Asked Questions</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Treatment FAQs</h2>
+            </div>
+            <div class="bi-faq-accordion reveal delay-1 space-y-3">
+
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">What is Fibromuscular Dysplasia (FMD)?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            FMD is a rare vascular disease that causes abnormal cell growth in the artery walls, leading to narrowing, aneurysms, or tears, most commonly affecting the kidneys and the brain.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How can TMS help with FMD-related neurological symptoms?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            While TMS does not cure the vascular abnormality, it can effectively manage the severe secondary neurological symptoms, such as chronic headaches, pulsatile tinnitus, and chronic pain syndromes.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS safe to use with vascular conditions?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, TMS only penetrates a few centimeters into the brain tissue and does not directly affect the vascular structures themselves, making it a safe adjunctive therapy for symptom management.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS alleviate the chronic fatigue associated with FMD?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            By addressing comorbid depression and chronic pain, TMS often significantly improves energy levels, sleep quality, and overall stamina in patients with complex systemic conditions like FMD.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Will TMS interfere with my blood pressure medications?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            No. Because TMS is a localized physical treatment, it does not interact with systemic medications like anti-hypertensives or blood thinners used to treat FMD.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <!-- CTA -->
     <section class="py-12 bg-white" id="get-evaluated">

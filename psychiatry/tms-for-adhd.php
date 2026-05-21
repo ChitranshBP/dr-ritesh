@@ -304,31 +304,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS covered by insurance for ADHD?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS help with ADHD symptoms?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Currently, TMS for ADHD is considered an "off-label" application by most insurers if ADHD is the primary diagnosis. However, a significant portion of our ADHD patients also suffer from <a href="/psychiatry/tms-for-major-depression.php" class="text-gold underline">Major Depressive Disorder (MDD)</a>. In these cases, insurance frequently covers the TMS treatment for the depression, which concurrently stimulates the areas of the brain that improve executive function.
+                            TMS helps with ADHD by targeting and stimulating the prefrontal cortex, the area of the brain responsible for executive functions, attention, and impulse control, which is often underactive in individuals with ADHD.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Can I stay on my Adderall during TMS?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS for ADHD a replacement for stimulants like Adderall?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes. Dr. Amin manages all medications during the course of your treatment. Sometimes, patients remain on their stimulants and use TMS as an adjunct. However, a common goal for many of our patients is to use the neuroplastic changes created by TMS to eventually lower their dependence on high doses of central nervous system stimulants.
+                            TMS can be an excellent alternative or adjunct therapy for individuals who do not tolerate stimulant medications well, experience severe side effects, or prefer a non-pharmacological approach to managing their ADHD.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How many TMS sessions are needed for ADHD?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            A typical course of TMS for ADHD involves 30 to 36 sessions, usually administered 5 days a week for about 6 weeks, similar to standard TMS protocols.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Are the effects of TMS for ADHD permanent?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Many patients experience long-lasting improvements in focus and executive function. However, ADHD is a chronic condition, and some patients may benefit from maintenance sessions in the future.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS safe for adults with ADHD?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, TMS is a safe, FDA-cleared, non-invasive procedure with very few side effects. The most common side effect is mild scalp discomfort during the session, which typically resolves quickly.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

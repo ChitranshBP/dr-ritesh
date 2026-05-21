@@ -326,44 +326,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS cure Alzheimer's disease?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS cure Alzheimer&#039;s disease?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            No. Currently, there is no cure for Alzheimer's disease. TMS for cognitive decline is considered an off-label use aimed at symptom management. Research suggests it may help boost cognitive function temporarily, slow the rate of decline in early stages, and manage depression or agitation, but it does not reverse the underlying neurodegeneration.
+                            There is currently no cure for Alzheimer's. However, TMS is an emerging therapy used to slow cognitive decline, improve memory function, and enhance quality of life in early-to-moderate stages.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS suitable for advanced stage or severe dementia?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS benefit patients with dementia?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Generally, TMS is most effective during Mild Cognitive Impairment (MCI) or Early-Stage Alzheimer's when there is still significant neural reserve to stimulate. In severe dementia, the amount of brain atrophy often limits the potential benefits of cognitive enhancement, though it is occasionally used to manage severe behavioral symptoms.
+                            TMS stimulates neuroplasticity and increases blood flow to the brain, which can help strengthen neural pathways associated with memory, language, and executive function that are deteriorating.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How does the treatment feel?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS safe for elderly patients?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Patients typically feel a tapping or clicking sensation on the scalp during the pulses. The procedure is non-invasive, does not require anesthesia, and patients remain fully awake. Memory patients are monitored closely to ensure they remain calm and comfortable throughout the short sessions.
+                            Yes, TMS is remarkably safe for older adults. Because it does not involve systemic drugs, it avoids the dangerous drug-drug interactions and heavy side effects often seen with dementia medications.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">At what stage of Alzheimer&#039;s is TMS most effective?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            TMS is generally most effective when utilized in the mild cognitive impairment (MCI) or early stages of Alzheimer's, when there is more healthy brain tissue available to form new connections.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Will TMS help with the behavioral symptoms of dementia?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, by targeting mood-regulating areas of the brain, TMS can significantly reduce the depression, anxiety, and agitation that frequently accompany Alzheimer's disease.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

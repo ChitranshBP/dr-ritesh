@@ -304,44 +304,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS the same as ECT (shock therapy)?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS work if I have failed multiple antidepressants?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            No, TMS is entirely different from Electroconvulsive Therapy (ECT). ECT requires medication, general anesthesia, explicitly induces a seizure, and carries a high risk of memory loss. TMS is non-invasive, requires no anesthesia, induces no seizures, and has no systemic side effects. You are awake and alert during the entire TMS procedure.
+                            Absolutely. TMS is specifically designed and highly effective for patients who have not found relief from two or more traditional antidepressant medications.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How soon will I see results?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Does TMS cause weight gain or sexual dysfunction?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            While every patient is different, most individuals begin to notice subtle improvements in their mood, energy levels, and sleep patterns within the second or third week of daily treatments. Full benefits are typically realized shortly after completing the 6-week protocol.
+                            No. Because TMS is non-systemic (it only affects the targeted area of the brain), it completely avoids the common systemic side effects of SSRIs, including weight gain, sexual dysfunction, and insomnia.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS covered by my insurance?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">What is the success rate of TMS for Major Depression?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes, <a href="/psychiatry-tms-therapy.php" class="text-gold underline">TMS therapy for Major Depressive Disorder</a> is covered by most major commercial insurances, as well as Medicare, provided you meet their specific medical necessity criteria (usually involving a history of trying and failing a certain number of antidepressants).
+                            Clinical studies and real-world data show that approximately 70% of patients experience significant improvement in their depressive symptoms, and many achieve full remission.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How long does a single TMS session take?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            A standard TMS session takes roughly 20 minutes. It is an outpatient procedure, meaning you walk in, receive treatment, and walk out to resume your normal day.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is the treatment painful?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            TMS is generally not painful. You will feel a tapping on your head and hear a clicking sound. Any mild scalp discomfort usually disappears after the first few sessions as you acclimate.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

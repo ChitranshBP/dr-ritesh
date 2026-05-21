@@ -916,60 +916,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS FDA-approved for Traumatic Brain Injury?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS assist in Traumatic Brain Injury (TBI) recovery?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            While TMS is fully FDA-approved for Major Depressive Disorder and OCD, its use for Traumatic Brain Injury (TBI) and Post-Concussion Syndrome is currently considered "off-label." However, a rapidly growing body of clinical research and neurological literature supports its profound efficacy in repairing neural networks damaged by physical trauma. Many major research institutions are currently utilizing TMS protocols identical to the ones we administer for brain injury recovery.
+                            TMS promotes neuroplasticity, helping the brain "rewire" itself around damaged areas by strengthening alternative neural pathways, thereby accelerating recovery of motor and cognitive functions.
                         </div>
                     </div>
                 </div>
-                
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How soon after a concussion can I start TMS?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS treat the depression caused by a brain injury?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Treatment timing depends on the severity of the concussion. Following the initial acute phase (typically the first 1-2 weeks where rest is required), TMS can be introduced if symptoms fail to resolve. Dr. Amin conducts a thorough neurological evaluation to determine if your brain has stabilized enough to benefit from active neurostimulation.
+                            Absolutely. Post-concussive depression is incredibly common, and standard antidepressants are often poorly tolerated by TBI patients. TMS directly treats the depression safely and effectively.
                         </div>
                     </div>
                 </div>
-
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Will TMS help with the cognitive fog and memory issues?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How soon after a head injury can I start TMS?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes. By targeting the dorsolateral prefrontal cortex—the area of the brain responsible for executive function, working memory, and attention—TMS stimulates metabolic activity and blood flow. Patients frequently report that the "brain fog" lifts entirely, allowing them to return to work, academics, and daily tasks with their previous mental clarity.
+                            Timing depends on the severity of the injury and stabilization. Dr. Amin will conduct a thorough neurological evaluation to determine the optimal, safest time to begin neuromodulation therapy.
                         </div>
                     </div>
                 </div>
-
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Does treatment hurt? Are there side effects?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Does TMS help with post-concussion headaches?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            No, TMS is entirely non-invasive and the vast majority of patients find it painless. You may feel a light tapping sensation on your scalp during the active magnetic pulses, and hear a clicking sound. There is absolutely no sedation required, no systemic side effects, and you can drive yourself home immediately after a session.
+                            Yes, specific TMS protocols can modulate pain networks and reduce the frequency and intensity of chronic headaches and migraines that persist after a concussion.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is there a risk of seizures if I have a TBI?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            While TBI can increase baseline seizure risk, TMS is applied using strict, safe parameters. Dr. Amin carefully evaluates each patient's medical history to ensure TMS is administered with maximum safety.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

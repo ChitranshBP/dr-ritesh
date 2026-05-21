@@ -72,6 +72,15 @@ $faqs = [
         'question' => 'How long before I notice an improvement in my mood or anxiety?',
         'answer' => 'While responses vary, many patients begin noticing subtle improvements—such as better sleep, increased energy, or "lighter" moods—around the second or third week of daily treatment (sessions 10-15). The most significant changes often occur toward the end of the treatment course.'
     ]
+    [
+        'question' => 'How do I know if I am a candidate for TMS?',
+        'answer' => 'If you suffer from depression, anxiety, PTSD, or OCD and have not found adequate relief from standard medications or talk therapy, you are likely an excellent candidate for TMS. A consultation with Dr. Amin will confirm.'
+    ],
+    [
+        'question' => 'Is there any downtime after a TMS session?',
+        'answer' => 'Zero downtime. Because TMS requires no anesthesia or sedation, you can immediately drive, return to work, and resume all normal daily activities the moment your 20-minute session ends.'
+    ],
+
 ];
 
 // Include the master service template

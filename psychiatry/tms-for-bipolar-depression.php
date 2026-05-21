@@ -295,7 +295,86 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- Closing CTA -->
-    <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-slate-50" id="faq">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="section-header center reveal mb-8">
+                <span class="eyebrow">Frequently Asked Questions</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Treatment FAQs</h2>
+            </div>
+            <div class="bi-faq-accordion reveal delay-1 space-y-3">
+
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS trigger mania in bipolar disorder?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            When administered correctly by a trained psychiatrist, TMS for bipolar depression uses specific protocols to safely lift depressive episodes while minimizing the risk of inducing hypomania or mania.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Do I need to stop my mood stabilizers during TMS?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            No. In fact, most patients continue their prescribed mood stabilizers (like Lithium or Lamictal) during TMS treatment to maintain a stable baseline while the TMS targets the depressive symptoms.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS differ from standard antidepressants for bipolar disorder?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Standard antidepressants carry a known risk of triggering manic switching in bipolar patients. TMS is a localized, physical treatment that avoids introducing systemic chemicals, offering a safer profile for many bipolar patients.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS FDA-cleared for Bipolar Depression?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            While initially FDA-cleared for Major Depressive Disorder, advanced protocols are increasingly used off-label or under new clearances to safely treat the depressive phase of bipolar disorder with high efficacy.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How quickly will I feel relief from bipolar depression with TMS?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Many patients notice a lifting of their depressive symptoms within 2 to 3 weeks of starting daily TMS sessions, with full benefits realized by the end of the 6-week course.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
 
     <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">

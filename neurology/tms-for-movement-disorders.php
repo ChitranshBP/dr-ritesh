@@ -466,57 +466,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS FDA-approved for Functional Movement Disorders?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">What movement disorders can TMS treat?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            TMS is FDA-approved for Major Depressive Disorder and OCD, but its use for Functional Movement Disorders and FND is considered "off-label." However, a growing body of peer-reviewed clinical research supports its effectiveness for functional motor conditions. Dr. Amin tailors protocols based on published evidence from leading neurology institutions.
+                            TMS is utilized to manage symptoms of Parkinson's disease, essential tremor, dystonia, Tourette syndrome, and various forms of ataxia and chorea.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS differ from Botox for movement disorders?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS calm tremors and spasms?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Botox addresses movement disorders at the muscular level by weakening overactive muscles. TMS works at the source — the brain — to reset the cortical commands driving the dysfunction. For functional disorders, where the problem is in brain-body signaling rather than structural damage, TMS is uniquely effective because it targets the actual origin of symptoms.
+                            Movement disorders often feature overactive circuits in the motor cortex. By using low-frequency inhibitory TMS, Dr. Amin can calm these circuits, reducing the severity of tremors and muscle spasms.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How many TMS sessions are needed for motor improvement?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS an alternative to Deep Brain Stimulation (DBS) surgery?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Neurological TMS protocols are highly individualized. A typical course for functional movement disorders ranges from 20–36 sessions, administered 5 days per week. Some patients see meaningful motor improvements within the first 2 weeks. Dr. Amin will design a custom schedule based on your specific condition and treatment response.
+                            For some patients, yes. TMS offers a non-invasive, surgery-free method to modulate deep brain networks. It is an excellent option for patients who are not candidates for or wish to avoid invasive DBS surgery.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS be combined with physiotherapy?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Will TMS interact with my levodopa or tremor medications?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Absolutely — and it is strongly recommended. TMS "primes" the motor cortex and makes it significantly more receptive to learning new movement patterns. When paired with physiotherapy immediately after a TMS session, patients often achieve markedly faster and more durable recovery of motor function than with either treatment alone.
+                            No. TMS is a physical, localized treatment that does not cause chemical interactions with your current neurological medications. It works synergistically with them.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How long do the effects on motor control last?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Effects vary by condition. Many patients experience relief that lasts for months. Because movement disorders are typically chronic, maintenance sessions are often recommended to sustain motor control.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

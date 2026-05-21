@@ -272,34 +272,71 @@ include __DIR__ . '/../header.php';
             <h2 class="section-title text-midnight font-serif font-bold">Stroke Recovery TMS FAQs</h2>
         </div>
         <div class="bi-faq-accordion reveal delay-1 space-y-3">
-            <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
-                <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                    <h3 class="text-lg font-bold text-midnight font-serif">How soon after a stroke can I start TMS?</h3>
-                    <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300"><svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-                </button>
-                <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
-                    <div class="p-6 pt-0 text-gray-600 leading-relaxed">TMS can begin as early as 1–2 weeks post-stroke once medically stable. The critical neuroplasticity window extends from 1 week to approximately 3 months post-stroke, making early intervention highly valuable. However, TMS has shown meaningful benefits even in patients years post-stroke.</div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS aid in stroke rehabilitation?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            After a stroke, the uninjured hemisphere often becomes hyperactive, suppressing the injured side. TMS is used to calm the healthy hemisphere, allowing the damaged side to heal and reorganize (neuroplasticity).
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
-                <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                    <h3 class="text-lg font-bold text-midnight font-serif">Can TMS help arm paralysis years after a stroke?</h3>
-                    <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300"><svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-                </button>
-                <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
-                    <div class="p-6 pt-0 text-gray-600 leading-relaxed">Yes. TMS-assisted motor rehabilitation has demonstrated significant improvements even in chronic stroke patients (more than 6 months post-stroke). The key predictor is residual corticospinal connectivity, which Dr. Amin measures using TMS motor mapping during your initial evaluation.</div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS help with post-stroke aphasia (speech difficulties)?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, by stimulating the language centers of the brain (like Broca's area), TMS has shown significant promise in improving speech production and comprehension during stroke recovery.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
-                <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                    <h3 class="text-lg font-bold text-midnight font-serif">Does TMS help post-stroke depression?</h3>
-                    <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300"><svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-                </button>
-                <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
-                    <div class="p-6 pt-0 text-gray-600 leading-relaxed">Absolutely. TMS is FDA-approved for Major Depressive Disorder and is exceptionally effective for post-stroke depression. Treating depression in stroke patients improves not only emotional wellbeing but motor rehabilitation outcomes — depressed patients engage less effectively in physical therapy, so addressing mood directly accelerates overall recovery.</div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Does TMS improve motor function in paralyzed limbs?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            When combined with physical therapy, TMS primes the motor cortex, significantly enhancing the brain's ability to relearn movements and accelerating the recovery of motor function in affected limbs.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">When is the best time to start TMS after a stroke?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Research suggests that starting TMS during the subacute phase (weeks to a few months after the stroke) yields the best results for harnessing peak neuroplasticity, though chronic stroke survivors can also benefit.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is it safe to use magnetic stimulation after a brain injury?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, TMS is safely used in stroke rehabilitation. Dr. Amin carefully reviews each patient's brain imaging and medical history to apply customized, safe stimulation protocols.
+                        </div>
+                    </div>
+                </div></div>
     </div>
 </section>
 

@@ -70,6 +70,19 @@ $faqs = [
         'question' => 'Does insurance cover Ketamine infusions?',
         'answer' => 'Currently, IV Ketamine is often considered off-label and may not be covered by all insurance plans. However, we provide superbills for out-of-network reimbursement and offer financing options.'
     ]
+    [
+        'question' => 'How is Ketamine therapy different from standard antidepressants?',
+        'answer' => 'While traditional antidepressants (SSRIs) take weeks to build up in your system, Ketamine works immediately on the glutamate system, rapidly generating new neural connections and often lifting depression within hours.'
+    ],
+    [
+        'question' => 'Can Ketamine cure my suicidal thoughts?',
+        'answer' => 'Ketamine is renowned for its unique, rapid anti-suicidal properties. Many patients report a complete cessation of suicidal ideation within 24 hours of their first infusion.'
+    ],
+    [
+        'question' => 'Are the effects of Ketamine permanent?',
+        'answer' => 'The rapid relief is profound but usually temporary without maintenance. Ketamine creates a window of neuroplasticity; engaging in therapy and maintaining booster infusions helps sustain the positive changes.'
+    ],
+
 ];
 
 // Include the master service template

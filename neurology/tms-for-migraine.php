@@ -326,44 +326,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS covered by insurance for migraines?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS FDA-cleared for treating migraines?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            While TMS is FDA-cleared for the treatment of migraine with aura, insurance coverage varies significantly depending on the provider and your specific policy. In many cases, it may be considered an "out-of-pocket" expense, unlike TMS for depression which is widely covered. Our office will help determine your coverage options during your consultation.
+                            Yes, certain forms of TMS are specifically FDA-cleared for both the acute treatment of migraine with aura and the long-term prevention of chronic migraines.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How does it compare to Botox for migraines?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS stop a migraine attack?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Botox involves multiple needle injections into the head and neck muscles every 12 weeks to block pain signals from the muscles to the brain. TMS is entirely non-invasive (no needles) and uses magnetic pulses to directly modulate the electrical activity of the brain itself. Patients who dislike needles or have not had success with Botox often prefer TMS.
+                            Migraines are associated with "cortical spreading depression"—a wave of hyperactivity in the brain. TMS pulses interrupt this wave, stopping the migraine before it fully develops or reducing its severity.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Will it cure my migraines permanently?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS reduce how often I get migraines?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Migraine is a chronic neurological condition without a definitive "cure." However, a course of preventative TMS can drastically reduce the severity and frequency of your attacks for months at a time. Many patients describe the results as life-changing, allowing them to return to work and social activities. Periodic maintenance sessions may be needed.
+                            Yes. Regular prophylactic (preventative) TMS sessions help stabilize the brain's electrical environment, significantly reducing the frequency of migraine days per month.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can I stop taking my daily preventative migraine meds?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Many patients are able to reduce or eliminate their reliance on daily preventatives (like Topamax or beta-blockers) and acute abortives (like triptans) after a successful TMS protocol.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Does TMS help if I have migraines without aura?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Yes, TMS is effective for treating both migraines with aura and migraines without aura, providing comprehensive relief for chronic sufferers.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 

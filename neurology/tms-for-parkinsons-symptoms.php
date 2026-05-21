@@ -326,44 +326,69 @@ include __DIR__ . '/../header.php';
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS replace my Parkinson's medication?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Can TMS replace my Parkinson&#039;s medications?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            No. TMS is intended as a **complementary therapy**. It works alongside your existing medications (like Levodopa) to enhance their effectiveness and help manage symptoms during "off" periods. You should never stop or change your Parkinson's medications without consulting your neurologist.
+                            No, TMS is not a replacement for levodopa or other primary Parkinson's medications. It is a powerful adjunctive therapy designed to enhance motor function and reduce symptoms that medications fail to control.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">How does TMS compare to Deep Brain Stimulation (DBS)?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">What specific Parkinson&#039;s symptoms does TMS improve?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            DBS is a surgical procedure that involves implanting electrodes deep inside the brain. TMS is entirely **non-invasive**, requires no surgery or anesthesia, and has a significantly lower risk profile. Many patients who are not candidates for surgery or want to avoid it choose TMS as a safer alternative.
+                            TMS is particularly effective at improving gait (walking), reducing freezing of gait, alleviating rigidity, and treating the severe depression that frequently accompanies Parkinson's disease.
                         </div>
                     </div>
                 </div>
                 <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
-                        <h3 class="text-lg font-bold text-midnight font-serif">Is TMS safe for Parkinson's patients?</h3>
+                        <h3 class="text-lg font-bold text-midnight font-serif">Does TMS help with Parkinson&#039;s-related depression?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
                             <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
                         </span>
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes, TMS is highly safe and has been cleared by the FDA for depression and OCD. The most common side effect is a temporary, mild headache or tapping sensation during the procedure. Unlike surgical interventions, there is no risk of infection or hemorrhage.
+                            Yes, up to 50% of Parkinson's patients suffer from depression. TMS is FDA-cleared for depression and is incredibly effective at lifting mood safely without adding more systemic drugs to the patient's regimen.
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">How is the treatment administered for Parkinson&#039;s?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            Depending on the primary symptoms, the magnetic coil is positioned over the motor cortex to improve movement, or over the prefrontal cortex to treat mood and cognitive symptoms.
+                        </div>
+                    </div>
+                </div>
+                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                    <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
+                        <h3 class="text-lg font-bold text-midnight font-serif">Are there any side effects of TMS for Parkinson&#039;s patients?</h3>
+                        <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                        </span>
+                    </button>
+                    <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
+                        <div class="p-6 pt-0 text-gray-600 leading-relaxed">
+                            TMS is very well tolerated. The most common side effect is transient, mild scalp discomfort. It does not cause the dyskinesias (involuntary movements) associated with long-term levodopa use.
+                        </div>
+                    </div>
+                </div></div>
         </div>
     </section>
 
