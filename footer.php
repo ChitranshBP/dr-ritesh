@@ -102,5 +102,103 @@
 
     <!-- Scripts -->
     <script src="/js/main.js"></script>
-</body>
+<?php
+$html_content = ob_get_clean();
+
+$schemas = [];
+
+// 1. Global MedicalOrganization Schema
+$schemas[] = [
+    "@context" => "https://schema.org",
+    "@type" => "MedicalOrganization",
+    "name" => "Dr. Ritesh Amin",
+    "url" => "https://drriteshamin.com",
+    "logo" => "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png",
+    "description" => "Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey.",
+    "telephone" => "+1-732-555-1234",
+    "address" => [
+        "@type" => "PostalAddress",
+        "addressLocality" => "Edison",
+        "addressRegion" => "NJ",
+        "addressCountry" => "US"
+    ]
+];
+
+// 2. Global WebSite Schema
+$schemas[] = [
+    "@context" => "https://schema.org",
+    "@type" => "WebSite",
+    "name" => "Dr. Ritesh Amin",
+    "url" => "https://drriteshamin.com"
+];
+
+// 3. FAQ Schema Extractor
+$dom = new DOMDocument();
+libxml_use_internal_errors(true);
+$dom->loadHTML('<?xml encoding="UTF-8">' . $html_content, LIBXML_NOERROR | LIBXML_NOWARNING);
+$xpath = new DOMXPath($dom);
+$faq_items = [];
+
+// For faq.php
+$faq_questions1 = $xpath->query("//*[contains(@class, 'faq-accordion-question')]");
+if ($faq_questions1) {
+    foreach ($faq_questions1 as $qNode) {
+        $item = $xpath->query("ancestor::*[contains(@class, 'faq-accordion-item')]", $qNode)->item(0);
+        if ($item) {
+            $aNode = $xpath->query(".//*[contains(@class, 'faq-accordion-answer-inner')]", $item)->item(0);
+            if ($aNode) {
+                $faq_items[] = [
+                    "@type" => "Question",
+                    "name" => trim(preg_replace('/^\d+\.\s*/', '', $qNode->textContent)),
+                    "acceptedAnswer" => [
+                        "@type" => "Answer",
+                        "text" => trim(preg_replace('/\s+/', ' ', $aNode->textContent))
+                    ]
+                ];
+            }
+        }
+    }
+}
+
+// For service pages (bi-faq-header)
+$faq_questions2 = $xpath->query("//*[contains(@class, 'bi-faq-header')]//h3");
+if ($faq_questions2) {
+    foreach ($faq_questions2 as $qNode) {
+        $item = $xpath->query("ancestor::*[contains(@class, 'bi-faq-item')]", $qNode)->item(0);
+        if ($item) {
+            $aNode = $xpath->query(".//*[contains(@class, 'bi-faq-content')]//div", $item)->item(0);
+            if ($aNode) {
+                $faq_items[] = [
+                    "@type" => "Question",
+                    "name" => trim(preg_replace('/^\d+\.\s*/', '', $qNode->textContent)),
+                    "acceptedAnswer" => [
+                        "@type" => "Answer",
+                        "text" => trim(preg_replace('/\s+/', ' ', $aNode->textContent))
+                    ]
+                ];
+            }
+        }
+    }
+}
+
+// Add FAQ Schema if questions exist
+if (count($faq_items) > 0) {
+    $schemas[] = [
+        "@context" => "https://schema.org",
+        "@type" => "FAQPage",
+        "mainEntity" => $faq_items
+    ];
+}
+
+// Build script tags
+$schema_html = "";
+foreach ($schemas as $schema) {
+    $schema_html .= '<script type="application/ld+json">' . "\n" . json_encode($schema, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n" . '</script>' . "\n";
+}
+
+// Inject into HTML and close body
+$html_content .= $schema_html;
+$html_content .= "\n</body>\n";
+echo $html_content;
+?>
 </html>

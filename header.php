@@ -1,4 +1,5 @@
 <?php
+ob_start();
 // Default values if not set before including header.php
 $page_title = $page_title ?? 'Advanced TMS Therapy in NJ';
 $page_desc = $page_desc ?? 'Learn about our advanced TMS Therapy and mental health treatments in New Jersey.';
