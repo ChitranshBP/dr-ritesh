@@ -71,7 +71,7 @@ $faqs = [
     [
         'question' => 'How many sessions are required for neurological recovery?',
         'answer' => 'Neurological protocols vary significantly depending on the condition being treated. While standard psychiatric protocols are usually 36 sessions, neurological recovery protocols are highly individualized. Dr. Amin will design a custom treatment schedule during your consultation.'
-    ]
+    ],
     [
         'question' => 'Can TMS reverse neurological damage?',
         'answer' => 'While TMS does not physically regrow dead tissue, it forcefully stimulates \"neuroplasticity\"—encouraging healthy, surviving brain cells to form new connections and take over the functions of the damaged areas.'

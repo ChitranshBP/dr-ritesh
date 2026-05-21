@@ -58,7 +58,7 @@ $faqs = [
     [
         'question' => 'How soon will I see results from TMS?',
         'answer' => 'While every patient is unique, some begin to notice subtle improvements in their mood, energy levels, or sleep patterns within the first one to two weeks of starting their daily treatments.'
-    ]
+    ],
     [
         'question' => 'Does TMS cause weight gain or sexual dysfunction?',
         'answer' => 'No. Because TMS is non-systemic (it only affects the targeted area of the brain), it completely avoids the common systemic side effects of SSRIs, including weight gain, sexual dysfunction, and insomnia.'

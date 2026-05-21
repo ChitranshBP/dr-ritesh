@@ -69,7 +69,7 @@ $faqs = [
     [
         'question' => 'Does insurance cover Ketamine infusions?',
         'answer' => 'Currently, IV Ketamine is often considered off-label and may not be covered by all insurance plans. However, we provide superbills for out-of-network reimbursement and offer financing options.'
-    ]
+    ],
     [
         'question' => 'How is Ketamine therapy different from standard antidepressants?',
         'answer' => 'While traditional antidepressants (SSRIs) take weeks to build up in your system, Ketamine works immediately on the glutamate system, rapidly generating new neural connections and often lifting depression within hours.'
