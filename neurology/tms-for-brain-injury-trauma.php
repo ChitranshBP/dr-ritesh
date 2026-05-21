@@ -1042,18 +1042,7 @@ include __DIR__ . '/../header.php';
         });
 
         // FAQ accordion functionality
-        const faqHeaders = document.querySelectorAll('.bi-faq-header');
-        faqHeaders.forEach(header => {
-            header.addEventListener('click', () => {
-                const content = header.nextElementSibling;
-                const icon = header.querySelector('.bi-faq-icon');
-                const isOpen = content.classList.contains('max-h-[1000px]');
-                
-                // Close all
-                document.querySelectorAll('.bi-faq-content').forEach(c => {
-                    c.classList.remove('max-h-[1000px]', 'opacity-100');
-                    c.classList.add('max-h-0', 'opacity-0');
-                });
+        
                 document.querySelectorAll('.bi-faq-icon').forEach(i => {
                     i.classList.remove('rotate-45');
                 });
