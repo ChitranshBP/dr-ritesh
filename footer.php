@@ -8,11 +8,15 @@
                         <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="footer-logo">
                     </a>
                     <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
-                    <div class="emergency-disclaimer mt-8">
-                        <div class="disclaimer-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                        </div>
-                        <p><strong>Emergency:</strong> If you are experiencing a medical crisis, call 911 or visit the nearest emergency room.</p>
+                    <div class="mt-6 space-y-2 text-sm font-light">
+                        <p class="text-white/60">
+                            <span class="text-white/40 mr-2">Phone:</span>
+                            <a href="tel:+17323791797" class="text-white hover:text-gold transition-colors">(732) 379-1797</a>
+                        </p>
+                        <p class="text-white/60">
+                            <span class="text-white/40 mr-2">Email:</span>
+                            <a href="mailto:psychiatrycare@gmail.com" class="text-white hover:text-gold transition-colors">psychiatrycare@gmail.com</a>
+                        </p>
                     </div>
                 </div>
 
@@ -115,7 +119,7 @@ $schemas[] = [
     "url" => "https://drriteshamin.com",
     "logo" => "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png",
     "description" => "Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey.",
-    "telephone" => "+1-732-555-1234",
+    "telephone" => "+1-732-379-1797",
     "address" => [
         "@type" => "PostalAddress",
         "addressLocality" => "Edison",

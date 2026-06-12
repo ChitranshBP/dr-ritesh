@@ -312,7 +312,7 @@ include 'header.php';
                             </div>
                             <div>
                                 <div class="contact-info-label">Call Us</div>
-                                <a href="tel:+17325551234" class="contact-info-value hover:text-gold transition-colors">(732) 555-1234</a>
+                                <a href="tel:+17323791797" class="contact-info-value hover:text-gold transition-colors">(732) 379-1797</a>
                                 <div class="contact-info-sub">Mon – Fri: 9:00 AM – 5:00 PM</div>
                             </div>
                         </div>
@@ -324,7 +324,7 @@ include 'header.php';
                             </div>
                             <div>
                                 <div class="contact-info-label">Email Us</div>
-                                <a href="mailto:info@drriteshamin.com" class="contact-info-value hover:text-gold transition-colors">info@drriteshamin.com</a>
+                                <a href="mailto:psychiatrycare@gmail.com" class="contact-info-value hover:text-gold transition-colors">psychiatrycare@gmail.com</a>
                                 <div class="contact-info-sub">We respond within 24 hours</div>
                             </div>
                         </div>
@@ -541,8 +541,8 @@ include 'header.php';
             <span class="block text-sm font-semibold tracking-widest text-gold-light uppercase mb-3">Ready to Begin?</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Your Wellness Starts Here</h2>
             <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">Don't wait any longer to take the first step toward better mental health. Our team is ready to support you every step of the way.</p>
-            <a href="tel:+17325551234" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform border border-white/20">
-                Call (732) 555-1234
+            <a href="tel:+17323791797" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform border border-white/20">
+                Call (732) 379-1797
             </a>
         </div>
     </section>

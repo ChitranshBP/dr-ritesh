@@ -894,7 +894,7 @@ include 'header.php';
                         Check My Coverage
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 ml-2 inline-block" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
-                    <a href="tel:+17325551234" class="text-white/50 text-sm hover:text-gold-light transition-colors">or call (732) 555-1234</a>
+                    <a href="tel:+17323791797" class="text-white/50 text-sm hover:text-gold-light transition-colors">or call (732) 379-1797</a>
                 </div>
             </div>
         </div>

@@ -89,8 +89,8 @@ include 'header.php';
                     <a href="/" class="btn btn-primary py-3 px-8 text-center text-sm tracking-wide shadow-lg shadow-gold/20 hover:-translate-y-0.5 transition-all">
                         Back to Homepage
                     </a>
-                    <a href="tel:+17325551234" class="btn py-3 px-8 text-center text-sm tracking-wide text-white border border-white/30 hover:bg-white/10 rounded-full transition-colors">
-                        Call (732) 555-1234
+                    <a href="tel:+17323791797" class="btn py-3 px-8 text-center text-sm tracking-wide text-white border border-white/30 hover:bg-white/10 rounded-full transition-colors">
+                        Call (732) 379-1797
                     </a>
                 </div>
 

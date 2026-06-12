@@ -806,7 +806,7 @@ include 'header.php';
                             </div>
                             <div>
                                 <div class="faq-cta-method-label">Call Us</div>
-                                <a href="tel:+17325551234" class="faq-cta-method-value hover:text-gold-light transition-colors">(732) 555-1234</a>
+                                <a href="tel:+17323791797" class="faq-cta-method-value hover:text-gold-light transition-colors">(732) 379-1797</a>
                             </div>
                         </div>
                         <div class="faq-cta-method">
@@ -815,7 +815,7 @@ include 'header.php';
                             </div>
                             <div>
                                 <div class="faq-cta-method-label">Email</div>
-                                <a href="mailto:info@drriteshamin.com" class="faq-cta-method-value hover:text-gold-light transition-colors">info@drriteshamin.com</a>
+                                <a href="mailto:psychiatrycare@gmail.com" class="faq-cta-method-value hover:text-gold-light transition-colors">psychiatrycare@gmail.com</a>
                             </div>
                         </div>
                     </div>

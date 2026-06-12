@@ -382,8 +382,8 @@ include 'header.php';
                     <div class="legal-highlight">
                         <p><strong>Dr. Ritesh Amin, MD</strong><br>
                         Edison, New Jersey<br>
-                        Phone: <a href="tel:+17325551234">(732) 555-1234</a><br>
-                        Email: <a href="mailto:info@drriteshamin.com">info@drriteshamin.com</a><br>
+                        Phone: <a href="tel:+17323791797">(732) 379-1797</a><br>
+                        Email: <a href="mailto:psychiatrycare@gmail.com">psychiatrycare@gmail.com</a><br>
                         Website: <a href="/">drriteshamin.com</a></p>
                     </div>
                 </div>
