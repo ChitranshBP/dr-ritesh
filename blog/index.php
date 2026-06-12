@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'Is TMS Therapy Legitimate? Science, FDA Approval, and Clinical Evidence',
+        'date'        => '2026-06-12',
+        'category'    => 'TMS Therapy',
+        'excerpt'     => 'Curious if Transcranial Magnetic Stimulation (TMS) is a legitimate medical treatment? Explore the clinical evidence, FDA clearances, and real patient outcomes that substantiate TMS.',
+        'image'       => '/assets/images/blog-tms-legitimate.png',
+        'slug'        => 'is-tms-legitimate',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'How Much Does TMS Cost With Insurance? A Complete Guide',
         'date'        => '2026-05-19',
         'category'    => 'TMS Therapy',
@@ -24,7 +33,7 @@ $posts = [
         'date'        => '2026-04-13',
         'category'    => 'TMS Therapy',
         'excerpt'     => 'Anxiety can feel overwhelming. If you’ve tried therapy or medications and still don’t feel like yourself, you may have come across Transcranial Magnetic Stimulation (TMS) as a treatment option.',
-        'image'       => 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=800&q=80',
+        'image'       => '/assets/images/blog-tms-anxiety.png',
         'slug'        => 'does-tms-help-with-anxiety',
         'featured'    => true,
     ],
