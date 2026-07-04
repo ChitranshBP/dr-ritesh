@@ -3035,7 +3035,7 @@ img {
 /* ── Footer Grid Container ── */
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr;
     gap: 3rem;
     margin-bottom: 4rem;
 }
@@ -3104,6 +3104,22 @@ img {
 .footer-links a:hover {
     color: var(--color-gold-light);
     transform: translateX(5px); /* Gentle slide right on hover */
+}
+
+/* ── 2-Column List for Areas We Serve ── */
+.areas-we-serve-list {
+    column-count: 2;
+    column-gap: 1.5rem;
+}
+.areas-we-serve-list li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+@media (max-width: 1024px) {
+    .areas-we-serve-list {
+        column-count: 1;
+    }
 }
 
 /* ── Premium Glassmorphism Map ── */
@@ -3343,7 +3359,7 @@ img {
    ========================================= */
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr 1fr 1fr;
     gap: 2rem;
 }
 
