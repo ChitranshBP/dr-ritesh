@@ -47,6 +47,20 @@
 
                 <!-- Links Columns -->
                 <div class="footer-links">
+                    <h4 class="footer-heading">Areas We Serve</h4>
+                    <ul>
+                        <li><a href="/areas-we-serve/tms-therapy-edison-nj.php">Edison</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-princeton-nj.php">Princeton</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-east-brunswick-nj.php">East Brunswick</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-new-brunswick-nj.php">New Brunswick</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-piscataway-nj.php">Piscataway</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-north-brunswick-nj.php">North Brunswick</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-plainsboro-nj.php">Plainsboro</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-somerset-nj.php">Somerset</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul>
                         <li><a href="/">Home</a></li>
