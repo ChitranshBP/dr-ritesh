@@ -54,6 +54,31 @@ $pages = [
     'psychiatry/tms-for-ptsd.php'                         => 'psychiatry/tms-for-ptsd.html',
     'psychiatry/tms-for-treatment-resistant-depression.php' => 'psychiatry/tms-for-treatment-resistant-depression.html',
 
+    // Areas We Serve - Location Pages
+    'areas-we-serve/tms-therapy-kendall-park-nj.php'       => 'areas-we-serve/tms-therapy-kendall-park-nj.html',
+    'areas-we-serve/tms-therapy-monmouth-junction-nj.php'  => 'areas-we-serve/tms-therapy-monmouth-junction-nj.html',
+    'areas-we-serve/tms-therapy-franklin-park-nj.php'      => 'areas-we-serve/tms-therapy-franklin-park-nj.html',
+    'areas-we-serve/tms-therapy-north-brunswick-nj.php'    => 'areas-we-serve/tms-therapy-north-brunswick-nj.html',
+    'areas-we-serve/tms-therapy-south-brunswick-nj.php'    => 'areas-we-serve/tms-therapy-south-brunswick-nj.html',
+    'areas-we-serve/tms-therapy-princeton-nj.php'          => 'areas-we-serve/tms-therapy-princeton-nj.html',
+    'areas-we-serve/tms-therapy-princeton-junction-nj.php' => 'areas-we-serve/tms-therapy-princeton-junction-nj.html',
+    'areas-we-serve/tms-therapy-plainsboro-nj.php'         => 'areas-we-serve/tms-therapy-plainsboro-nj.html',
+    'areas-we-serve/tms-therapy-dayton-nj.php'             => 'areas-we-serve/tms-therapy-dayton-nj.html',
+    'areas-we-serve/tms-therapy-kingston-nj.php'           => 'areas-we-serve/tms-therapy-kingston-nj.html',
+    'areas-we-serve/tms-therapy-rocky-hill-nj.php'         => 'areas-we-serve/tms-therapy-rocky-hill-nj.html',
+    'areas-we-serve/tms-therapy-milltown-nj.php'           => 'areas-we-serve/tms-therapy-milltown-nj.html',
+    'areas-we-serve/tms-therapy-east-brunswick-nj.php'     => 'areas-we-serve/tms-therapy-east-brunswick-nj.html',
+    'areas-we-serve/tms-therapy-somerset-nj.php'           => 'areas-we-serve/tms-therapy-somerset-nj.html',
+    'areas-we-serve/tms-therapy-new-brunswick-nj.php'      => 'areas-we-serve/tms-therapy-new-brunswick-nj.html',
+    'areas-we-serve/tms-therapy-edison-nj.php'             => 'areas-we-serve/tms-therapy-edison-nj.html',
+    'areas-we-serve/tms-therapy-piscataway-nj.php'         => 'areas-we-serve/tms-therapy-piscataway-nj.html',
+    'areas-we-serve/tms-therapy-monroe-township-nj.php'    => 'areas-we-serve/tms-therapy-monroe-township-nj.html',
+    'areas-we-serve/tms-therapy-cranbury-nj.php'           => 'areas-we-serve/tms-therapy-cranbury-nj.html',
+    'areas-we-serve/tms-therapy-hillsborough-township-nj.php' => 'areas-we-serve/tms-therapy-hillsborough-township-nj.html',
+    'areas-we-serve/tms-therapy-lawrence-township-nj.php'  => 'areas-we-serve/tms-therapy-lawrence-township-nj.html',
+    'areas-we-serve/tms-therapy-west-windsor-township-nj.php' => 'areas-we-serve/tms-therapy-west-windsor-township-nj.html',
+    'areas-we-serve/tms-therapy-hamilton-township-nj.php'  => 'areas-we-serve/tms-therapy-hamilton-township-nj.html',
+
     // Blog
     'blog/index.php'                      => 'blog/index.html',
 ];

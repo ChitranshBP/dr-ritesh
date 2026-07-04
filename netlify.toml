@@ -36,3 +36,119 @@
   from = "/what-is-spravato"
   to = "/what-is-spravato.html"
   status = 200
+
+# Areas We Serve - Location Pages
+[[redirects]]
+  from = "/areas-we-serve/kendall-park-nj"
+  to = "/areas-we-serve/tms-therapy-kendall-park-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/monmouth-junction-nj"
+  to = "/areas-we-serve/tms-therapy-monmouth-junction-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/franklin-park-nj"
+  to = "/areas-we-serve/tms-therapy-franklin-park-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/north-brunswick-nj"
+  to = "/areas-we-serve/tms-therapy-north-brunswick-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/south-brunswick-nj"
+  to = "/areas-we-serve/tms-therapy-south-brunswick-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/princeton-nj"
+  to = "/areas-we-serve/tms-therapy-princeton-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/princeton-junction-nj"
+  to = "/areas-we-serve/tms-therapy-princeton-junction-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/plainsboro-nj"
+  to = "/areas-we-serve/tms-therapy-plainsboro-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/dayton-nj"
+  to = "/areas-we-serve/tms-therapy-dayton-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/kingston-nj"
+  to = "/areas-we-serve/tms-therapy-kingston-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/rocky-hill-nj"
+  to = "/areas-we-serve/tms-therapy-rocky-hill-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/milltown-nj"
+  to = "/areas-we-serve/tms-therapy-milltown-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/east-brunswick-nj"
+  to = "/areas-we-serve/tms-therapy-east-brunswick-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/somerset-nj"
+  to = "/areas-we-serve/tms-therapy-somerset-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/new-brunswick-nj"
+  to = "/areas-we-serve/tms-therapy-new-brunswick-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/edison-nj"
+  to = "/areas-we-serve/tms-therapy-edison-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/piscataway-nj"
+  to = "/areas-we-serve/tms-therapy-piscataway-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/monroe-township-nj"
+  to = "/areas-we-serve/tms-therapy-monroe-township-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/cranbury-nj"
+  to = "/areas-we-serve/tms-therapy-cranbury-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/hillsborough-township-nj"
+  to = "/areas-we-serve/tms-therapy-hillsborough-township-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/lawrence-township-nj"
+  to = "/areas-we-serve/tms-therapy-lawrence-township-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/west-windsor-township-nj"
+  to = "/areas-we-serve/tms-therapy-west-windsor-township-nj.html"
+  status = 200
+
+[[redirects]]
+  from = "/areas-we-serve/hamilton-township-nj"
+  to = "/areas-we-serve/tms-therapy-hamilton-township-nj.html"
+  status = 200
