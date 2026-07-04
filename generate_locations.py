@@ -1,30 +1,359 @@
 import os
 
-cities = [
-    {"name": "Kendall Park", "slug": "kendall-park", "type": "primary"},
-    {"name": "Monmouth Junction", "slug": "monmouth-junction", "type": "primary"},
-    {"name": "Franklin Park", "slug": "franklin-park", "type": "primary"},
-    {"name": "North Brunswick", "slug": "north-brunswick", "type": "primary"},
-    {"name": "South Brunswick", "slug": "south-brunswick", "type": "primary"},
-    {"name": "Princeton", "slug": "princeton", "type": "primary"},
-    {"name": "Princeton Junction", "slug": "princeton-junction", "type": "primary"},
-    {"name": "Plainsboro", "slug": "plainsboro", "type": "primary"},
-    {"name": "Dayton", "slug": "dayton", "type": "primary"},
-    {"name": "Kingston", "slug": "kingston", "type": "primary"},
-    {"name": "Rocky Hill", "slug": "rocky-hill", "type": "primary"},
-    {"name": "Milltown", "slug": "milltown", "type": "primary"},
-    {"name": "East Brunswick", "slug": "east-brunswick", "type": "primary"},
-    {"name": "Somerset", "slug": "somerset", "type": "primary"},
-    {"name": "New Brunswick", "slug": "new-brunswick", "type": "primary"},
-    {"name": "Edison", "slug": "edison", "type": "secondary"},
-    {"name": "Piscataway", "slug": "piscataway", "type": "secondary"},
-    {"name": "Monroe Township", "slug": "monroe-township", "type": "secondary"},
-    {"name": "Cranbury", "slug": "cranbury", "type": "secondary"},
-    {"name": "Hillsborough Township", "slug": "hillsborough-township", "type": "secondary"},
-    {"name": "Lawrence Township", "slug": "lawrence-township", "type": "secondary"},
-    {"name": "West Windsor Township", "slug": "west-windsor-township", "type": "secondary"},
-    {"name": "Hamilton Township", "slug": "hamilton-township", "type": "secondary"},
-]
+cities = [   {   'name': 'Kendall Park',
+        'slug': 'kendall-park',
+        'type': 'primary',
+        'hero_desc': 'Dr. Ritesh Amin provides FDA-cleared Transcranial '
+                     'Magnetic Stimulation (TMS) therapy to patients in '
+                     'Kendall Park, NJ. Our advanced neuromodulation '
+                     'treatments offer hope for those struggling with '
+                     'depression, anxiety, OCD, PTSD, and a wide range of '
+                     'neurological conditions — all without systemic side '
+                     'effects or downtime.',
+        'about_desc': 'With extensive clinical experience, Dr. Amin is '
+                      'dedicated to providing compassionate, evidence-based '
+                      'care to patients in Kendall Park and throughout central '
+                      'New Jersey. His personal philosophy centers around '
+                      'treating the whole person, not just the symptoms, '
+                      'ensuring each patient receives a tailored approach to '
+                      'their mental wellness.'},
+    {   'name': 'Monmouth Junction',
+        'slug': 'monmouth-junction',
+        'type': 'primary',
+        'hero_desc': 'Residents of Monmouth Junction have access to '
+                     'state-of-the-art TMS therapy under the expert care of '
+                     'Dr. Ritesh Amin. We specialize in non-invasive, '
+                     'drug-free treatments for major depressive disorder, '
+                     'severe anxiety, and complex neurological issues, helping '
+                     'you reclaim your quality of life.',
+        'about_desc': 'Dr. Amin has built a reputation in the Monmouth '
+                      'Junction area for his deep commitment to patient '
+                      'recovery and his expertise in advanced neuromodulation. '
+                      "He takes the time to understand each patient's unique "
+                      'history, delivering highly individualized care that '
+                      'addresses the root causes of psychiatric and '
+                      'neurological conditions.'},
+    {   'name': 'Franklin Park',
+        'slug': 'franklin-park',
+        'type': 'primary',
+        'hero_desc': 'Discover a path to wellness in Franklin Park with Dr. '
+                     "Ritesh Amin's specialized TMS therapy. By delivering "
+                     'targeted magnetic pulses to the brain, we effectively '
+                     'treat medication-resistant depression and various '
+                     'neurological disorders in a comfortable, outpatient '
+                     'setting.',
+        'about_desc': 'For individuals in Franklin Park seeking a specialized '
+                      'psychiatric approach, Dr. Amin offers unparalleled '
+                      'expertise in Treatment-Resistant Depression. His '
+                      'patient-first philosophy means that your treatment plan '
+                      'is constantly monitored and adapted to ensure you '
+                      'achieve the best possible clinical outcomes.'},
+    {   'name': 'North Brunswick',
+        'slug': 'north-brunswick',
+        'type': 'primary',
+        'hero_desc': 'If you live in North Brunswick and are seeking '
+                     'alternative treatments for mental health or neurological '
+                     "conditions, Dr. Amin's customized TMS therapy protocols "
+                     'offer an FDA-cleared solution. Experience lasting relief '
+                     'without the side effects commonly associated with '
+                     'traditional medications.',
+        'about_desc': 'Recognized for his compassionate care in North '
+                      'Brunswick, Dr. Amin integrates the latest advancements '
+                      'in TMS therapy with a holistic understanding of mental '
+                      'health. He empowers his patients to regain control of '
+                      'their lives through innovative, evidence-based '
+                      'treatment strategies.'},
+    {   'name': 'South Brunswick',
+        'slug': 'south-brunswick',
+        'type': 'primary',
+        'hero_desc': 'Serving the South Brunswick community, Dr. Ritesh Amin '
+                     'brings innovative Transcranial Magnetic Stimulation to '
+                     'patients battling stubborn depression, OCD, and '
+                     'neurological conditions. Our personalized approach '
+                     'ensures each treatment is uniquely tailored for maximum '
+                     'efficacy and comfort.',
+        'about_desc': 'Dr. Amin serves the South Brunswick community with a '
+                      'focus on comprehensive psychiatric evaluations and '
+                      'advanced therapeutic interventions. His dedication to '
+                      'clinical excellence ensures that patients facing '
+                      'complex mental health or neurological challenges '
+                      'receive the highest standard of care.'},
+    {   'name': 'Princeton',
+        'slug': 'princeton',
+        'type': 'primary',
+        'hero_desc': 'Patients in Princeton can now overcome '
+                     'treatment-resistant mental health challenges through '
+                     'advanced TMS therapy. Dr. Amin utilizes cutting-edge '
+                     'brain stimulation techniques to restore neurological '
+                     'balance safely and effectively, right here in your local '
+                     'area.',
+        'about_desc': 'Combining a wealth of medical knowledge with a deeply '
+                      'empathetic approach, Dr. Amin provides patients in '
+                      'Princeton with a safe space to heal. He specializes in '
+                      'utilizing modern technologies like TMS to offer '
+                      'alternative solutions when traditional treatments have '
+                      'fallen short.'},
+    {   'name': 'Princeton Junction',
+        'slug': 'princeton-junction',
+        'type': 'primary',
+        'hero_desc': 'Experience a breakthrough in mental health care with Dr. '
+                     'Ritesh Amin in Princeton Junction. Our TMS treatments '
+                     'provide a lifeline for individuals dealing with PTSD, '
+                     'treatment-resistant depression, and neurological '
+                     'ailments, utilizing precise magnetic energy to promote '
+                     'healing.',
+        'about_desc': 'With extensive clinical experience, Dr. Amin is '
+                      'dedicated to providing compassionate, evidence-based '
+                      'care to patients in Princeton Junction and throughout '
+                      'central New Jersey. His personal philosophy centers '
+                      'around treating the whole person, not just the '
+                      'symptoms, ensuring each patient receives a tailored '
+                      'approach to their mental wellness.'},
+    {   'name': 'Plainsboro',
+        'slug': 'plainsboro',
+        'type': 'primary',
+        'hero_desc': 'Dr. Amin is proud to offer the residents of Plainsboro '
+                     'access to highly effective, non-invasive TMS therapy. '
+                     'Whether you are dealing with chronic anxiety or a '
+                     'neurological condition, our specialized care plans are '
+                     'designed to help you achieve profound, lasting wellness.',
+        'about_desc': 'Dr. Amin has built a reputation in the Plainsboro area '
+                      'for his deep commitment to patient recovery and his '
+                      'expertise in advanced neuromodulation. He takes the '
+                      "time to understand each patient's unique history, "
+                      'delivering highly individualized care that addresses '
+                      'the root causes of psychiatric and neurological '
+                      'conditions.'},
+    {   'name': 'Dayton',
+        'slug': 'dayton',
+        'type': 'primary',
+        'hero_desc': 'Dr. Ritesh Amin provides FDA-cleared Transcranial '
+                     'Magnetic Stimulation (TMS) therapy to patients in '
+                     'Dayton, NJ. Our advanced neuromodulation treatments '
+                     'offer hope for those struggling with depression, '
+                     'anxiety, OCD, PTSD, and a wide range of neurological '
+                     'conditions — all without systemic side effects or '
+                     'downtime.',
+        'about_desc': 'For individuals in Dayton seeking a specialized '
+                      'psychiatric approach, Dr. Amin offers unparalleled '
+                      'expertise in Treatment-Resistant Depression. His '
+                      'patient-first philosophy means that your treatment plan '
+                      'is constantly monitored and adapted to ensure you '
+                      'achieve the best possible clinical outcomes.'},
+    {   'name': 'Kingston',
+        'slug': 'kingston',
+        'type': 'primary',
+        'hero_desc': 'Residents of Kingston have access to state-of-the-art '
+                     'TMS therapy under the expert care of Dr. Ritesh Amin. We '
+                     'specialize in non-invasive, drug-free treatments for '
+                     'major depressive disorder, severe anxiety, and complex '
+                     'neurological issues, helping you reclaim your quality of '
+                     'life.',
+        'about_desc': 'Recognized for his compassionate care in Kingston, Dr. '
+                      'Amin integrates the latest advancements in TMS therapy '
+                      'with a holistic understanding of mental health. He '
+                      'empowers his patients to regain control of their lives '
+                      'through innovative, evidence-based treatment '
+                      'strategies.'},
+    {   'name': 'Rocky Hill',
+        'slug': 'rocky-hill',
+        'type': 'primary',
+        'hero_desc': 'Discover a path to wellness in Rocky Hill with Dr. '
+                     "Ritesh Amin's specialized TMS therapy. By delivering "
+                     'targeted magnetic pulses to the brain, we effectively '
+                     'treat medication-resistant depression and various '
+                     'neurological disorders in a comfortable, outpatient '
+                     'setting.',
+        'about_desc': 'Dr. Amin serves the Rocky Hill community with a focus '
+                      'on comprehensive psychiatric evaluations and advanced '
+                      'therapeutic interventions. His dedication to clinical '
+                      'excellence ensures that patients facing complex mental '
+                      'health or neurological challenges receive the highest '
+                      'standard of care.'},
+    {   'name': 'Milltown',
+        'slug': 'milltown',
+        'type': 'primary',
+        'hero_desc': 'If you live in Milltown and are seeking alternative '
+                     'treatments for mental health or neurological conditions, '
+                     "Dr. Amin's customized TMS therapy protocols offer an "
+                     'FDA-cleared solution. Experience lasting relief without '
+                     'the side effects commonly associated with traditional '
+                     'medications.',
+        'about_desc': 'Combining a wealth of medical knowledge with a deeply '
+                      'empathetic approach, Dr. Amin provides patients in '
+                      'Milltown with a safe space to heal. He specializes in '
+                      'utilizing modern technologies like TMS to offer '
+                      'alternative solutions when traditional treatments have '
+                      'fallen short.'},
+    {   'name': 'East Brunswick',
+        'slug': 'east-brunswick',
+        'type': 'primary',
+        'hero_desc': 'Serving the East Brunswick community, Dr. Ritesh Amin '
+                     'brings innovative Transcranial Magnetic Stimulation to '
+                     'patients battling stubborn depression, OCD, and '
+                     'neurological conditions. Our personalized approach '
+                     'ensures each treatment is uniquely tailored for maximum '
+                     'efficacy and comfort.',
+        'about_desc': 'With extensive clinical experience, Dr. Amin is '
+                      'dedicated to providing compassionate, evidence-based '
+                      'care to patients in East Brunswick and throughout '
+                      'central New Jersey. His personal philosophy centers '
+                      'around treating the whole person, not just the '
+                      'symptoms, ensuring each patient receives a tailored '
+                      'approach to their mental wellness.'},
+    {   'name': 'Somerset',
+        'slug': 'somerset',
+        'type': 'primary',
+        'hero_desc': 'Patients in Somerset can now overcome '
+                     'treatment-resistant mental health challenges through '
+                     'advanced TMS therapy. Dr. Amin utilizes cutting-edge '
+                     'brain stimulation techniques to restore neurological '
+                     'balance safely and effectively, right here in your local '
+                     'area.',
+        'about_desc': 'Dr. Amin has built a reputation in the Somerset area '
+                      'for his deep commitment to patient recovery and his '
+                      'expertise in advanced neuromodulation. He takes the '
+                      "time to understand each patient's unique history, "
+                      'delivering highly individualized care that addresses '
+                      'the root causes of psychiatric and neurological '
+                      'conditions.'},
+    {   'name': 'New Brunswick',
+        'slug': 'new-brunswick',
+        'type': 'primary',
+        'hero_desc': 'Experience a breakthrough in mental health care with Dr. '
+                     'Ritesh Amin in New Brunswick. Our TMS treatments provide '
+                     'a lifeline for individuals dealing with PTSD, '
+                     'treatment-resistant depression, and neurological '
+                     'ailments, utilizing precise magnetic energy to promote '
+                     'healing.',
+        'about_desc': 'For individuals in New Brunswick seeking a specialized '
+                      'psychiatric approach, Dr. Amin offers unparalleled '
+                      'expertise in Treatment-Resistant Depression. His '
+                      'patient-first philosophy means that your treatment plan '
+                      'is constantly monitored and adapted to ensure you '
+                      'achieve the best possible clinical outcomes.'},
+    {   'name': 'Edison',
+        'slug': 'edison',
+        'type': 'secondary',
+        'hero_desc': 'Dr. Amin is proud to offer the residents of Edison '
+                     'access to highly effective, non-invasive TMS therapy. '
+                     'Whether you are dealing with chronic anxiety or a '
+                     'neurological condition, our specialized care plans are '
+                     'designed to help you achieve profound, lasting wellness.',
+        'about_desc': 'Recognized for his compassionate care in Edison, Dr. '
+                      'Amin integrates the latest advancements in TMS therapy '
+                      'with a holistic understanding of mental health. He '
+                      'empowers his patients to regain control of their lives '
+                      'through innovative, evidence-based treatment '
+                      'strategies.'},
+    {   'name': 'Piscataway',
+        'slug': 'piscataway',
+        'type': 'secondary',
+        'hero_desc': 'Dr. Ritesh Amin provides FDA-cleared Transcranial '
+                     'Magnetic Stimulation (TMS) therapy to patients in '
+                     'Piscataway, NJ. Our advanced neuromodulation treatments '
+                     'offer hope for those struggling with depression, '
+                     'anxiety, OCD, PTSD, and a wide range of neurological '
+                     'conditions — all without systemic side effects or '
+                     'downtime.',
+        'about_desc': 'Dr. Amin serves the Piscataway community with a focus '
+                      'on comprehensive psychiatric evaluations and advanced '
+                      'therapeutic interventions. His dedication to clinical '
+                      'excellence ensures that patients facing complex mental '
+                      'health or neurological challenges receive the highest '
+                      'standard of care.'},
+    {   'name': 'Monroe Township',
+        'slug': 'monroe-township',
+        'type': 'secondary',
+        'hero_desc': 'Residents of Monroe Township have access to '
+                     'state-of-the-art TMS therapy under the expert care of '
+                     'Dr. Ritesh Amin. We specialize in non-invasive, '
+                     'drug-free treatments for major depressive disorder, '
+                     'severe anxiety, and complex neurological issues, helping '
+                     'you reclaim your quality of life.',
+        'about_desc': 'Combining a wealth of medical knowledge with a deeply '
+                      'empathetic approach, Dr. Amin provides patients in '
+                      'Monroe Township with a safe space to heal. He '
+                      'specializes in utilizing modern technologies like TMS '
+                      'to offer alternative solutions when traditional '
+                      'treatments have fallen short.'},
+    {   'name': 'Cranbury',
+        'slug': 'cranbury',
+        'type': 'secondary',
+        'hero_desc': 'Discover a path to wellness in Cranbury with Dr. Ritesh '
+                     "Amin's specialized TMS therapy. By delivering targeted "
+                     'magnetic pulses to the brain, we effectively treat '
+                     'medication-resistant depression and various neurological '
+                     'disorders in a comfortable, outpatient setting.',
+        'about_desc': 'With extensive clinical experience, Dr. Amin is '
+                      'dedicated to providing compassionate, evidence-based '
+                      'care to patients in Cranbury and throughout central New '
+                      'Jersey. His personal philosophy centers around treating '
+                      'the whole person, not just the symptoms, ensuring each '
+                      'patient receives a tailored approach to their mental '
+                      'wellness.'},
+    {   'name': 'Hillsborough Township',
+        'slug': 'hillsborough-township',
+        'type': 'secondary',
+        'hero_desc': 'If you live in Hillsborough Township and are seeking '
+                     'alternative treatments for mental health or neurological '
+                     "conditions, Dr. Amin's customized TMS therapy protocols "
+                     'offer an FDA-cleared solution. Experience lasting relief '
+                     'without the side effects commonly associated with '
+                     'traditional medications.',
+        'about_desc': 'Dr. Amin has built a reputation in the Hillsborough '
+                      'Township area for his deep commitment to patient '
+                      'recovery and his expertise in advanced neuromodulation. '
+                      "He takes the time to understand each patient's unique "
+                      'history, delivering highly individualized care that '
+                      'addresses the root causes of psychiatric and '
+                      'neurological conditions.'},
+    {   'name': 'Lawrence Township',
+        'slug': 'lawrence-township',
+        'type': 'secondary',
+        'hero_desc': 'Serving the Lawrence Township community, Dr. Ritesh Amin '
+                     'brings innovative Transcranial Magnetic Stimulation to '
+                     'patients battling stubborn depression, OCD, and '
+                     'neurological conditions. Our personalized approach '
+                     'ensures each treatment is uniquely tailored for maximum '
+                     'efficacy and comfort.',
+        'about_desc': 'For individuals in Lawrence Township seeking a '
+                      'specialized psychiatric approach, Dr. Amin offers '
+                      'unparalleled expertise in Treatment-Resistant '
+                      'Depression. His patient-first philosophy means that '
+                      'your treatment plan is constantly monitored and adapted '
+                      'to ensure you achieve the best possible clinical '
+                      'outcomes.'},
+    {   'name': 'West Windsor Township',
+        'slug': 'west-windsor-township',
+        'type': 'secondary',
+        'hero_desc': 'Patients in West Windsor Township can now overcome '
+                     'treatment-resistant mental health challenges through '
+                     'advanced TMS therapy. Dr. Amin utilizes cutting-edge '
+                     'brain stimulation techniques to restore neurological '
+                     'balance safely and effectively, right here in your local '
+                     'area.',
+        'about_desc': 'Recognized for his compassionate care in West Windsor '
+                      'Township, Dr. Amin integrates the latest advancements '
+                      'in TMS therapy with a holistic understanding of mental '
+                      'health. He empowers his patients to regain control of '
+                      'their lives through innovative, evidence-based '
+                      'treatment strategies.'},
+    {   'name': 'Hamilton Township',
+        'slug': 'hamilton-township',
+        'type': 'secondary',
+        'hero_desc': 'Experience a breakthrough in mental health care with Dr. '
+                     'Ritesh Amin in Hamilton Township. Our TMS treatments '
+                     'provide a lifeline for individuals dealing with PTSD, '
+                     'treatment-resistant depression, and neurological '
+                     'ailments, utilizing precise magnetic energy to promote '
+                     'healing.',
+        'about_desc': 'Dr. Amin serves the Hamilton Township community with a '
+                      'focus on comprehensive psychiatric evaluations and '
+                      'advanced therapeutic interventions. His dedication to '
+                      'clinical excellence ensures that patients facing '
+                      'complex mental health or neurological challenges '
+                      'receive the highest standard of care.'}]
 
 faq_items = [
     ("What is TMS Therapy?",
@@ -72,15 +401,13 @@ include __DIR__ . '/../header.php';
         <div class="bihero-orb-2"></div>
         <div class="container mx-auto px-4 max-w-7xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
-                <h1 class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">{h1_text}</h1>
-                <h2 class="text-3xl lg:text-4xl font-serif text-white leading-tight mb-6">
+                <h1 class="text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">{h1_text}</h1>
+                <h2 class="text-lg lg:text-xl font-sans text-white/80 font-medium tracking-wide mb-6">
                     Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>
                 </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
-                    Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy to patients in {name}, NJ. 
-                    Our advanced neuromodulation treatments offer hope for those struggling with depression, anxiety, OCD, PTSD, 
-                    and a wide range of neurological conditions — all without systemic side effects or downtime.
+                    {city.get('hero_desc', '')}
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Book a Consultation</a>
@@ -343,6 +670,7 @@ include __DIR__ . '/../header.php';
                         <span class="about-cred-tag">NJ Licensed</span>
                     </div>
                     <p class="lead-text">Board-Certified Psychiatrist specializing in Treatment-Resistant Depression and Advanced TMS Therapy.</p>
+                    <p>{city.get('about_desc', '')}</p>
                     <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care to patients in {name} and throughout central New Jersey. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p>
                     <ul class="credentials-list">
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Top Tier Education and Medical Training</li>

@@ -19,15 +19,13 @@ include __DIR__ . '/../header.php';
         <div class="bihero-orb-2"></div>
         <div class="container mx-auto px-4 max-w-7xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
-                <h1 class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">TMS Therapy Near Princeton, NJ</h1>
-                <h2 class="text-3xl lg:text-4xl font-serif text-white leading-tight mb-6">
+                <h1 class="text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">TMS Therapy Near Princeton, NJ</h1>
+                <h2 class="text-lg lg:text-xl font-sans text-white/80 font-medium tracking-wide mb-6">
                     Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>
                 </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
-                    Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy to patients in Princeton, NJ. 
-                    Our advanced neuromodulation treatments offer hope for those struggling with depression, anxiety, OCD, PTSD, 
-                    and a wide range of neurological conditions — all without systemic side effects or downtime.
+                    Patients in Princeton can now overcome treatment-resistant mental health challenges through advanced TMS therapy. Dr. Amin utilizes cutting-edge brain stimulation techniques to restore neurological balance safely and effectively, right here in your local area.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Book a Consultation</a>
@@ -290,6 +288,7 @@ include __DIR__ . '/../header.php';
                         <span class="about-cred-tag">NJ Licensed</span>
                     </div>
                     <p class="lead-text">Board-Certified Psychiatrist specializing in Treatment-Resistant Depression and Advanced TMS Therapy.</p>
+                    <p>Combining a wealth of medical knowledge with a deeply empathetic approach, Dr. Amin provides patients in Princeton with a safe space to heal. He specializes in utilizing modern technologies like TMS to offer alternative solutions when traditional treatments have fallen short.</p>
                     <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care to patients in Princeton and throughout central New Jersey. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p>
                     <ul class="credentials-list">
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Top Tier Education and Medical Training</li>
