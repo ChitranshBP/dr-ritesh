@@ -42,7 +42,13 @@ faq_items = [
 def generate_page(city):
     name = city["name"]
     slug = city["slug"]
-    page_title = f"TMS Therapy Near {name}, NJ | Dr. Ritesh Amin"
+    if name in ["Edison", "Kendall Park"]:
+        page_title = f"TMS Therapy in {name}, NJ | Dr. Ritesh Amin"
+        h1_text = f"TMS Therapy in {name}, NJ"
+    else:
+        page_title = f"TMS Therapy Near {name}, NJ | Dr. Ritesh Amin"
+        h1_text = f"TMS Therapy Near {name}, NJ"
+
     page_desc = f"Advanced TMS therapy for mental health and neurological conditions serving {name}, NJ. FDA-cleared, non-invasive brain stimulation. Call (732) 379-1797."
 
     page = f"""<?php
@@ -66,10 +72,10 @@ include __DIR__ . '/../header.php';
         <div class="bihero-orb-2"></div>
         <div class="container mx-auto px-4 max-w-7xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
-                <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">TMS Therapy Near {name}, NJ</span>
-                <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
+                <h1 class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">{h1_text}</h1>
+                <h2 class="text-3xl lg:text-4xl font-serif text-white leading-tight mb-6">
                     Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>
-                </h1>
+                </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
                     Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy to patients in {name}, NJ. 

@@ -19,10 +19,10 @@ include __DIR__ . '/../header.php';
         <div class="bihero-orb-2"></div>
         <div class="container mx-auto px-4 max-w-7xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
-                <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">TMS Therapy Near North Brunswick, NJ</span>
-                <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
+                <h1 class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">TMS Therapy Near North Brunswick, NJ</h1>
+                <h2 class="text-3xl lg:text-4xl font-serif text-white leading-tight mb-6">
                     Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>
-                </h1>
+                </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
                     Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy to patients in North Brunswick, NJ. 

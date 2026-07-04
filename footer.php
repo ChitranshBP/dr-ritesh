@@ -49,14 +49,21 @@
                 <div class="footer-links">
                     <h4 class="footer-heading">Areas We Serve</h4>
                     <ul>
-                        <li><a href="/areas-we-serve/tms-therapy-edison-nj.php">Edison</a></li>
-                        <li><a href="/areas-we-serve/tms-therapy-princeton-nj.php">Princeton</a></li>
-                        <li><a href="/areas-we-serve/tms-therapy-east-brunswick-nj.php">East Brunswick</a></li>
-                        <li><a href="/areas-we-serve/tms-therapy-new-brunswick-nj.php">New Brunswick</a></li>
-                        <li><a href="/areas-we-serve/tms-therapy-piscataway-nj.php">Piscataway</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-kendall-park-nj.php">Kendall Park</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-monmouth-junction-nj.php">Monmouth Junction</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-franklin-park-nj.php">Franklin Park</a></li>
                         <li><a href="/areas-we-serve/tms-therapy-north-brunswick-nj.php">North Brunswick</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-south-brunswick-nj.php">South Brunswick</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-princeton-nj.php">Princeton</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-princeton-junction-nj.php">Princeton Junction</a></li>
                         <li><a href="/areas-we-serve/tms-therapy-plainsboro-nj.php">Plainsboro</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-dayton-nj.php">Dayton</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-kingston-nj.php">Kingston</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-rocky-hill-nj.php">Rocky Hill</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-milltown-nj.php">Milltown</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-east-brunswick-nj.php">East Brunswick</a></li>
                         <li><a href="/areas-we-serve/tms-therapy-somerset-nj.php">Somerset</a></li>
+                        <li><a href="/areas-we-serve/tms-therapy-new-brunswick-nj.php">New Brunswick</a></li>
                     </ul>
                 </div>
 
