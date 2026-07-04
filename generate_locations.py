@@ -45,7 +45,7 @@ def generate_page(city):
     page_title = f"TMS Therapy Near {name}, NJ | Dr. Ritesh Amin"
     page_desc = f"Advanced TMS therapy for mental health and neurological conditions serving {name}, NJ. FDA-cleared, non-invasive brain stimulation. Call (732) 379-1797."
 
-    return f"""<?php
+    page = f"""<?php
 $page_title = '{page_title}';
 $page_desc = '{page_desc}';
 $body_class = 'bg-beige font-sans';
@@ -393,7 +393,7 @@ include __DIR__ . '/../header.php';
     </section>
 
 <?php include __DIR__ . '/../footer.php'; ?>"""
-
+    return page
 
 output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'areas-we-serve')
 os.makedirs(output_dir, exist_ok=True)

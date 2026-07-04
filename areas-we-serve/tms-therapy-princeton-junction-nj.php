@@ -312,3 +312,67 @@ include __DIR__ . '/../header.php';
                     <p class="tms-para text-center lg:text-left max-w-2xl mx-auto lg:mx-0">Common questions about TMS therapy for patients in Princeton Junction, NJ.</p>
 
                     <div class="tms-accordion mt-10 text-left">
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <h3>What is TMS Therapy?</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Transcranial Magnetic Stimulation (TMS) is a non-invasive, FDA-cleared therapy that uses magnetic pulses to stimulate nerve cells in brain regions associated with mood regulation and neurological function. It is a drug-free alternative for patients struggling with depression, anxiety, OCD, and various neurological conditions.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <div class="accordion-header">
+                                <h3>Who is a candidate for TMS?</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Most adults who have not found adequate relief from traditional treatments are candidates. A full evaluation with Dr. Amin will determine if TMS is appropriate for your specific condition. Ideal candidates include those with major depression, treatment-resistant depression, anxiety disorders, OCD, PTSD, and several neurological conditions.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <div class="accordion-header">
+                                <h3>Is TMS covered by insurance?</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Yes, TMS therapy is covered by many major insurance plans including Medicare, Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare, and more. Our team handles the insurance verification process for you and will explain all costs upfront before treatment begins.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <div class="accordion-header">
+                                <h3>How many sessions are required?</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>A standard TMS treatment course typically consists of daily sessions over 4-6 weeks, followed by a gradual tapering phase. Each session lasts approximately 20-40 minutes, and you can return to your normal activities immediately afterward.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item ">
+                            <div class="accordion-header">
+                                <h3>Does TMS help depression and neurological conditions?</h3>
+                                <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                            </div>
+                            <div class="accordion-body">
+                                <p>Yes. TMS is FDA-cleared for major depressive disorder and has shown remarkable efficacy for treatment-resistant depression. It is also used off-label for various neurological conditions including Parkinson's disease, stroke recovery, chronic migraine, neuropathic pain, and cognitive disorders. Dr. Amin specializes in both psychiatric and neurological applications of TMS.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="closing-cta" id="take-action">
+        <div class="container text-center reveal">
+            <h2 class="section-title text-white">Ready to Start Your TMS Journey?</h2>
+            <p class="section-subtitle text-white/70 mb-8">Schedule Your Consultation Today and take the first step toward lasting relief.</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <a href="tel:+17323791797" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform">Call (732) 379-1797</a>
+                <a href="/contact.php" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all py-4 px-10 rounded-full text-lg">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
+
+<?php include __DIR__ . '/../footer.php'; ?>
