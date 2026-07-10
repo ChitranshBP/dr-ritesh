@@ -151,107 +151,111 @@ $extra_css = '
         box-shadow: 0 4px 16px rgba(37,111,168,0.3);
     }
 
-    /* ── Testimonial Cards Grid — Masonry Style ── */
-    .reviews-masonry {
-        column-count: 3;
-        column-gap: 1.5rem;
+    /* ── Swiper Testimonials Slider ── */
+    .reviews-swiper-container {
         max-width: 1200px;
         margin: 0 auto;
-    }
-
-    /* ── Testimonial Card ── */
-    .review-card {
-        break-inside: avoid;
-        background: #fff;
-        border-radius: 1.25rem;
-        padding: 2rem;
-        margin-bottom: 1.5rem;
-        border: 1px solid rgba(37,111,168,0.06);
-        box-shadow: 0 4px 20px rgba(11,25,44,0.04);
-        transition: all 0.35s ease;
+        padding: 2rem 1rem;
         position: relative;
+    }
+    .reviews-swiper {
+        width: 100%;
         overflow: hidden;
     }
-    .review-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 16px 40px rgba(11,25,44,0.08);
-        border-color: rgba(37,111,168,0.15);
+    .reviews-swiper .swiper-slide {
+        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-    /* Blue accent bar on top */
+    
+    /* Premium Glassmorphism Testimonial Card */
+    .review-card {
+        background: rgba(255, 255, 255, 0.70) !important;
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(37, 111, 168, 0.12) !important;
+        border-radius: 1.75rem !important;
+        padding: 2.5rem !important;
+        box-shadow: 0 10px 30px rgba(11, 25, 44, 0.02) !important;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        margin-bottom: 0 !important;
+    }
     .review-card::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 3px;
+        top: 0; left: 0; right: 0;
+        height: 4px;
         background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent);
-        opacity: 0;
-        transition: opacity 0.35s ease;
     }
-    .review-card:hover::before {
-        opacity: 1;
+    .review-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 45px rgba(11, 25, 44, 0.08) !important;
+        border-color: rgba(37, 111, 168, 0.25) !important;
+        background: #ffffff !important;
     }
-
-    /* ── Featured / Highlight Card ── */
+    
+    /* Featured Review Slide (Dark theme) */
     .review-card.featured {
-        background: var(--color-midnight);
-        border-color: rgba(37,111,168,0.25);
+        background: var(--color-midnight) !important;
+        border-color: rgba(37, 111, 168, 0.25) !important;
     }
-    .review-card.featured::before {
-        opacity: 1;
+    .review-card.featured:hover {
+        background: var(--color-midnight) !important;
+        box-shadow: 0 20px 45px rgba(11, 25, 44, 0.25) !important;
+        border-color: rgba(37, 111, 168, 0.35) !important;
     }
     .review-card.featured .review-name {
         color: #fff;
     }
     .review-card.featured .review-condition {
-        color: rgba(255,255,255,0.45);
+        color: rgba(255, 255, 255, 0.45);
     }
     .review-card.featured .review-text {
-        color: rgba(255,255,255,0.70);
+        color: rgba(255, 255, 255, 0.75);
     }
     .review-card.featured .review-stars {
         color: var(--color-gold-light);
     }
     .review-card.featured .review-avatar {
-        background: rgba(37,111,168,0.25);
-        border-color: rgba(37,111,168,0.4);
+        background: rgba(37, 111, 168, 0.25);
+        border-color: rgba(37, 111, 168, 0.4);
         color: var(--color-gold-light);
     }
     .review-card.featured .review-quote-icon {
-        color: rgba(37,111,168,0.25);
+        color: rgba(37, 111, 168, 0.12);
     }
-    .review-card.featured .review-tag {
-        background: rgba(37,111,168,0.15);
-        border-color: rgba(37,111,168,0.3);
-        color: var(--color-gold-light);
-    }
-
-    /* ── Card Elements ── */
+    
+    /* Card Elements */
     .review-header {
         display: flex;
         align-items: center;
-        gap: 1rem;
-        margin-bottom: 1rem;
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
     }
     .review-avatar {
-        width: 46px;
-        height: 46px;
-        min-width: 46px;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
         border-radius: 50%;
-        background: rgba(37,111,168,0.08);
-        border: 2px solid rgba(37,111,168,0.15);
+        background: rgba(37, 111, 168, 0.08);
+        border: 2px solid rgba(37, 111, 168, 0.15);
         color: var(--color-gold);
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: var(--font-serif);
         font-weight: 700;
-        font-size: 1.15rem;
+        font-size: 1.2rem;
     }
     .review-name {
         font-family: var(--font-sans);
-        font-size: 0.95rem;
+        font-size: 1.05rem;
         font-weight: 700;
         color: var(--color-midnight);
         margin: 0;
@@ -259,145 +263,102 @@ $extra_css = '
     }
     .review-condition {
         font-family: var(--font-sans);
-        font-size: 0.72rem;
+        font-size: 0.76rem;
         color: var(--color-text-light);
         display: block;
-        margin-top: 0.15rem;
+        margin-top: 0.18rem;
     }
     .review-stars {
         margin-left: auto;
         color: var(--color-gold);
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         letter-spacing: 2px;
         flex-shrink: 0;
     }
     .review-text {
-        font-size: 0.95rem;
-        line-height: 1.7;
+        font-family: var(--font-serif);
+        font-size: 1.05rem;
+        font-style: italic;
+        line-height: 1.8;
         color: var(--color-text-light);
-        margin: 0 0 1rem;
+        margin: 0 0 1.5rem;
         position: relative;
+        flex-grow: 1;
     }
     .review-quote-icon {
         position: absolute;
-        top: -0.6rem;
-        left: -0.25rem;
+        top: -1.5rem;
+        left: -0.5rem;
         font-family: var(--font-serif);
-        font-size: 4rem;
+        font-size: 5rem;
         line-height: 1;
-        color: rgba(37,111,168,0.08);
+        color: rgba(37, 111, 168, 0.06);
         pointer-events: none;
         user-select: none;
-    }
-    .review-tag {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.3rem 0.75rem;
-        border-radius: 999px;
-        font-family: var(--font-sans);
-        font-size: 0.68rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.06em;
-        color: var(--color-gold);
-        background: rgba(37,111,168,0.06);
-        border: 1px solid rgba(37,111,168,0.12);
-    }
-    .review-tag svg {
-        width: 12px;
-        height: 12px;
     }
     .review-verified {
         display: flex;
         align-items: center;
-        gap: 0.35rem;
-        font-size: 0.7rem;
+        gap: 0.4rem;
+        font-size: 0.75rem;
         font-weight: 500;
         color: #22c55e;
-        margin-top: 0.75rem;
     }
     .review-verified svg {
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
     }
-
-    /* ── Video Testimonial Card ── */
-    .review-card.video-review {
-        padding: 0;
-        overflow: hidden;
-    }
-    .review-video-thumb {
-        position: relative;
-        aspect-ratio: 16/10;
-        overflow: hidden;
-        background: #000;
-    }
-    .review-video-thumb img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.75;
-        transition: all 0.5s ease;
-    }
-    .review-card.video-review:hover .review-video-thumb img {
-        opacity: 0.5;
-        transform: scale(1.05);
-    }
-    .review-video-overlay {
-        position: absolute;
-        inset: 0;
+    
+    /* Navigation Controls */
+    .reviews-controls {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 2;
+        gap: 1.5rem;
     }
-    .review-play-btn {
-        width: 54px;
-        height: 54px;
-        background: rgba(255,255,255,0.15);
-        backdrop-filter: blur(6px);
-        border: 1.5px solid rgba(255,255,255,0.35);
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        width: 46px;
+        height: 46px;
         border-radius: 50%;
+        background: var(--color-midnight-light);
+        border: 1.5px solid rgba(37, 111, 168, 0.2);
+        color: var(--color-gold-light);
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.35s ease;
         cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 10px rgba(11,25,44,0.06);
     }
-    .review-play-btn svg {
+    .swiper-button-prev-custom:hover,
+    .swiper-button-next-custom:hover {
+        background: var(--color-gold);
+        color: #fff;
+        border-color: var(--color-gold);
+        transform: scale(1.08);
+        box-shadow: 0 6px 18px rgba(37, 111, 168, 0.25);
+    }
+    .swiper-button-prev-custom svg,
+    .swiper-button-next-custom svg {
         width: 20px;
         height: 20px;
-        fill: #fff;
-        margin-left: 3px;
     }
-    .review-card.video-review:hover .review-play-btn {
+    .swiper-pagination-custom .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(11, 25, 44, 0.15);
+        opacity: 1;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .swiper-pagination-custom .swiper-pagination-bullet-active {
+        width: 28px;
+        border-radius: 999px;
         background: var(--color-gold);
-        border-color: var(--color-gold);
-        transform: scale(1.1);
-    }
-    .review-video-caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 1.5rem;
-        background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
-        z-index: 3;
-    }
-    .review-video-caption h4 {
-        font-family: var(--font-serif);
-        font-size: 1.15rem;
-        color: #fff;
-        margin: 0 0 0.15rem;
-    }
-    .review-video-caption span {
-        font-size: 0.78rem;
-        color: rgba(255,255,255,0.65);
-    }
-    .review-video-body {
-        padding: 1.5rem 2rem;
+        box-shadow: 0 2px 8px rgba(37, 111, 168, 0.3);
     }
 
     /* ── CTA Card ── */
@@ -430,14 +391,78 @@ $extra_css = '
         border-radius: 1px;
     }
 
+    /* ── Testimonial Modal ── */
+    .review-modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(11, 25, 44, 0.45);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+    .review-modal-backdrop.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .review-modal-content {
+        max-width: 600px;
+        width: 90%;
+        box-shadow: 0 30px 70px rgba(11, 25, 44, 0.25);
+        transform: translateY(20px) scale(0.95);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        position: relative;
+    }
+    .review-modal-backdrop.active .review-modal-content {
+        transform: translateY(0) scale(1);
+    }
+    .review-modal-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(11, 25, 44, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: var(--color-midnight);
+        border: none;
+        transition: all 0.2s ease;
+        z-index: 100;
+    }
+    .review-modal-close:hover {
+        background: var(--color-gold);
+        color: #fff;
+        transform: rotate(90deg);
+    }
+    .review-modal-close svg {
+        width: 18px;
+        height: 18px;
+    }
+
     /* ── Responsive ── */
+    @media (max-width: 1024px) {
+        .reviews-swiper-container {
+            padding: 1rem 0;
+        }
+        .swiper-button-prev-custom,
+        .swiper-button-next-custom {
+            display: none;
+        }
+    }
     @media (max-width: 991px) {
-        .reviews-masonry { column-count: 2; }
         .reviews-summary-bar { gap: 1.5rem; padding: 1.75rem 2rem; }
     }
     @media (max-width: 640px) {
         .reviews-hero { padding: 8rem 0 3rem; }
-        .reviews-masonry { column-count: 1; }
         .reviews-summary-bar {
             flex-wrap: wrap;
             gap: 1.25rem;
@@ -496,7 +521,7 @@ include 'header.php';
         </div>
     </section>
 
-    <!-- Testimonials Grid -->
+    <!-- Testimonials Section -->
     <section class="py-20 bg-beige-dark/50 relative" id="reviews-grid">
         <div class="container mx-auto px-4 max-w-7xl">
 
@@ -509,8 +534,30 @@ include 'header.php';
                 <button class="reviews-filter-tab" data-filter="ocd">OCD</button>
             </div>
 
-            <!-- Masonry Grid -->
-            <div class="reviews-masonry" id="reviewsMasonry">
+            <!-- Swiper Assets & Slider -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            
+            <div class="reviews-swiper-container relative reveal mt-8">
+                <div class="swiper reviews-swiper">
+                    <div class="swiper-wrapper" id="reviewsSwiperWrapper">
+                        <!-- Dynamically populated slides -->
+                    </div>
+                </div>
+                
+                <!-- Custom Navigation & Pagination Controls -->
+                <div class="reviews-controls mt-12">
+                    <div class="swiper-button-prev-custom">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                    </div>
+                    <div class="swiper-pagination-custom flex gap-2"></div>
+                    <div class="swiper-button-next-custom">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template Container (Hidden) -->
+            <div class="hidden" id="reviewsTemplateContainer">
 
                 <!-- Ganesh — Featured -->
                 <div class="review-card featured" data-tags="depression anxiety">
@@ -756,7 +803,7 @@ include 'header.php';
                     </div>
                 </div>
 
-            </div><!-- /#reviewsMasonry -->
+            </div><!-- /#reviewsTemplateContainer -->
         </div>
     </section>
 
@@ -792,32 +839,223 @@ include 'header.php';
         </div>
     </section>
 
+    <!-- Testimonial Details Modal -->
+    <div class="review-modal-backdrop" id="reviewModal">
+        <div class="review-modal-content">
+            <button class="review-modal-close" id="closeReviewModal" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div id="modalReviewCard" class="review-card" style="border:none !important; background:transparent !important; box-shadow:none !important; padding:0 !important; backdrop-filter:none !important;">
+                <!-- Content cloned dynamically here -->
+            </div>
+        </div>
+    </div>
+ 
     <!-- Testimonials JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
     (function() {
-        // ── Filter Tabs ──
+        var swiper;
         var tabs = document.querySelectorAll('.reviews-filter-tab');
-        var cards = document.querySelectorAll('.review-card');
+        var allCards = Array.from(document.querySelectorAll('#reviewsTemplateContainer .review-card'));
+        
+        // Assign index to all original cards for easy modal mapping
+        allCards.forEach(function(card, idx) {
+            card.setAttribute('data-index', idx);
+        });
 
+        function initSwiperInstance(shouldLoop) {
+            swiper = new Swiper('.reviews-swiper', {
+                slidesPerView: 1,
+                centeredSlides: false,
+                spaceBetween: 20,
+                loop: shouldLoop,
+                autoplay: {
+                    delay: 6000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination-custom',
+                    clickable: true,
+                    bulletClass: 'swiper-pagination-bullet',
+                    bulletActiveClass: 'swiper-pagination-bullet-active',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-custom',
+                    prevEl: '.swiper-button-prev-custom',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 24,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    }
+                }
+            });
+        }
+
+        function renderReviews(filter) {
+            if (swiper) {
+                swiper.destroy(true, true);
+            }
+
+            var wrapper = document.getElementById('reviewsSwiperWrapper');
+            wrapper.innerHTML = '';
+
+            // Filter cards
+            var filteredCards = allCards.filter(function(card) {
+                if (filter === 'all') return true;
+                var tags = card.getAttribute('data-tags') || '';
+                return tags.split(' ').indexOf(filter) !== -1;
+            });
+
+            // Populate slides (1 card per slide)
+            filteredCards.forEach(function(card) {
+                var slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+
+                var clonedCard = card.cloneNode(true);
+                clonedCard.style.display = 'flex';
+                
+                // Truncate long reviews to keep slider cards uniform in size
+                var textEl = clonedCard.querySelector('.review-text');
+                if (textEl) {
+                    var originalText = textEl.textContent.trim();
+                    if (originalText.length > 220) {
+                        var cleanText = originalText.replace(/^"\s*|\s*"$/g, ''); // strip quotes
+                        var truncated = '"' + cleanText.substring(0, 190) + '...';
+                        textEl.textContent = truncated;
+                        
+                        // Re-add quote decorative icon
+                        var quoteIcon = document.createElement('span');
+                        quoteIcon.className = 'review-quote-icon';
+                        quoteIcon.textContent = '"';
+                        textEl.appendChild(quoteIcon);
+                        
+                        // Add Read More button
+                        var btn = document.createElement('button');
+                        btn.className = 'read-more-btn font-sans text-xs font-semibold text-gold hover:text-gold-light mt-2 underline cursor-pointer border-none bg-transparent block p-0';
+                        btn.textContent = 'Read More';
+                        btn.setAttribute('data-index', card.getAttribute('data-index'));
+                        clonedCard.appendChild(btn);
+                    }
+                }
+                
+                slide.appendChild(clonedCard);
+                wrapper.appendChild(slide);
+            });
+
+            var shouldLoop = filteredCards.length >= 3;
+            initSwiperInstance(shouldLoop);
+
+            // Hide controls if only 1 slide exists
+            var slides = wrapper.querySelectorAll('.swiper-slide');
+            var navPrev = document.querySelector('.swiper-button-prev-custom');
+            var navNext = document.querySelector('.swiper-button-next-custom');
+            var pagination = document.querySelector('.swiper-pagination-custom');
+            var controls = document.querySelector('.reviews-controls');
+
+            if (slides.length <= 1) {
+                if (controls) controls.style.display = 'none';
+            } else {
+                if (controls) controls.style.display = 'flex';
+                if (window.innerWidth > 1024) {
+                    if (navPrev) navPrev.style.display = 'flex';
+                    if (navNext) navNext.style.display = 'flex';
+                } else {
+                    if (navPrev) navPrev.style.display = 'none';
+                    if (navNext) navNext.style.display = 'none';
+                }
+                if (pagination) pagination.style.display = 'flex';
+            }
+        }
+
+        // Initialize on load
+        renderReviews('all');
+
+        // Tab click event listeners
         tabs.forEach(function(tab) {
             tab.addEventListener('click', function() {
                 var filter = this.getAttribute('data-filter');
 
-                // Update active tab
+                // Update active tab class
                 tabs.forEach(function(t) { t.classList.remove('active'); });
                 this.classList.add('active');
 
-                // Filter cards
-                cards.forEach(function(card) {
-                    var tags = card.getAttribute('data-tags') || '';
-                    if (filter === 'all' || tags.indexOf(filter) !== -1) {
-                        card.style.display = '';
-                        card.style.opacity = '1';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
+                // Render matching reviews
+                renderReviews(filter);
             });
+        });
+
+        // Event delegation for opening the "Read More" modal
+        var wrapperEl = document.getElementById('reviewsSwiperWrapper');
+        wrapperEl.addEventListener('click', function(e) {
+            if (e.target.classList.contains('read-more-btn')) {
+                var index = e.target.getAttribute('data-index');
+                var originalCard = allCards[index];
+                if (originalCard) {
+                    var modalInner = document.getElementById('modalReviewCard');
+                    modalInner.innerHTML = '';
+                    
+                    var cloned = originalCard.cloneNode(true);
+                    cloned.style.display = 'flex';
+                    // Render modal testimonial with standard clean light background
+                    cloned.className = 'review-card';
+                    
+                    // Remove read more button from the modal view clone
+                    var rm = cloned.querySelector('.read-more-btn');
+                    if (rm) rm.remove();
+                    
+                    modalInner.appendChild(cloned);
+                    
+                    var modal = document.getElementById('reviewModal');
+                    modal.classList.add('active');
+                }
+            }
+        });
+
+        // Modal Close listeners
+        var modal = document.getElementById('reviewModal');
+        var closeBtn = document.getElementById('closeReviewModal');
+        
+        function closeModal() {
+            modal.classList.remove('active');
+        }
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeModal);
+        }
+        
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Handle resize events to dynamically hide/show nav buttons
+        window.addEventListener('resize', function() {
+            var slides = document.querySelectorAll('#reviewsSwiperWrapper .swiper-slide');
+            var navPrev = document.querySelector('.swiper-button-prev-custom');
+            var navNext = document.querySelector('.swiper-button-next-custom');
+            if (slides.length > 1) {
+                if (window.innerWidth > 1024) {
+                    if (navPrev) navPrev.style.display = 'flex';
+                    if (navNext) navNext.style.display = 'flex';
+                } else {
+                    if (navPrev) navPrev.style.display = 'none';
+                    if (navNext) navNext.style.display = 'none';
+                }
+            }
         });
     })();
     </script>
