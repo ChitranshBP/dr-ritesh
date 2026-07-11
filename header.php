@@ -279,97 +279,6 @@ $extra_css = $extra_css ?? '';
                 <a href="/contact.php" class="btn btn-primary btn-sm nav-cta">Schedule a Consultation</a>
             </div>
 
-            <!-- Mobile Navigation Overlay -->
-            <div class="mobile-nav" id="mobileNav">
-                <div class="mobile-nav-content">
-                    <div class="mobile-nav-links">
-                        <!-- About Accordion -->
-                        <div class="mobile-accordion">
-                            <button class="mobile-link accordion-toggle">
-                                About Us
-                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9" />
-                                </svg>
-                            </button>
-                            <div class="accordion-panel">
-                                <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>
-                                <a href="/dr-nalin-ranasinghe.php">Dr. Nalin E. Ranasinghe</a>
-                            </div>
-                        </div>
-
-                        <!-- Treatments Accordion -->
-                        <div class="mobile-accordion">
-                            <button class="mobile-link accordion-toggle">
-                                Treatments
-                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9" />
-                                </svg>
-                            </button>
-                            <div class="accordion-panel">
-                                <div class="mobile-sub-group">
-                                    <span class="sub-group-title">Psychiatry TMS</span>
-                                    <a href="/psychiatry-tms-therapy.php">Therapy Overview</a>
-                                    <a href="/psychiatry/tms-for-major-depression.php">Major Depression</a>
-                                    <a
-                                        href="/psychiatry/tms-for-treatment-resistant-depression.php">Treatment-Resistant</a>
-                                    <a href="/psychiatry/tms-for-generalized-anxiety.php">Generalized Anxiety</a>
-                                    <a href="/psychiatry/tms-for-ptsd.php">PTSD</a>
-                                    <a href="/psychiatry/tms-for-ocd.php">OCD</a>
-                                    <a href="/psychiatry/tms-for-panic-disorder.php">Panic Disorder</a>
-                                    <a href="/psychiatry/tms-for-bipolar-depression.php">Bipolar Depression</a>
-                                    <a href="/psychiatry/tms-for-adhd.php">ADHD</a>
-                                </div>
-                                <div class="mobile-sub-group">
-                                    <span class="sub-group-title">Neurology TMS</span>
-                                    <a href="/neurology-tms-therapy.php">Therapy Overview</a>
-                                    <a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a>
-                                    <a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a>
-                                    <a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a>
-                                    <a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a>
-                                    <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a>
-                                    <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
-                                    <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
-                                    <a href="/neurology/tms-for-fibromyalgia.php">Fibromyalgia</a>
-                                    <a href="/neurology/tms-for-huntingtons-disease.php">Huntington's Disease</a>
-                                    <a href="/neurology/tms-for-fibromuscular-dysplasia.php">Fibromuscular Dysplasia</a>
-                                </div>
-                                <div class="mobile-sub-group">
-                                    <span class="sub-group-title">Innovative Treatments</span>
-                                    <a href="/what-is-spravato.php">Spravato (Esketamine)</a>
-                                    <a href="/what-is-ketamine-therapy.php">Ketamine Therapy</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Resources Accordion -->
-                        <div class="mobile-accordion">
-                            <button class="mobile-link accordion-toggle">
-                                Resources
-                                <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9" />
-                                </svg>
-                            </button>
-                            <div class="accordion-panel">
-                                <a href="/reviews.php">Patient Testimonials</a>
-                                <a href="/faq.php">Patient FAQs</a>
-                                <a href="/insurance.php">Insurance & Financing</a>
-                                <a href="/blog/index.php">Wellness Blog</a>
-                                <a href="/areas-we-serve/tms-therapy-edison-nj.php">Areas We Serve</a>
-                            </div>
-                        </div>
-
-                        <a href="/contact.php" class="mobile-link">Contact</a>
-                    </div>
-
-                    <div class="mobile-nav-cta">
-                        <a href="/contact.php" class="btn btn-primary w-full">Schedule a Consultation</a>
-                    </div>
-                </div>
-            </div>
-
             <!-- Mobile hamburger -->
             <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
                 <span class="bar"></span>
@@ -378,3 +287,94 @@ $extra_css = $extra_css ?? '';
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-links">
+                <!-- About Accordion -->
+                <div class="mobile-accordion">
+                    <button class="mobile-link accordion-toggle">
+                        About Us
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="accordion-panel">
+                        <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>
+                        <a href="/dr-nalin-ranasinghe.php">Dr. Nalin E. Ranasinghe</a>
+                    </div>
+                </div>
+
+                <!-- Treatments Accordion -->
+                <div class="mobile-accordion">
+                    <button class="mobile-link accordion-toggle">
+                        Treatments
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="mobile-sub-group">
+                            <span class="sub-group-title">Psychiatry TMS</span>
+                            <a href="/psychiatry-tms-therapy.php">Therapy Overview</a>
+                            <a href="/psychiatry/tms-for-major-depression.php">Major Depression</a>
+                            <a
+                                href="/psychiatry/tms-for-treatment-resistant-depression.php">Treatment-Resistant</a>
+                            <a href="/psychiatry/tms-for-generalized-anxiety.php">Generalized Anxiety</a>
+                            <a href="/psychiatry/tms-for-ptsd.php">PTSD</a>
+                            <a href="/psychiatry/tms-for-ocd.php">OCD</a>
+                            <a href="/psychiatry/tms-for-panic-disorder.php">Panic Disorder</a>
+                            <a href="/psychiatry/tms-for-bipolar-depression.php">Bipolar Depression</a>
+                            <a href="/psychiatry/tms-for-adhd.php">ADHD</a>
+                        </div>
+                        <div class="mobile-sub-group">
+                            <span class="sub-group-title">Neurology TMS</span>
+                            <a href="/neurology-tms-therapy.php">Therapy Overview</a>
+                            <a href="/neurology/tms-for-brain-injury-trauma.php">Traumatic Brain Injury</a>
+                            <a href="/neurology/tms-for-movement-disorders.php">Movement Disorders</a>
+                            <a href="/neurology/tms-for-stroke-recovery.php">Stroke Recovery</a>
+                            <a href="/neurology/tms-for-parkinsons-symptoms.php">Parkinson's Symptoms</a>
+                            <a href="/neurology/tms-for-alzheimers-dementia.php">Alzheimer's & Dementia</a>
+                            <a href="/neurology/tms-for-migraine.php">Chronic Migraine</a>
+                            <a href="/neurology/tms-for-neuropathic-pain.php">Neuropathic Pain</a>
+                            <a href="/neurology/tms-for-fibromyalgia.php">Fibromyalgia</a>
+                            <a href="/neurology/tms-for-huntingtons-disease.php">Huntington's Disease</a>
+                            <a href="/neurology/tms-for-fibromuscular-dysplasia.php">Fibromuscular Dysplasia</a>
+                        </div>
+                        <div class="mobile-sub-group">
+                            <span class="sub-group-title">Innovative Treatments</span>
+                            <a href="/what-is-spravato.php">Spravato (Esketamine)</a>
+                            <a href="/what-is-ketamine-therapy.php">Ketamine Therapy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Accordion -->
+                <div class="mobile-accordion">
+                    <button class="mobile-link accordion-toggle">
+                        Resources
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+                    <div class="accordion-panel">
+                        <a href="/reviews.php">Patient Testimonials</a>
+                        <a href="/faq.php">Patient FAQs</a>
+                        <a href="/insurance.php">Insurance & Financing</a>
+                        <a href="/blog/index.php">Wellness Blog</a>
+                        <a href="/areas-we-serve/tms-therapy-edison-nj.php">Areas We Serve</a>
+                    </div>
+                </div>
+
+                <a href="/contact.php" class="mobile-link">Contact</a>
+            </div>
+
+            <div class="mobile-nav-cta">
+                <a href="/contact.php" class="btn btn-primary w-full">Schedule a Consultation</a>
+            </div>
+        </div>
+    </div>
