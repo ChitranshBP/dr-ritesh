@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'Who Is a Good Candidate for TMS Therapy? A Complete Guide',
+        'date'        => '2026-07-13',
+        'category'    => 'TMS Therapy',
+        'excerpt'     => 'Not everyone is a candidate for Transcranial Magnetic Stimulation (TMS) therapy. Learn who makes an ideal candidate, what conditions qualify, and how to determine if TMS is right for you.',
+        'image'       => '/assets/images/magstim device.jpg',
+        'slug'        => 'who-is-a-good-candidate-for-tms-therapy',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'Is TMS Therapy Legitimate? Science, FDA Approval, and Clinical Evidence',
         'date'        => '2026-06-12',
         'category'    => 'TMS Therapy',

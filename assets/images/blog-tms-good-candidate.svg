@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2847"/>
+      <stop offset="50%" style="stop-color:#162b47"/>
+      <stop offset="100%" style="stop-color:#0b192c"/>
+    </linearGradient>
+    <radialGradient id="brainGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#256fa8;stop-opacity:0.4"/>
+      <stop offset="70%" style="stop-color:#256fa8;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#256fa8;stop-opacity:0.05"/>
+    </radialGradient>
+    <radialGradient id="pulseGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="50%" style="stop-color:#5dadee"/>
+      <stop offset="100%" style="stop-color:#5dadee;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5dadee"/>
+      <stop offset="50%" style="stop-color:#3498db"/>
+      <stop offset="100%" style="stop-color:#5dadee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#256fa8" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="630"/>
+    <line x1="40" y1="0" x2="40" y2="630"/>
+    <line x1="80" y1="0" x2="80" y2="630"/>
+    <line x1="120" y1="0" x2="120" y2="630"/>
+    <line x1="160" y1="0" x2="160" y2="630"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="240" y1="0" x2="240" y2="630"/>
+    <line x1="280" y1="0" x2="280" y2="630"/>
+    <line x1="320" y1="0" x2="320" y2="630"/>
+    <line x1="360" y1="0" x2="360" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="440" y1="0" x2="440" y2="630"/>
+    <line x1="480" y1="0" x2="480" y2="630"/>
+    <line x1="520" y1="0" x2="520" y2="630"/>
+    <line x1="560" y1="0" x2="560" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="640" y1="0" x2="640" y2="630"/>
+    <line x1="680" y1="0" x2="680" y2="630"/>
+    <line x1="720" y1="0" x2="720" y2="630"/>
+    <line x1="760" y1="0" x2="760" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="840" y1="0" x2="840" y2="630"/>
+    <line x1="880" y1="0" x2="880" y2="630"/>
+    <line x1="920" y1="0" x2="920" y2="630"/>
+    <line x1="960" y1="0" x2="960" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1040" y1="0" x2="1040" y2="630"/>
+    <line x1="1080" y1="0" x2="1080" y2="630"/>
+    <line x1="1120" y1="0" x2="1120" y2="630"/>
+    <line x1="1160" y1="0" x2="1160" y2="630"/>
+    <line x1="1200" y1="0" x2="1200" y2="630"/>
+    <line x1="0" y1="0" x2="1200" y2="0"/>
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="440" x2="1200" y2="440"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="520" x2="1200" y2="520"/>
+    <line x1="0" y1="560" x2="1200" y2="560"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accentLine)"/>
+
+  <!-- Left side - Brain/TMS illustration -->
+  <g transform="translate(280, 315)">
+    <!-- Outer glow -->
+    <circle r="165" fill="none" stroke="#5dadee" stroke-opacity="0.05" stroke-width="2"/>
+    <circle r="190" fill="none" stroke="#5dadee" stroke-opacity="0.03" stroke-width="2"/>
+
+    <!-- Brain background -->
+    <circle r="130" fill="url(#brainGlow)"/>
+
+    <!-- TMS coil rings -->
+    <circle r="110" fill="none" stroke="#5dadee" stroke-width="3"/>
+    <circle r="85" fill="none" stroke="#3498db" stroke-width="2"/>
+
+    <!-- Brain representation -->
+    <circle r="60" fill="#5dadee" fill-opacity="0.2"/>
+
+    <!-- Neural network connections -->
+    <g stroke="#5dadee" stroke-opacity="0.5" stroke-width="1.5" fill="none">
+      <line x1="0" y1="-45" x2="38" y2="-23"/>
+      <line x1="38" y1="-23" x2="38" y2="23"/>
+      <line x1="38" y1="23" x2="0" y2="45"/>
+      <line x1="0" y1="45" x2="-38" y2="23"/>
+      <line x1="-38" y1="23" x2="-38" y2="-23"/>
+      <line x1="-38" y1="-23" x2="0" y2="-45"/>
+      <line x1="0" y1="-45" x2="38" y2="23"/>
+      <line x1="38" y1="-23" x2="-38" y2="23"/>
+      <line x1="-38" y1="-23" x2="38" y2="23"/>
+    </g>
+
+    <!-- Neural nodes -->
+    <circle cx="0" cy="-45" r="6" fill="#5dadee"/>
+    <circle cx="38" cy="-23" r="6" fill="#5dadee"/>
+    <circle cx="38" cy="23" r="6" fill="#5dadee"/>
+    <circle cx="0" cy="45" r="6" fill="#5dadee"/>
+    <circle cx="-38" cy="23" r="6" fill="#5dadee"/>
+    <circle cx="-38" cy="-23" r="6" fill="#5dadee"/>
+
+    <!-- Central pulse -->
+    <circle r="20" fill="url(#pulseGrad)"/>
+
+    <!-- Pulsing rings -->
+    <circle r="35" fill="none" stroke="#5dadee" stroke-opacity="0.3" stroke-width="2"/>
+    <circle r="50" fill="none" stroke="#5dadee" stroke-opacity="0.2" stroke-width="2"/>
+    <circle r="65" fill="none" stroke="#5dadee" stroke-opacity="0.1" stroke-width="2"/>
+  </g>
+
+  <!-- Checkmark badge -->
+  <g transform="translate(280, 500)">
+    <circle r="28" fill="#2ecc71" fill-opacity="0.2"/>
+    <circle r="28" fill="none" stroke="#2ecc71" stroke-width="3"/>
+    <path d="M-12 0 L-3 10 L14 -10" fill="none" stroke="#2ecc71" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#5dadee" fill-opacity="0.15">
+    <circle cx="150" cy="100" r="3"/>
+    <circle cx="200" cy="450" r="2"/>
+    <circle cx="450" cy="80" r="2"/>
+    <circle cx="520" cy="550" r="3"/>
+    <circle cx="100" cy="300" r="2"/>
+    <circle cx="550" cy="200" r="2"/>
+  </g>
+
+  <!-- Right side text content -->
+  <!-- Eyebrow -->
+  <text x="600" y="140" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#5dadee">TMS THERAPY GUIDE</text>
+
+  <!-- Decorative line -->
+  <rect x="600" y="152" width="200" height="2" fill="#5dadee" fill-opacity="0.5"/>
+
+  <!-- Main title -->
+  <text x="600" y="230" font-family="Georgia, serif" font-size="54" font-weight="bold" fill="#ffffff">Who Is a Good</text>
+  <text x="600" y="300" font-family="Georgia, serif" font-size="54" font-weight="bold" fill="#ffffff">Candidate for</text>
+  <text x="600" y="370" font-family="Georgia, serif" font-size="54" font-weight="bold" fill="#5dadee">TMS Therapy?</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" fill-opacity="0.7">Discover if TMS is right for you</text>
+
+  <!-- Bottom info bar -->
+  <rect x="600" y="480" width="500" height="55" rx="8" fill="#256fa8" fill-opacity="0.25"/>
+  <text x="625" y="517" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Dr. Ritesh Amin, MD</text>
+  <text x="820" y="517" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" fill-opacity="0.5">|</text>
+  <text x="840" y="517" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#5dadee">Board-Certified Psychiatrist</text>
+  <text x="1060" y="517" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" fill-opacity="0.5">|</text>
+  <text x="1080" y="517" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" fill-opacity="0.6">Edison, NJ</text>
+
+  <!-- Bottom decorative circles -->
+  <circle cx="50" cy="580" r="40" fill="#5dadee" fill-opacity="0.1"/>
+  <circle cx="1150" cy="50" r="50" fill="#5dadee" fill-opacity="0.1"/>
+</svg>
