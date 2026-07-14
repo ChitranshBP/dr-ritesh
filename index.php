@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Dr. Ritesh Amin | Advanced TMS Therapy & Psychiatry in NJ';
-$page_desc = 'Dr. Ritesh Amin offers cutting-edge, FDA-approved TMS therapy, Spravato, and comprehensive psychiatric care in New Jersey for depression and anxiety.';
+$page_title = 'Dr. Ritesh Amin | TMS Therapy Specialist | Psychiatrist in NJ';
+$page_desc = 'Dr. Ritesh Amin, ABPN certified psychiatrist, offers advanced TMS therapy, Spravato, and comprehensive mental health treatment in Edison, NJ for depression, anxiety, OCD, and more.';
 $body_class = 'bg-beige';
 $extra_css = '
         /* Responsive override for section-title — kept here so it wins over the base rule above */
@@ -109,8 +109,8 @@ include 'header.php';
         <div class="hero-left">
             <div class="hero-content reveal">
                 <h1 class="hero-title">
-                    Advanced TMS<br>
-                    Therapy in Edison, NJ for<br>
+                    Dr. Ritesh Amin: <br>Advanced TMS
+                    Therapy in Edison, NJ for
                     <a href="/psychiatry/tms-for-major-depression.php" id="hero-condition"
                         class="text-[#5dadee] not-italic hero-condition-link">Depression</a>
                 </h1>
