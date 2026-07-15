@@ -73,10 +73,10 @@ about_replace = """                    <p class="lead-text">Board-Certified Psyc
 content = re.sub(r'                    <p class="lead-text">.*?</p>', about_replace, content, flags=re.DOTALL)
 
 # Update h1 and h2 sizing
-h1_h2_old = r'<h1 class="block font-sans text-sm font-semibold uppercase tracking-\[2px\] text-gold mb-4">\{h1_text\}</h1>\s*<h2 class="text-3xl lg:text-4xl font-serif text-white leading-tight mb-6">\s*Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>\s*</h2>'
+h1_h2_old = r'<h1 class="block font-sans text-sm font-semibold uppercase tracking-\[2px\] text-gold mb-4">\{h1_text\}</h1>\s*<h2 class="text-3xl lg:text-4xl font-serif text-white leading-tight mb-6">\s*Comprehensive brain stimulation <span class="text-gold-light">and psychiatric care tailored to your unique needs.</span>\s*</h2>'
 h1_h2_new = """<h1 class="text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">{h1_text}</h1>
                 <h2 class="text-lg lg:text-xl font-sans text-white/80 font-medium tracking-wide mb-6">
-                    Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>
+                    Comprehensive brain stimulation <span class="text-gold-light">and psychiatric care tailored to your unique needs.</span>
                 </h2>"""
 content = re.sub(h1_h2_old, h1_h2_new, content)
 

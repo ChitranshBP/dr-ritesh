@@ -122,9 +122,9 @@ include 'header.php';
                             { label: 'OCD.', url: '/psychiatry/tms-for-ocd.php' },
                             { label: 'PTSD.', url: '/psychiatry/tms-for-ptsd.php' },
                             { label: 'Bipolar Depression.', url: '/psychiatry/tms-for-bipolar-depression.php' },
-                            { label: 'Panic Disorder.', url: '/psychiatry/tms-for-panic-disorder.php' },
                             { label: 'ADHD.', url: '/psychiatry/tms-for-adhd.php' },
-                            { label: 'Chronic Migraine.', url: '/neurology/tms-for-migraine.php' },
+                            { label: 'Panic Disorder.', url: '/psychiatry/tms-for-panic-disorder.php' },
+                                                        { label: 'Chronic Migraine.', url: '/neurology/tms-for-migraine.php' },
                             { label: 'Neuropathic Pain.', url: '/neurology/tms-for-neuropathic-pain.php' },
                             { label: 'Stroke Recovery.', url: '/neurology/tms-for-stroke-recovery.php' },
                         ];
@@ -406,6 +406,7 @@ include 'header.php';
                             <line x1="7" y1="17" x2="17" y2="7"></line>
                             <polyline points="7 7 17 7 17 17"></polyline>
                         </svg></a>
+                    <div class="basis-full h-0"></div>
                     <!-- Repeat loop arrows — represents compulsive, repetitive cycles -->
                     <a href="/psychiatry/tms-for-ocd.php" class="condition-chip"><span class="chip-icon"><svg
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -430,16 +431,6 @@ include 'header.php';
                             <line x1="7" y1="17" x2="17" y2="7"></line>
                             <polyline points="7 7 17 7 17 17"></polyline>
                         </svg></a>
-                    <!-- Moon — represents mood cycling between highs and lows -->
-                    <a href="/psychiatry/tms-for-bipolar-depression.php" class="condition-chip"><span
-                            class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                            </svg></span>Bipolar Depression <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg></a>
                     <!-- Target / crosshair — represents attention focus deficit -->
                     <a href="/psychiatry/tms-for-adhd.php" class="condition-chip"><span class="chip-icon"><svg
                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -448,6 +439,16 @@ include 'header.php';
                                 <circle cx="12" cy="12" r="6" />
                                 <circle cx="12" cy="12" r="2" />
                             </svg></span>ADHD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg></a>
+                    <!-- Moon — represents mood cycling between highs and lows -->
+                    <a href="/psychiatry/tms-for-bipolar-depression.php" class="condition-chip"><span
+                            class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                            </svg></span>Bipolar Disorder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="7" y1="17" x2="17" y2="7"></line>
                             <polyline points="7 7 17 7 17 17"></polyline>
@@ -644,50 +645,27 @@ include 'header.php';
         <div class="trust-grid">
             <div class="trust-card reveal">
                 <span class="trust-card-num">01</span>
-                <div class="trust-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                        </path>
-                    </svg>
-                </div>
-                <h3>Board Certified</h3>
-                <p>Expert psychiatric care backed by rigorous training and certification.</p>
+                <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">health_and_safety</span></div>
+                <h3>Board-Certified Neurologist</h3>
+                <p>Dr. Amin is board-certified by the American Board of Psychiatry and Neurology with specialized training in neuromodulation.</p>
             </div>
             <div class="trust-card reveal delay-1">
                 <span class="trust-card-num">02</span>
-                <div class="trust-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                    </svg>
-                </div>
-                <h3>Advanced TMS</h3>
-                <p>Offering the latest in non-invasive, drug-free depression treatment.</p>
+                <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">bolt</span></div>
+                <h3>FDA-Cleared TMS Technology</h3>
+                <p>We use the latest FDA-cleared TMS devices to ensure safe, effective, and precise brain stimulation treatments.</p>
             </div>
             <div class="trust-card reveal delay-2">
                 <span class="trust-card-num">03</span>
-                <div class="trust-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
-                        </path>
-                    </svg>
-                </div>
-                <h3>Personalized Plans</h3>
-                <p>Tailored treatment approaches designed specifically for your unique needs.</p>
+                <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">tune</span></div>
+                <h3>Personalized Treatment Plans</h3>
+                <p>Every treatment plan is customized based on your unique brain activity, symptoms, and health goals.</p>
             </div>
             <div class="trust-card reveal delay-3">
                 <span class="trust-card-num">04</span>
-                <div class="trust-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-                        </path>
-                    </svg>
-                </div>
-                <h3>Compassionate Care</h3>
-                <p>A safe, supportive environment focused entirely on your well-being.</p>
+                <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">favorite_border</span></div>
+                <h3>Dual Expertise: Psychiatry &amp; Neurology</h3>
+                <p>Dr. Amin brings a comprehensive understanding of both psychiatric and neurological conditions for integrated care.</p>
             </div>
         </div>
     </div>
@@ -730,7 +708,7 @@ include 'header.php';
                             <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg> Specialized expertise in Neuromodulation</li>
                 </ul>
-                <a href="contact.php" class="btn btn-primary mt-6">Book an Appointment</a>
+                <a href="contact.php" class="btn btn-primary mt-6">Book a Consultation</a>
             </div>
         </div>
     </div>

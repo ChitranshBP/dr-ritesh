@@ -89,6 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenuBtn.addEventListener('click', () => {
             mobileNav.classList.toggle('active');
             mobileMenuBtn.classList.toggle('active');
+            if (navbar) {
+                navbar.classList.toggle('active');
+            }
             document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
         });
         
@@ -97,6 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 mobileNav.classList.remove('active');
                 mobileMenuBtn.classList.remove('active');
+                if (navbar) {
+                    navbar.classList.remove('active');
+                }
                 document.body.style.overflow = '';
             });
         });

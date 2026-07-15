@@ -18,14 +18,14 @@ include __DIR__ . '/../header.php';
         <div class="bihero-orb-1"></div>
         <div class="bihero-orb-2"></div>
         <div class="container mx-auto px-4 max-w-7xl relative z-10">
-            <div class="max-w-3xl mx-auto text-center reveal">
+            <div class="max-w-5xl mx-auto text-center reveal">
                 <h1 class="text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">TMS Therapy Near Princeton, NJ</h1>
                 <h2 class="text-lg lg:text-xl font-sans text-white/80 font-medium tracking-wide mb-6">
-                    Advanced TMS Treatment <span class="text-gold-light">for Mental Health &amp; Neurological Conditions</span>
+                    Comprehensive brain stimulation <span class="text-gold-light">and psychiatric care tailored to your unique needs.</span>
                 </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
-                    Patients in Princeton can now overcome treatment-resistant mental health challenges through advanced TMS therapy. Dr. Amin utilizes cutting-edge brain stimulation techniques to restore neurological balance safely and effectively, right here in your local area.
+                    Residents of Princeton, NJ have access to advanced, FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy with Dr. Ritesh Amin. Conveniently located near Princeton, our practice provides personalized, non-invasive, medication-free treatment for depression, anxiety, OCD, and select neurological conditions. Our goal is to help patients achieve lasting symptom relief and improve their overall quality of life.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Book a Consultation</a>
@@ -131,6 +131,7 @@ include __DIR__ . '/../header.php';
                         <a href="/psychiatry/tms-for-generalized-anxiety.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg></span>Anxiety <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
                         <a href="/psychiatry/tms-for-ocd.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>OCD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
                         <a href="/psychiatry/tms-for-ptsd.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>PTSD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+                        <div class="basis-full h-0"></div>
                         <a href="/psychiatry/tms-for-adhd.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>ADHD <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
                         <a href="/psychiatry/tms-for-bipolar-depression.php" class="condition-chip"><span class="chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>Bipolar Disorder <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
                     </div>
@@ -194,37 +195,37 @@ include __DIR__ . '/../header.php';
             <div class="trust-grid reveal delay-1">
                 <div class="trust-card">
                     <span class="trust-card-num">01</span>
-                    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+                    <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">health_and_safety</span></div>
                     <h3>Board-Certified Neurologist</h3>
                     <p>Dr. Amin is board-certified by the American Board of Psychiatry and Neurology with specialized training in neuromodulation.</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">02</span>
-                    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+                    <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">bolt</span></div>
                     <h3>FDA-Cleared TMS Technology</h3>
                     <p>We use the latest FDA-cleared TMS devices to ensure safe, effective, and precise brain stimulation treatments.</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">03</span>
-                    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg></div>
+                    <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">tune</span></div>
                     <h3>Personalized Treatment Plans</h3>
                     <p>Every treatment plan is customized based on your unique brain activity, symptoms, and health goals.</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">04</span>
-                    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg></div>
+                    <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">favorite_border</span></div>
                     <h3>Dual Expertise: Psychiatry &amp; Neurology</h3>
                     <p>Dr. Amin brings a comprehensive understanding of both psychiatric and neurological conditions for integrated care.</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">05</span>
-                    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+                    <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">groups</span></div>
                     <h3>Serving Princeton &amp; Nearby Areas</h3>
                     <p>Our Edison clinic is conveniently located and easily accessible for patients throughout central New Jersey.</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">06</span>
-                    <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+                    <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">verified</span></div>
                     <h3>Insurance Assistance Available</h3>
                     <p>Our team verifies your insurance coverage and handles prior authorizations so you can focus on healing.</p>
                 </div>
@@ -295,7 +296,7 @@ include __DIR__ . '/../header.php';
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Board Certified by the ABPN</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Specialized expertise in Neuromodulation</li>
                     </ul>
-                    <a href="/contact.php" class="btn btn-primary mt-6">Book an Appointment</a>
+                    <a href="/contact.php" class="btn btn-primary mt-6">Book a Consultation</a>
                 </div>
             </div>
         </div>
@@ -366,10 +367,10 @@ include __DIR__ . '/../header.php';
     <section class="closing-cta" id="take-action">
         <div class="container text-center reveal">
             <h2 class="section-title text-white">Ready to Start Your TMS Journey?</h2>
-            <p class="section-subtitle text-white/70 mb-8">Schedule Your Consultation Today and take the first step toward lasting relief.</p>
+            <p class="section-subtitle text-white/70 mb-8 lg:whitespace-nowrap">Schedule your consultation today and take the first step toward lasting relief.</p>
             <div class="flex flex-wrap justify-center gap-4 mt-6">
                 <a href="tel:+17323791797" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform">Call (732) 379-1797</a>
-                <a href="/contact.php" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all py-4 px-10 rounded-full text-lg">Book an Appointment</a>
+                <a href="/contact.php" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all py-4 px-10 rounded-full text-lg">Book a Consultation</a>
             </div>
         </div>
     </section>

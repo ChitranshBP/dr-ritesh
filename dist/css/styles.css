@@ -551,12 +551,13 @@ img {
     display: none;
     position: fixed;
     top: 0;
-    left: 100%;
+    left: 0;
     width: 100%;
     height: 100vh;
     background: var(--color-midnight);
     z-index: 2000;
-    transition: left 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     overflow-y: auto;
     padding-top: 7.5rem;
 }
@@ -571,7 +572,31 @@ img {
 }
 
 .mobile-nav.active {
-    left: 0;
+    transform: translateX(0);
+}
+
+/* ── Active Navbar (when mobile menu is open) ── */
+.navbar.active {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    z-index: 2050;
+}
+
+.navbar.active .logo-white,
+.navbar.scrolled.active .logo-white {
+    display: block !important;
+}
+
+.navbar.active .logo-main,
+.navbar.scrolled.active .logo-main {
+    display: none !important;
+}
+
+.navbar.active .mobile-menu-btn .bar {
+    background-color: var(--color-white) !important;
 }
 
 .mobile-nav-content {
@@ -1569,6 +1594,7 @@ img {
 }
 
 /* Cards */
+@media (min-width: 992px) { .trust-grid { grid-template-columns: repeat(3, 1fr) !important; } }
 .trust-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1586,6 +1612,29 @@ img {
     border-top: 3px solid var(--color-gold);
     position: relative;
     overflow: hidden;
+    /* Horizontal Layout */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 1.25rem;
+    row-gap: 0.5rem;
+}
+
+.trust-icon {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.trust-card h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+}
+
+.trust-card p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0;
 }
 
 /* Warm wash on hover */
@@ -2089,7 +2138,7 @@ img {
     color: var(--color-midnight-light);
     margin-bottom: 0;
     margin-top: 0.75rem;
-    max-width: 600px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
