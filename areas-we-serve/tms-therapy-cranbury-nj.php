@@ -375,4 +375,9 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-<?php include __DIR__ . '/../footer.php'; ?>
+<?php 
+if ('{name}' === 'Kendall Park') {
+    $custom_map_url = "https://maps.google.com/maps?q=Dr.+Ritesh+Amin,+3086+Route+27,+Kendall+Park,+NJ+08824&t=&z=14&ie=UTF8&iwloc=&output=embed";
+}
+include __DIR__ . '/../footer.php'; 
+?>
