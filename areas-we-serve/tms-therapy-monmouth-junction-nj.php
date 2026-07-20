@@ -82,7 +82,7 @@ include __DIR__ . '/../header.php';
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Parkinson's Disease</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Alzheimer's &amp; Dementia</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Chronic Migraine &amp; Neuropathic Pain</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Fibromyalgia &amp; Huntington's</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Fibromyalgia &amp; Huntington's Disease</li>
                     </ul>
                 </div>
 
@@ -188,7 +188,7 @@ include __DIR__ . '/../header.php';
                 <div class="trust-stat-divider"></div>
                 <div class="trust-stat">
                     <span class="trust-stat-num">FDA</span>
-                    <span class="trust-stat-label">Cleared Treatment</span>
+                    <span class="trust-stat-label">Approved Treatment</span>
                 </div>
             </div>
 
@@ -290,7 +290,7 @@ include __DIR__ . '/../header.php';
                     </div>
                     <p class="lead-text">Board-Certified Psychiatrist specializing in Treatment-Resistant Depression and Advanced TMS Therapy.</p>
                     <p>Dr. Amin has built a reputation in the Monmouth Junction area for his deep commitment to patient recovery and his expertise in advanced neuromodulation. He takes the time to understand each patient's unique history, delivering highly individualized care that addresses the root causes of psychiatric and neurological conditions.</p>
-                    <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care to patients in Monmouth Junction and throughout central New Jersey. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p>
+                    <!-- <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care to patients in Monmouth Junction and throughout central New Jersey. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p> -->
                     <ul class="credentials-list">
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Top Tier Education and Medical Training</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Board Certified by the ABPN</li>
@@ -367,7 +367,7 @@ include __DIR__ . '/../header.php';
     <section class="closing-cta" id="take-action">
         <div class="container text-center reveal">
             <h2 class="section-title text-white">Ready to Start Your TMS Journey?</h2>
-            <p class="section-subtitle text-white/70 mb-8 lg:whitespace-nowrap">Schedule your consultation today and take the first step toward lasting relief.</p>
+            <p class="section-subtitle text-white/70 mb-8 lg:whitespace-nowrap">Schedule your consultation today and take the first step towards lasting relief.</p>
             <div class="flex flex-wrap justify-center gap-4 mt-6">
                 <a href="tel:+17323791797" class="btn btn-primary py-4 px-10 rounded-full text-lg shadow-[0_10px_30px_rgba(37,111,168,0.4)] hover:-translate-y-1 transition-transform">Call (732) 379-1797</a>
                 <a href="/contact.php" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all py-4 px-10 rounded-full text-lg">Book a Consultation</a>
