@@ -10,11 +10,11 @@
                     <p class="text-white/60 mt-4 leading-relaxed font-light text-sm">Providing advanced, compassionate care and innovative TMS therapy for individuals in New Jersey seeking profound mental wellness.</p>
                     <div class="mt-6 space-y-2 text-sm font-light">
                         <p class="text-white/60">
-                            <span class="text-white/40 mr-2">Phone:</span>
+                            <span class="text-white/40">Phone:</span>
                             <a href="tel:+17323791797" class="text-white hover:text-gold transition-colors">(732) 379-1797</a>
                         </p>
                         <p class="text-white/60">
-                            <span class="text-white/40 mr-2">Email:</span>
+                            <span class="text-white/40 ">Email:</span>
                             <a href="mailto:psychiatrycare@gmail.com" class="text-white hover:text-gold transition-colors">psychiatrycare@gmail.com</a>
                         </p>
                     </div>

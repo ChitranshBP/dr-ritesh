@@ -155,7 +155,7 @@ $extra_css = $extra_css ?? '';
                             <span class="mega-feature-eyebrow">Our Treatments</span>
                             <h3 class="mega-feature-title">Advanced TMS<br>Therapy</h3>
                             <p class="mega-feature-desc">Non-invasive brain stimulation tailored by Dr. Amin for
-                                neurology &amp; psychiatry conditions.</p>
+                                neurological &amp; psychiatry conditions.</p>
                             <a href="/neurology-tms-therapy.php" class="mega-feature-cta">
                                 Explore All →
                             </a>

@@ -21,20 +21,22 @@ include __DIR__ . '/../header.php';
             <div class="max-w-5xl mx-auto text-center reveal">
                 <h1 class="text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">TMS Therapy in Kendall Park, NJ</h1>
                 <h2 class="text-lg lg:text-xl font-sans text-white/80 font-medium tracking-wide mb-6">
-                    Comprehensive brain stimulation <span class="text-gold-light">and psychiatric care tailored to your unique needs.</span>
+                    Comprehensive brain stimulation <span class="text-gold-light">and psychiatric care tailored to your needs.</span>
                 </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
-                    Residents of Kendall Park, NJ have access to advanced, FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy with Dr. Ritesh Amin. Conveniently located near Kendall Park, our practice provides personalized, non-invasive, medication-free treatment for depression, anxiety, OCD, and select neurological conditions. Our goal is to help patients achieve lasting symptom relief and improve their overall quality of life.
+Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy for patients in Kendall Park, NJ seeking effective treatment for depression, anxiety, OCD, PTSD, and a range of neurological conditions. Our personalized, non-invasive approach helps stimulate areas of the brain associated with mood regulation, offering symptom relief without surgery, anesthesia, or systemic medication side effects.
+
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Book a Consultation</a>
                     <a href="tel:+17323791797" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Call (732) 379-1797</a>
                 </div>
                 <div class="flex flex-wrap justify-center gap-3">
+                                        <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium text-white/80 border border-white/20 bg-white/5"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Personalized Care</span>
                     <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium text-white/80 border border-white/20 bg-white/5"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>FDA-Cleared</span>
+
                     <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium text-white/80 border border-white/20 bg-white/5"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Insurance Accepted</span>
-                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium text-white/80 border border-white/20 bg-white/5"><svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Personalized Care</span>
                 </div>
             </div>
         </div>
@@ -47,7 +49,7 @@ include __DIR__ . '/../header.php';
                 <div class="services-title-wrapper">
                     <span class="eyebrow">Our Services</span>
                     <h2 class="section-title">TMS Services We Offer in Kendall Park, NJ</h2>
-                    <p class="services-header-desc">Comprehensive brain stimulation and psychiatric care tailored to your unique needs.</p>
+                    <p class="services-header-desc">Comprehensive brain stimulation and psychiatric care tailored to your needs.</p>
                 </div>
             </div>
 
@@ -82,7 +84,7 @@ include __DIR__ . '/../header.php';
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Parkinson's Disease</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Alzheimer's &amp; Dementia</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Chronic Migraine &amp; Neuropathic Pain</li>
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Fibromyalgia &amp; Huntington's</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Fibromyalgia &amp; Huntington's Disease</li>
                     </ul>
                 </div>
 
@@ -165,8 +167,8 @@ include __DIR__ . '/../header.php';
     <section class="trust-section" id="why-choose">
         <div class="container">
             <div class="section-header center reveal">
-                <span class="eyebrow">Why Choose Us</span>
-                <h2 class="section-title">Why Choose Dr. Ritesh Amin?</h2>
+                <span class="eyebrow">Why Choose Us ?</span>
+                <h2 class="section-title">Trusted TMS Therapy Care in Kendall Park, NJ</h2>
                 <p class="section-subtitle">Experience the difference of expert-led, personalized TMS therapy.</p>
             </div>
 
@@ -188,7 +190,7 @@ include __DIR__ . '/../header.php';
                 <div class="trust-stat-divider"></div>
                 <div class="trust-stat">
                     <span class="trust-stat-num">FDA</span>
-                    <span class="trust-stat-label">Cleared Treatment</span>
+                    <span class="trust-stat-label">Approved Treatment</span>
                 </div>
             </div>
 
@@ -209,7 +211,7 @@ include __DIR__ . '/../header.php';
                     <span class="trust-card-num">03</span>
                     <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">tune</span></div>
                     <h3>Personalized Treatment Plans</h3>
-                    <p>Every treatment plan is customized based on your unique brain activity, symptoms, and health goals.</p>
+                    <p>Every treatment plan is customized based on your consultation and brain activity, symptoms, and health goals.</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">04</span>
@@ -221,7 +223,9 @@ include __DIR__ . '/../header.php';
                     <span class="trust-card-num">05</span>
                     <div class="trust-icon"><span class="material-icons" style="font-size:2rem; color:var(--color-gold);">groups</span></div>
                     <h3>Serving Kendall Park &amp; Nearby Areas</h3>
-                    <p>Our Edison clinic is conveniently located and easily accessible for patients throughout central New Jersey.</p>
+                    <p>Conveniently located in Edison, our clinic provides easy access for patients throughout Central New Jersey.
+
+</p>
                 </div>
                 <div class="trust-card">
                     <span class="trust-card-num">06</span>
@@ -252,7 +256,7 @@ include __DIR__ . '/../header.php';
                     <div class="journey-step-num">02</div>
                     <div class="journey-step-connector"></div>
                     <h3>Personalized Treatment Plan</h3>
-                    <p>Dr. Amin designs a tailored TMS protocol targeting the specific brain regions involved in your condition.</p>
+                    <p>Dr. Amin designs a tailored TMS protocol targeting the specific brain regions involved in your condition.Dr. Amin develops a customized TMS protocol that targets the brain regions associated with your condition and creates a comprehensive treatment plan personalized to your goals.</p>
                 </div>
                 <div class="journey-step-card">
                     <div class="journey-step-num">03</div>
@@ -288,8 +292,8 @@ include __DIR__ . '/../header.php';
                         <span class="about-cred-tag">TMS Specialist</span>
                         <span class="about-cred-tag">NJ Licensed</span>
                     </div>
+
                     <p class="lead-text">Board-Certified Psychiatrist specializing in Treatment-Resistant Depression and Advanced TMS Therapy.</p>
-                    <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care to patients in Kendall Park and throughout central New Jersey. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p>
                     <p>With extensive clinical experience, Dr. Amin is dedicated to providing compassionate, evidence-based care to patients in Kendall Park and throughout central New Jersey. His personal philosophy centers around treating the whole person, not just the symptoms, ensuring each patient receives a tailored approach to their mental wellness.</p>
                     <ul class="credentials-list">
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Top Tier Education and Medical Training</li>
@@ -375,9 +379,7 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-<?php 
-if ('{name}' === 'Kendall Park') {
-    $custom_map_url = "https://maps.google.com/maps?q=Dr.+Ritesh+Amin,+3086+Route+27,+Kendall+Park,+NJ+08824&t=&z=14&ie=UTF8&iwloc=&output=embed";
-}
-include __DIR__ . '/../footer.php'; 
+<?php
+$custom_map_url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.746113941611!2d-74.54187534793232!3d40.4366203980124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eab44e387c33f59%3A0x37c7a36b3993147c!2sDr.%20Ritesh%20Amin%20-%20Neurologist!5e0!3m2!1sen!2sin!4v1784546913622!5m2!1sen!2sin";
+include __DIR__ . '/../footer.php';
 ?>
