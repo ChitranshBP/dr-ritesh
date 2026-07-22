@@ -30,7 +30,9 @@
       "Bash(git checkout *)",
       "Bash(git push *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(php -l nad-plus.php)",
+      "Bash(php -l medical-management.php)"
     ]
   }
 }
