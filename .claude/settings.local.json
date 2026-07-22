@@ -33,7 +33,10 @@
       "Bash(git commit -m ' *)",
       "Bash(php -l nad-plus.php)",
       "Bash(php -l medical-management.php)",
-      "Bash(grep -n '\\\\$hero_image' nad-plus.php medical-management.php)"
+      "Bash(grep -n '\\\\$hero_image' nad-plus.php medical-management.php)",
+      "Bash(awk '/<script>/,/<\\\\/script>/' neurology/tms-for-fibromyalgia.php)",
+      "Bash(awk '/<script>/,/<\\\\/script>/' neurology/tms-for-migraine.php)",
+      "Bash(python \"C:\\\\Users\\\\GCV\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--download-ritesh\\\\c9b86c44-a15e-4db5-96ad-c8b6db910f4f\\\\scratchpad\\\\fix_tabs.py\")"
     ]
   }
 }

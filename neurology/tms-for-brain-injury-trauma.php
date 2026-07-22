@@ -1018,36 +1018,32 @@ include __DIR__ . '/../header.php';
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Tab functionality
         const tabs = document.querySelectorAll('.bi-tab-btn');
         const panes = document.querySelectorAll('.bi-tab-pane');
 
         tabs.forEach(tab => {
             tab.addEventListener('click', function(e) {
                 e.preventDefault();
-
-                // Remove active classes
                 tabs.forEach(t => t.classList.remove('active'));
                 panes.forEach(p => p.classList.remove('active'));
-
-                // Add active to clicked target
                 this.classList.add('active');
-                const targetId = this.getAttribute('data-target');
-                const pane = document.getElementById(targetId);
-                
-                if (pane) {
-                    pane.classList.add('active');
-                }
+                const pane = document.getElementById(this.getAttribute('data-target'));
+                if (pane) pane.classList.add('active');
             });
         });
 
-        // FAQ accordion functionality
-        
-                document.querySelectorAll('.bi-faq-icon').forEach(i => {
-                    i.classList.remove('rotate-45');
-                });
+        document.querySelectorAll('.bi-faq-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('.bi-faq-icon');
+                const isOpen = content.classList.contains('max-h-[1000px]');
 
-                // Set min heights appropriately for Tailwind classes to animate over
+                document.querySelectorAll('.bi-faq-content').forEach(c => {
+                    c.classList.add('max-h-0', 'opacity-0');
+                    c.classList.remove('max-h-[1000px]', 'opacity-100');
+                });
+                document.querySelectorAll('.bi-faq-icon').forEach(i => i.classList.remove('rotate-45'));
+
                 if (!isOpen) {
                     content.classList.remove('max-h-0', 'opacity-0');
                     content.classList.add('max-h-[1000px]', 'opacity-100');

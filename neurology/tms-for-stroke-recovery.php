@@ -368,25 +368,41 @@ include __DIR__ . '/../header.php';
 </section>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const tabs = document.querySelectorAll('.bi-tab-btn');
-    const panes = document.querySelectorAll('.bi-tab-pane');
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function(e) {
-            e.preventDefault();
-            tabs.forEach(t => t.classList.remove('active'));
-            panes.forEach(p => p.classList.remove('active'));
-            this.classList.add('active');
-            const pane = document.getElementById(this.getAttribute('data-target'));
-            if (pane) pane.classList.add('active');
+    document.addEventListener('DOMContentLoaded', function() {
+        const tabs = document.querySelectorAll('.bi-tab-btn');
+        const panes = document.querySelectorAll('.bi-tab-pane');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                tabs.forEach(t => t.classList.remove('active'));
+                panes.forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                const pane = document.getElementById(this.getAttribute('data-target'));
+                if (pane) pane.classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.bi-faq-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('.bi-faq-icon');
+                const isOpen = content.classList.contains('max-h-[1000px]');
+
+                document.querySelectorAll('.bi-faq-content').forEach(c => {
+                    c.classList.add('max-h-0', 'opacity-0');
+                    c.classList.remove('max-h-[1000px]', 'opacity-100');
+                });
+                document.querySelectorAll('.bi-faq-icon').forEach(i => i.classList.remove('rotate-45'));
+
+                if (!isOpen) {
+                    content.classList.remove('max-h-0', 'opacity-0');
+                    content.classList.add('max-h-[1000px]', 'opacity-100');
+                    icon.classList.add('rotate-45');
+                }
+            });
         });
     });
-    
-            document.querySelectorAll('.bi-faq-icon').forEach(i => i.classList.remove('rotate-45'));
-            if (!isOpen) { content.classList.remove('max-h-0', 'opacity-0'); content.classList.add('max-h-[1000px]', 'opacity-100'); icon.classList.add('rotate-45'); }
-        });
-    });
-});
 </script>
 
 <?php include __DIR__ . '/../footer.php'; ?>

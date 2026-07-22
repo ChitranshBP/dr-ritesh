@@ -580,8 +580,18 @@ include __DIR__ . '/../header.php';
             });
         });
 
-        
+        document.querySelectorAll('.bi-faq-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('.bi-faq-icon');
+                const isOpen = content.classList.contains('max-h-[1000px]');
+
+                document.querySelectorAll('.bi-faq-content').forEach(c => {
+                    c.classList.add('max-h-0', 'opacity-0');
+                    c.classList.remove('max-h-[1000px]', 'opacity-100');
+                });
                 document.querySelectorAll('.bi-faq-icon').forEach(i => i.classList.remove('rotate-45'));
+
                 if (!isOpen) {
                     content.classList.remove('max-h-0', 'opacity-0');
                     content.classList.add('max-h-[1000px]', 'opacity-100');
