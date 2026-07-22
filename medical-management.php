@@ -7,7 +7,7 @@ $page_desc = 'Expert psychiatric medication management with Dr. Ritesh Amin in E
 $eyebrow = 'Personalized Psychiatric Care';
 $hero_title = 'Expert <br><span>Medication Management</span> for Lasting Wellness';
 $hero_subtitle = 'Medication management is more than a prescription. It is an ongoing partnership focused on finding the right treatment, monitoring your progress, and adjusting your plan so you feel your best.';
-$hero_image = 'assets/images/tms_brain_banner.png';
+$hero_image = 'assets/images/tms_psychiatry_hero.png';
 
 // Introduction Section
 $intro_title = 'A Thoughtful Approach to Psychiatric Medication';
