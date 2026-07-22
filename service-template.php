@@ -164,7 +164,7 @@ include 'header.php';
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Board Certified by the ABPN</li>
                         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Specialized expertise in Neuromodulation</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary mt-6">Book a Consultation</a>
+                    <a href="/contact.php" class="btn btn-primary mt-6">Book a Consultation</a>
                 </div>
             </div>
         </div>

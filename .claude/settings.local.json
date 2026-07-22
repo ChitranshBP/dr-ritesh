@@ -32,7 +32,8 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(php -l nad-plus.php)",
-      "Bash(php -l medical-management.php)"
+      "Bash(php -l medical-management.php)",
+      "Bash(grep -n '\\\\$hero_image' nad-plus.php medical-management.php)"
     ]
   }
 }
