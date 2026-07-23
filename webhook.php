@@ -27,7 +27,7 @@ if (isset($data['ref']) && $data['ref'] === 'refs/heads/main') {
     $return_var = 0;
     
     // Execute git pull. Using absolute path of git.
-    exec("cd /home/drriteshamin.com/public_html && /usr/bin/git pull origin main 2>&1", $output, $return_var);
+    exec("cd /home/drriteshamin.com/public_html && /usr/bin/git -c safe.directory=/home/drriteshamin.com/public_html pull origin main 2>&1", $output, $return_var);
     
     // Log the output
     $log_data = date('Y-m-d H:i:s') . " - Status: " . $return_var . "\n" . implode("\n", $output) . "\n\n";
