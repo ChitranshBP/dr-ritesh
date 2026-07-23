@@ -45,8 +45,8 @@ AddDefaultCharset UTF-8
     # Internally rewrite /foo -> /foo.php when the .php file exists
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{DOCUMENT_ROOT}/$1.php -f
-    RewriteRule ^(.+?)/?$ /$1.php [L]
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.+?)/?$ $1.php [L]
 </IfModule>
 
 # ==========================================================
