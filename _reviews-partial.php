@@ -4,7 +4,7 @@
             <div class="section-header center reveal mb-12">
                 <span class="eyebrow">Patient Stories</span>
                 <h2 class="section-title text-midnight font-serif font-bold">Real People, Real Results</h2>
-                <p class="section-subtitle text-gray-600">Hear from patients whose lives were transformed through Dr. Amin's care.</p>
+                <p class="section-subtitle text-gray-600 md:max-w-none md:whitespace-nowrap">Hear from patients whose lives were transformed through Dr. Amin's care.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
                 <div class="review-card featured">

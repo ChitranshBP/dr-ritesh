@@ -11,6 +11,7 @@ $hero_image = 'assets/images/tms_brain_banner.png';
 
 // Introduction Section
 $intro_title = 'What Is NAD+ and Why Does It Matter?';
+$intro_image = 'assets/images/nad_plus_intro.png';
 $intro_paragraphs = [
     'NAD+ is a coenzyme present in every living cell that plays a central role in energy production, DNA repair, and cellular communication. As we age or experience chronic stress, our natural NAD+ levels decline, which can contribute to fatigue, brain fog, and reduced resilience.',
     'By replenishing NAD+ directly through a guided infusion protocol, we help support mitochondrial function at the cellular level. Many patients report improved mental clarity, steadier energy, and a greater sense of overall wellbeing as part of a broader plan for brain and body health.'
