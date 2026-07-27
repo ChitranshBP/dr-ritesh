@@ -5,7 +5,7 @@ $page_desc = 'Discover NAD+ therapy at Dr. Ritesh Amin\'s clinic in Edison, NJ. 
 
 // Hero Banner Data
 $eyebrow = 'Cellular Health & Vitality';
-$hero_title = 'Restore Your Energy with <br><span>NAD+</span> Therapy';
+$hero_title = 'Restore Your Energy <br>with <span>NAD+</span> Therapy';
 $hero_subtitle = 'NAD+ (Nicotinamide Adenine Dinucleotide) is a vital coenzyme found in every cell of your body. Physician-supervised NAD+ therapy helps restore cellular energy, sharpen focus, and support healthy aging.';
 $hero_image = 'assets/images/tms_brain_banner.png';
 
