@@ -5,6 +5,7 @@ $page_title = $page_title ?? 'Advanced TMS Therapy in NJ';
 $page_desc = $page_desc ?? 'Learn about our advanced TMS Therapy and mental health treatments in New Jersey.';
 $body_class = $body_class ?? 'bg-beige';
 $extra_css = $extra_css ?? '';
+$noindex = $noindex ?? false;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,6 +52,9 @@ $extra_css = $extra_css ?? '';
         <?= htmlspecialchars($page_title)?>
     </title>
     <meta name="description" content="<?= htmlspecialchars($page_desc)?>">
+    <?php if (!empty($noindex)): ?>
+    <meta name="robots" content="noindex, follow">
+    <?php endif; ?>
     <meta name="google-site-verification" content="9HecL4ym_tUaWhSbVauZyiMzwAtQX-ZT_fxwIyscC6k">
 
     <!-- Google Fonts -->

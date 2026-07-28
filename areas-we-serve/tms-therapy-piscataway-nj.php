@@ -11,6 +11,7 @@ $extra_css = '
     @media (max-width: 640px) { .bihero { padding: 8rem 0 3rem; } }
 ';
 include __DIR__ . '/../header.php';
+include __DIR__ . '/../_locations-tab.php';
 ?>
 
     <!-- Hero -->
