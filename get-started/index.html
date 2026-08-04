@@ -437,6 +437,15 @@
             color: #f8f5f0;
         }
 
+        select.form-input {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f8f5f0' stroke-opacity='0.5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.85rem center;
+            background-size: 14px 14px;
+            padding-right: 2.4rem;
+            cursor: pointer;
+        }
+
         .form-label {
             display: block;
             font-family: 'Nunito', sans-serif;
@@ -1739,6 +1748,27 @@
                                     <label class="form-label" for="email">Email Address</label>
                                     <input type="email" id="email" name="email" class="form-input"
                                         placeholder="you@example.com" required />
+                                </div>
+                                <div class="mb-4 grid gap-4 sm:grid-cols-2">
+                                    <div>
+                                        <label class="form-label" for="zip">ZIP Code</label>
+                                        <input type="text" id="zip" name="zip" class="form-input"
+                                            placeholder="07728" inputmode="numeric" pattern="[0-9]{5}(-[0-9]{4})?"
+                                            maxlength="10" required />
+                                    </div>
+                                    <div>
+                                        <label class="form-label" for="insurance">Insurance Provider</label>
+                                        <select id="insurance" name="insurance" class="form-input" required>
+                                            <option value="">Select your insurance</option>
+                                            <option value="cigna">Cigna</option>
+                                            <option value="united-commercial">United Commercial</option>
+                                            <option value="bcbs">Blue Cross Blue Shield</option>
+                                            <option value="medicare">Medicare</option>
+                                            <option value="aetna-nj-health">Aetna NJ Health</option>
+                                            <option value="aetna-commercial">Aetna Commercial</option>
+                                            <option value="other">Other / Not Sure</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="mb-[1.4rem]">
                                     <label class="form-label" for="message">What are you struggling with?</label>

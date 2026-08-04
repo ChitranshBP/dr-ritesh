@@ -268,6 +268,26 @@ include 'header.php';
                                 </div>
                             </div>
 
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="zip">ZIP Code *</label>
+                                    <input type="text" id="zip" name="zip" placeholder="07728" inputmode="numeric" pattern="[0-9]{5}(-[0-9]{4})?" maxlength="10" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="insurance">Insurance Provider *</label>
+                                    <select id="insurance" name="insurance" required>
+                                        <option value="">— Select your insurance —</option>
+                                        <option value="cigna">Cigna</option>
+                                        <option value="united-commercial">United Commercial</option>
+                                        <option value="bcbs">Blue Cross Blue Shield</option>
+                                        <option value="medicare">Medicare</option>
+                                        <option value="aetna-nj-health">Aetna NJ Health</option>
+                                        <option value="aetna-commercial">Aetna Commercial</option>
+                                        <option value="other">Other / Not Sure</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <label for="service">Service of Interest</label>
                                 <select id="service" name="service">
