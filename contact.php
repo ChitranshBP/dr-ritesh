@@ -296,6 +296,8 @@ include 'header.php';
                                     <option value="tms-neurology">TMS Therapy (Neurology)</option>
                                     <option value="spravato">Spravato® (Esketamine)</option>
                                     <option value="ketamine">Ketamine IV Infusion</option>
+                                    <option value="medication-management">Medication Management</option>
+                                    <option value="nad-plus">NAD+ Therapy</option>
                                     <option value="general">General Psychiatric Consultation</option>
                                     <option value="other">Other / Not Sure</option>
                                 </select>

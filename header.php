@@ -237,6 +237,16 @@ $noindex = $noindex ?? false;
                                 <span class="mega-treatment-desc">Rapid-relief IV infusions for severe depression &amp;
                                     mood disorders.</span>
                             </a>
+                            <a href="/medical-management.php" class="mega-treatment-card">
+                                <span class="mega-treatment-title">Medication Management</span>
+                                <span class="mega-treatment-desc">Personalized psychiatric medication plans with ongoing
+                                    monitoring.</span>
+                            </a>
+                            <a href="/nad-plus.php" class="mega-treatment-card">
+                                <span class="mega-treatment-title">NAD+ Therapy</span>
+                                <span class="mega-treatment-desc">Physician-supervised infusions for cellular energy
+                                    &amp; brain health.</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -353,6 +363,8 @@ $noindex = $noindex ?? false;
                             <span class="sub-group-title">Innovative Treatments</span>
                             <a href="/what-is-spravato.php">Spravato (Esketamine)</a>
                             <a href="/what-is-ketamine-therapy.php">Ketamine Therapy</a>
+                            <a href="/medical-management.php">Medication Management</a>
+                            <a href="/nad-plus.php">NAD+ Therapy</a>
                         </div>
                     </div>
                 </div>
