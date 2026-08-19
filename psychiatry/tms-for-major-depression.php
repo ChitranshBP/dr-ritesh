@@ -8,12 +8,6 @@ $extra_css  = '
     .bihero::after { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, var(--color-gold) 22%, var(--color-gold-light) 50%, var(--color-gold) 78%, transparent 100%); }
     .bihero-orb-1 { position: absolute; top: -30%; right: -8%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(37,111,168,0.16) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
     .bihero-orb-2 { position: absolute; bottom: -35%; left: -6%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(37,111,168,0.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-    .bi-quicknav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 3rem; }
-    .bi-quicknav a { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.25rem; border-radius: 999px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--color-midnight-light); background: #fff; border: 1.5px solid #e2e8f0; text-decoration: none; transition: all 0.3s ease; }
-    .bi-quicknav a:hover, .bi-quicknav a.active { background: var(--color-midnight); color: white; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(11,25,44,0.15); border-color: var(--color-midnight); }
-    .bi-quicknav a.active { cursor: default; } .bi-quicknav a.bi-tab-btn { cursor: pointer; } .bi-quicknav a svg { width: 15px; height: 15px; stroke: var(--color-gold); }
-    .bi-tab-pane { display: none !important; } .bi-tab-pane.active { display: block !important; animation: bi-fade-in 0.4s ease forwards; }
-    @keyframes bi-fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .review-card { background: #fff; border-radius: 1.25rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
     .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(11,25,44,0.08); }
     .review-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); opacity: 0; transition: opacity 0.35s ease; }
@@ -105,33 +99,19 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Condition Quick Nav -->
-    <section class="pt-16 pb-4 bg-white" id="conditions">
+    <!-- Conditions Header -->
+    <section class="pt-16 pb-8 bg-white" id="conditions">
         <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal">
+            <div class="section-header center reveal mb-0">
                 <span class="eyebrow">Understanding Treatment</span>
                 <h2 class="section-title">A New Pathway to Relief</h2>
                 <p class="section-subtitle">How targeted magnetic stimulation addresses the biological root of depression when medications fall short.</p>
-            </div>
-            <div class="bi-quicknav reveal" id="condition-tabs">
-                <a href="#biological-basis" class="bi-tab-btn active" data-target="biological-basis">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    The Biological Root
-                </a>
-                <a href="#how-it-works" class="bi-tab-btn" data-target="how-it-works">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-                    How TMS Works
-                </a>
-                <a href="#symptoms" class="bi-tab-btn" data-target="symptoms">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                    Symptoms Addressed
-                </a>
             </div>
         </div>
     </section>
 
     <!-- SECTION 1: Biological Basis -->
-    <div class="bi-condition bi-tab-pane active" id="biological-basis">
+    <div class="bi-condition" id="biological-basis">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="reveal">
                 <span class="bi-condition-badge">
@@ -158,7 +138,7 @@ include __DIR__ . '/../header.php';
     </div>
 
     <!-- SECTION 2: How It Works -->
-    <div class="bi-condition bi-tab-pane" id="how-it-works">
+    <div class="bi-condition bg-slate-50" id="how-it-works">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="reveal">
                 <span class="bi-condition-badge">
@@ -200,7 +180,7 @@ include __DIR__ . '/../header.php';
     </div>
 
     <!-- SECTION 3: Symptoms -->
-    <div class="bi-condition bi-tab-pane" id="symptoms">
+    <div class="bi-condition" id="symptoms">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="reveal">
                 <span class="bi-condition-badge">
@@ -263,6 +243,87 @@ include __DIR__ . '/../header.php';
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">High Efficacy Rates</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">Clinical trials show that a majority of patients experience significant improvement, and many achieve full clinical remission, even after multiple medications have failed.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-16 bg-slate-50" id="comparison">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="section-header center reveal mb-10">
+                <span class="eyebrow">Treatment Comparison</span>
+                <h2 class="section-title text-midnight font-serif font-bold">TMS vs. Antidepressants</h2>
+                <p class="section-subtitle">See how Transcranial Magnetic Stimulation compares to traditional medication.</p>
+            </div>
+            <div class="reveal delay-1">
+                <table class="bi-table w-full">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>TMS Therapy</th>
+                            <th>Traditional Antidepressants</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Targeted Approach</td>
+                            <td>Stimulates only the specific area of the brain regulating mood.</td>
+                            <td>Systemic—affects the entire body and brain.</td>
+                        </tr>
+                        <tr>
+                            <td>Systemic Side Effects</td>
+                            <td>None. (No weight gain, sexual dysfunction, or sedation).</td>
+                            <td>Common. (Weight changes, sleep issues, gastrointestinal issues).</td>
+                        </tr>
+                        <tr>
+                            <td>Timeline for Results</td>
+                            <td>Often within 2 to 4 weeks of starting treatment.</td>
+                            <td>Can take 6 to 8 weeks to determine if a specific medication works.</td>
+                        </tr>
+                        <tr>
+                            <td>Duration of Care</td>
+                            <td>Usually a 6-week course, after which treatment concludes.</td>
+                            <td>Often required indefinitely to maintain results.</td>
+                        </tr>
+                        <tr>
+                            <td>Remission Rates</td>
+                            <td>High success rate, even for treatment-resistant patients.</td>
+                            <td>Success rates drop significantly after the first two medication trials.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Candidacy -->
+    <section class="py-16 bg-white" id="candidacy">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <div class="reveal">
+                <span class="eyebrow block mb-3 text-gold font-bold tracking-widest text-sm uppercase">Patient Qualifications</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-midnight font-bold mb-6">Are You a Candidate?</h2>
+                <p class="text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">TMS is an FDA-cleared treatment that is covered by most major commercial insurances and Medicare. It is typically recommended for individuals who:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-10">
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Have been diagnosed with Major Depressive Disorder (MDD).</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Have not achieved satisfactory improvement from prior antidepressant medications.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Are unable to tolerate the side effects of their current medications.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Do not have non-removable conductive metal in or near the head.</p>
+                    </div>
+                </div>
+                
+                <a href="/contact.php" class="btn btn-primary px-8">Schedule a Screening</a>
             </div>
         </div>
     </section>
@@ -404,20 +465,6 @@ include __DIR__ . '/../header.php';
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const tabs = document.querySelectorAll('.bi-tab-btn');
-        const panes = document.querySelectorAll('.bi-tab-pane');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(e) {
-                e.preventDefault();
-                tabs.forEach(t => t.classList.remove('active'));
-                panes.forEach(p => p.classList.remove('active'));
-                this.classList.add('active');
-                const pane = document.getElementById(this.getAttribute('data-target'));
-                if (pane) pane.classList.add('active');
-            });
-        });
-
         document.querySelectorAll('.bi-faq-header').forEach(header => {
             header.addEventListener('click', function() {
                 const content = this.nextElementSibling;
