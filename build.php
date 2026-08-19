@@ -81,6 +81,7 @@ $pages = [
 
     // Blog
     'blog/index.php'                      => 'blog/index.html',
+    'blog/can-ocd-get-worse-with-age.php' => 'blog/can-ocd-get-worse-with-age.html',
 ];
 
 // ── Static asset directories to copy ──
