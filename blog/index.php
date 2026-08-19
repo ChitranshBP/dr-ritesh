@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'Can OCD Get Worse With Age? Understanding the Progression of Obsessive-Compulsive Disorder',
+        'date'        => '2026-08-19',
+        'category'    => 'OCD',
+        'excerpt'     => 'Does Obsessive-Compulsive Disorder worsen as you get older? Explore how OCD progresses over a lifetime, the factors that trigger symptom changes, and why seeking treatment early makes a significant difference.',
+        'image'       => '/assets/images/blog-ocd-age.png',
+        'slug'        => 'can-ocd-get-worse-with-age',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'Who Is a Good Candidate for TMS Therapy? A Complete Guide',
         'date'        => '2026-07-13',
         'category'    => 'TMS Therapy',
