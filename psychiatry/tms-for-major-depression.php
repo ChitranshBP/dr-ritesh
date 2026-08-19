@@ -113,19 +113,19 @@ include __DIR__ . '/../header.php';
     <!-- SECTION 1: Biological Basis -->
     <div class="bi-condition" id="biological-basis">
         <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
+            <div class="reveal text-center">
                 <span class="bi-condition-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     Section 01
                 </span>
                 <h2>The Biological Root of Depression</h2>
-                <p class="bi-condition-lead">Depression is a physical condition of the brain circuitry, not just an emotional state.</p>
+                <p class="bi-condition-lead mx-auto">Depression is a physical condition of the brain circuitry, not just an emotional state.</p>
             </div>
 
             <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
                 <div>
-                    <p>Major Depressive Disorder (MDD) is characterized by persistent a feelings of sadness, loss of interest, and a lack of energy. Research has shown that in depressed individuals, certain areas of the brain—specifically the left Dorsolateral Prefrontal Cortex (DLPFC)—are physically underactive.</p>
-                    <p>This area of the brain is responsible for regulating mood, motivation, and executive function. When neural activity in the DLPFC drops, communication with deeper emotional centers (like the amygdala) becomes disrupted, leading to the entrenched symptoms of depression.</p>
+                    <p>Major Depressive Disorder (MDD) is characterized by persistent feelings of sadness, loss of interest, and a lack of energy. Research has shown that in depressed individuals, certain areas of the brain—specifically the left Dorsolateral Prefrontal Cortex (DLPFC)—are physically underactive.</p>
+                    <p>This area of the brain is responsible for regulating mood, motivation, and executive function. When neural activity in the DLPFC drops, communication with deeper emotional centers (like the amygdala) becomes disrupted, leading to the entrenched symptoms of depression. Over time, this disruption creates a loop of negative emotional processing that can be extremely difficult to break with conventional treatments alone.</p>
                     <div class="bi-callout">
                         <p>Unlike traditional antidepressants that bathe the entire brain in chemicals, TMS precisely targets this specific, underactive region to "wake it up."</p>
                     </div>
@@ -140,22 +140,22 @@ include __DIR__ . '/../header.php';
     <!-- SECTION 2: How It Works -->
     <div class="bi-condition bg-slate-50" id="how-it-works">
         <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
+            <div class="reveal text-center">
                 <span class="bi-condition-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
                     Section 02
                 </span>
                 <h2>How TMS Lifts Mood</h2>
-                <p class="bi-condition-lead">Utilizing electromagnetic pulses to stimulate neuroplasticity and restore neural communication.</p>
+                <p class="bi-condition-lead mx-auto">Utilizing electromagnetic pulses to stimulate neuroplasticity and restore neural communication.</p>
             </div>
 
             <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
                 <div class="bi-image-wrapper">
-                    <img src="/assets/psychiatry-tms/mdd-relief.png" alt="Patient receiving TMS therapy for depression">
+                    <img src="/assets/images/clinic-img-5.jpg" alt="Patient receiving TMS therapy for depression in our Edison clinic">
                 </div>
                 <div>
-                    <p>Transcranial Magnetic Stimulation (TMS) uses highly focused, MRI-strength magnetic pulses to stimulate the nerve cells in the prefrontal cortex. The changing magnetic field induces a mild electrical current in the superficial layers of the brain.</p>
-                    <p>Over a course of treatment (typically 4-6 weeks), these repeated pulses encourage <strong>neuroplasticity</strong>. Existing neurons form new, stronger connections, and the brain's natural mood-regulating neurotransmitters (like serotonin and dopamine) are released locally where they are needed most.</p>
+                    <p>Transcranial Magnetic Stimulation (TMS) uses highly focused, MRI-strength magnetic pulses to stimulate the nerve cells in the prefrontal cortex. The changing magnetic field induces a mild electrical current in the superficial layers of the brain, exactly where mood regulation occurs.</p>
+                    <p>Over a course of treatment (typically 4-6 weeks), these repeated pulses encourage <strong>neuroplasticity</strong>. Existing neurons form new, stronger connections, and the brain's natural mood-regulating neurotransmitters (like serotonin and dopamine) are released locally where they are needed most. Because we are targeting the root cause directly, many patients experience a "lifting of the fog" and return to feeling like themselves again.</p>
                 </div>
             </div>
 
@@ -182,13 +182,13 @@ include __DIR__ . '/../header.php';
     <!-- SECTION 3: Symptoms -->
     <div class="bi-condition" id="symptoms">
         <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
+            <div class="reveal text-center">
                 <span class="bi-condition-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
                     Section 03
                 </span>
                 <h2>Symptoms Relieved by TMS</h2>
-                <p class="bi-condition-lead">Comprehensive relief across the spectrum of major depressive disorder.</p>
+                <p class="bi-condition-lead mx-auto">Comprehensive relief across the spectrum of major depressive disorder.</p>
             </div>
 
             <div class="reveal mt-8">
@@ -212,6 +212,38 @@ include __DIR__ . '/../header.php';
             </div>
         </div>
     </div>
+
+    <!-- Video and Clinic Tour -->
+    <section class="py-16 bg-beige-dark/20" id="clinic-tour">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="section-header center reveal mb-10">
+                <span class="eyebrow">Your Comfort Matters</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Experience Our Healing Environment</h2>
+                <p class="section-subtitle">Take a look at our state-of-the-art TMS treatment rooms designed for your relaxation.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 reveal delay-1">
+                <div class="bi-image-wrapper h-full shadow-lg">
+                    <video src="/assets/images/clinic-video.mp4" controls class="w-full h-full object-cover rounded-[1.5rem]" style="min-height: 400px;" poster="/assets/images/clinic-img-4.jpg"></video>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bi-image-wrapper aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-3.jpg" alt="TMS Therapy Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-1.jpg" alt="TMS Equipment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper aspect-[2/1] col-span-2 shadow-sm">
+                        <img src="/assets/images/clinic-img-2.jpg" alt="Relaxing Patient Experience" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto text-center reveal mt-6">
+                <p class="text-gray-600 leading-relaxed text-lg">During your daily sessions, you will relax in our comfortable treatment chair. You can watch TV, listen to music, read a book, or simply close your eyes. The treatment is completely non-invasive, and our dedicated team is always present to ensure your utmost comfort.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Our Approach -->
     <section class="py-12 bg-white" id="approach">
@@ -298,32 +330,37 @@ include __DIR__ . '/../header.php';
 
     <!-- Candidacy -->
     <section class="py-16 bg-white" id="candidacy">
-        <div class="container mx-auto px-4 max-w-4xl text-center">
-            <div class="reveal">
-                <span class="eyebrow block mb-3 text-gold font-bold tracking-widest text-sm uppercase">Patient Qualifications</span>
-                <h2 class="text-3xl md:text-4xl font-serif text-midnight font-bold mb-6">Are You a Candidate?</h2>
-                <p class="text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto">TMS is an FDA-cleared treatment that is covered by most major commercial insurances and Medicare. It is typically recommended for individuals who:</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-10">
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Have been diagnosed with Major Depressive Disorder (MDD).</p>
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center; gap: 4rem;">
+                <div>
+                    <span class="eyebrow block mb-3 text-gold font-bold tracking-widest text-sm uppercase">Patient Qualifications</span>
+                    <h2 class="text-3xl md:text-4xl font-serif text-midnight font-bold mb-6">Are You a Candidate?</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">TMS is an FDA-cleared treatment that is covered by most major commercial insurances and Medicare. We offer comprehensive insurance verification before you start. TMS is typically recommended for individuals who:</p>
+                    
+                    <div class="space-y-4 mb-10">
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm transition-transform hover:translate-y-[-2px]">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Have been diagnosed with Major Depressive Disorder (MDD).</p>
+                        </div>
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm transition-transform hover:translate-y-[-2px]">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Have not achieved satisfactory improvement from prior antidepressant medications.</p>
+                        </div>
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm transition-transform hover:translate-y-[-2px]">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Are unable to tolerate the side effects of their current medications.</p>
+                        </div>
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm transition-transform hover:translate-y-[-2px]">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                            <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Do not have non-removable conductive metal in or near the head.</p>
+                        </div>
                     </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Have not achieved satisfactory improvement from prior antidepressant medications.</p>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Are unable to tolerate the side effects of their current medications.</p>
-                    </div>
-                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4 items-start shadow-sm">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" class="w-6 h-6 shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                        <p class="text-gray-700 m-0 text-sm leading-relaxed font-medium">Do not have non-removable conductive metal in or near the head.</p>
-                    </div>
+                    
+                    <a href="/contact.php" class="btn btn-primary px-8 shadow-lg shadow-gold/20">Schedule a Screening</a>
                 </div>
-                
-                <a href="/contact.php" class="btn btn-primary px-8">Schedule a Screening</a>
+                <div class="bi-image-wrapper shadow-2xl">
+                    <img src="/assets/images/clinic-img-4.jpg" alt="Patient Consultation for TMS" class="w-full h-full object-cover">
+                </div>
             </div>
         </div>
     </section>
