@@ -2,19 +2,16 @@
 $page_title = 'TMS Therapy for Neuropathic Pain | Dr. Ritesh Amin – Edison, NJ';
 $page_desc  = 'Advanced TMS therapy for chronic neuropathic pain syndromes, including Fibromyalgia and CRPS, in Edison, NJ. Retraining the brain\'s pain processing networks.';
 $body_class = 'bg-beige font-sans';
-$extra_css  = '
+$extra_css  = '    .section-header.center { margin-bottom: 3rem; }
+    .section-header .section-subtitle { margin-bottom: 0; }
+    .bi-faq-header { background: none; border: 0; appearance: none; -webkit-appearance: none; font: inherit; color: inherit; }
     .bihero { position: relative; padding: 10rem 0 5rem; background: var(--color-midnight); overflow: hidden; }
     .bihero::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(37,111,168,0.06) 1px, transparent 1px); background-size: 30px 30px; pointer-events: none; }
     .bihero::after { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, var(--color-gold) 22%, var(--color-gold-light) 50%, var(--color-gold) 78%, transparent 100%); }
     .bihero-orb-1 { position: absolute; top: -30%; right: -8%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(37,111,168,0.16) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
     .bihero-orb-2 { position: absolute; bottom: -35%; left: -6%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(37,111,168,0.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-    .bi-quicknav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 3rem; }
-    .bi-quicknav a { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.25rem; border-radius: 999px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--color-midnight-light); background: #fff; border: 1.5px solid #e2e8f0; text-decoration: none; transition: all 0.3s ease; }
-    .bi-quicknav a:hover, .bi-quicknav a.active { background: var(--color-midnight); color: white; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(11,25,44,0.15); border-color: var(--color-midnight); }
-    .bi-quicknav a.active { cursor: default; } .bi-quicknav a.bi-tab-btn { cursor: pointer; } .bi-quicknav a svg { width: 15px; height: 15px; stroke: var(--color-gold); }
-    .bi-tab-pane { display: none !important; } .bi-tab-pane.active { display: block !important; animation: bi-fade-in 0.4s ease forwards; }
     @keyframes bi-fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .review-card { background: #fff; border-radius: 1.25rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
+    .review-card { background: #fff; border-radius: 1rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
     .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(11,25,44,0.08); }
     .review-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); opacity: 0; transition: opacity 0.35s ease; }
     .review-card:hover::before { opacity: 1; }
@@ -27,46 +24,48 @@ $extra_css  = '
     .review-text { font-size: 0.95rem; color: #4b5563; line-height: 1.7; margin-bottom: 1.5rem; position: relative; z-index: 1; }
     .review-quote-icon { font-family: var(--font-serif); font-size: 3.5rem; color: rgba(37,111,168,0.08); position: absolute; top: -1.75rem; left: -0.5rem; z-index: -1; line-height: 1; }
     .review-verified { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 500; color: #22c55e; } .review-verified svg { width: 14px; height: 14px; }
-    .bi-condition { position: relative; padding: 2rem 0 3rem; }
-    .bi-condition-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1rem; background: rgba(37,111,168,0.06); border: 1px solid rgba(37,111,168,0.14); border-radius: 999px; font-family: var(--font-sans); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); margin-bottom: 1rem; }
-    .bi-condition-badge svg { width: 14px; height: 14px; }
-    .bi-condition h2 { font-family: var(--font-serif); font-size: 2.25rem; font-weight: 600; color: var(--color-midnight); margin-bottom: 1rem; line-height: 1.25; }
-    .bi-condition-lead { font-size: 1.1rem; line-height: 1.7; color: var(--color-midnight-light); max-width: 650px; margin-bottom: 2rem; }
-    .bi-condition p { font-size: 0.95rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 1rem; }
-    .bi-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+    .bi-condition { scroll-margin-top: 6.5rem; position: relative; padding: 5rem 0; }
+    .bi-condition h2 { font-family: var(--font-serif); font-size: clamp(1.75rem, 3.2vw, 2.5rem); font-weight: 600; color: var(--color-midnight); margin-bottom: 1rem; line-height: 1.25; }
+    .bi-condition .bi-condition-lead { font-size: 1.1rem; line-height: 1.7; color: var(--color-midnight-light); max-width: 650px;  margin: 0 auto 3rem; }
+    .bi-condition p { font-size: 0.95rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 1.25rem; }
+    .bi-condition p:not(.bi-condition-lead):last-child { margin-bottom: 0; }
+    .bi-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 0; align-items: stretch; }
     .bi-card { background: #fff; border: 1px solid rgba(37,111,168,0.08); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s ease; }
     .bi-card:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(11,25,44,0.05); border-color: rgba(37,111,168,0.18); }
     .bi-card-icon { width: 2.75rem; height: 2.75rem; background: rgba(37,111,168,0.07); border: 1px solid rgba(37,111,168,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 0.85rem; }
     .bi-card-icon svg { width: 1.15rem; height: 1.15rem; }
     .bi-card h4 { font-family: var(--font-sans); font-size: 0.92rem; font-weight: 700; color: var(--color-midnight); margin: 0 0 0.35rem; }
     .bi-card p { font-size: 0.82rem; line-height: 1.6; color: var(--color-text-light); margin: 0; }
-    .bi-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
-    .bi-stat { text-align: center; padding: 2rem 1rem; background: #fff; border: 1px solid rgba(37,111,168,0.08); border-radius: 1.25rem; transition: all 0.3s ease; }
+    .bi-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: none;  align-items: stretch; }
+    .bi-stat { text-align: center; padding: 2rem 1rem; background: #fff; border: 1px solid rgba(37,111,168,0.08); border-radius: 1rem; transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: center; min-height: 9rem; }
     .bi-stat:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(11,25,44,0.05); }
-    .bi-stat-num { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 700; color: var(--color-gold); line-height: 1; margin-bottom: 0.4rem; }
+    .bi-stat-num { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.4vw, 2.5rem); font-weight: 700; color: var(--color-gold); line-height: 1.1; margin-bottom: 0.6rem; white-space: nowrap; }
     .bi-stat-label { font-family: var(--font-sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-light); }
-    .bi-how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2.5rem 0; }
-    .bi-how-step { background: var(--color-midnight); border-radius: 1.25rem; padding: 2rem; position: relative; overflow: hidden; }
+    .bi-how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 3.5rem 0 0; align-items: stretch; }
+    .bi-how-step { background: var(--color-midnight); border-radius: 1rem; padding: 2rem; position: relative; overflow: hidden; }
     .bi-how-step::before { content: ""; position: absolute; top: 0; left: 1.5rem; right: 1.5rem; height: 2px; background: linear-gradient(90deg, var(--color-gold), transparent); border-radius: 1px; }
-    .bi-how-num { font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: rgba(37,111,168,0.25); margin-bottom: 0.75rem; line-height: 1; }
+    .bi-how-num { font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: rgba(93,173,238,0.45); margin-bottom: 0.75rem; line-height: 1; }
     .bi-how-step h4 { font-family: var(--font-sans); font-size: 1rem; font-weight: 700; color: #fff; margin: 0 0 0.5rem; }
     .bi-how-step p { font-size: 0.85rem; line-height: 1.6; color: rgba(255,255,255,0.55); margin: 0; }
-    .bi-callout { background: rgba(37,111,168,0.04); border-left: 3px solid var(--color-gold); padding: 1.25rem 1.5rem; border-radius: 0 14px 14px 0; margin: 1.5rem 0; }
-    .bi-callout p { color: var(--color-midnight); font-weight: 500; margin: 0; font-size: 0.95rem; }
-    .bi-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-    .bi-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 1.5rem; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 15px rgba(11,25,44,0.05); border: 1px solid rgba(11,25,44,0.05); }
-    .bi-table th { background: var(--color-midnight); color: white; font-weight: 500; text-align: left; padding: 1rem 1.5rem; font-size: 0.95rem; text-transform: uppercase; }
+    .bi-callout { background: rgba(37,111,168,0.04); border-left: 3px solid var(--color-gold); padding: 1.25rem 1.5rem; border-radius: 0 14px 14px 0; margin: 1.75rem 0 0; }
+    .bi-callout p { color: var(--color-midnight); font-weight: 500; margin: 0 !important; font-size: 0.95rem; }
+    .bi-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+    .bi-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 0; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 15px rgba(11,25,44,0.05); border: 1px solid rgba(11,25,44,0.05); }
+    .bi-table th { background: var(--color-midnight); color: white; font-weight: 500; text-align: left; padding: 1.1rem 1.5rem; font-size: 0.9rem; text-transform: uppercase; vertical-align: middle; letter-spacing: 0.04em; }
     .bi-table td { padding: 1.25rem 1.5rem; border-bottom: 1px solid rgba(11,25,44,0.05); color: var(--color-text); vertical-align: top; }
     .bi-table tr:last-child td { border-bottom: none; } .bi-table td:first-child { font-weight: 600; color: var(--color-midnight); width: 40%; }
     .bi-image-wrapper { position: relative; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 40px rgba(11,25,44,0.1); }
     .bi-image-wrapper img { width: 100%; height: auto; display: block; transition: transform 0.7s ease; }
     .bi-image-wrapper:hover img { transform: scale(1.05); }
     .bi-image-wrapper::after { content: ""; position: absolute; inset: 0; border-radius: 1.5rem; border: 2px solid rgba(255,255,255,0.1); pointer-events: none; }
+    .bi-image-wrapper.is-cover img { height: 100%; object-fit: cover; }
+    .bi-image-wrapper.is-fill { height: 100%; min-height: 100%; }
+    .bi-image-wrapper.is-fill img { height: 100%; object-fit: cover; }
     .bi-cta-card { background: var(--color-midnight); border-radius: 2rem; padding: 3.5rem; position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
     .bi-cta-card::before { content: ""; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(37,111,168,0.18) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
     .bi-cta-card::after { content: ""; position: absolute; top: 0; left: 2rem; right: 2rem; height: 2px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); border-radius: 1px; }
-    @media (max-width: 991px) { .bi-cards-grid { grid-template-columns: repeat(2, 1fr); } .bi-how-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); } .bi-split { grid-template-columns: 1fr !important; gap: 2.5rem; } }
-    @media (max-width: 640px) { .bihero { padding: 8rem 0 3rem; } .bi-cards-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; } .bi-stat { padding: 1.25rem 0.75rem; } .bi-stat-num { font-size: 2rem; } .bi-cta-card { grid-template-columns: 1fr; padding: 2rem; text-align: center; } .bi-condition h2 { font-size: 1.75rem; } }
+    @media (max-width: 991px) { .bi-condition { padding: 3.5rem 0; } .bi-cards-grid { grid-template-columns: repeat(2, 1fr); } .bi-how-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); } .bi-split { grid-template-columns: 1fr !important; gap: 2.5rem; } }
+    @media (max-width: 640px) { .bi-condition { padding: 3rem 0; } .bi-how-grid { margin-top: 2.5rem; } .bihero { padding: 8rem 0 3rem; } .bi-cards-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; } .bi-stat { padding: 1.25rem 0.75rem; } .bi-stat-num { font-size: 2rem; } .bi-cta-card { grid-template-columns: 1fr; padding: 2rem; text-align: center; } .bi-condition h2 { font-size: 1.75rem; } }
 ';
 include __DIR__ . '/../header.php';
 ?>
@@ -75,7 +74,7 @@ include __DIR__ . '/../header.php';
     <section class="bihero" id="bi-hero">
         <div class="bihero-orb-1"></div>
         <div class="bihero-orb-2"></div>
-        <div class="container mx-auto px-4 max-w-7xl relative z-10">
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology &amp; Brain Stimulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
@@ -87,15 +86,15 @@ include __DIR__ . '/../header.php';
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mt-10">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule a Consultation</a>
-                    <a href="#conditions" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Pain Therapy</a>
+                    <a href="#fibromyalgia" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Pain Therapy</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Bar -->
-    <section class="py-16 bg-beige-dark/50" id="stats">
-        <div class="container mx-auto px-4 max-w-7xl">
+    <section class="py-14 md:py-20 bg-beige-dark" id="stats">
+        <div class="container mx-auto px-4 max-w-6xl">
             <div class="bi-stats-row reveal">
                 <div class="bi-stat"><div class="bi-stat-num">Non-OP</div><div class="bi-stat-label">Non-Opioid Therapy</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">CNS</div><div class="bi-stat-label">Central System Focus</div></div>
@@ -105,44 +104,15 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Condition Quick Nav -->
-    <section class="pt-16 pb-4 bg-white" id="conditions">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal">
-                <span class="eyebrow">Pain Conditions We Treat</span>
-                <h2 class="section-title">Modulating the Pain Matrix</h2>
-                <p class="section-subtitle">When pain becomes chronic, the brain's "pain matrix" becomes hyper-sensitized. TMS targets the Motor Cortex and Prefrontal areas to dampen this aberrant signaling.</p>
-            </div>
-            <div class="bi-quicknav reveal" id="condition-tabs">
-                <a href="#fibromyalgia" class="bi-tab-btn active" data-target="fibromyalgia">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    Fibromyalgia
-                </a>
-                <a href="#neuropathy" class="bi-tab-btn" data-target="neuropathy">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    Neuropathic Pain
-                </a>
-                <a href="#crps" class="bi-tab-btn" data-target="crps">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                    CRPS
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- SECTION 1: Fibromyalgia -->
-    <div class="bi-condition bi-tab-pane active" id="fibromyalgia">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    Section 01
-                </span>
+    <div class="bi-condition" id="fibromyalgia">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Fibromyalgia Syndrome (FMS)</h2>
-                <p class="bi-condition-lead">Addressing widespread musculoskeletal pain by targeting central sensitization.</p>
+                <p class="bi-condition-lead mx-auto">Addressing widespread musculoskeletal pain by targeting central sensitization.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Fibromyalgia is now understood primarily as a disorder of **central sensitization**. This means the brain and spinal cord amplify pain signals, turning what should be a normal sensation into widespread, chronic pain. Patients often suffer from severe fatigue, "fibro fog," and poor sleep as a result.</p>
                     <p>TMS offers a way to directly influence this central amplification. By applying high-frequency magnetic pulses to the Primary Motor Cortex (M1), TMS stimulates descending pain inhibitory pathways in the spinal cord, effectively "dialing down" the volume of the pain signals traversing the body.</p>
@@ -179,18 +149,14 @@ include __DIR__ . '/../header.php';
     </div>
 
     <!-- SECTION 2: Neuropathy -->
-    <div class="bi-condition bi-tab-pane" id="neuropathy">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    Section 02
-                </span>
+    <div class="bi-condition bg-beige-dark" id="neuropathy">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Peripheral Neuropathic Pain</h2>
-                <p class="bi-condition-lead">When nerve damage sends continuous pain "static," TMS offers central relief.</p>
+                <p class="bi-condition-lead mx-auto">When nerve damage sends continuous pain "static," TMS offers central relief.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 0.9fr 1.1fr; align-items: center;">
                 <div class="bi-image-wrapper">
                     <img src="/assets/neurology-tms/neuropathic-pain-nerve.png" alt="Illustration of inflamed peripheral nerve transitioning to central pain">
                 </div>
@@ -221,18 +187,14 @@ include __DIR__ . '/../header.php';
     </div>
 
     <!-- SECTION 3: CRPS -->
-    <div class="bi-condition bi-tab-pane" id="crps">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                    Section 03
-                </span>
+    <div class="bi-condition" id="crps">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Complex Regional Pain Syndrome (CRPS)</h2>
-                <p class="bi-condition-lead">A non-invasive alternative for one of the most agonizing neuropathic conditions.</p>
+                <p class="bi-condition-lead mx-auto">A non-invasive alternative for one of the most agonizing neuropathic conditions.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Complex Regional Pain Syndrome (CRPS) is a severe, debilitating condition usually affecting one limb after an injury. It involves profound autonomic dysfunction and extreme hyperalgesia (sensitivity to pain). Traditional treatment often involves heavy narcotics, nerve blocks, or surgically implanted spinal cord stimulators.</p>
                     <p>TMS offers a <strong>completely non-invasive alternative</strong> to spinal surgery. By applying high-frequency stimulation to the motor cortex representing the affected limb, TMS can modulate both the sensory pain pathways and the autonomic dysregulation driving the disorder. It is an excellent option for patients who are poor surgical candidates or wish to avoid implanted hardware.</p>
@@ -256,30 +218,62 @@ include __DIR__ . '/../header.php';
         </div>
     </div>
 
+
+    <!-- Clinic Tour -->
+    <section class="py-14 md:py-20 bg-beige-dark" id="clinic-tour">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
+                <span class="eyebrow">Your Comfort Matters</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Experience Our Healing Environment</h2>
+                <p class="section-subtitle">Take a look at our state-of-the-art TMS treatment rooms designed for your relaxation.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch reveal delay-1">
+                <div class="bi-image-wrapper is-fill shadow-lg">
+                    <img src="/assets/images/clinic-img-4.jpg" alt="TMS Treatment Room at Dr. Ritesh Amin's Clinic" class="w-full object-cover">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bi-image-wrapper is-cover aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-3.jpg" alt="TMS Therapy Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper is-cover aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-1.jpg" alt="TMS Equipment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper is-cover aspect-[2/1] col-span-2 shadow-sm">
+                        <img src="/assets/images/clinic-img-2.jpg" alt="Relaxing Patient Experience" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto text-center reveal mt-10">
+                <p class="text-gray-600 leading-relaxed text-lg">During your daily sessions, you will relax in our comfortable treatment chair. You can watch TV, listen to music, read a book, or simply close your eyes. The treatment is completely non-invasive, and our dedicated team is always present to ensure your utmost comfort.</p>
+            </div>
+        </div>
+    </section>
     <!-- Our Approach -->
-    <section class="py-12 bg-white" id="approach">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal mb-8">
+    <section class="py-14 md:py-20 bg-white" id="approach">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
                 <span class="eyebrow">A Holistic Pain Strategy</span>
                 <h2 class="section-title text-midnight font-serif font-bold">Treating Pain &amp; Mood Synergistically</h2>
                 <p class="section-subtitle">Chronic pain and depression share the exact same neural pathways. We treat both.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-1">
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Dual-Target Protocols</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">When necessary, we can stimulate the Motor Cortex (M1) for direct pain relief, and the Prefrontal Cortex (DLPFC) to address the debilitating anxiety and depression caused by living with chronic pain.</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Motor Threshold Precision</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">We find your exact "motor threshold"—the precise magnetic intensity needed to activate your neurons—ensuring the treatment is both effective and comfortable.</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
@@ -291,9 +285,9 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- About Dr Amin -->
-    <section class="py-16 bg-midnight" id="about-doctor">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+    <section class="py-14 md:py-20 bg-midnight" id="about-doctor">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-5/12 reveal shrink-0">
                     <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-2 bg-[#0d1a2d]">
                         <img src="/assets/images/dr-ritesh-hero.webp" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[4/5] object-cover rounded-2xl">
@@ -304,7 +298,7 @@ include __DIR__ . '/../header.php';
                         <span class="w-8 h-[2px] bg-gold block"></span>
                         Specialist in Neuropsychiatry &amp; Pain
                     </span>
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
+                    <h2 class="text-[2rem] md:text-[2.5rem] leading-tight font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
                     <h3 class="text-xl text-[#c1d9f8] mb-8 font-light border-b border-white/10 pb-6">Board Certified Psychiatrist &amp; TMS Specialist</h3>
                     <p class="text-lg text-white/80 leading-relaxed mb-6">
                         Dr. Amin recognizes that severe chronic pain is not just a physical sensation; it deteriorates a patient's entire emotional and mental well-being. By utilizing "off-label" TMS protocols supported by European and emerging US research, he offers hope to patients who have exhausted traditional pain management routes.
@@ -318,16 +312,18 @@ include __DIR__ . '/../header.php';
     </section>
 
         
+<?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
+
     <!-- FAQ Section -->
-    <section class="py-16 bg-slate-50" id="faq">
+    <section class="py-14 md:py-20 bg-white" id="faq">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div class="section-header center reveal mb-8">
+            <div class="section-header center reveal mb-12">
                 <span class="eyebrow">Frequently Asked Questions</span>
                 <h2 class="section-title text-midnight font-serif font-bold">Treatment FAQs</h2>
             </div>
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
 
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">How does TMS relieve chronic nerve pain?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -340,7 +336,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Can TMS treat diabetic neuropathy?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -353,7 +349,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Is TMS better than gabapentin or opioids for nerve pain?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -366,7 +362,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Where is the magnetic coil placed for pain treatment?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -379,7 +375,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">How many treatments are required to feel pain relief?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -396,10 +392,8 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-<?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
-
     <!-- CTA -->
-    <section class="py-12 bg-white" id="get-evaluated">
+    <section class="py-14 md:py-20 bg-beige-dark" id="get-evaluated">
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="bi-cta-card reveal">
                 <div class="relative z-10">
@@ -418,7 +412,7 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- Closing CTA -->
-    <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
+    <section class="closing-cta py-14 md:py-20 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Reclaim Your Life</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Target Pain at its Source</h2>
@@ -430,20 +424,6 @@ include __DIR__ . '/../header.php';
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const tabs = document.querySelectorAll('.bi-tab-btn');
-        const panes = document.querySelectorAll('.bi-tab-pane');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(e) {
-                e.preventDefault();
-                tabs.forEach(t => t.classList.remove('active'));
-                panes.forEach(p => p.classList.remove('active'));
-                this.classList.add('active');
-                const pane = document.getElementById(this.getAttribute('data-target'));
-                if (pane) pane.classList.add('active');
-            });
-        });
-
         document.querySelectorAll('.bi-faq-header').forEach(header => {
             header.addEventListener('click', function() {
                 const content = this.nextElementSibling;

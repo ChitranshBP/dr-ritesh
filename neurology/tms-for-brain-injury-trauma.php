@@ -2,7 +2,9 @@
 $page_title = 'TMS for Brain Injury & Trauma | Dr. Ritesh Amin – Edison, NJ';
 $page_desc = 'Advanced TMS therapy for brain injuries and trauma in Edison, NJ. Treating Traumatic Brain Injury (TBI), concussions, post-concussion syndrome, and head trauma with precision neuromodulation.';
 $body_class = 'bg-beige font-sans';
-$extra_css = '
+$extra_css = '    .section-header.center { margin-bottom: 3rem; }
+    .section-header .section-subtitle { margin-bottom: 0; }
+    .bi-faq-header { background: none; border: 0; appearance: none; -webkit-appearance: none; font: inherit; color: inherit; }
     /* ══════════════════════════════════════════
        BRAIN INJURY & TRAUMA PAGE
        ══════════════════════════════════════════ */
@@ -42,61 +44,6 @@ $extra_css = '
         border-radius: 50%; pointer-events: none;
     }
 
-    /* ── Quick-nav anchors ── */
-    .bi-quicknav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-bottom: 3rem;
-    }
-    .bi-quicknav a {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.6rem 1.25rem;
-        border-radius: 999px;
-        font-family: var(--font-sans);
-        font-size: 0.82rem;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-        color: var(--color-midnight-light);
-        background: #fff;
-        border: 1.5px solid #e2e8f0;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    .bi-quicknav a:hover,
-    .bi-quicknav a.active {
-        background: var(--color-midnight);
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(11,25,44,0.15);
-        border-color: var(--color-midnight);
-        cursor: default;
-    }
-    .bi-quicknav a.active svg {
-        stroke: var(--color-gold);
-    }
-    .bi-quicknav a.bi-tab-btn {
-        cursor: pointer;
-    }
-    .bi-quicknav a svg {
-        width: 15px; height: 15px;
-        stroke: var(--color-gold);
-        transition: stroke 0.3s ease;
-    }
-
-    /* ── Tab Layout CSS ── */
-    .bi-tab-pane {
-        display: none !important;
-        animation: fadeInTab 0.5s ease-out forwards;
-    }
-    .bi-tab-pane.active {
-        display: block !important;
-        opacity: 1;
-        animation: bi-fade-in 0.4s ease forwards;
-    }
     @keyframes bi-fade-in {
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
@@ -105,7 +52,7 @@ $extra_css = '
     /* ── Testimonial Styles (Adapted from reviews.php) ── */
     .review-card {
         background: #fff;
-        border-radius: 1.25rem;
+        border-radius: 1rem;
         padding: 2rem;
         border: 1px solid rgba(37,111,168,0.06);
         box-shadow: 0 4px 20px rgba(11,25,44,0.04);
@@ -164,52 +111,33 @@ $extra_css = '
     /* ── Condition Section ── */
     .bi-condition {
         position: relative;
-        padding: 2rem 0 3rem;
+        padding: 5rem 0;
     }
     .bi-condition:nth-child(even) { background: transparent; }
     .bi-condition:nth-child(odd) { background: transparent; }
 
-    .bi-condition-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.4rem 1rem;
-        background: rgba(37,111,168,0.06);
-        border: 1px solid rgba(37,111,168,0.14);
-        border-radius: 999px;
-        font-family: var(--font-sans);
-        font-size: 0.72rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: var(--color-gold);
-        margin-bottom: 1rem;
-    }
-    .bi-condition-badge svg {
-        width: 14px; height: 14px;
-    }
 
     .bi-condition h2 {
         font-family: var(--font-serif);
-        font-size: 2.25rem;
+        font-size: clamp(1.75rem, 3.2vw, 2.5rem);
         font-weight: 600;
         color: var(--color-midnight);
         margin-bottom: 1rem;
         line-height: 1.25;
     }
-    .bi-condition-lead {
+    .bi-condition .bi-condition-lead {
         font-size: 1.1rem;
         line-height: 1.7;
         color: var(--color-midnight-light);
         max-width: 650px;
-        margin-bottom: 2rem;
-    }
+         margin: 0 auto 3rem; }
     .bi-condition p {
         font-size: 0.95rem;
         line-height: 1.8;
         color: var(--color-text-light);
-        margin-bottom: 1rem;
+        margin-bottom: 1.25rem;
     }
+    .bi-condition p:not(.bi-condition-lead):last-child { margin-bottom: 0; }
     .bi-condition a {
         color: var(--color-gold);
         text-decoration: underline;
@@ -220,9 +148,8 @@ $extra_css = '
     .bi-cards-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin-top: 2rem;
-    }
+        gap: 1.5rem;
+        margin-top: 0; align-items: stretch; }
     .bi-card {
         background: #fff;
         border: 1px solid rgba(37,111,168,0.08);
@@ -269,29 +196,26 @@ $extra_css = '
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+        max-width: none;
+         align-items: stretch; }
     .bi-stat {
         text-align: center;
         padding: 2rem 1rem;
         background: #fff;
         border: 1px solid rgba(37,111,168,0.08);
-        border-radius: 1.25rem;
-        transition: all 0.3s ease;
-    }
+        border-radius: 1rem;
+        transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: center; min-height: 9rem; }
     .bi-stat:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 25px rgba(11,25,44,0.05);
     }
     .bi-stat-num {
         font-family: var(--font-serif);
-        font-size: 2.5rem;
+        font-size: clamp(1.6rem, 2.4vw, 2.5rem);
         font-weight: 700;
         color: var(--color-gold);
-        line-height: 1;
-        margin-bottom: 0.4rem;
-    }
+        line-height: 1.1;
+        margin-bottom: 0.6rem; white-space: nowrap; }
     .bi-stat-label {
         font-family: var(--font-sans);
         font-size: 0.75rem;
@@ -306,11 +230,10 @@ $extra_css = '
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
-        margin: 2.5rem 0;
-    }
+        margin: 3.5rem 0 0; align-items: stretch; }
     .bi-how-step {
         background: var(--color-midnight);
-        border-radius: 1.25rem;
+        border-radius: 1rem;
         padding: 2rem;
         position: relative;
         overflow: hidden;
@@ -327,7 +250,7 @@ $extra_css = '
         font-family: var(--font-serif);
         font-size: 2rem;
         font-weight: 700;
-        color: rgba(37,111,168,0.25);
+        color: rgba(93,173,238,0.45);
         margin-bottom: 0.75rem;
         line-height: 1;
     }
@@ -351,12 +274,12 @@ $extra_css = '
         border-left: 3px solid var(--color-gold);
         padding: 1.25rem 1.5rem;
         border-radius: 0 14px 14px 0;
-        margin: 1.5rem 0;
+        margin: 1.75rem 0 0;
     }
     .bi-callout p {
         color: var(--color-midnight);
         font-weight: 500;
-        margin: 0;
+        margin: 0 !important;
         font-size: 0.95rem;
     }
 
@@ -364,19 +287,18 @@ $extra_css = '
     .bi-split {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+        gap: 3.5rem;
         align-items: start;
     }
     .bi-split-full {
         grid-column: 1 / -1;
     }
 
-    /* ── Tabular Data ── */
     .bi-table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
-        margin-top: 1.5rem;
+        margin-top: 0;
         background: white;
         border-radius: 1rem;
         overflow: hidden;
@@ -388,11 +310,10 @@ $extra_css = '
         color: white;
         font-weight: 500;
         text-align: left;
-        padding: 1rem 1.5rem;
-        font-size: 0.95rem;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-    }
+        padding: 1.1rem 1.5rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
+        text-transform: uppercase; vertical-align: middle; }
     .bi-table td {
         padding: 1.25rem 1.5rem;
         border-bottom: 1px solid rgba(11,25,44,0.05);
@@ -430,6 +351,9 @@ $extra_css = '
         border: 2px solid rgba(255,255,255,0.1);
         pointer-events: none;
     }
+    .bi-image-wrapper.is-cover img { height: 100%; object-fit: cover; }
+    .bi-image-wrapper.is-fill { height: 100%; min-height: 100%; }
+    .bi-image-wrapper.is-fill img { height: 100%; object-fit: cover; }
 
     /* ── CTA Card ── */
     .bi-cta-card {
@@ -462,13 +386,13 @@ $extra_css = '
     }
 
     /* ── Responsive ── */
-    @media (max-width: 991px) {
+    @media (max-width: 991px) { .bi-condition { padding: 3.5rem 0; }
         .bi-cards-grid { grid-template-columns: repeat(2, 1fr); }
         .bi-how-grid { grid-template-columns: 1fr; }
         .bi-stats-row { grid-template-columns: repeat(2, 1fr); }
         .bi-split { grid-template-columns: 1fr !important; gap: 2.5rem; }
     }
-    @media (max-width: 640px) {
+    @media (max-width: 640px) { .bi-condition { padding: 3rem 0; } .bi-how-grid { margin-top: 2.5rem; }
         .bihero { padding: 8rem 0 3rem; }
         .bi-cards-grid { grid-template-columns: 1fr; }
         .bi-stats-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
@@ -486,7 +410,7 @@ include __DIR__ . '/../header.php';
     <section class="bihero" id="bi-hero">
         <div class="bihero-orb-1"></div>
         <div class="bihero-orb-2"></div>
-        <div class="container mx-auto px-4 max-w-7xl relative z-10">
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology & Brain Stimulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
@@ -498,15 +422,15 @@ include __DIR__ . '/../header.php';
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mt-10">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Schedule a Consultation</a>
-                    <a href="#conditions" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Conditions</a>
+                    <a href="#tbi" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Conditions</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Bar -->
-    <section class="py-16 bg-beige-dark/50" id="stats">
-        <div class="container mx-auto px-4 max-w-7xl">
+    <section class="py-14 md:py-20 bg-beige-dark" id="stats">
+        <div class="container mx-auto px-4 max-w-6xl">
             <div class="bi-stats-row reveal">
                 <div class="bi-stat">
                     <div class="bi-stat-num">2.8M</div>
@@ -528,54 +452,17 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Condition Quick Nav -->
-    <section class="pt-16 pb-4 bg-white" id="conditions">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal">
-                <span class="eyebrow">Conditions We Treat</span>
-                <h2 class="section-title">Comprehensive Brain Injury Care</h2>
-                <p class="section-subtitle">Dr. Amin uses specialized TMS protocols tailored to each type of brain injury and trauma, promoting neuroplasticity and recovery.</p>
-            </div>
-            <div class="bi-quicknav reveal" id="condition-tabs">
-                <a href="#tbi" class="bi-tab-btn active" data-target="tbi">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    Traumatic Brain Injury
-                </a>
-                <a href="#brain-injury" class="bi-tab-btn" data-target="brain-injury">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                    Brain Injury
-                </a>
-                <a href="#concussion" class="bi-tab-btn" data-target="concussion">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/></svg>
-                    Concussion
-                </a>
-                <a href="#post-concussion" class="bi-tab-btn" data-target="post-concussion">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Post-Concussion Syndrome
-                </a>
-                <a href="#head-trauma" class="bi-tab-btn" data-target="head-trauma">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Head Trauma
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- ═══════════════════════════════════════
          SECTION 1: Traumatic Brain Injury (TBI)
          ═══════════════════════════════════════ -->
-    <div class="bi-condition bi-tab-pane active" id="tbi">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    Section 01
-                </span>
+    <div class="bi-condition" id="tbi">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Traumatic Brain Injury (TBI)</h2>
-                <p class="bi-condition-lead">A groundbreaking, non-invasive approach to stimulating damaged neural pathways and accelerating recovery after TBI.</p>
+                <p class="bi-condition-lead mx-auto">A groundbreaking, non-invasive approach to stimulating damaged neural pathways and accelerating recovery after TBI.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Traumatic Brain Injury affects millions of Americans each year, ranging from mild concussions to severe brain damage. Traditional treatments often plateau, leaving patients with persistent cognitive, emotional, and physical challenges.</p>
                     <p>TMS therapy works by delivering precise magnetic pulses to the affected cortical regions, promoting <strong>neuroplasticity</strong> — the brain's natural ability to rewire and heal itself. Research demonstrates that TMS can reactivate dormant neural circuits, improve blood flow to injured areas, and reduce neuroinflammation.</p>
@@ -620,18 +507,14 @@ include __DIR__ . '/../header.php';
     <!-- ═══════════════════════════════════════
          SECTION 2: Brain Injury (General)
          ═══════════════════════════════════════ -->
-    <div class="bi-condition bi-tab-pane" id="brain-injury">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-                    Section 02
-                </span>
+    <div class="bi-condition bg-beige-dark" id="brain-injury">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Brain Injury Recovery</h2>
-                <p class="bi-condition-lead">Whether caused by accidents, falls, sports injuries, or surgical complications, brain injuries require specialized neural rehabilitation.</p>
+                <p class="bi-condition-lead mx-auto">Whether caused by accidents, falls, sports injuries, or surgical complications, brain injuries require specialized neural rehabilitation.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 0.9fr 1.1fr; align-items: center;">
                 <div class="bi-image-wrapper">
                     <img src="/assets/neurology-tms/recovery.png" alt="Patient experiencing peaceful recovery and mental clarity after brain injury treatment">
                 </div>
@@ -669,18 +552,14 @@ include __DIR__ . '/../header.php';
     <!-- ═══════════════════════════════════════
          SECTION 3: Concussion
          ═══════════════════════════════════════ -->
-    <div class="bi-condition bi-tab-pane" id="concussion">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/></svg>
-                    Section 03
-                </span>
+    <div class="bi-condition" id="concussion">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Concussion Recovery</h2>
-                <p class="bi-condition-lead">Accelerating recovery from concussion with targeted brain stimulation — no medications, no side effects, no downtime.</p>
+                <p class="bi-condition-lead mx-auto">Accelerating recovery from concussion with targeted brain stimulation — no medications, no side effects, no downtime.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Concussions are classified as mild traumatic brain injuries, but the term "mild" can be misleading. Even a single concussion can disrupt the brain's delicate electrochemical balance, causing symptoms that persist for weeks, months, or longer.</p>
                     <p>While rest and gradual return to activity remain the foundation of concussion management, TMS offers an additional tool to <strong>accelerate neural recovery</strong>. By targeting the prefrontal cortex and other affected regions, TMS can help restore normal brain signaling patterns and reduce inflammation.</p>
@@ -727,18 +606,14 @@ include __DIR__ . '/../header.php';
     <!-- ═══════════════════════════════════════
          SECTION 4: Post-Concussion Syndrome
          ═══════════════════════════════════════ -->
-    <div class="bi-condition bi-tab-pane" id="post-concussion">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Section 04
-                </span>
+    <div class="bi-condition bg-beige-dark" id="post-concussion">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Post-Concussion Syndrome</h2>
-                <p class="bi-condition-lead">When concussion symptoms persist beyond the expected recovery window, TMS offers a targeted path to relief.</p>
+                <p class="bi-condition-lead mx-auto">When concussion symptoms persist beyond the expected recovery window, TMS offers a targeted path to relief.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 0.9fr 1.1fr; align-items: center;">
                 <div class="bi-image-wrapper">
                     <img src="/assets/neurology-tms/post-concussion.png" alt="Patient demonstrating clear cognitive function and relief from post-concussion syndrome">
                 </div>
@@ -783,18 +658,14 @@ include __DIR__ . '/../header.php';
     <!-- ═══════════════════════════════════════
          SECTION 5: Head Trauma
          ═══════════════════════════════════════ -->
-    <div class="bi-condition bi-tab-pane" id="head-trauma">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Section 05
-                </span>
+    <div class="bi-condition" id="head-trauma">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Head Trauma Recovery</h2>
-                <p class="bi-condition-lead">Supporting the brain's healing process after physical head trauma with advanced, non-invasive neurostimulation.</p>
+                <p class="bi-condition-lead mx-auto">Supporting the brain's healing process after physical head trauma with advanced, non-invasive neurostimulation.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Head trauma encompasses a broad spectrum of injuries — from falls in the elderly to sports injuries, motor vehicle accidents, and workplace incidents. Even when imaging appears normal, the brain may sustain diffuse axonal injury that disrupts the coordinated firing of neural networks.</p>
                     <p>TMS offers a unique modality for head trauma recovery because it works at the <strong>network level</strong>. Rather than addressing a single neurotransmitter imbalance, TMS enhances the connectivity and communication between brain regions that were disrupted by the traumatic force.</p>
@@ -838,31 +709,63 @@ include __DIR__ . '/../header.php';
         </div>
     </div>
 
+
+    <!-- Clinic Tour -->
+    <section class="py-14 md:py-20 bg-beige-dark" id="clinic-tour">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
+                <span class="eyebrow">Your Comfort Matters</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Experience Our Healing Environment</h2>
+                <p class="section-subtitle">Take a look at our state-of-the-art TMS treatment rooms designed for your relaxation.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch reveal delay-1">
+                <div class="bi-image-wrapper is-fill shadow-lg">
+                    <img src="/assets/images/clinic-img-4.jpg" alt="TMS Treatment Room at Dr. Ritesh Amin's Clinic" class="w-full object-cover">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bi-image-wrapper is-cover aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-3.jpg" alt="TMS Therapy Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper is-cover aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-1.jpg" alt="TMS Equipment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper is-cover aspect-[2/1] col-span-2 shadow-sm">
+                        <img src="/assets/images/clinic-img-2.jpg" alt="Relaxing Patient Experience" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto text-center reveal mt-10">
+                <p class="text-gray-600 leading-relaxed text-lg">During your daily sessions, you will relax in our comfortable treatment chair. You can watch TV, listen to music, read a book, or simply close your eyes. The treatment is completely non-invasive, and our dedicated team is always present to ensure your utmost comfort.</p>
+            </div>
+        </div>
+    </section>
     <!-- Our Approach -->
-    <section class="py-12 bg-white" id="approach">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal mb-8">
+    <section class="py-14 md:py-20 bg-white" id="approach">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
                 <span class="eyebrow">Our Philosophy</span>
                 <h2 class="section-title text-midnight font-serif font-bold">A Comprehensive Approach to Neural Healing</h2>
                 <p class="section-subtitle text-gray-600">We go beyond symptom management to address the structural and functional disruptions caused by brain trauma.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-1">
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Advanced Diagnostics</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">Using state-of-the-art qEEG mapping to identify precisely which cortical networks are underactive or hyperactive following an injury.</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Targeted Stimulation</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">Delivering highly specific MRI-guided magnetic pulses to the identified regions of dysfunction, prompting the brain to build new neural pathways.</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
@@ -874,9 +777,9 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- About Dr Amin -->
-    <section class="py-16 bg-midnight" id="about-doctor">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+    <section class="py-14 md:py-20 bg-midnight" id="about-doctor">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-5/12 reveal shrink-0">
                     <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-2 bg-[#0d1a2d]">
                         <img src="/assets/images/dr-ritesh-hero.webp" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[4/5] object-cover rounded-2xl">
@@ -887,7 +790,7 @@ include __DIR__ . '/../header.php';
                         <span class="w-8 h-[2px] bg-gold block"></span>
                         Leading the Field in Neuromodulation
                     </span>
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
+                    <h2 class="text-[2rem] md:text-[2.5rem] leading-tight font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
                     <h3 class="text-xl text-[#c1d9f8] mb-8 font-light border-b border-white/10 pb-6">Board Certified Psychiatrist & TMS Specialist</h3>
                     
                     <p class="text-lg text-white/80 leading-relaxed mb-6">
@@ -905,16 +808,19 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
+    <!-- Patient Stories Section -->
+        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
+
     <!-- FAQ Section -->
-    <section class="py-16 bg-slate-50" id="faq">
+    <section class="py-14 md:py-20 bg-white" id="faq">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div class="section-header center reveal mb-8">
+            <div class="section-header center reveal mb-12">
                 <span class="eyebrow">Frequently Asked Questions</span>
                 <h2 class="section-title text-midnight font-serif font-bold">TMS for Brain Injury FAQs</h2>
             </div>
             
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">How does TMS assist in Traumatic Brain Injury (TBI) recovery?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -927,7 +833,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Can TMS treat the depression caused by a brain injury?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -940,7 +846,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">How soon after a head injury can I start TMS?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -953,7 +859,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Does TMS help with post-concussion headaches?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -966,7 +872,7 @@ include __DIR__ . '/../header.php';
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Is there a risk of seizures if I have a TBI?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -982,11 +888,8 @@ include __DIR__ . '/../header.php';
         </div>
     </section>
 
-    <!-- Patient Stories Section -->
-        <?php include dirname(__DIR__) . '/_reviews-partial.php'; ?>
-
     <!-- CTA Section -->
-    <section class="py-12 bg-white" id="get-evaluated">
+    <section class="py-14 md:py-20 bg-beige-dark" id="get-evaluated">
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="bi-cta-card reveal">
                 <div class="relative z-10">
@@ -1006,7 +909,7 @@ include __DIR__ . '/../header.php';
     </section>
 
     <!-- Closing CTA -->
-    <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
+    <section class="closing-cta py-14 md:py-20 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Recovery Begins Here</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Reclaim Your Life After Brain Injury</h2>
@@ -1018,20 +921,6 @@ include __DIR__ . '/../header.php';
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const tabs = document.querySelectorAll('.bi-tab-btn');
-        const panes = document.querySelectorAll('.bi-tab-pane');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(e) {
-                e.preventDefault();
-                tabs.forEach(t => t.classList.remove('active'));
-                panes.forEach(p => p.classList.remove('active'));
-                this.classList.add('active');
-                const pane = document.getElementById(this.getAttribute('data-target'));
-                if (pane) pane.classList.add('active');
-            });
-        });
-
         document.querySelectorAll('.bi-faq-header').forEach(header => {
             header.addEventListener('click', function() {
                 const content = this.nextElementSibling;

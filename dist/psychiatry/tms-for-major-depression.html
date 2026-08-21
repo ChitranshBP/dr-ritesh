@@ -155,33 +155,6 @@
     .bi-cta-card { background: var(--color-midnight); border-radius: 2rem; padding: 3.5rem; position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
     .bi-cta-card::before { content: ""; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(37,111,168,0.18) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
     .bi-cta-card::after { content: ""; position: absolute; top: 0; left: 2rem; right: 2rem; height: 2px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); border-radius: 1px; }
-    .rev-slider { position: relative; }
-    .rev-track { display: flex; align-items: stretch; gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 0.5rem 0; margin: -0.5rem 0; scrollbar-width: none; -ms-overflow-style: none; }
-    .rev-track::-webkit-scrollbar { display: none; }
-    .rev-track:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; border-radius: 1.25rem; }
-    .rev-slide { flex: 0 0 calc(33.3333% - 1rem); scroll-snap-align: start; display: flex; flex-direction: column; }
-    .rev-slide .review-text { flex: 0 0 auto; margin-bottom: 1.25rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 10; overflow: hidden; }
-    @media (max-width: 1099px) { .rev-slide .review-text { -webkit-line-clamp: 8; } }
-    .rev-foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(37,111,168,0.08); }
-    .rev-google { width: 22px; height: 22px; }
-    .rev-slide .review-name { font-size: 1.05rem; }
-    .rev-slide .review-stars { font-size: 0.95rem; letter-spacing: 1px; }
-    .rev-slide .review-avatar { width: 42px; height: 42px; min-width: 42px; font-size: 1.05rem; }
-    .rev-slide .review-header { min-height: 3.5rem; }
-    .rev-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: #fff; border: 1px solid rgba(37,111,168,0.15); color: var(--color-gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(11,25,44,0.10); cursor: pointer; z-index: 3; transition: all 0.25s ease; }
-    .rev-nav svg { width: 20px; height: 20px; }
-    .rev-nav:hover:not(:disabled) { background: var(--color-gold); border-color: var(--color-gold); color: #fff; }
-    .rev-nav:disabled { opacity: 0.3; cursor: default; box-shadow: none; }
-    .rev-prev { left: -22px; } .rev-next { right: -22px; }
-    .rev-dots { display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 2rem; }
-    .rev-dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px; background: rgba(11,25,44,0.18); cursor: pointer; transition: all 0.25s ease; }
-    .rev-dot:hover { background: rgba(37,111,168,0.5); }
-    .rev-dot.is-active { width: 26px; background: var(--color-gold); }
-    @media (max-width: 1099px) { .rev-slide { flex: 0 0 calc(50% - 0.75rem); } }
-    @media (max-width: 767px) { .rev-slide { flex: 0 0 100%; } }
-    /* arrows only where they fit outside the cards; dots + swipe below that */
-    @media (max-width: 1183px) { .rev-nav { display: none; } }
-    @media (prefers-reduced-motion: reduce) { .rev-track { scroll-behavior: auto; } }
     @media (max-width: 991px) { .bi-condition { padding: 3.5rem 0; } .bi-cards-grid { grid-template-columns: repeat(2, 1fr); } .bi-how-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); } .bi-split { grid-template-columns: 1fr !important; gap: 2.5rem; } }
     @media (max-width: 640px) { .bihero { padding: 8rem 0 3rem; } .bi-condition { padding: 3rem 0; } .bi-condition-lead { margin-bottom: 2rem; } .bi-how-grid { margin-top: 2.5rem; } .bi-cards-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; } .bi-stat { padding: 1.25rem 0.75rem; } .bi-stat-num { font-size: 2rem; } .bi-cta-card { grid-template-columns: 1fr; padding: 2rem; text-align: center; } .bi-condition h2 { font-size: 1.75rem; } }
     </style>
@@ -776,6 +749,53 @@
         </div>
     </section>
 
+        <!-- Patient Stories — self-contained testimonial slider (styles + behaviour included) -->
+<style>
+    /* base card styles — kept here so the partial drops into any page */
+    .review-card { background: #fff; border-radius: 1rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
+    .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(11,25,44,0.08); }
+    .review-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); opacity: 0; transition: opacity 0.35s ease; }
+    .review-card:hover::before { opacity: 1; }
+    .review-card.featured { background: var(--color-midnight); border-color: rgba(37,111,168,0.25); } .review-card.featured::before { opacity: 1; }
+    .review-card.featured .review-name { color: #fff; } .review-card.featured .review-condition { color: rgba(255,255,255,0.45); } .review-card.featured .review-text { color: rgba(255,255,255,0.70); } .review-card.featured .review-stars { color: var(--color-gold-light); }
+    .review-card.featured .review-avatar { background: rgba(37,111,168,0.25); border-color: rgba(37,111,168,0.4); color: var(--color-gold-light); }
+    .review-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+    .review-avatar { width: 46px; height: 46px; min-width: 46px; border-radius: 50%; background: rgba(37,111,168,0.08); border: 2px solid rgba(37,111,168,0.15); color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 1.15rem; }
+    .review-name { font-family: var(--font-serif); font-size: 1.15rem; color: var(--color-midnight); margin: 0 0 0.15rem; font-weight: 700; } .review-condition { font-size: 0.8rem; color: rgba(11,25,44,0.6); display: block; font-weight: 500; } .review-stars { color: var(--color-gold); font-size: 1.1rem; letter-spacing: 2px; margin-left: auto; }
+    .review-text { font-size: 0.95rem; color: #4b5563; line-height: 1.7; margin-bottom: 1.5rem; position: relative; z-index: 1; }
+    .review-quote-icon { font-family: var(--font-serif); font-size: 3.5rem; color: rgba(37,111,168,0.08); position: absolute; top: -1.75rem; left: -0.5rem; z-index: -1; line-height: 1; }
+    .review-verified { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 500; color: #22c55e; } .review-verified svg { width: 14px; height: 14px; }
+
+    /* slider */
+    .rev-slider { position: relative; }
+    .rev-track { display: flex; align-items: stretch; gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 0.5rem 0; margin: -0.5rem 0; scrollbar-width: none; -ms-overflow-style: none; }
+    .rev-track::-webkit-scrollbar { display: none; }
+    .rev-track:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; border-radius: 1.25rem; }
+    .rev-slide { flex: 0 0 calc(33.3333% - 1rem); scroll-snap-align: start; display: flex; flex-direction: column; }
+    .rev-slide .review-text { flex: 0 0 auto; margin-bottom: 1.25rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 10; overflow: hidden; }
+    @media (max-width: 1099px) { .rev-slide .review-text { -webkit-line-clamp: 8; } }
+    .rev-foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(37,111,168,0.08); }
+    .rev-google { width: 22px; height: 22px; }
+    .rev-slide .review-name { font-size: 1.05rem; }
+    .rev-slide .review-stars { font-size: 0.95rem; letter-spacing: 1px; }
+    .rev-slide .review-avatar { width: 42px; height: 42px; min-width: 42px; font-size: 1.05rem; }
+    .rev-slide .review-header { min-height: 3.5rem; }
+    .rev-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: #fff; border: 1px solid rgba(37,111,168,0.15); color: var(--color-gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(11,25,44,0.10); cursor: pointer; z-index: 3; transition: all 0.25s ease; }
+    .rev-nav svg { width: 20px; height: 20px; }
+    .rev-nav:hover:not(:disabled) { background: var(--color-gold); border-color: var(--color-gold); color: #fff; }
+    .rev-nav:disabled { opacity: 0.3; cursor: default; box-shadow: none; }
+    .rev-prev { left: -22px; } .rev-next { right: -22px; }
+    .rev-dots { display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 2rem; }
+    .rev-dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px; background: rgba(11,25,44,0.18); cursor: pointer; transition: all 0.25s ease; }
+    .rev-dot:hover { background: rgba(37,111,168,0.5); }
+    .rev-dot.is-active { width: 26px; background: var(--color-gold); }
+    @media (max-width: 1099px) { .rev-slide { flex: 0 0 calc(50% - 0.75rem); } }
+    @media (max-width: 767px) { .rev-slide { flex: 0 0 100%; } }
+    /* arrows only where they fit outside the cards; dots + swipe below that */
+    @media (max-width: 1183px) { .rev-nav { display: none; } }
+    @media (prefers-reduced-motion: reduce) { .rev-track { scroll-behavior: auto; } }
+</style>
+
     <!-- Patient Stories -->
     <section class="py-14 md:py-20 bg-beige-dark" id="patient-stories">
         <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="rev-google" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></symbol></svg>
@@ -1023,6 +1043,80 @@
         </div>
     </section>
 
+<script>
+(function () {
+    function initReviewSlider() {
+            // Patient stories slider
+            (function () {
+                var track = document.getElementById('revTrack');
+                if (!track) return;
+                var dotsWrap = document.getElementById('revDots');
+                var slides = Array.prototype.slice.call(track.querySelectorAll('.rev-slide'));
+                var prev = document.querySelector('.rev-prev');
+                var next = document.querySelector('.rev-next');
+                if (!slides.length) return;
+
+                function perView() {
+                    var w = window.innerWidth;
+                    return w <= 767 ? 1 : (w <= 1099 ? 2 : 3);
+                }
+                function step() {
+                    var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+                    return perView() * (slides[0].getBoundingClientRect().width + gap);
+                }
+                function pageCount() { return Math.ceil(slides.length / perView()); }
+                function activePage() { return Math.min(pageCount() - 1, Math.round(track.scrollLeft / step())); }
+
+                function buildDots() {
+                    dotsWrap.innerHTML = '';
+                    for (var i = 0; i < pageCount(); i++) {
+                        var d = document.createElement('button');
+                        d.type = 'button';
+                        d.className = 'rev-dot';
+                        d.setAttribute('role', 'tab');
+                        d.setAttribute('aria-label', 'Go to testimonial slide ' + (i + 1));
+                        d.addEventListener('click', (function (n) {
+                            return function () { track.scrollTo({ left: n * step(), behavior: 'smooth' }); };
+                        })(i));
+                        dotsWrap.appendChild(d);
+                    }
+                    sync();
+                }
+                function sync() {
+                    var max = track.scrollWidth - track.clientWidth;
+                    var i = activePage();
+                    Array.prototype.forEach.call(dotsWrap.children, function (d, n) {
+                        d.classList.toggle('is-active', n === i);
+                        d.setAttribute('aria-selected', n === i ? 'true' : 'false');
+                    });
+                    prev.disabled = track.scrollLeft <= 8;
+                    next.disabled = track.scrollLeft >= max - 8;
+                }
+
+                prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+                next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+                track.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
+                    if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
+                });
+
+                track.addEventListener('scroll', sync);
+                var lastPer = perView();
+                window.addEventListener('resize', function () {
+                    if (perView() !== lastPer) { lastPer = perView(); track.scrollLeft = 0; buildDots(); }
+                    else { sync(); }
+                });
+                buildDots();
+            })();
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initReviewSlider);
+    } else {
+        initReviewSlider();
+    }
+})();
+</script>
+
     <!-- FAQ Section -->
     <section class="py-14 md:py-20 bg-white" id="faq">
         <div class="container mx-auto px-4 max-w-4xl">
@@ -1151,69 +1245,6 @@
                 }
             });
         });
-
-        // Patient stories slider
-        (function () {
-            var track = document.getElementById('revTrack');
-            if (!track) return;
-            var dotsWrap = document.getElementById('revDots');
-            var slides = Array.prototype.slice.call(track.querySelectorAll('.rev-slide'));
-            var prev = document.querySelector('.rev-prev');
-            var next = document.querySelector('.rev-next');
-            if (!slides.length) return;
-
-            function perView() {
-                var w = window.innerWidth;
-                return w <= 767 ? 1 : (w <= 1099 ? 2 : 3);
-            }
-            function step() {
-                var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-                return perView() * (slides[0].getBoundingClientRect().width + gap);
-            }
-            function pageCount() { return Math.ceil(slides.length / perView()); }
-            function activePage() { return Math.min(pageCount() - 1, Math.round(track.scrollLeft / step())); }
-
-            function buildDots() {
-                dotsWrap.innerHTML = '';
-                for (var i = 0; i < pageCount(); i++) {
-                    var d = document.createElement('button');
-                    d.type = 'button';
-                    d.className = 'rev-dot';
-                    d.setAttribute('role', 'tab');
-                    d.setAttribute('aria-label', 'Go to testimonial slide ' + (i + 1));
-                    d.addEventListener('click', (function (n) {
-                        return function () { track.scrollTo({ left: n * step(), behavior: 'smooth' }); };
-                    })(i));
-                    dotsWrap.appendChild(d);
-                }
-                sync();
-            }
-            function sync() {
-                var max = track.scrollWidth - track.clientWidth;
-                var i = activePage();
-                Array.prototype.forEach.call(dotsWrap.children, function (d, n) {
-                    d.classList.toggle('is-active', n === i);
-                    d.setAttribute('aria-selected', n === i ? 'true' : 'false');
-                });
-                prev.disabled = track.scrollLeft <= 8;
-                next.disabled = track.scrollLeft >= max - 8;
-            }
-
-            prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
-            next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
-            track.addEventListener('keydown', function (e) {
-                if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
-                if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
-            });
-
-            track.addEventListener('scroll', sync);
-            var lastPer = perView();
-            window.addEventListener('resize', function () {
-                if (perView() !== lastPer) { lastPer = perView(); track.scrollLeft = 0; buildDots(); }
-                else { sync(); }
-            });
-            buildDots();
-        })();
     });
 </script>
 

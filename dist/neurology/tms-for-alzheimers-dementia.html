@@ -93,19 +93,16 @@
             .section-title { font-size: 2.2rem; }
         }
 
-        
+            .section-header.center { margin-bottom: 3rem; }
+    .section-header .section-subtitle { margin-bottom: 0; }
+    .bi-faq-header { background: none; border: 0; appearance: none; -webkit-appearance: none; font: inherit; color: inherit; }
     .bihero { position: relative; padding: 10rem 0 5rem; background: var(--color-midnight); overflow: hidden; }
     .bihero::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(37,111,168,0.06) 1px, transparent 1px); background-size: 30px 30px; pointer-events: none; }
     .bihero::after { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, var(--color-gold) 22%, var(--color-gold-light) 50%, var(--color-gold) 78%, transparent 100%); }
     .bihero-orb-1 { position: absolute; top: -30%; right: -8%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(37,111,168,0.16) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
     .bihero-orb-2 { position: absolute; bottom: -35%; left: -6%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(37,111,168,0.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-    .bi-quicknav { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 3rem; }
-    .bi-quicknav a { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.25rem; border-radius: 999px; font-family: var(--font-sans); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; color: var(--color-midnight-light); background: #fff; border: 1.5px solid #e2e8f0; text-decoration: none; transition: all 0.3s ease; }
-    .bi-quicknav a:hover, .bi-quicknav a.active { background: var(--color-midnight); color: white; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(11,25,44,0.15); border-color: var(--color-midnight); }
-    .bi-quicknav a.active { cursor: default; } .bi-quicknav a.bi-tab-btn { cursor: pointer; } .bi-quicknav a svg { width: 15px; height: 15px; stroke: var(--color-gold); }
-    .bi-tab-pane { display: none !important; } .bi-tab-pane.active { display: block !important; animation: bi-fade-in 0.4s ease forwards; }
     @keyframes bi-fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .review-card { background: #fff; border-radius: 1.25rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
+    .review-card { background: #fff; border-radius: 1rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
     .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(11,25,44,0.08); }
     .review-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); opacity: 0; transition: opacity 0.35s ease; }
     .review-card:hover::before { opacity: 1; }
@@ -118,46 +115,48 @@
     .review-text { font-size: 0.95rem; color: #4b5563; line-height: 1.7; margin-bottom: 1.5rem; position: relative; z-index: 1; }
     .review-quote-icon { font-family: var(--font-serif); font-size: 3.5rem; color: rgba(37,111,168,0.08); position: absolute; top: -1.75rem; left: -0.5rem; z-index: -1; line-height: 1; }
     .review-verified { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 500; color: #22c55e; } .review-verified svg { width: 14px; height: 14px; }
-    .bi-condition { position: relative; padding: 2rem 0 3rem; }
-    .bi-condition-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.4rem 1rem; background: rgba(37,111,168,0.06); border: 1px solid rgba(37,111,168,0.14); border-radius: 999px; font-family: var(--font-sans); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); margin-bottom: 1rem; }
-    .bi-condition-badge svg { width: 14px; height: 14px; }
-    .bi-condition h2 { font-family: var(--font-serif); font-size: 2.25rem; font-weight: 600; color: var(--color-midnight); margin-bottom: 1rem; line-height: 1.25; }
-    .bi-condition-lead { font-size: 1.1rem; line-height: 1.7; color: var(--color-midnight-light); max-width: 650px; margin-bottom: 2rem; }
-    .bi-condition p { font-size: 0.95rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 1rem; }
-    .bi-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+    .bi-condition { scroll-margin-top: 6.5rem; position: relative; padding: 5rem 0; }
+    .bi-condition h2 { font-family: var(--font-serif); font-size: clamp(1.75rem, 3.2vw, 2.5rem); font-weight: 600; color: var(--color-midnight); margin-bottom: 1rem; line-height: 1.25; }
+    .bi-condition .bi-condition-lead { font-size: 1.1rem; line-height: 1.7; color: var(--color-midnight-light); max-width: 650px;  margin: 0 auto 3rem; }
+    .bi-condition p { font-size: 0.95rem; line-height: 1.8; color: var(--color-text-light); margin-bottom: 1.25rem; }
+    .bi-condition p:not(.bi-condition-lead):last-child { margin-bottom: 0; }
+    .bi-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 0; align-items: stretch; }
     .bi-card { background: #fff; border: 1px solid rgba(37,111,168,0.08); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s ease; }
     .bi-card:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(11,25,44,0.05); border-color: rgba(37,111,168,0.18); }
     .bi-card-icon { width: 2.75rem; height: 2.75rem; background: rgba(37,111,168,0.07); border: 1px solid rgba(37,111,168,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-gold); margin-bottom: 0.85rem; }
     .bi-card-icon svg { width: 1.15rem; height: 1.15rem; }
     .bi-card h4 { font-family: var(--font-sans); font-size: 0.92rem; font-weight: 700; color: var(--color-midnight); margin: 0 0 0.35rem; }
     .bi-card p { font-size: 0.82rem; line-height: 1.6; color: var(--color-text-light); margin: 0; }
-    .bi-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
-    .bi-stat { text-align: center; padding: 2rem 1rem; background: #fff; border: 1px solid rgba(37,111,168,0.08); border-radius: 1.25rem; transition: all 0.3s ease; }
+    .bi-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: none;  align-items: stretch; }
+    .bi-stat { text-align: center; padding: 2rem 1rem; background: #fff; border: 1px solid rgba(37,111,168,0.08); border-radius: 1rem; transition: all 0.3s ease; display: flex; flex-direction: column; justify-content: center; min-height: 9rem; }
     .bi-stat:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(11,25,44,0.05); }
-    .bi-stat-num { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 700; color: var(--color-gold); line-height: 1; margin-bottom: 0.4rem; }
+    .bi-stat-num { font-family: var(--font-serif); font-size: clamp(1.6rem, 2.4vw, 2.5rem); font-weight: 700; color: var(--color-gold); line-height: 1.1; margin-bottom: 0.6rem; white-space: nowrap; }
     .bi-stat-label { font-family: var(--font-sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-light); }
-    .bi-how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2.5rem 0; }
-    .bi-how-step { background: var(--color-midnight); border-radius: 1.25rem; padding: 2rem; position: relative; overflow: hidden; }
+    .bi-how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 3.5rem 0 0; align-items: stretch; }
+    .bi-how-step { background: var(--color-midnight); border-radius: 1rem; padding: 2rem; position: relative; overflow: hidden; }
     .bi-how-step::before { content: ""; position: absolute; top: 0; left: 1.5rem; right: 1.5rem; height: 2px; background: linear-gradient(90deg, var(--color-gold), transparent); border-radius: 1px; }
-    .bi-how-num { font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: rgba(37,111,168,0.25); margin-bottom: 0.75rem; line-height: 1; }
+    .bi-how-num { font-family: var(--font-serif); font-size: 2rem; font-weight: 700; color: rgba(93,173,238,0.45); margin-bottom: 0.75rem; line-height: 1; }
     .bi-how-step h4 { font-family: var(--font-sans); font-size: 1rem; font-weight: 700; color: #fff; margin: 0 0 0.5rem; }
     .bi-how-step p { font-size: 0.85rem; line-height: 1.6; color: rgba(255,255,255,0.55); margin: 0; }
-    .bi-callout { background: rgba(37,111,168,0.04); border-left: 3px solid var(--color-gold); padding: 1.25rem 1.5rem; border-radius: 0 14px 14px 0; margin: 1.5rem 0; }
-    .bi-callout p { color: var(--color-midnight); font-weight: 500; margin: 0; font-size: 0.95rem; }
-    .bi-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
-    .bi-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 1.5rem; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 15px rgba(11,25,44,0.05); border: 1px solid rgba(11,25,44,0.05); }
-    .bi-table th { background: var(--color-midnight); color: white; font-weight: 500; text-align: left; padding: 1rem 1.5rem; font-size: 0.95rem; text-transform: uppercase; }
+    .bi-callout { background: rgba(37,111,168,0.04); border-left: 3px solid var(--color-gold); padding: 1.25rem 1.5rem; border-radius: 0 14px 14px 0; margin: 1.75rem 0 0; }
+    .bi-callout p { color: var(--color-midnight); font-weight: 500; margin: 0 !important; font-size: 0.95rem; }
+    .bi-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: start; }
+    .bi-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 0; background: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 15px rgba(11,25,44,0.05); border: 1px solid rgba(11,25,44,0.05); }
+    .bi-table th { background: var(--color-midnight); color: white; font-weight: 500; text-align: left; padding: 1.1rem 1.5rem; font-size: 0.9rem; text-transform: uppercase; vertical-align: middle; letter-spacing: 0.04em; }
     .bi-table td { padding: 1.25rem 1.5rem; border-bottom: 1px solid rgba(11,25,44,0.05); color: var(--color-text); vertical-align: top; }
     .bi-table tr:last-child td { border-bottom: none; } .bi-table td:first-child { font-weight: 600; color: var(--color-midnight); width: 40%; }
     .bi-image-wrapper { position: relative; border-radius: 1.5rem; overflow: hidden; box-shadow: 0 20px 40px rgba(11,25,44,0.1); }
     .bi-image-wrapper img { width: 100%; height: auto; display: block; transition: transform 0.7s ease; }
     .bi-image-wrapper:hover img { transform: scale(1.05); }
     .bi-image-wrapper::after { content: ""; position: absolute; inset: 0; border-radius: 1.5rem; border: 2px solid rgba(255,255,255,0.1); pointer-events: none; }
+    .bi-image-wrapper.is-cover img { height: 100%; object-fit: cover; }
+    .bi-image-wrapper.is-fill { height: 100%; min-height: 100%; }
+    .bi-image-wrapper.is-fill img { height: 100%; object-fit: cover; }
     .bi-cta-card { background: var(--color-midnight); border-radius: 2rem; padding: 3.5rem; position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
     .bi-cta-card::before { content: ""; position: absolute; top: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(37,111,168,0.18) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
     .bi-cta-card::after { content: ""; position: absolute; top: 0; left: 2rem; right: 2rem; height: 2px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); border-radius: 1px; }
-    @media (max-width: 991px) { .bi-cards-grid { grid-template-columns: repeat(2, 1fr); } .bi-how-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); } .bi-split { grid-template-columns: 1fr !important; gap: 2.5rem; } }
-    @media (max-width: 640px) { .bihero { padding: 8rem 0 3rem; } .bi-cards-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; } .bi-stat { padding: 1.25rem 0.75rem; } .bi-stat-num { font-size: 2rem; } .bi-cta-card { grid-template-columns: 1fr; padding: 2rem; text-align: center; } .bi-condition h2 { font-size: 1.75rem; } }
+    @media (max-width: 991px) { .bi-condition { padding: 3.5rem 0; } .bi-cards-grid { grid-template-columns: repeat(2, 1fr); } .bi-how-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); } .bi-split { grid-template-columns: 1fr !important; gap: 2.5rem; } }
+    @media (max-width: 640px) { .bi-condition { padding: 3rem 0; } .bi-how-grid { margin-top: 2.5rem; } .bihero { padding: 8rem 0 3rem; } .bi-cards-grid { grid-template-columns: 1fr; } .bi-stats-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; } .bi-stat { padding: 1.25rem 0.75rem; } .bi-stat-num { font-size: 2rem; } .bi-cta-card { grid-template-columns: 1fr; padding: 2rem; text-align: center; } .bi-condition h2 { font-size: 1.75rem; } }
     </style>
 </head>
 
@@ -450,7 +449,7 @@
     <section class="bihero" id="bi-hero">
         <div class="bihero-orb-1"></div>
         <div class="bihero-orb-2"></div>
-        <div class="container mx-auto px-4 max-w-7xl relative z-10">
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
             <div class="max-w-3xl mx-auto text-center reveal">
                 <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold mb-4">Neurology &amp; Brain Stimulation</span>
                 <h1 class="text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">
@@ -462,15 +461,15 @@
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mt-10">
                     <a href="/contact.html" class="btn btn-primary shadow-lg shadow-gold/20">Schedule a Consultation</a>
-                    <a href="#conditions" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Therapy</a>
+                    <a href="#mci" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all">Explore Therapy</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Bar -->
-    <section class="py-16 bg-beige-dark/50" id="stats">
-        <div class="container mx-auto px-4 max-w-7xl">
+    <section class="py-14 md:py-20 bg-beige-dark" id="stats">
+        <div class="container mx-auto px-4 max-w-6xl">
             <div class="bi-stats-row reveal">
                 <div class="bi-stat"><div class="bi-stat-num">Non-OP</div><div class="bi-stat-label">Non-Invasive Protocol</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">MCI</div><div class="bi-stat-label">Targets Early Stages</div></div>
@@ -480,44 +479,15 @@
         </div>
     </section>
 
-    <!-- Condition Quick Nav -->
-    <section class="pt-16 pb-4 bg-white" id="conditions">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal">
-                <span class="eyebrow">Areas of Focus</span>
-                <h2 class="section-title">Supporting Cognitive Networks</h2>
-                <p class="section-subtitle">TMS aims to strengthen connectivity within the brain's memory and executive networks before significant atrophy occurs.</p>
-            </div>
-            <div class="bi-quicknav reveal" id="condition-tabs">
-                <a href="#mci" class="bi-tab-btn active" data-target="mci">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                    Mild Cognitive Impairment
-                </a>
-                <a href="#early-stage" class="bi-tab-btn" data-target="early-stage">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    Early-Stage Alzheimer's
-                </a>
-                <a href="#behavioral" class="bi-tab-btn" data-target="behavioral">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
-                    Behavioral Symptoms
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- SECTION 1: Mild Cognitive Impairment -->
-    <div class="bi-condition bi-tab-pane active" id="mci">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                    Section 01
-                </span>
+    <div class="bi-condition" id="mci">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Mild Cognitive Impairment (MCI)</h2>
-                <p class="bi-condition-lead">A critical window for intervention: stimulating the brain to reinforce fading memory pathways.</p>
+                <p class="bi-condition-lead mx-auto">A critical window for intervention: stimulating the brain to reinforce fading memory pathways.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Mild Cognitive Impairment (MCI) is often the transitional stage between the expected cognitive decline of normal aging and the more serious decline of dementia. During this phase, intervention is crucial. Functional imaging shows that network connectivity in the brain begins to falter before significant physical shrinkage (atrophy) occurs.</p>
                     <p>TMS applies focused magnetic pulses to the **Dorsolateral Prefrontal Cortex (DLPFC)** and temporal regions, which are closely linked to the brain's memory centers, including the hippocampus. This stimulation promotes <strong>neuroplasticity</strong>—the brain's ability to form and reorganize synaptic connections, helping to compensate for early amyloid or tau pathology.</p>
@@ -554,18 +524,14 @@
     </div>
 
     <!-- SECTION 2: Early-Stage Alzheimer's -->
-    <div class="bi-condition bi-tab-pane" id="early-stage">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    Section 02
-                </span>
+    <div class="bi-condition bg-beige-dark" id="early-stage">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Early-Stage Alzheimer's</h2>
-                <p class="bi-condition-lead">Modulating the Default Mode Network (DMN) to preserve independence and cognitive reserve.</p>
+                <p class="bi-condition-lead mx-auto">Modulating the Default Mode Network (DMN) to preserve independence and cognitive reserve.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 0.8fr 1.2fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 0.9fr 1.1fr; align-items: center;">
                 <div class="bi-image-wrapper">
                     <img src="/assets/neurology-tms/alzheimers-early-stage.png" alt="Doctor reviewing cognitive assessment with a patient">
                 </div>
@@ -596,18 +562,14 @@
     </div>
 
     <!-- SECTION 3: Behavioral Symptoms -->
-    <div class="bi-condition bi-tab-pane" id="behavioral">
-        <div class="container mx-auto px-4 max-w-5xl">
-            <div class="reveal">
-                <span class="bi-condition-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
-                    Section 03
-                </span>
+    <div class="bi-condition" id="behavioral">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="reveal text-center">
                 <h2>TMS for Behavioral &amp; Psychological Symptoms of Dementia (BPSD)</h2>
-                <p class="bi-condition-lead">Providing relief for the emotional toll of cognitive decline without heavy sedation.</p>
+                <p class="bi-condition-lead mx-auto">Providing relief for the emotional toll of cognitive decline without heavy sedation.</p>
             </div>
 
-            <div class="bi-split reveal" style="grid-template-columns: 1.2fr 0.8fr; align-items: center;">
+            <div class="bi-split reveal" style="grid-template-columns: 1.1fr 0.9fr; align-items: center;">
                 <div>
                     <p>Cognitive decline is only one aspect of dementia. Up to 90% of patients will experience Behavioral and Psychological Symptoms of Dementia (BPSD), which include severe <a href="/psychiatry/tms-for-major-depression.html" class="text-gold underline">depression</a>, agitation, anxiety, and apathy. These symptoms are often the primary cause of caregiver burnout and nursing home placement.</p>
                     <p>Traditional psychiatric medications (like antipsychotics) often carry significant risks for elderly dementia patients, including increased confusion and fall risk. TMS offers a powerful, localized alternative. Because TMS is FDA-cleared for Depression and Anxiety, we can adapt these protocols to target the mood-regulating circuits in dementia patients, <strong>calming agitation and lifting mood without systemic side effects.</strong></p>
@@ -630,30 +592,62 @@
         </div>
     </div>
 
+
+    <!-- Clinic Tour -->
+    <section class="py-14 md:py-20 bg-beige-dark" id="clinic-tour">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
+                <span class="eyebrow">Your Comfort Matters</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Experience Our Healing Environment</h2>
+                <p class="section-subtitle">Take a look at our state-of-the-art TMS treatment rooms designed for your relaxation.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch reveal delay-1">
+                <div class="bi-image-wrapper is-fill shadow-lg">
+                    <img src="/assets/images/clinic-img-4.jpg" alt="TMS Treatment Room at Dr. Ritesh Amin's Clinic" class="w-full object-cover">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bi-image-wrapper is-cover aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-3.jpg" alt="TMS Therapy Room" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper is-cover aspect-square shadow-sm">
+                        <img src="/assets/images/clinic-img-1.jpg" alt="TMS Equipment" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="bi-image-wrapper is-cover aspect-[2/1] col-span-2 shadow-sm">
+                        <img src="/assets/images/clinic-img-2.jpg" alt="Relaxing Patient Experience" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto text-center reveal mt-10">
+                <p class="text-gray-600 leading-relaxed text-lg">During your daily sessions, you will relax in our comfortable treatment chair. You can watch TV, listen to music, read a book, or simply close your eyes. The treatment is completely non-invasive, and our dedicated team is always present to ensure your utmost comfort.</p>
+            </div>
+        </div>
+    </section>
     <!-- Our Approach -->
-    <section class="py-12 bg-white" id="approach">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="section-header center reveal mb-8">
+    <section class="py-14 md:py-20 bg-white" id="approach">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
                 <span class="eyebrow">A Careful, Measured Process</span>
                 <h2 class="section-title text-midnight font-serif font-bold">Integrating TMS into Cognitive Care</h2>
                 <p class="section-subtitle">We prioritize realistic goals, safety, and improving quality of life for the patient and their family.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal delay-1">
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Comprehensive Evaluation</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">Reviewing neuro-psych testing, MRIs, and medical history to ensure TMS is an appropriate and safe option for your specific stage.</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
                     </div>
                     <h3 class="text-xl font-bold text-midnight mb-3 font-serif">Caregiver Integration</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">We work closely with family members and caregivers to monitor progress, changes in behavior, and adjust protocols as needed.</p>
                 </div>
-                <div class="bg-slate-50 border border-slate-100 p-8 rounded-3xl hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-beige-dark border border-gold/10 p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
                     <div class="w-12 h-12 bg-gold/10 rounded-2xl flex items-center justify-center text-gold mb-5">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     </div>
@@ -665,9 +659,9 @@
     </section>
 
     <!-- About Dr Amin -->
-    <section class="py-16 bg-midnight" id="about-doctor">
-        <div class="container mx-auto px-4 max-w-7xl">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
+    <section class="py-14 md:py-20 bg-midnight" id="about-doctor">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-5/12 reveal shrink-0">
                     <div class="relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-2 bg-[#0d1a2d]">
                         <img src="/assets/images/dr-ritesh-hero.webp" alt="Dr. Ritesh Amin" class="w-full h-auto aspect-[4/5] object-cover rounded-2xl">
@@ -678,7 +672,7 @@
                         <span class="w-8 h-[2px] bg-gold block"></span>
                         Expertise in Neuropsychiatry
                     </span>
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
+                    <h2 class="text-[2rem] md:text-[2.5rem] leading-tight font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
                     <h3 class="text-xl text-[#c1d9f8] mb-8 font-light border-b border-white/10 pb-6">Board Certified Psychiatrist &amp; TMS Specialist</h3>
                     <p class="text-lg text-white/80 leading-relaxed mb-6">
                         Navigating cognitive decline is vastly challenging for both the patient and their family. Dr. Amin approaches Alzheimer's and MCI with a compassionate, realistic, and science-driven mindset. He utilizes TMS not as a cure, but as a stabilizing tool to enhance the brain's remaining reserves and improve daily mood and function.
@@ -691,15 +685,384 @@
         </div>
     </section>
 
+    <!-- Patient Stories (Caregiver perspective) -->
+        <!-- Patient Stories — self-contained testimonial slider (styles + behaviour included) -->
+<style>
+    /* base card styles — kept here so the partial drops into any page */
+    .review-card { background: #fff; border-radius: 1rem; padding: 2rem; border: 1px solid rgba(37,111,168,0.06); box-shadow: 0 4px 20px rgba(11,25,44,0.04); transition: all 0.35s ease; position: relative; overflow: hidden; }
+    .review-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(11,25,44,0.08); }
+    .review-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), transparent); opacity: 0; transition: opacity 0.35s ease; }
+    .review-card:hover::before { opacity: 1; }
+    .review-card.featured { background: var(--color-midnight); border-color: rgba(37,111,168,0.25); } .review-card.featured::before { opacity: 1; }
+    .review-card.featured .review-name { color: #fff; } .review-card.featured .review-condition { color: rgba(255,255,255,0.45); } .review-card.featured .review-text { color: rgba(255,255,255,0.70); } .review-card.featured .review-stars { color: var(--color-gold-light); }
+    .review-card.featured .review-avatar { background: rgba(37,111,168,0.25); border-color: rgba(37,111,168,0.4); color: var(--color-gold-light); }
+    .review-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+    .review-avatar { width: 46px; height: 46px; min-width: 46px; border-radius: 50%; background: rgba(37,111,168,0.08); border: 2px solid rgba(37,111,168,0.15); color: var(--color-gold); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-weight: 700; font-size: 1.15rem; }
+    .review-name { font-family: var(--font-serif); font-size: 1.15rem; color: var(--color-midnight); margin: 0 0 0.15rem; font-weight: 700; } .review-condition { font-size: 0.8rem; color: rgba(11,25,44,0.6); display: block; font-weight: 500; } .review-stars { color: var(--color-gold); font-size: 1.1rem; letter-spacing: 2px; margin-left: auto; }
+    .review-text { font-size: 0.95rem; color: #4b5563; line-height: 1.7; margin-bottom: 1.5rem; position: relative; z-index: 1; }
+    .review-quote-icon { font-family: var(--font-serif); font-size: 3.5rem; color: rgba(37,111,168,0.08); position: absolute; top: -1.75rem; left: -0.5rem; z-index: -1; line-height: 1; }
+    .review-verified { display: flex; align-items: center; gap: 0.35rem; font-size: 0.7rem; font-weight: 500; color: #22c55e; } .review-verified svg { width: 14px; height: 14px; }
+
+    /* slider */
+    .rev-slider { position: relative; }
+    .rev-track { display: flex; align-items: stretch; gap: 1.5rem; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 0.5rem 0; margin: -0.5rem 0; scrollbar-width: none; -ms-overflow-style: none; }
+    .rev-track::-webkit-scrollbar { display: none; }
+    .rev-track:focus-visible { outline: 2px solid var(--color-gold); outline-offset: 2px; border-radius: 1.25rem; }
+    .rev-slide { flex: 0 0 calc(33.3333% - 1rem); scroll-snap-align: start; display: flex; flex-direction: column; }
+    .rev-slide .review-text { flex: 0 0 auto; margin-bottom: 1.25rem; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 10; overflow: hidden; }
+    @media (max-width: 1099px) { .rev-slide .review-text { -webkit-line-clamp: 8; } }
+    .rev-foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 1rem; border-top: 1px solid rgba(37,111,168,0.08); }
+    .rev-google { width: 22px; height: 22px; }
+    .rev-slide .review-name { font-size: 1.05rem; }
+    .rev-slide .review-stars { font-size: 0.95rem; letter-spacing: 1px; }
+    .rev-slide .review-avatar { width: 42px; height: 42px; min-width: 42px; font-size: 1.05rem; }
+    .rev-slide .review-header { min-height: 3.5rem; }
+    .rev-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: #fff; border: 1px solid rgba(37,111,168,0.15); color: var(--color-gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(11,25,44,0.10); cursor: pointer; z-index: 3; transition: all 0.25s ease; }
+    .rev-nav svg { width: 20px; height: 20px; }
+    .rev-nav:hover:not(:disabled) { background: var(--color-gold); border-color: var(--color-gold); color: #fff; }
+    .rev-nav:disabled { opacity: 0.3; cursor: default; box-shadow: none; }
+    .rev-prev { left: -22px; } .rev-next { right: -22px; }
+    .rev-dots { display: flex; justify-content: center; align-items: center; gap: 0.5rem; margin-top: 2rem; }
+    .rev-dot { width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px; background: rgba(11,25,44,0.18); cursor: pointer; transition: all 0.25s ease; }
+    .rev-dot:hover { background: rgba(37,111,168,0.5); }
+    .rev-dot.is-active { width: 26px; background: var(--color-gold); }
+    @media (max-width: 1099px) { .rev-slide { flex: 0 0 calc(50% - 0.75rem); } }
+    @media (max-width: 767px) { .rev-slide { flex: 0 0 100%; } }
+    /* arrows only where they fit outside the cards; dots + swipe below that */
+    @media (max-width: 1183px) { .rev-nav { display: none; } }
+    @media (prefers-reduced-motion: reduce) { .rev-track { scroll-behavior: auto; } }
+</style>
+
+    <!-- Patient Stories -->
+    <section class="py-14 md:py-20 bg-beige-dark" id="patient-stories">
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="rev-google" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></symbol></svg>
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="section-header center reveal mb-12">
+                <span class="eyebrow">Patient Stories</span>
+                <h2 class="section-title text-midnight font-serif font-bold">Real People, Real Results</h2>
+                <p class="section-subtitle text-gray-600 md:max-w-[46rem]">Hear from patients whose lives were transformed through Dr. Amin's care.</p>
+            </div>
+            <div class="rev-slider reveal delay-1">
+                <button type="button" class="rev-nav rev-prev" aria-label="Previous testimonials" aria-controls="revTrack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+                <div class="rev-track" id="revTrack" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Patient testimonials">
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Marietta Baranca">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">M</div>
+                            <div>
+                                <h3 class="review-name">Marietta Baranca</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            I've been dealing with depression and PTSD for years and Dr. Amin's TMS Therapy has honestly saved my life. I'm someone who does not respond well to depression medication, so TMS was a godsend for me. I went from crying for no reason almost every day to feeling more stable and even optimistic. Dr. Amin is really invested in my mental health and Charlie, the TMS technician, is very helpful in making the treatments go by quickly and swiftly. I don't even want to imagine what my life would have been like without these treatments these past few years.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Ganesh">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">G</div>
+                            <div>
+                                <h3 class="review-name">Ganesh</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Dr Amin helped me a lot with my persistent depression, anxiety and attention deficit issues. He is excellent at establishing a good relationship with the patient and helped understand more about these conditions and what he was looking to achieve through the treatment. Would highly recommend him.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Kavita Ingle">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">K</div>
+                            <div>
+                                <h3 class="review-name">Kavita Ingle</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Amazing experience with Dr. Amin. He helped me get out of my anxiety in just 2 months. He is very responsive, follows up personally, and is always available when you need to talk. Highly recommended! I had a wonderful experience with Nurse Melissa. She genuinely cares about her patients, and it shows in how she handles them. Thank You Dr Amin.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Jeanne Hambrecht">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">J</div>
+                            <div>
+                                <h3 class="review-name">Jeanne Hambrecht</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            I've been experiencing night terrors for a few years. I called Dr Amin immediately and he called me back right away. He told me he could help me. He came up with a medical plan with his diagnosis and that's what we're doing now. Dr. Amin is not aggressive and started very cautious with treatment because of my family history. Dr. Amin calls me to follow up on how I'm feeling. I highly recommend his practice. They answer in a timely manner. Everyone is very nice.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Athena Xipolias">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">A</div>
+                            <div>
+                                <h3 class="review-name">Athena Xipolias</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Dr. Amin saved me from my horrible OCD. Thank god for him. I originally went to him for a second opinion. I decided to take a leap of faith and start TMS after I had a bad OCD episode. It was rough in the beginning when I first started TMS but I persevered my way through and I'm so glad I did. I'm just about half way through and I see so many benefits already. I have my life back. I feel such relief — I can rationalize my thoughts and emotions so much better now. Overall I'm a better person. Thank you x1000 Dr. Amin!!!
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Kathryn Mahaney">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">K</div>
+                            <div>
+                                <h3 class="review-name">Kathryn Mahaney</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            With professionalism and empathy, Dr Amin and Dr R. Truly are a rarity in today's world of Psychiatry. Incredibly knowledgeable and they are excellent patient advocates. Highly Recommend!
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Syeda Shebah Ali">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">S</div>
+                            <div>
+                                <h3 class="review-name">Syeda Shebah Ali</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Before becoming a patient of Dr. Amin, I was experiencing persistent cognitive fog, chronic depression, and generalized anxiety that significantly impacted my ability to function day to day. Since implementing Dr. Amin's comprehensive recommendations, my cognitive clarity has returned, my mood has stabilized, and I now have the energy and confidence to manage daily tasks and engage in social environments without fear. Dr. Amin's thoughtful and integrative approach to treatment has been transformative. His attention to detail and commitment to addressing root causes — rather than just symptoms — has helped me reclaim both my functionality and quality of life. I am truly grateful for the care I've received.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Deolinda Amaral">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">D</div>
+                            <div>
+                                <h3 class="review-name">Deolinda Amaral</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Thank you for the help. After the stroke, my husband improved in his speech, walking and memory with TMS for his Depression. Best doctor ever.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Punam Patel">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">P</div>
+                            <div>
+                                <h3 class="review-name">Punam Patel</h3>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Dr Singh and Dr Amin are phenomenal. They go above and beyond for their patients.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Sharon Page">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">S</div>
+                            <div>
+                                <h3 class="review-name">Sharon Page</h3>
+                            <span class="review-condition">Local Guide · 15 reviews</span>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            I have been a patient with NJ Healthy Minds for the past couple of years, and choosing them has been one of the best decisions I've made for myself. Everyone I've encountered has been kind, compassionate, supportive, and consistent. The passion and care they show truly reflect their purpose and the positive impact they make in people's lives every day. I am not the same person I was when I first came to them. Their support has made a tremendous difference in my life, and for that I am deeply grateful. Dr Amin & staff, you rock.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                    <article class="review-card rev-slide" role="group" aria-roledescription="testimonial" aria-label="Ann Rappaport">
+                        <div class="review-header">
+                            <div class="review-avatar" aria-hidden="true">A</div>
+                            <div>
+                                <h3 class="review-name">Ann Rappaport</h3>
+                            <span class="review-condition">Local Guide · 33 reviews</span>
+                            </div>
+                            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        </div>
+                        <div class="review-text">
+                            <span class="review-quote-icon" aria-hidden="true">"</span>
+                            Dr Amin is a very caring doctor. He helped me regain my peace via TMS therapy. He took whatever time was required to explain in detail what to expect. Unlike most in his field, he returns calls with urgency. I love having him as my doctor.
+                        </div>
+                        <div class="rev-foot">
+                            <svg class="rev-google" viewBox="0 0 48 48" aria-hidden="true"><use href="#rev-google"/></svg>
+                            <div class="review-verified">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Google Review
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button type="button" class="rev-nav rev-next" aria-label="Next testimonials" aria-controls="revTrack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button>
+            </div>
+            <div class="rev-dots" id="revDots" role="tablist" aria-label="Choose testimonial slide"></div>
+            <p class="text-center mt-8 reveal">
+                <a href="/reviews.html" class="inline-flex items-center gap-2 text-gold font-semibold hover:text-midnight transition-colors">
+                    Read all patient reviews
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </p>
+        </div>
+    </section>
+
+<script>
+(function () {
+    function initReviewSlider() {
+            // Patient stories slider
+            (function () {
+                var track = document.getElementById('revTrack');
+                if (!track) return;
+                var dotsWrap = document.getElementById('revDots');
+                var slides = Array.prototype.slice.call(track.querySelectorAll('.rev-slide'));
+                var prev = document.querySelector('.rev-prev');
+                var next = document.querySelector('.rev-next');
+                if (!slides.length) return;
+
+                function perView() {
+                    var w = window.innerWidth;
+                    return w <= 767 ? 1 : (w <= 1099 ? 2 : 3);
+                }
+                function step() {
+                    var gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+                    return perView() * (slides[0].getBoundingClientRect().width + gap);
+                }
+                function pageCount() { return Math.ceil(slides.length / perView()); }
+                function activePage() { return Math.min(pageCount() - 1, Math.round(track.scrollLeft / step())); }
+
+                function buildDots() {
+                    dotsWrap.innerHTML = '';
+                    for (var i = 0; i < pageCount(); i++) {
+                        var d = document.createElement('button');
+                        d.type = 'button';
+                        d.className = 'rev-dot';
+                        d.setAttribute('role', 'tab');
+                        d.setAttribute('aria-label', 'Go to testimonial slide ' + (i + 1));
+                        d.addEventListener('click', (function (n) {
+                            return function () { track.scrollTo({ left: n * step(), behavior: 'smooth' }); };
+                        })(i));
+                        dotsWrap.appendChild(d);
+                    }
+                    sync();
+                }
+                function sync() {
+                    var max = track.scrollWidth - track.clientWidth;
+                    var i = activePage();
+                    Array.prototype.forEach.call(dotsWrap.children, function (d, n) {
+                        d.classList.toggle('is-active', n === i);
+                        d.setAttribute('aria-selected', n === i ? 'true' : 'false');
+                    });
+                    prev.disabled = track.scrollLeft <= 8;
+                    next.disabled = track.scrollLeft >= max - 8;
+                }
+
+                prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
+                next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
+                track.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowRight') { e.preventDefault(); next.click(); }
+                    if (e.key === 'ArrowLeft') { e.preventDefault(); prev.click(); }
+                });
+
+                track.addEventListener('scroll', sync);
+                var lastPer = perView();
+                window.addEventListener('resize', function () {
+                    if (perView() !== lastPer) { lastPer = perView(); track.scrollLeft = 0; buildDots(); }
+                    else { sync(); }
+                });
+                buildDots();
+            })();
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initReviewSlider);
+    } else {
+        initReviewSlider();
+    }
+})();
+</script>
+
     <!-- FAQ Section -->
-    <section class="py-16 bg-slate-50" id="faq">
+    <section class="py-14 md:py-20 bg-white" id="faq">
         <div class="container mx-auto px-4 max-w-4xl">
-            <div class="section-header center reveal mb-8">
+            <div class="section-header center reveal mb-12">
                 <span class="eyebrow">Frequently Asked Questions</span>
                 <h2 class="section-title text-midnight font-serif font-bold">Cognitive TMS FAQs</h2>
             </div>
             <div class="bi-faq-accordion reveal delay-1 space-y-3">
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Can TMS cure Alzheimer&#039;s disease?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -712,7 +1075,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">How does TMS benefit patients with dementia?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -725,7 +1088,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Is TMS safe for elderly patients?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -738,7 +1101,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">At what stage of Alzheimer&#039;s is TMS most effective?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -751,7 +1114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bi-faq-item bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
+                <div class="bi-faq-item bg-beige-dark border border-gold/10 rounded-2xl overflow-hidden hover:border-gold/50 transition-colors">
                     <button class="bi-faq-header w-full flex items-center justify-between p-6 text-left cursor-pointer focus:outline-none">
                         <h3 class="text-lg font-bold text-midnight font-serif">Will TMS help with the behavioral symptoms of dementia?</h3>
                         <span class="bi-faq-icon text-gold ml-4 shrink-0 transition-transform duration-300">
@@ -767,62 +1130,8 @@
         </div>
     </section>
 
-    <!-- Patient Stories (Caregiver perspective) -->
-        <!-- Patient Stories -->
-    <section class="py-20 bg-beige-dark/50" id="patient-stories">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <div class="section-header center reveal mb-12">
-                <span class="eyebrow">Patient Stories</span>
-                <h2 class="section-title text-midnight font-serif font-bold">Real People, Real Results</h2>
-                <p class="section-subtitle text-gray-600 md:max-w-none md:whitespace-nowrap">Hear from patients whose lives were transformed through Dr. Amin's care.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-1">
-                <div class="review-card featured">
-                    <div class="review-header">
-                        <div class="review-avatar">M</div>
-                        <div>
-                            <h4 class="review-name">Marietta Baranca</h4>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        I've been dealing with depression and PTSD for years and Dr. Amin's TMS Therapy has honestly saved my life. I'm someone who does not respond well to depression medication, so TMS was a godsend for me. I went from crying for no reason almost every day to feeling more stable and even optimistic. Dr. Amin is really invested in my mental health and Charlie, the TMS technician, is very helpful in making the treatments go by quickly and swiftly.
-                    </div>
-                    <div class="flex items-center justify-between flex-wrap gap-2 mt-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22px" height="22px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
-                        <div class="review-verified">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Google Review
-                        </div>
-                    </div>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-avatar">S</div>
-                        <div>
-                            <h4 class="review-name">Syeda Shebah Ali</h4>
-                        </div>
-                        <div class="review-stars">★★★★★</div>
-                    </div>
-                    <div class="review-text">
-                        <span class="review-quote-icon">"</span>
-                        Before becoming a patient of Dr. Amin, I was experiencing persistent cognitive fog, chronic depression, and generalized anxiety that significantly impacted my ability to function day to day. Since implementing Dr. Amin's comprehensive recommendations, my cognitive clarity has returned, my mood has stabilized, and I now have the energy and confidence to manage daily tasks. Dr. Amin's thoughtful and integrative approach has been transformative — his attention to detail and commitment to addressing root causes rather than just symptoms has helped me reclaim my quality of life.
-                    </div>
-                    <div class="flex items-center justify-between flex-wrap gap-2 mt-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22px" height="22px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
-                        <div class="review-verified">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Google Review
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA -->
-    <section class="py-12 bg-white" id="get-evaluated">
+    <section class="py-14 md:py-20 bg-beige-dark" id="get-evaluated">
         <div class="container mx-auto px-4 max-w-4xl">
             <div class="bi-cta-card reveal">
                 <div class="relative z-10">
@@ -841,7 +1150,7 @@
     </section>
 
     <!-- Closing CTA -->
-    <section class="closing-cta py-16 lg:py-20 relative overflow-hidden" id="take-action">
+    <section class="closing-cta py-14 md:py-20 relative overflow-hidden" id="take-action">
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Maximize Cognitive Reserve</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Taking a Proactive Step Forward</h2>
@@ -853,20 +1162,6 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const tabs = document.querySelectorAll('.bi-tab-btn');
-        const panes = document.querySelectorAll('.bi-tab-pane');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(e) {
-                e.preventDefault();
-                tabs.forEach(t => t.classList.remove('active'));
-                panes.forEach(p => p.classList.remove('active'));
-                this.classList.add('active');
-                const pane = document.getElementById(this.getAttribute('data-target'));
-                if (pane) pane.classList.add('active');
-            });
-        });
-
         document.querySelectorAll('.bi-faq-header').forEach(header => {
             header.addEventListener('click', function() {
                 const content = this.nextElementSibling;
