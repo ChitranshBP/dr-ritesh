@@ -80,9 +80,14 @@ click. To swap or add one, change `data-gumlet` on the `.vt-card` element.
   section (or its images) invisible.
 - The page is `noindex, nofollow` (same as `/get-started/` and `/inquire/`). Remove
   that meta tag in `index.html` if you ever want it in organic search.
-- Every photo is an original clinic image — the Magstim suite, Dr. Amin with the
-  machine, a real TMS session, the treatment rooms, reception and atrium — pulled
-  from the service pages and the old `/inquire/` LP, then resized for web.
+- Every photo on the page is a real photograph of the Edison clinic or of Dr. Amin:
+  the Magstim suite, Dr. Amin with the machine, Dr. Amin treating a patient, the
+  recovery room, the quiet room, the consult room, reception and the building
+  atrium. The AI/stock images that shipped on the service pages (spravato-suite,
+  ketamine-suite, psychiatric-care) and the vendor TMS photo have been removed
+  entirely, including from the hero, which is now a pure gradient.
+- The footer carries a Google Maps embed of the Edison office (the same place-ID
+  embed used on `contact.php`) plus a "Get directions" link.
 - All testimonials are verbatim from the practice's real Google reviews
   (`_reviews-partial.php`); nothing is invented.
 - Clinical claims match what the site already states (~70% of TMS patients see

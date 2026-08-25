@@ -10,11 +10,11 @@
         content="Board-certified psychiatrist Dr. Ritesh Amin treats medication-resistant depression in Edison, NJ with FDA-approved TMS, Spravato® and Ketamine therapy. Free insurance check. Most plans accepted." />
 
     <link rel="icon" type="image/png" href="/depression-relief-nj/assets/img/favicon.png" />
+    <link rel="preload" as="image" href="/depression-relief-nj/assets/img/tms-suite-wide.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="preload" as="image" href="/depression-relief-nj/assets/img/tms-session.jpg" />
 
     <style>
         /* ═══════════════════════════════════════════════
@@ -162,23 +162,28 @@
            HERO
         ═══════════════════════════════════════════════ */
         .hero { position: relative; background: var(--navy); color: var(--cream); overflow: hidden; padding: clamp(2rem, 3.6vw, 3rem) 0 clamp(2.25rem, 3.8vw, 3.25rem); }
+        .hero::before {
+            content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+            background: linear-gradient(160deg, #0d1e38 0%, var(--navy) 55%, #060f1f 100%);
+        }
+        /* Real photo of the clinic's TMS room, sitting over the base gradient. */
         .hero__bg { position: absolute; inset: 0; z-index: 0; }
-        .hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: 68% center; opacity: .72; }
+        .hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 58%; opacity: .78; }
         .hero__bg::after {
             content: ''; position: absolute; inset: 0;
             background:
-                linear-gradient(100deg, rgba(10, 22, 40, .90) 0%, rgba(10, 22, 40, .72) 42%, rgba(10, 22, 40, .28) 100%),
-                radial-gradient(ellipse 60% 55% at 78% 20%, rgba(53, 114, 212, .16) 0%, transparent 62%);
+                linear-gradient(100deg, rgba(10, 22, 40, .86) 0%, rgba(10, 22, 40, .64) 44%, rgba(10, 22, 40, .30) 100%),
+                radial-gradient(ellipse 62% 58% at 78% 18%, rgba(53, 114, 212, .22) 0%, transparent 62%);
         }
         .hero .wrap { position: relative; z-index: 2; }
         .hero__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2rem, 4vw, 3.5rem); align-items: start; }
 
-        .hero h1 { color: #fff; margin-bottom: 1rem; text-shadow: 0 2px 22px rgba(10, 22, 40, .5); }
+        .hero h1 { color: #fff; margin-bottom: 1rem; text-shadow: 0 2px 20px rgba(6, 14, 28, .55); }
         .hero h1 em { font-style: normal; color: var(--blue-light); }
-        .hero__sub { font-size: clamp(1rem, 1.5vw, 1.12rem); color: rgba(255, 255, 255, .92); max-width: 46ch; margin-bottom: 1.5rem; text-shadow: 0 1px 12px rgba(10, 22, 40, .55); }
+        .hero__sub { font-size: clamp(1rem, 1.5vw, 1.12rem); color: rgba(255, 255, 255, .93); max-width: 46ch; margin-bottom: 1.5rem; text-shadow: 0 1px 14px rgba(6, 14, 28, .6); }
 
         .hero__checks { display: flex; flex-direction: column; gap: .7rem; margin-bottom: 1.7rem; }
-        .hero__checks li { display: flex; align-items: flex-start; gap: .65rem; font-size: .95rem; color: rgba(255, 255, 255, .94); text-shadow: 0 1px 12px rgba(10, 22, 40, .55); }
+        .hero__checks li { display: flex; align-items: flex-start; gap: .65rem; font-size: .95rem; color: rgba(255, 255, 255, .95); text-shadow: 0 1px 14px rgba(6, 14, 28, .6); }
         .tick {
             flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; margin-top: .15rem;
             background: rgba(53, 114, 212, .22); border: 1px solid rgba(91, 155, 240, .5);
@@ -494,12 +499,25 @@
 
         /* ── Footer ── */
         .site-footer { background: var(--navy-deep); color: rgba(248, 245, 240, .55); padding: 2.25rem 0 5rem; border-top: 1px solid rgba(53, 114, 212, .14); font-size: .87rem; }
-        .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: 2rem; margin-bottom: 1.5rem; }
+        .footer-grid { display: grid; grid-template-columns: 1.25fr .8fr 1.05fr 1.15fr; gap: 2rem; margin-bottom: 1.5rem; }
         .site-footer img { height: 54px; width: auto; margin-bottom: 1rem; }
         .site-footer h5 { font-size: .7rem; letter-spacing: .13em; text-transform: uppercase; color: var(--blue-light); margin-bottom: .9rem; }
         .site-footer a { color: rgba(248, 245, 240, .62); text-decoration: none; }
         .site-footer a:hover { color: var(--blue-light); }
         .site-footer li { margin-bottom: .5rem; }
+        .footer-map {
+            border: 1px solid rgba(53, 114, 212, .22); border-radius: 12px; overflow: hidden;
+            background: var(--navy-mid); line-height: 0;
+        }
+        .footer-map iframe { width: 100%; height: 215px; border: 0; display: block; filter: grayscale(.25); }
+        .footer-map__bar {
+            display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap;
+            padding: .6rem .85rem; line-height: 1.5; background: rgba(255, 255, 255, .04);
+            border-top: 1px solid rgba(53, 114, 212, .16);
+        }
+        .footer-map__bar span { font-size: .78rem; color: rgba(248, 245, 240, .6); }
+        .footer-map__bar a { font-size: .78rem; font-weight: 700; color: var(--blue-light); white-space: nowrap; }
+
         .footer-bottom { border-top: 1px solid rgba(53, 114, 212, .12); padding-top: 1.25rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: .74rem; color: rgba(248, 245, 240, .34); }
         .crisis { background: rgba(53, 114, 212, .08); border: 1px solid rgba(53, 114, 212, .2); border-radius: 10px; padding: .85rem 1rem; font-size: .78rem; margin-top: 1.25rem; color: rgba(248, 245, 240, .6); }
 
@@ -532,10 +550,10 @@
         @media (max-width: 1080px) {
             .nav { display: none; }
             .hero__grid { grid-template-columns: 1fr; }
-            /* Copy runs the full width here, so swap the side-to-side scrim for an even one. */
+            /* Copy runs full width here, so swap the side-to-side scrim for an even one. */
             .hero__bg img { opacity: .55; }
             .hero__bg::after {
-                background: linear-gradient(180deg, rgba(10, 22, 40, .84) 0%, rgba(10, 22, 40, .76) 50%, rgba(10, 22, 40, .88) 100%);
+                background: linear-gradient(180deg, rgba(10, 22, 40, .82) 0%, rgba(10, 22, 40, .72) 50%, rgba(10, 22, 40, .88) 100%);
             }
             .lead-card { max-width: 560px; }
             .grid-4 { grid-template-columns: repeat(2, 1fr); }
@@ -547,7 +565,7 @@
             .grid-3 { grid-template-columns: 1fr; }
             .steps { grid-template-columns: 1fr; gap: 2rem; }
             .step:not(:last-child)::after { display: none; }
-            .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.75rem; }
             .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 140px; }
             .quote-banner { min-height: 260px; }
             .announce .wrap { gap: .5rem 1rem; font-size: .74rem; }
@@ -561,6 +579,7 @@
             .header-phone { display: none; }
             .site-header img { height: 34px; }
             .grid-2, .grid-4, .stat-tiles { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
             .ins-grid { grid-template-columns: repeat(2, 1fr); }
             .field-row { grid-template-columns: 1fr; }
             .lead-card { padding: 1.25rem; }
@@ -650,7 +669,9 @@
         <!-- ═══ HERO ═══ -->
         <section class="hero">
             <div class="hero__bg">
-                <img src="/depression-relief-nj/assets/img/tms-session.jpg" alt="" width="1024" height="683" fetchpriority="high" />
+                <img src="/depression-relief-nj/assets/img/tms-suite-wide.jpg"
+                    alt="The TMS treatment room at Dr. Ritesh Amin's Edison, New Jersey clinic"
+                    width="1200" height="900" fetchpriority="high" />
             </div>
 
             <div class="wrap">
@@ -851,9 +872,9 @@
                         </div>
 
                         <figure class="figure" style="margin:1rem 0 0">
-                            <img src="/depression-relief-nj/assets/img/recovery-room.jpg" alt="Private recovery room at Dr. Ritesh Amin's Edison, NJ clinic"
-                                loading="lazy" width="768" height="1024" style="aspect-ratio:16/9" />
-                            <figcaption>Private treatment room &middot; Edison, NJ</figcaption>
+                            <img src="/depression-relief-nj/assets/img/quiet-room.jpg" alt="Waiting area at Dr. Ritesh Amin's Edison, NJ clinic"
+                                loading="lazy" width="740" height="1600" style="aspect-ratio:16/9;object-position:center 62%" />
+                            <figcaption>Inside the Edison, NJ clinic</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -892,8 +913,8 @@
                     <article class="card">
                         <div class="card__media">
                             <span class="card__tag card__tag--gold">Insurance Covered</span>
-                            <img src="/depression-relief-nj/assets/img/spravato-suite.png" alt="Spravato esketamine treatment suite"
-                                loading="lazy" width="640" height="640" />
+                            <img src="/depression-relief-nj/assets/img/recovery-room.jpg" alt="Private monitored recovery room at the Edison, NJ clinic"
+                                loading="lazy" width="768" height="1024" style="object-position:center 62%" />
                         </div>
                         <div class="card__body">
                             <h3>Spravato<sup>&reg;</sup></h3>
@@ -909,8 +930,8 @@
                     <article class="card">
                         <div class="card__media">
                             <span class="card__tag">Rapid Relief</span>
-                            <img src="/depression-relief-nj/assets/img/ketamine-suite.png" alt="Ketamine infusion therapy room"
-                                loading="lazy" width="640" height="640" />
+                            <img src="/depression-relief-nj/assets/img/quiet-room.jpg" alt="Quiet seating area at the Edison, NJ clinic"
+                                loading="lazy" width="740" height="1600" style="object-position:center 34%" />
                         </div>
                         <div class="card__body">
                             <h3>Ketamine Therapy</h3>
@@ -926,8 +947,8 @@
                     <article class="card">
                         <div class="card__media">
                             <span class="card__tag card__tag--gold">Personalized Care</span>
-                            <img src="/depression-relief-nj/assets/img/psychiatric-care.png" alt="Psychiatric consultation at the clinic"
-                                loading="lazy" width="640" height="640" />
+                            <img src="/depression-relief-nj/assets/img/consult-room.jpg" alt="Consultation room at the Edison, NJ clinic"
+                                loading="lazy" width="1024" height="768" />
                         </div>
                         <div class="card__body">
                             <h3>Psychiatric Care</h3>
@@ -1326,9 +1347,9 @@
                         <figcaption>Building Atrium</figcaption>
                     </figure>
                     <figure>
-                        <img src="/depression-relief-nj/assets/img/tms-session.jpg" alt="A TMS therapy session in progress"
-                            loading="lazy" width="1024" height="683" />
-                        <figcaption>TMS Session</figcaption>
+                        <img src="/depression-relief-nj/assets/img/dr-amin-tms-machine.jpg" alt="Dr. Amin with the clinic's Magstim Horizon TMS system"
+                            loading="lazy" width="1100" height="1467" style="object-position:center 32%" />
+                        <figcaption>TMS Equipment</figcaption>
                     </figure>
                 </div>
             </div>
@@ -1489,7 +1510,7 @@
 
         <!-- ═══ FINAL CTA ═══ -->
         <section class="section final-cta">
-            <img class="bg" src="/depression-relief-nj/assets/img/tms-suite-wide.jpg" alt="" loading="lazy" width="1200" height="900" />
+            <img class="bg" src="/depression-relief-nj/assets/img/clinic-atrium.jpg" alt="" loading="lazy" width="1600" height="740" />
             <div class="wrap">
                 <div class="reveal">
                     <div class="eyebrow center" style="justify-content:center">Your next step</div>
@@ -1573,6 +1594,19 @@
                         <strong style="color:rgba(248,245,240,.85)">In crisis?</strong> Call or text <strong
                             style="color:#8fc0ff">988</strong> (Suicide &amp; Crisis Lifeline) or dial 911. This page
                         is not for emergencies.
+                    </div>
+                </div>
+
+                <div>
+                    <h5>Find us</h5>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.4649038986363!2d-74.35920228816407!3d40.59756527129183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b76e5e714edd%3A0x54ca677c2f217b65!2sDr.%20Ritesh%20Amin%20-%20Psychiatrist!5e0!3m2!1sen!2sin!4v1774940619468!5m2!1sen!2sin" title="Map to Dr. Ritesh Amin, 35-37 Progress St, Suite AA5, Edison, NJ 08820"
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                        <div class="footer-map__bar">
+                            <span>35-37 Progress St, Suite AA5<br />Edison, NJ 08820</span>
+                            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Dr.+Ritesh+Amin+-+Psychiatrist,+35-37+Progress+St+suite+aa5,+Edison,+NJ+08820"
+                                target="_blank" rel="noopener">Get directions &rarr;</a>
+                        </div>
                     </div>
                 </div>
             </div>
