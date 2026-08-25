@@ -18,7 +18,7 @@
 $title      = 'Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works';
 $category   = 'TMS Therapy';
 $date       = '2026-04-15';
-$author     = '<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD';
+$author     = 'Dr. Ritesh Amin, MD';
 $hero_image = 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=80';
 $excerpt    = 'A deep dive into the science behind TMS — how magnetic pulses target specific areas of the brain, what to expect during a session, and why it is effective for treatment-resistant depression.';
 $read_time  = 7;
@@ -107,7 +107,7 @@ $content = '
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
+$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -619,7 +619,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": <?= json_encode($img_url) ?>,
   "author": {
     "@type": "Person",
-    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
+    "name": "Dr. Ritesh Amin",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {

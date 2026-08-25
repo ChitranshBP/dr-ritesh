@@ -38,7 +38,7 @@ $posts = [
         'featured'    => true,
     ],
     [
-        'title'       => 'How Much Does <a href="/blog/how-much-does-tms-cost-with-insurance.php">TMS Cost</a> With Insurance? A Complete Guide',
+        'title'       => 'How Much Does TMS Cost With Insurance? A Complete Guide',
         'date'        => '2026-05-19',
         'category'    => 'TMS Therapy',
         'excerpt'     => 'Wondering about the cost of Transcranial Magnetic Stimulation (TMS)? Understand how insurance coverage works, out-of-pocket costs, and financing options for TMS therapy.',
@@ -61,8 +61,8 @@ $posts = [
 // DO NOT EDIT BELOW THIS LINE
 // ─────────────────────────────────────────────
 
-$page_title = 'Blog — Advanced Psychiatry & TMS Therapy | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD';
-$page_desc  = 'Expert insights on TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, ketamine, depression, anxiety, and psychiatric care from <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Edison, NJ.';
+$page_title = 'Blog — Advanced Psychiatry & TMS Therapy | Dr. Ritesh Amin, MD';
+$page_desc  = 'Expert insights on TMS therapy, Spravato, ketamine, depression, anxiety, and psychiatric care from Dr. Ritesh Amin, MD — Edison, NJ.';
 $body_class = 'bg-beige-dark';
 $extra_css   = '
     .blog-hero {

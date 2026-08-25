@@ -64,7 +64,7 @@ $faqs = [
         'answer' => 'No. Because TMS is non-systemic (it only affects the targeted area of the brain), it completely avoids the common systemic side effects of SSRIs, including weight gain, sexual dysfunction, and insomnia.'
     ],
     [
-        'question' => 'What is the success rate of <a href="/psychiatry/tms-for-major-depression.php">TMS for Major Depression</a>?',
+        'question' => 'What is the success rate of TMS for Major Depression?',
         'answer' => 'Clinical studies and real-world data show that approximately 70% of patients experience significant improvement in their depressive symptoms, and many achieve full remission.'
     ],
 

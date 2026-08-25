@@ -275,7 +275,7 @@ HTML;
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
+$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -809,7 +809,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": "https://drriteshamin.com/assets/images/magstim%20device.jpg",
   "author": {
     "@type": "Person",
-    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
+    "name": "Dr. Ritesh Amin",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {
