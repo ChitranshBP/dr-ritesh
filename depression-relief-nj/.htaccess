@@ -1,0 +1,24 @@
+# ==========================================================
+#  depression-relief-nj — landing page (Hostinger / Apache)
+#  Inherits the site-wide rules in the root .htaccess.
+# ==========================================================
+
+# Serve index.html for /depression-relief-nj/
+DirectoryIndex index.html
+
+# Keep internal notes out of the public site
+<Files "README.md">
+    Require all denied
+</Files>
+
+# Long-cache the LP's own images — they are never overwritten in place
+<IfModule mod_expires.c>
+    ExpiresActive On
+    <FilesMatch "\.(jpg|jpeg|png|webp)$">
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
