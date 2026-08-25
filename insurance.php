@@ -698,7 +698,7 @@ include 'header.php';
                             <td>FDA-approved for depression; we handle PA</td>
                         </tr>
                         <tr>
-                            <td>Spravato (Esketamine)</td>
+                            <td><a href="/what-is-spravato.php">Spravato</a> (Esketamine)</td>
                             <td><span class="ins-badge covered"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/></svg> Covered</span></td>
                             <td>Yes</td>
                             <td>FDA-approved; REMS certification required</td>
@@ -861,7 +861,7 @@ include 'header.php';
                     </div>
                     <div class="ins-faq-answer">
                         <div class="ins-faq-answer-inner">
-                            Yes! Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA) can be used to pay for our services, including TMS therapy, Spravato treatments, Ketamine infusions, and standard psychiatric consultations. These are tax-advantaged ways to cover your mental health treatment costs.
+                            Yes! Health Savings Accounts (HSA) and Flexible Spending Accounts (FSA) can be used to pay for our services, including TMS therapy, <a href="/what-is-spravato.php">Spravato</a> treatments, Ketamine infusions, and standard psychiatric consultations. These are tax-advantaged ways to cover your mental health treatment costs.
                         </div>
                     </div>
                 </div>

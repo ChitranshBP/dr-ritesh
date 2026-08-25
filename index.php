@@ -201,7 +201,7 @@ include 'header.php';
         <div class="hero-right reveal delay-1">
 
             <!-- Vertical name — editorial detail -->
-            <p class="hero-name-vert">Dr. Ritesh Amin &middot; MD &middot; Psychiatrist</p>
+            <p class="hero-name-vert"><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> &middot; MD &middot; Psychiatrist</p>
         </div>
 
     </div>

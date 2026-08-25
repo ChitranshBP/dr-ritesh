@@ -14,7 +14,7 @@ $intro_title = 'A Thoughtful Approach to Psychiatric Medication';
 $intro_image = 'assets/images/medical_management_intro.png';
 $intro_paragraphs = [
     'Finding the right medication and dose is rarely a one-time event. Effective medication management is a careful, collaborative process that considers your symptoms, medical history, lifestyle, and personal goals to build a treatment plan tailored to you.',
-    'At our Edison, NJ clinic, Dr. Ritesh Amin provides evidence-based psychiatric medication management with attentive follow-up. We monitor how you respond, address side effects promptly, and make thoughtful adjustments over time so your treatment continues to work as your needs evolve.'
+    'At our Edison, NJ clinic, <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> provides evidence-based psychiatric medication management with attentive follow-up. We monitor how you respond, address side effects promptly, and make thoughtful adjustments over time so your treatment continues to work as your needs evolve.'
 ];
 
 // Key Benefits Grid

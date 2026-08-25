@@ -88,21 +88,45 @@
                 </div>
             </div>
 
-            <!-- Premium Map Container -->
-            <div class="footer-map-section mt-16 mb-12">
-                <div class="footer-map-glass">
-                    <?php 
-                    $default_map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.4649038986363!2d-74.35920228816407!3d40.59756527129183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b76e5e714edd%3A0x54ca677c2f217b65!2sDr.%20Ritesh%20Amin%20-%20Psychiatrist!5e0!3m2!1sen!2sin!4v1774940619468!5m2!1sen!2sin";
-                    $map_src = isset($custom_map_url) ? $custom_map_url : $default_map;
-                    ?>
-                    <iframe src="<?= htmlspecialchars($map_src) ?>" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Premium Maps Container -->
+            <div class="footer-maps-section mt-16 mb-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Edison Location -->
+                    <div class="footer-map-wrapper">
+                        <h4 class="text-white font-bold mb-4 text-center tracking-wide uppercase text-sm text-gold">Edison Location</h4>
+                        <div class="footer-map-glass" style="height: 300px; padding: 0.5rem; margin-bottom: 1rem;">
+                            <?php 
+                            $default_map_edison = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.4649038986363!2d-74.35920228816407!3d40.59756527129183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b76e5e714edd%3A0x54ca677c2f217b65!2sDr.%20Ritesh%20Amin%20-%20Psychiatrist!5e0!3m2!1sen!2sin!4v1774940619468!5m2!1sen!2sin";
+                            $map_src = isset($custom_map_url) ? $custom_map_url : $default_map_edison;
+                            ?>
+                            <iframe src="<?= htmlspecialchars($map_src) ?>" width="100%" height="100%" style="border:0; border-radius: 0.75rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="text-white/80 text-sm text-center leading-relaxed">
+                            <strong class="text-white block mb-1"><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> - Psychiatrist & TMS Therapy</strong>
+                            35-37 Progress St, Suite AA5<br>
+                            Edison, NJ 08820
+                        </div>
+                    </div>
+                    
+                    <!-- Kendall Park Location -->
+                    <div class="footer-map-wrapper">
+                        <h4 class="text-white font-bold mb-4 text-center tracking-wide uppercase text-sm text-gold">Kendall Park Location</h4>
+                        <div class="footer-map-glass" style="height: 300px; padding: 0.5rem; margin-bottom: 1rem;">
+                            <iframe src="https://maps.google.com/maps?q=Dr.+Ritesh+Amin+-+Neurologist+%26+TMS+Therapy,+3086+NJ-27+%2310,+Kendall+Park,+NJ+08824&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="100%" style="border:0; border-radius: 0.75rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="text-white/80 text-sm text-center leading-relaxed">
+                            <strong class="text-white block mb-1"><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> - Neurologist & TMS Therapy</strong>
+                            3086 NJ-27 #10<br>
+                            Kendall Park, NJ 08824, USA
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <!-- Bottom Footer bar with Socials -->
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; <?= date("Y"); ?> Dr. Ritesh Amin, MD. All Rights Reserved. Not acting as a substitute for medical advice.</p>
+                    <p>&copy; <?= date("Y"); ?> <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD. All Rights Reserved. Not acting as a substitute for medical advice.</p>
                 </div>
                 <div class="footer-legal-links flex flex-wrap gap-4 text-white/60 text-sm mt-4 md:mt-0">
                     <a href="/privacy-policy.php" class="hover:text-gold transition-colors">Privacy Policy</a>

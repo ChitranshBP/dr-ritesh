@@ -161,7 +161,7 @@ $content = <<<'HTML'
 
 <h2 id="why-choose-dr-amin">Why Choose Dr. Ritesh Amin for TMS in Edison, NJ?</h2>
 <p>
-    Choosing the right provider matters just as much as the treatment itself. At Dr. Ritesh Amin's practice, patients benefit from:
+    Choosing the right provider matters just as much as the treatment itself. At <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>'s practice, patients benefit from:
 </p>
 <ul>
     <li>Comprehensive mental health evaluation</li>
@@ -202,7 +202,7 @@ HTML;
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
+$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -527,9 +527,9 @@ include dirname(__DIR__) . '/header.php';
                         <span class="text-white text-xl font-bold" style="font-family:var(--font-serif);">RA</span>
                     </div>
                     <div>
-                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);">Dr. Ritesh Amin</p>
+                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);"><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a></p>
                         <p class="text-sm leading-relaxed mb-3" style="color:var(--color-text-light);">
-                            Dr. Ritesh Amin is a Board-Certified Psychiatrist specializing in TMS therapy, Spravato, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
+                            <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> is a Board-Certified Psychiatrist specializing in TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
                         </p>
                         <a href="/dr-ritesh-amin.php" class="text-xs font-semibold tracking-wide" style="color:var(--color-gold);">About Dr. Amin →</a>
                     </div>
@@ -725,7 +725,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": <?= json_encode($img_url) ?>,
   "author": {
     "@type": "Person",
-    "name": "Dr. Ritesh Amin",
+    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {

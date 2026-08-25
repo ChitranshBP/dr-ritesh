@@ -139,6 +139,10 @@ $noindex = $noindex ?? false;
                             <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
                             <span class="dd-label">Dr. Ritesh Amin<span class="dd-label-sub">MD &middot; Psychiatry &amp; TMS</span></span>
                         </a>
+                        <a href="/neurologist-kendall-park-nj/index.php">
+                            <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <span class="dd-label">Dr. Ritesh Amin<span class="dd-label-sub">MD &middot; Neurology &amp; TMS</span></span>
+                        </a>
                         <a href="/dr-nalin-ranasinghe.php">
                             <span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
                             <span class="dd-label">Dr. Nalin E. Ranasinghe<span class="dd-label-sub">MD &middot; Emergency &amp; General Medicine</span></span>
@@ -318,6 +322,7 @@ $noindex = $noindex ?? false;
                     </button>
                     <div class="accordion-panel">
                         <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>
+                        <a href="/neurologist-kendall-park-nj/index.php">Dr. Ritesh Amin, Neurology &amp; TMS</a>
                         <a href="/dr-nalin-ranasinghe.php">Dr. Nalin E. Ranasinghe</a>
                     </div>
                 </div>

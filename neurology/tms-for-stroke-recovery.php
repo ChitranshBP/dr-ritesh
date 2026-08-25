@@ -92,7 +92,7 @@ include __DIR__ . '/../header.php';
             <div class="bi-stat"><div class="bi-stat-num">795K</div><div class="bi-stat-label">Strokes Per Year in the US</div></div>
             <div class="bi-stat"><div class="bi-stat-num">87%</div><div class="bi-stat-label">Are Ischemic Strokes</div></div>
             <div class="bi-stat"><div class="bi-stat-num">FDA</div><div class="bi-stat-label">Cleared Technology</div></div>
-            <div class="bi-stat"><div class="bi-stat-num">0</div><div class="bi-stat-label">Systemic Side Effects</div></div>
+            <div class="bi-stat"><div class="bi-stat-num"></div><div class="bi-stat-label">Systemic Side Effects</div></div>
         </div>
     </div>
 </section>

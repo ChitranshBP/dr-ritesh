@@ -26,7 +26,7 @@ include __DIR__ . '/../_locations-tab.php';
                 </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
-Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy for patients in Kendall Park, NJ seeking effective treatment for depression, anxiety, OCD, PTSD, and a range of neurological conditions. Our personalized, non-invasive approach helps stimulate areas of the brain associated with mood regulation, offering symptom relief without surgery, anesthesia, or systemic medication side effects.
+<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> provides FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy for patients in Kendall Park, NJ seeking effective treatment for depression, anxiety, OCD, PTSD, and a range of neurological conditions. Our personalized, non-invasive approach helps stimulate areas of the brain associated with mood regulation, offering symptom relief without surgery, anesthesia, or systemic medication side effects.
 
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
@@ -97,7 +97,7 @@ Dr. Ritesh Amin provides FDA-cleared Transcranial Magnetic Stimulation (TMS) the
                     </div>
                     <h3>Other Treatments</h3>
                     <ul class="mt-3 space-y-2 text-sm text-gray-600">
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Spravato&reg; (Esketamine) Therapy</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><a href="/what-is-spravato.php">Spravato</a>&reg; (Esketamine) Therapy</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Ketamine Infusion Therapy</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Medication Management</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Pharmacogenetic Testing</li>

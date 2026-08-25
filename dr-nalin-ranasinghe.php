@@ -371,7 +371,7 @@ include 'header.php';
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span>
-                                <span class="font-medium text-gray-700">Spravato &amp; Ketamine Therapy</span>
+                                <span class="font-medium text-gray-700"><a href="/what-is-spravato.php">Spravato</a> &amp; <a href="/what-is-ketamine-therapy.php">Ketamine Therapy</a></span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span>

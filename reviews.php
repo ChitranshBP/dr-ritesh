@@ -490,7 +490,7 @@ include 'header.php';
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
-                    Hear from patients who have transformed their lives through TMS therapy, Spravato, and compassionate psychiatric care with Dr. Amin.
+                    Hear from patients who have transformed their lives through TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, and compassionate psychiatric care with Dr. Amin.
                 </p>
             </div>
         </div>
@@ -814,7 +814,7 @@ include 'header.php';
                 <div class="relative z-10">
                     <span class="block font-sans text-sm font-semibold uppercase tracking-[2px] text-gold-light mb-3">Your Story Matters</span>
                     <h2 class="text-3xl md:text-4xl font-serif text-white mb-4 leading-tight">Ready to Start Your Journey?</h2>
-                    <p class="text-white/60 text-base leading-relaxed max-w-lg mx-auto mb-8">If you're ready to explore TMS therapy, Spravato, or Ketamine treatments, we'd love to hear from you. Every patient's path to wellness begins with a single step.</p>
+                    <p class="text-white/60 text-base leading-relaxed max-w-lg mx-auto mb-8">If you're ready to explore TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, or Ketamine treatments, we'd love to hear from you. Every patient's path to wellness begins with a single step.</p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a href="/contact.php" class="btn btn-primary py-4 px-8 text-base shadow-[0_8px_24px_rgba(37,111,168,0.4)]">
                             Schedule a Consultation

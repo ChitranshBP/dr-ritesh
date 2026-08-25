@@ -45,7 +45,7 @@ $total = count($locations);
                 <h1 class="text-4xl lg:text-5xl font-serif text-white leading-tight mb-4">Service Locations</h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
-                    Dr. Ritesh Amin provides advanced TMS therapy to patients across <?php echo $total; ?> communities in central New Jersey. Select a location below to learn more.
+                    <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> provides advanced TMS therapy to patients across <?php echo $total; ?> communities in central New Jersey. Select a location below to learn more.
                 </p>
             </div>
         </div>

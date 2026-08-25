@@ -227,7 +227,7 @@ include 'header.php';
                 </h1>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed">
-                    Whether you're exploring TMS therapy, Spravato, or Ketamine infusions — or simply seeking compassionate psychiatric care — we're here to answer your questions and help you take the first step.
+                    Whether you're exploring TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, or Ketamine infusions — or simply seeking compassionate psychiatric care — we're here to answer your questions and help you take the first step.
                 </p>
             </div>
         </div>
@@ -294,7 +294,7 @@ include 'header.php';
                                     <option value="">— Select a service —</option>
                                     <option value="tms-psychiatry">TMS Therapy (Psychiatry)</option>
                                     <option value="tms-neurology">TMS Therapy (Neurology)</option>
-                                    <option value="spravato">Spravato® (Esketamine)</option>
+                                    <option value="spravato"><a href="/what-is-spravato.php">Spravato</a>® (Esketamine)</option>
                                     <option value="ketamine">Ketamine IV Infusion</option>
                                     <option value="medication-management">Medication Management</option>
                                     <option value="nad-plus">NAD+ Therapy</option>
@@ -517,7 +517,7 @@ include 'header.php';
                                 <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
                             </div>
                             <div class="accordion-body">
-                                <p>No referral is needed for general psychiatric consultations. However, some insurance plans may require a referral for TMS therapy or Spravato. Our team will help verify this during the scheduling process.</p>
+                                <p>No referral is needed for general psychiatric consultations. However, some insurance plans may require a referral for TMS therapy or <a href="/what-is-spravato.php">Spravato</a>. Our team will help verify this during the scheduling process.</p>
                             </div>
                         </div>
 
@@ -547,7 +547,7 @@ include 'header.php';
                                 <div class="accordion-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
                             </div>
                             <div class="accordion-body">
-                                <p>Yes, we offer telehealth consultations for general psychiatric evaluations and medication management follow-ups. In-person treatments like TMS, Spravato, and Ketamine must be administered at our Edison clinic.</p>
+                                <p>Yes, we offer telehealth consultations for general psychiatric evaluations and medication management follow-ups. In-person treatments like TMS, <a href="/what-is-spravato.php">Spravato</a>, and Ketamine must be administered at our Edison clinic.</p>
                             </div>
                         </div>
                     </div>

@@ -487,7 +487,7 @@ include 'header.php';
                             </div>
                             <div class="faq-accordion-answer">
                                 <div class="faq-accordion-answer-inner">
-                                    No referral is needed for general psychiatric consultations. However, some insurance plans may require a referral for TMS therapy or Spravato treatments. Our team will help you verify this during the scheduling process — just <a href="/contact.php">contact us</a> and we'll take care of the rest.
+                                    No referral is needed for general psychiatric consultations. However, some insurance plans may require a referral for TMS therapy or <a href="/what-is-spravato.php">Spravato</a> treatments. Our team will help you verify this during the scheduling process — just <a href="/contact.php">contact us</a> and we'll take care of the rest.
                                 </div>
                             </div>
                         </div>
@@ -523,7 +523,7 @@ include 'header.php';
                             </div>
                             <div class="faq-accordion-answer">
                                 <div class="faq-accordion-answer-inner">
-                                    Yes, we offer telehealth consultations for general psychiatric evaluations and medication management follow-ups. In-person treatments like TMS, Spravato, and Ketamine must be administered at our Edison, NJ clinic for safety and supervision.
+                                    Yes, we offer telehealth consultations for general psychiatric evaluations and medication management follow-ups. In-person treatments like TMS, <a href="/what-is-spravato.php">Spravato</a>, and Ketamine must be administered at our Edison, NJ clinic for safety and supervision.
                                 </div>
                             </div>
                         </div>
@@ -645,7 +645,7 @@ include 'header.php';
                             </div>
                             <div class="faq-accordion-answer">
                                 <div class="faq-accordion-answer-inner">
-                                    Spravato (esketamine) is FDA-approved and covered by most major insurance plans for treatment-resistant depression. Our team handles the entire prior authorization process. We'll verify your benefits and explain any out-of-pocket costs before starting treatment.
+                                    <a href="/what-is-spravato.php">Spravato</a> (esketamine) is FDA-approved and covered by most major insurance plans for treatment-resistant depression. Our team handles the entire prior authorization process. We'll verify your benefits and explain any out-of-pocket costs before starting treatment.
                                 </div>
                             </div>
                         </div>
@@ -694,7 +694,7 @@ include 'header.php';
                             </div>
                             <div class="faq-accordion-answer">
                                 <div class="faq-accordion-answer-inner">
-                                    Spravato (esketamine) is an FDA-approved nasal spray for treatment-resistant depression. It's self-administered under medical supervision in our clinic. Each session lasts about 2 hours (including a mandatory 2-hour monitoring period). Treatment typically starts with twice-weekly visits, then transitions to weekly and eventually bi-weekly maintenance.
+                                    <a href="/what-is-spravato.php">Spravato</a> (esketamine) is an FDA-approved nasal spray for treatment-resistant depression. It's self-administered under medical supervision in our clinic. Each session lasts about 2 hours (including a mandatory 2-hour monitoring period). Treatment typically starts with twice-weekly visits, then transitions to weekly and eventually bi-weekly maintenance.
                                 </div>
                             </div>
                         </div>
@@ -718,7 +718,7 @@ include 'header.php';
                             </div>
                             <div class="faq-accordion-answer">
                                 <div class="faq-accordion-answer-inner">
-                                    During your initial consultation, Dr. Amin conducts a thorough evaluation of your symptoms, medical history, previous treatments, and personal goals. He takes a whole-person approach, considering all factors to recommend the most effective treatment pathway — whether that's TMS, Spravato, Ketamine, medication management, or a combination.
+                                    During your initial consultation, Dr. Amin conducts a thorough evaluation of your symptoms, medical history, previous treatments, and personal goals. He takes a whole-person approach, considering all factors to recommend the most effective treatment pathway — whether that's TMS, <a href="/what-is-spravato.php">Spravato</a>, Ketamine, medication management, or a combination.
                                 </div>
                             </div>
                         </div>
@@ -779,7 +779,7 @@ include 'header.php';
                             </div>
                             <div class="faq-accordion-answer">
                                 <div class="faq-accordion-answer-inner">
-                                    When administered in a controlled clinical setting with proper medical supervision, ketamine therapy is considered safe. During infusion, you may experience temporary dissociation, dizziness, or nausea, which resolve shortly after the session. Our team monitors your vital signs throughout the entire treatment to ensure your safety and comfort.
+                                    When administered in a controlled clinical setting with proper medical supervision, <a href="/what-is-ketamine-therapy.php">ketamine therapy</a> is considered safe. During infusion, you may experience temporary dissociation, dizziness, or nausea, which resolve shortly after the session. Our team monitors your vital signs throughout the entire treatment to ensure your safety and comfort.
                                 </div>
                             </div>
                         </div>

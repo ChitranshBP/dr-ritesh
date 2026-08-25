@@ -98,7 +98,7 @@ include __DIR__ . '/../header.php';
             <div class="bi-stats-row reveal">
                 <div class="bi-stat"><div class="bi-stat-num">Bio</div><div class="bi-stat-label">Non-chemical Care</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">Targeted</div><div class="bi-stat-label">Right-side Protocols</div></div>
-                <div class="bi-stat"><div class="bi-stat-num">0</div><div class="bi-stat-label">Addictive properties</div></div>
+                <div class="bi-stat"><div class="bi-stat-num"></div><div class="bi-stat-label">Addictive properties</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">Outpt.</div><div class="bi-stat-label">Safe & Comfortable</div></div>
             </div>
         </div>

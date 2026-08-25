@@ -99,7 +99,7 @@ include __DIR__ . '/../header.php';
                 <div class="bi-stat"><div class="bi-stat-num">Non-Inv</div><div class="bi-stat-label">Non-Invasive Therapy</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">CNS</div><div class="bi-stat-label">Central Nervous System</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">Vasc</div><div class="bi-stat-label">Vascular Symptom Relief</div></div>
-                <div class="bi-stat"><div class="bi-stat-num">0</div><div class="bi-stat-label">Systemic Side Effects</div></div>
+                <div class="bi-stat"><div class="bi-stat-num"></div><div class="bi-stat-label">Systemic Side Effects</div></div>
             </div>
         </div>
     </section>

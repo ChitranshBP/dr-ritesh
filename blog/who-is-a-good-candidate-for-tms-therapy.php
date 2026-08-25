@@ -143,7 +143,7 @@ $content = <<<'HTML'
 
 <h2 id="evaluation-process">The TMS Candidate Evaluation Process</h2>
 <p>
-    At Dr. Ritesh Amin's Edison, NJ practice, every potential TMS candidate undergoes a comprehensive evaluation to ensure safety and maximize treatment effectiveness.
+    At <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>'s Edison, NJ practice, every potential TMS candidate undergoes a comprehensive evaluation to ensure safety and maximize treatment effectiveness.
 </p>
 
 <h3 id="step-1-consultation">Step 1: Initial Consultation</h3>
@@ -275,7 +275,7 @@ HTML;
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
+$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -600,9 +600,9 @@ include dirname(__DIR__) . '/header.php';
                         <span class="text-white text-xl font-bold" style="font-family:var(--font-serif);">RA</span>
                     </div>
                     <div>
-                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);">Dr. Ritesh Amin</p>
+                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);"><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a></p>
                         <p class="text-sm leading-relaxed mb-3" style="color:var(--color-text-light);">
-                            Dr. Ritesh Amin is a Board-Certified Psychiatrist specializing in TMS therapy, Spravato, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
+                            <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> is a Board-Certified Psychiatrist specializing in TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
                         </p>
                         <a href="/dr-ritesh-amin.php" class="text-xs font-semibold tracking-wide" style="color:var(--color-gold);">About Dr. Amin →</a>
                     </div>
@@ -709,7 +709,7 @@ include dirname(__DIR__) . '/header.php';
     <div class="max-w-3xl mx-auto text-center">
         <div class="post-rule mx-auto mb-6"></div>
         <h2 class="font-serif text-3xl font-bold text-white mb-4" style="font-family:var(--font-serif);">Is TMS Right for You?</h2>
-        <p class="mb-8" style="color:rgba(255,255,255,.5);">Take the first step toward relief. Schedule a consultation with Dr. Ritesh Amin to determine if you are a candidate for TMS therapy.</p>
+        <p class="mb-8" style="color:rgba(255,255,255,.5);">Take the first step toward relief. Schedule a consultation with <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> to determine if you are a candidate for TMS therapy.</p>
         <a href="/contact.php" class="inline-flex px-8 py-3.5 rounded-full text-sm font-semibold tracking-wide text-white transition-all hover:-translate-y-0.5 hover:shadow-lg"
            style="background:var(--color-gold);font-family:var(--font-sans);">
             Request a Consultation
@@ -809,7 +809,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": "https://drriteshamin.com/assets/images/magstim%20device.jpg",
   "author": {
     "@type": "Person",
-    "name": "Dr. Ritesh Amin",
+    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {

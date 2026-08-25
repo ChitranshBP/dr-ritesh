@@ -61,7 +61,7 @@ $content = '
 </p>
 <h3 id="tms-for-ocd">Transcranial Magnetic Stimulation (TMS)</h3>
 <p>
-    In 2018, the FDA cleared <strong><a href="/psychiatry-tms-therapy.php">Deep Transcranial Magnetic Stimulation (dTMS)</a></strong> for the treatment of OCD. While <a href="/tms-for-depression.php">traditional TMS for depression</a> targets the dorsolateral prefrontal cortex, TMS for OCD targets deeper structures, specifically the anterior cingulate cortex (ACC) and the medial prefrontal cortex (mPFC). These areas are heavily implicated in the hyperactive "error-detection" circuitry characteristic of OCD.
+    In 2018, the FDA cleared <strong><a href="/psychiatry-tms-therapy.php">Deep Transcranial Magnetic Stimulation (dTMS)</a></strong> for the treatment of OCD. While <a href="/tms-for-depression.php">traditional TMS for depression</a> targets the dorsolateral prefrontal cortex, <a href="/psychiatry/tms-for-ocd.php">TMS for OCD</a> targets deeper structures, specifically the anterior cingulate cortex (ACC) and the medial prefrontal cortex (mPFC). These areas are heavily implicated in the hyperactive "error-detection" circuitry characteristic of OCD.
 </p>
 <p>
     By delivering targeted magnetic pulses, TMS helps to normalize the activity in these circuits, breaking the intense urge to perform compulsions and reducing the distress associated with obsessions. TMS is non-invasive, does not involve the systemic side effects of medication, and has shown remarkable efficacy even in patients who have suffered from severe OCD for decades.
@@ -87,7 +87,7 @@ $content = '
     OCD does not have to be a life sentence of worsening anxiety. Regardless of your age or how long you have struggled with the disorder, effective, evidence-based treatments are available. The cycle of obsessions and compulsions can be broken.
 </p>
 <p>
-    If you are dealing with chronic, treatment-resistant OCD and want to explore advanced options like TMS therapy, <a href="/contact.php">schedule a consultation</a> with Dr. Ritesh Amin. Our clinic specializes in comprehensive, personalized psychiatric care to help you regain control and improve your quality of life.
+    If you are dealing with chronic, treatment-resistant OCD and want to explore advanced options like TMS therapy, <a href="/contact.php">schedule a consultation</a> with <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>. Our clinic specializes in comprehensive, personalized psychiatric care to help you regain control and improve your quality of life.
 </p>
 ';
 
@@ -96,7 +96,7 @@ $content = '
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
+$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -423,7 +423,7 @@ include dirname(__DIR__) . '/header.php';
                     <div>
                         <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);"><?= htmlspecialchars($author) ?></p>
                         <p class="text-sm leading-relaxed mb-3" style="color:var(--color-text-light);">
-                            Dr. Ritesh Amin is a Board-Certified Psychiatrist specializing in TMS therapy, Spravato, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
+                            <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> is a Board-Certified Psychiatrist specializing in TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
                         </p>
                         <a href="/dr-ritesh-amin.php" class="text-xs font-semibold tracking-wide" style="color:var(--color-gold);">About Dr. Amin →</a>
                     </div>
@@ -597,7 +597,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": <?= json_encode($img_url) ?>,
   "author": {
     "@type": "Person",
-    "name": "Dr. Ritesh Amin",
+    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {

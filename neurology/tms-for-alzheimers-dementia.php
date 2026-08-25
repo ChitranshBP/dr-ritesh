@@ -99,7 +99,7 @@ include __DIR__ . '/../header.php';
                 <div class="bi-stat"><div class="bi-stat-num">Non-OP</div><div class="bi-stat-label">Non-Invasive Protocol</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">MCI</div><div class="bi-stat-label">Targets Early Stages</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">DMN</div><div class="bi-stat-label">Network Modulation</div></div>
-                <div class="bi-stat"><div class="bi-stat-num">0</div><div class="bi-stat-label">Systemic Side Effects</div></div>
+                <div class="bi-stat"><div class="bi-stat-num"></div><div class="bi-stat-label">Systemic Side Effects</div></div>
             </div>
         </div>
     </section>

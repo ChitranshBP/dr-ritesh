@@ -253,7 +253,7 @@ include 'header.php';
                     </ol>
                 </div>
 
-                <p>These Terms of Service ("Terms") govern your use of the website operated by Dr. Ritesh Amin, MD ("we," "our," or "us"), located at drriteshamin.com, and your engagement with our medical services. By accessing our website or using our services, you agree to be bound by these Terms.</p>
+                <p>These Terms of Service ("Terms") govern your use of the website operated by <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD ("we," "our," or "us"), located at drriteshamin.com, and your engagement with our medical services. By accessing our website or using our services, you agree to be bound by these Terms.</p>
 
                 <!-- Section 1 -->
                 <div class="legal-section" id="tos-1">
@@ -274,7 +274,7 @@ include 'header.php';
                     <ul>
                         <li>The content on this site does not establish a doctor-patient relationship</li>
                         <li>Treatment outcomes described on this website are not guaranteed and may vary by individual</li>
-                        <li>Information about TMS therapy, Spravato, Ketamine, and other treatments is provided for educational purposes only</li>
+                        <li>Information about TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, Ketamine, and other treatments is provided for educational purposes only</li>
                         <li>In case of a medical emergency, call 911 or visit your nearest emergency room immediately</li>
                     </ul>
                 </div>
@@ -307,7 +307,7 @@ include 'header.php';
                         <li><strong>No-Shows:</strong> Patients who do not show up for their scheduled appointment without prior notice may be charged a no-show fee</li>
                         <li><strong>Arrival Time:</strong> Please arrive 15 minutes early for your first appointment to complete necessary paperwork</li>
                     </ul>
-                    <p>Specific policies regarding TMS therapy sessions, Spravato treatments, and Ketamine infusions will be discussed during your initial consultation and provided in writing.</p>
+                    <p>Specific policies regarding TMS therapy sessions, <a href="/what-is-spravato.php">Spravato</a> treatments, and Ketamine infusions will be discussed during your initial consultation and provided in writing.</p>
                 </div>
 
                 <!-- Section 5 -->
@@ -329,10 +329,10 @@ include 'header.php';
                 <div class="legal-section" id="tos-6">
                     <span class="legal-section-num">06</span>
                     <h2>Intellectual Property</h2>
-                    <p>All content on this website — including text, graphics, images, logos, icons, photographs, videos, and software — is the property of Dr. Ritesh Amin, MD, or its content suppliers and is protected by United States and international copyright, trademark, and intellectual property laws.</p>
+                    <p>All content on this website — including text, graphics, images, logos, icons, photographs, videos, and software — is the property of <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD, or its content suppliers and is protected by United States and international copyright, trademark, and intellectual property laws.</p>
                     <ul>
                         <li>You may not reproduce, distribute, modify, or create derivative works from any content on this site without our express written permission</li>
-                        <li>The "Dr. Ritesh Amin" name, logo, and associated branding are trademarks of our practice</li>
+                        <li>The "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>" name, logo, and associated branding are trademarks of our practice</li>
                         <li>Limited personal, non-commercial use of our website content is permitted for educational purposes</li>
                     </ul>
                 </div>
@@ -380,7 +380,7 @@ include 'header.php';
                     <h2>Contact Information</h2>
                     <p>If you have any questions about these Terms of Service, please contact us:</p>
                     <div class="legal-highlight">
-                        <p><strong>Dr. Ritesh Amin, MD</strong><br>
+                        <p><strong><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD</strong><br>
                         Edison, New Jersey<br>
                         Phone: <a href="tel:+17323791797">(732) 379-1797</a><br>
                         Email: <a href="mailto:psychiatrycare@gmail.com">psychiatrycare@gmail.com</a><br>

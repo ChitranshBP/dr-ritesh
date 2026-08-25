@@ -99,7 +99,7 @@ include __DIR__ . '/../header.php';
                 <div class="bi-stat"><div class="bi-stat-num">2+</div><div class="bi-stat-label">Meds Failed</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">FDA</div><div class="bi-stat-label">Cleared for TRD</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">30%</div><div class="bi-stat-label">Of MDD is TRD</div></div>
-                <div class="bi-stat"><div class="bi-stat-num">0</div><div class="bi-stat-label">Systemic Side Effects</div></div>
+                <div class="bi-stat"><div class="bi-stat-num"></div><div class="bi-stat-label">Systemic Side Effects</div></div>
             </div>
         </div>
     </section>
@@ -188,7 +188,7 @@ include __DIR__ . '/../header.php';
                     <div class="bi-card">
                         <div class="bi-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
                         <h4>Spravato Synergy</h4>
-                        <p>As an interventional psychiatrist, Dr. Amin can combine TMS with Spravato (Esketamine) to aggressively treat rigid TRD.</p>
+                        <p>As an interventional psychiatrist, Dr. Amin can combine TMS with <a href="/what-is-spravato.php">Spravato</a> (Esketamine) to aggressively treat rigid TRD.</p>
                     </div>
                 </div>
             </div>
@@ -245,7 +245,7 @@ include __DIR__ . '/../header.php';
                     <h2 class="text-[2rem] md:text-[2.5rem] leading-tight font-serif font-bold mb-6 text-white">Meet Dr. Ritesh Amin, MD</h2>
                     <h3 class="text-xl text-[#c1d9f8] mb-8 font-light border-b border-white/10 pb-6">Board Certified Psychiatrist</h3>
                     <p class="text-lg text-white/80 leading-relaxed mb-6">
-                        Having witnessed countless patients lose hope after cycling through dozens of medications, Dr. Amin specializes specifically in Treatment-Resistant Depression. He operates as an expert in Interventional Psychiatry—using advanced tools like TMS, Ketamine, and Spravato to aggressively and successfully manage diseases that others have given up on.
+                        Having witnessed countless patients lose hope after cycling through dozens of medications, Dr. Amin specializes specifically in Treatment-Resistant Depression. He operates as an expert in Interventional Psychiatry—using advanced tools like TMS, Ketamine, and <a href="/what-is-spravato.php">Spravato</a> to aggressively and successfully manage diseases that others have given up on.
                     </p>
                     <a href="/dr-ritesh-amin.php" class="inline-flex items-center text-gold font-semibold hover:text-white transition-colors gap-2">
                         Read Full Biography <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -313,7 +313,7 @@ include __DIR__ . '/../header.php';
                     </button>
                     <div class="bi-faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out opacity-0">
                         <div class="p-6 pt-0 text-gray-600 leading-relaxed">
-                            Yes, in severe cases of TRD, Dr. Amin may utilize both modalities. TMS builds long-term neural pathways, while Spravato (esketamine) can provide rapid, acute relief from severe depressive symptoms.
+                            Yes, in severe cases of TRD, Dr. Amin may utilize both modalities. TMS builds long-term neural pathways, while <a href="/what-is-spravato.php">Spravato</a> (esketamine) can provide rapid, acute relief from severe depressive symptoms.
                         </div>
                     </div>
                 </div>
@@ -338,7 +338,7 @@ include __DIR__ . '/../header.php';
         <div class="container mx-auto px-4 max-w-4xl text-center reveal relative z-10">
             <span class="block text-sm font-semibold tracking-widest text-gold uppercase mb-3">Don't Accept Depression As Normal</span>
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Find Your Breakthrough</h2>
-            <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">It's time to try a treatment that works differently. Contact Dr. Ritesh Amin to discover if TMS is the right path forward for your TRD.</p>
+            <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">It's time to try a treatment that works differently. Contact <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> to discover if TMS is the right path forward for your TRD.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
             <p class="text-sm text-white/50 mt-6">Also learn about <a href="/psychiatry/tms-for-ocd.php" class="underline hover:text-white">TMS for OCD</a> and <a href="/psychiatry/tms-for-bipolar-depression.php" class="underline hover:text-white">TMS for Bipolar Depression</a>.
         </div>

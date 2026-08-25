@@ -18,7 +18,7 @@
 $title      = 'Understanding TMS Therapy: How Transcranial Magnetic Stimulation Works';
 $category   = 'TMS Therapy';
 $date       = '2026-04-15';
-$author     = 'Dr. Ritesh Amin, MD';
+$author     = '<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD';
 $hero_image = 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1400&q=80';
 $excerpt    = 'A deep dive into the science behind TMS — how magnetic pulses target specific areas of the brain, what to expect during a session, and why it is effective for treatment-resistant depression.';
 $read_time  = 7;
@@ -98,7 +98,7 @@ $content = '
     If you have tried one or more antidepressants without adequate relief, or if the side effects have made medication impractical, TMS deserves serious consideration. It is one of the most scientifically validated non-pharmacological treatments in psychiatry — with decades of research, FDA clearances, and a safety record that spans millions of treatment sessions worldwide.
 </p>
 <p>
-    <a href="/contact">Schedule a consultation</a> with Dr. Ritesh Amin to learn whether TMS is appropriate for your clinical situation. We will review your history, explain the options, and build a personalized treatment plan around your goals.
+    <a href="/contact">Schedule a consultation</a> with <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> to learn whether TMS is appropriate for your clinical situation. We will review your history, explain the options, and build a personalized treatment plan around your goals.
 </p>
 ';
 
@@ -107,7 +107,7 @@ $content = '
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
+$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -434,7 +434,7 @@ include dirname(__DIR__) . '/header.php';
                     <div>
                         <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);"><?= htmlspecialchars($author) ?></p>
                         <p class="text-sm leading-relaxed mb-3" style="color:var(--color-text-light);">
-                            Dr. Ritesh Amin is a Board-Certified Psychiatrist specializing in TMS therapy, Spravato, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
+                            <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> is a Board-Certified Psychiatrist specializing in TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
                         </p>
                         <a href="/dr-ritesh-amin" class="text-xs font-semibold tracking-wide" style="color:var(--color-gold);">About Dr. Amin →</a>
                     </div>
@@ -619,7 +619,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": <?= json_encode($img_url) ?>,
   "author": {
     "@type": "Person",
-    "name": "Dr. Ritesh Amin",
+    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {

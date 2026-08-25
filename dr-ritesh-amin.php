@@ -1,6 +1,6 @@
 <?php
-$page_title = 'Dr. Ritesh Amin | Advanced TMS Therapy in NJ';
-$page_desc = 'Dr. Ritesh Amin is a Board Certified Psychiatrist offering FDA-Approved TMS Therapy for Depression and Mental Wellness in New Jersey.';
+$page_title = 'Best Psychiatrist in Edison, NJ | Dr. Ritesh Amin';
+$page_desc = 'Dr. Ritesh Amin is the Best Psychiatrist in Edison, NJ, offering FDA-Approved TMS Therapy and interventional treatments for Depression and Mental Wellness.';
 $body_class = 'bg-beige';
 $extra_css = '
         /* Hero Banner Styles */
@@ -114,8 +114,8 @@ include 'header.php';
                     <span class="w-8 h-[2px] bg-gold block"></span>
                     Meet Dr. Amin
                 </span>
-                <h1 class="font-serif text-5xl md:text-6xl font-bold mb-4 text-white">Dr. Ritesh Amin, MD</h1>
-                <h2 class="text-xl md:text-2xl text-[#c1d9f8] font-light mb-8">Specialist in Treatment-Resistant Depression &amp; Neuromodulation</h2>
+                <h1 class="font-serif text-5xl md:text-6xl font-bold mb-4 text-white">Dr. Ritesh Amin, MD - Best Psychiatrist in Edison, NJ</h1>
+                <h2 class="text-xl md:text-2xl text-[#c1d9f8] font-light mb-8">Recognized as the Best Psychiatrist in Edison, NJ for Treatment-Resistant Depression</h2>
                 
                 <p class="text-lg text-white/80 leading-relaxed mb-8 max-w-2xl">
                     With over 15 years of clinical excellence, Dr. Amin is dedicated to utilizing the most advanced mental health technologies to help patients achieve deep, lasting remission from complex emotional and neurological conditions.
@@ -123,7 +123,7 @@ include 'header.php';
 
                 <div class="flex flex-wrap gap-4 mb-10">
                     <span class="bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">TMS Therapy</span>
-                    <span class="bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">Spravato</span>
+                    <span class="bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm"><a href="/what-is-spravato.php">Spravato</a></span>
                     <span class="bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">Ketamine Infusions</span>
                     <span class="bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">Complex Diagnostics</span>
                 </div>
@@ -147,10 +147,10 @@ include 'header.php';
                         Dr. Ritesh Amin believes that true mental wellness requires more than just masking symptoms—it requires addressing the root neurological and emotional causes of distress.
                     </p>
                     <p class="mb-6">
-                        As a Board-Certified Psychiatrist in New Jersey, Dr. Amin has dedicated his career to resolving cases that standard medical approaches have failed to improve. Recognizing early on that traditional oral antidepressants have limitations and often unbearable side effects, he pivoted his practice to the forefront of psychiatric innovation: Neuromodulation and interventional therapies.
+                        Widely regarded as the best psychiatrist in Edison, NJ, Dr. Amin has dedicated his career to resolving cases that standard medical approaches have failed to improve. Recognizing early on that traditional oral antidepressants have limitations and often unbearable side effects, he pivoted his practice to the forefront of psychiatric innovation: Neuromodulation and interventional therapies.
                     </p>
                     <p class="mb-6">
-                        Today, his clinic stands as a premier center for FDA-approved Transcranial Magnetic Stimulation (TMS), Spravato (Esketamine), and Ketamine Infusion therapies. By mapping treatment protocols specifically to an individual's brain topology and personal history, Dr. Amin dramatically increases the probability of remission for Treatment-Resistant Depression (TRD), severe Anxiety, PTSD, OCD, and a spectrum of neurological conditions.
+                        Today, his clinic stands as a premier center for FDA-approved Transcranial Magnetic Stimulation (TMS), <a href="/what-is-spravato.php">Spravato</a> (Esketamine), and Ketamine Infusion therapies. By mapping treatment protocols specifically to an individual's brain topology and personal history, Dr. Amin dramatically increases the probability of remission for Treatment-Resistant Depression (TRD), severe Anxiety, PTSD, OCD, and a spectrum of neurological conditions.
                     </p>
                     <p>
                         Beyond his technical expertise, patients recognize Dr. Amin for his deeply empathetic, unhurried approach. He views his relationship with patients as a true partnership—taking the time to understand their life circumstances, explaining complex medical concepts clearly, and fostering a safe, luxurious environment conducive to healing. 
@@ -243,7 +243,7 @@ include 'header.php';
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span>
-                                <span class="font-medium text-gray-700">Spravato (Esketamine) Therapy</span>
+                                <span class="font-medium text-gray-700"><a href="/what-is-spravato.php">Spravato</a> (Esketamine) Therapy</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span>

@@ -352,7 +352,7 @@
         // Info bar text
         ctx.fillStyle = '#ffffff';
         ctx.font = 'bold 15px Arial, sans-serif';
-        ctx.fillText('Dr. Ritesh Amin, MD', 625, 507);
+        ctx.fillText('<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD', 625, 507);
 
         ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
         ctx.font = '15px Arial, sans-serif';

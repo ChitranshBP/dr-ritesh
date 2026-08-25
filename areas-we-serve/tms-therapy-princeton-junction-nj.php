@@ -26,7 +26,7 @@ include __DIR__ . '/../_locations-tab.php';
                 </h2>
                 <div class="w-16 h-1 bg-gold mb-8 mx-auto"></div>
                 <p class="text-lg text-white/75 max-w-xl mx-auto leading-relaxed mb-8">
-                    Residents of Princeton Junction, NJ have access to advanced, FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy with Dr. Ritesh Amin. Conveniently located near Princeton Junction, our practice provides personalized, non-invasive, medication-free treatment for depression, anxiety, OCD, and select neurological conditions. Our goal is to help patients achieve lasting symptom relief and improve their overall quality of life.
+                    Residents of Princeton Junction, NJ have access to advanced, FDA-cleared Transcranial Magnetic Stimulation (TMS) therapy with <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>. Conveniently located near Princeton Junction, our practice provides personalized, non-invasive, medication-free treatment for depression, anxiety, OCD, and select neurological conditions. Our goal is to help patients achieve lasting symptom relief and improve their overall quality of life.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4 mb-8">
                     <a href="/contact.php" class="btn btn-primary shadow-lg shadow-gold/20">Book a Consultation</a>
@@ -95,7 +95,7 @@ include __DIR__ . '/../_locations-tab.php';
                     </div>
                     <h3>Other Treatments</h3>
                     <ul class="mt-3 space-y-2 text-sm text-gray-600">
-                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Spravato&reg; (Esketamine) Therapy</li>
+                        <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><a href="/what-is-spravato.php">Spravato</a>&reg; (Esketamine) Therapy</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Ketamine Infusion Therapy</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Medication Management</li>
                         <li class="flex items-start gap-2"><svg class="w-4 h-4 text-gold mt-0.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Pharmacogenetic Testing</li>

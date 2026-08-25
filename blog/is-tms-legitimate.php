@@ -105,7 +105,7 @@ $content = <<<'HTML'
 
 <h2 id="insurance-coverage">Insurance Coverage as a Marker of Medical Legitimacy</h2>
 <p>
-    In the United States, health insurance companies generally do not cover experimental or unproven therapies. The fact that almost all major commercial plans, including Aetna, Cigna, Blue Cross Blue Shield, UnitedHealthcare, Medicare, and Medicaid, cover TMS for depression is one of the strongest proofs of its legitimacy.
+    In the United States, health insurance companies generally do not cover experimental or unproven therapies. The fact that almost all major commercial plans, including Aetna, Cigna, Blue Cross Blue Shield, UnitedHealthcare, Medicare, and Medicaid, cover <a href="/tms-for-depression.php">TMS for depression</a> is one of the strongest proofs of its legitimacy.
 </p>
 <p>
     Coverage requires documenting medical necessity, which typically means showing that standard medications and psychotherapy have failed to provide relief. If you are wondering about the authorization process, you can read our complete guide on <a href="/blog/how-much-does-tms-cost-with-insurance.php">how much does TMS cost with insurance</a> to understand criteria and coverage.
@@ -142,7 +142,7 @@ HTML;
 // ──────────────────────────────────────────────────────
 
 $date_fmt   = date('F j, Y', strtotime($date));
-$page_title = "$title | Dr. Ritesh Amin, MD — Blog";
+$page_title = "$title | <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
@@ -467,9 +467,9 @@ include dirname(__DIR__) . '/header.php';
                         <span class="text-white text-xl font-bold" style="font-family:var(--font-serif);">RA</span>
                     </div>
                     <div>
-                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);">Dr. Ritesh Amin</p>
+                        <p class="font-semibold text-base mb-1" style="color:var(--color-midnight);"><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a></p>
                         <p class="text-sm leading-relaxed mb-3" style="color:var(--color-text-light);">
-                            Dr. Ritesh Amin is a Board-Certified Psychiatrist specializing in TMS therapy, Spravato, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
+                            <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> is a Board-Certified Psychiatrist specializing in TMS therapy, <a href="/what-is-spravato.php">Spravato</a>, and advanced neuromodulation for treatment-resistant depression in Edison, NJ.
                         </p>
                         <a href="/dr-ritesh-amin.php" class="text-xs font-semibold tracking-wide" style="color:var(--color-gold);">About Dr. Amin →</a>
                     </div>
@@ -665,7 +665,7 @@ $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drritesh
   "image": <?= json_encode($img_url) ?>,
   "author": {
     "@type": "Person",
-    "name": "Dr. Ritesh Amin",
+    "name": "<a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>",
     "url": "https://drriteshamin.com/dr-ritesh-amin.php"
   },
   "publisher": {

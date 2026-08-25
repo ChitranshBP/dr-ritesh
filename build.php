@@ -24,7 +24,7 @@ $pages = [
     'psychiatry-tms-therapy.php'  => 'psychiatry-tms-therapy.html',
     'tms-for-depression.php'      => 'tms-for-depression.html',
     'what-is-ketamine-therapy.php'=> 'what-is-ketamine-therapy.html',
-    'what-is-spravato.php'        => 'what-is-spravato.html',
+    'what-is-<a href="/what-is-spravato.php">spravato</a>.php'        => 'what-is-<a href="/what-is-spravato.php">spravato</a>.html',
     'faq.php'                      => 'faq.html',
     'insurance.php'                => 'insurance.html',
     'privacy-policy.php'           => 'privacy-policy.html',
@@ -127,7 +127,7 @@ function renderPage($phpFile) {
     return ob_get_clean();
 }
 
-echo "=== Dr. Ritesh Amin — Static Build ===\n\n";
+echo "=== <a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a> — Static Build ===\n\n";
 
 // Step 1: Clean & create output directory
 echo "[1/3] Preparing output directory...\n";

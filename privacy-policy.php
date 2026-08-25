@@ -252,7 +252,7 @@ include 'header.php';
                     </ol>
                 </div>
 
-                <p>Dr. Ritesh Amin, MD ("we," "our," or "us") is committed to protecting the privacy and security of your personal and health information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with our practice.</p>
+                <p><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD ("we," "our," or "us") is committed to protecting the privacy and security of your personal and health information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, use our services, or interact with our practice.</p>
 
                 <!-- Section 1 -->
                 <div class="legal-section" id="pp-1">
@@ -386,7 +386,7 @@ include 'header.php';
                     <h2>Contact Us</h2>
                     <p>If you have any questions about this Privacy Policy, your personal information, or wish to exercise your rights, please contact us:</p>
                     <div class="legal-highlight">
-                        <p><strong>Dr. Ritesh Amin, MD</strong><br>
+                        <p><strong><a href="/dr-ritesh-amin.php">Dr. Ritesh Amin</a>, MD</strong><br>
                         Edison, New Jersey<br>
                         Phone: <a href="tel:+17323791797">(732) 379-1797</a><br>
                         Email: <a href="mailto:psychiatrycare@gmail.com">psychiatrycare@gmail.com</a></p>

@@ -143,7 +143,7 @@ include __DIR__ . '/../header.php';
             <div class="bi-stats-row reveal">
                 <div class="bi-stat"><div class="bi-stat-num">FDA</div><div class="bi-stat-label">Cleared Technology</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">1 in 3</div><div class="bi-stat-label">Patients Misdiagnosed Initially</div></div>
-                <div class="bi-stat"><div class="bi-stat-num">0</div><div class="bi-stat-label">Systemic Side Effects</div></div>
+                <div class="bi-stat"><div class="bi-stat-num"></div><div class="bi-stat-label">Systemic Side Effects</div></div>
                 <div class="bi-stat"><div class="bi-stat-num">Non-Rx</div><div class="bi-stat-label">Drug-Free Treatment</div></div>
             </div>
         </div>
