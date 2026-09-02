@@ -1,11 +1,19 @@
 <?php
 ob_start();
 // Default values if not set before including header.php
-$page_title = $page_title ?? 'Advanced TMS Therapy in NJ';
-$page_desc = $page_desc ?? 'Learn about our advanced TMS Therapy and mental health treatments in New Jersey.';
+$page_title = $page_title ?? 'Advanced TMS Therapy in NJ | Dr. Ritesh Amin';
+$page_desc = $page_desc ?? 'Dr. Ritesh Amin offers FDA-cleared TMS Therapy, Spravato, and psychiatric care in Edison, NJ. Drug-free relief for depression, OCD, and anxiety.';
 $body_class = $body_class ?? 'bg-beige';
 $extra_css = $extra_css ?? '';
 $noindex = $noindex ?? false;
+$page_type = $page_type ?? 'website';
+$og_image = $og_image ?? 'https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png';
+
+// Dynamic canonical URL calculation
+$request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+$clean_uri = preg_replace('/\.php(\?.*)?$/', '$1', $request_uri);
+$clean_uri = preg_replace('/\/index$/', '/', $clean_uri);
+$canonical_url = $canonical_url ?? ('https://drriteshamin.com' . (strpos($clean_uri, '/') === 0 ? $clean_uri : '/' . $clean_uri));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,14 +56,117 @@ $noindex = $noindex ?? false;
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?= htmlspecialchars($page_title)?>
-    </title>
+    <title><?= htmlspecialchars($page_title)?></title>
     <meta name="description" content="<?= htmlspecialchars($page_desc)?>">
+    <link rel="canonical" href="<?= htmlspecialchars($canonical_url)?>">
     <?php if (!empty($noindex)): ?>
     <meta name="robots" content="noindex, follow">
+    <?php else: ?>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <?php endif; ?>
     <meta name="google-site-verification" content="9HecL4ym_tUaWhSbVauZyiMzwAtQX-ZT_fxwIyscC6k">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="<?= htmlspecialchars($page_type)?>">
+    <meta property="og:title" content="<?= htmlspecialchars($page_title)?>">
+    <meta property="og:description" content="<?= htmlspecialchars($page_desc)?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonical_url)?>">
+    <meta property="og:site_name" content="Dr. Ritesh Amin, MD | Advanced TMS Therapy &amp; Psychiatry NJ">
+    <meta property="og:image" content="<?= htmlspecialchars($og_image)?>">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars($page_title)?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($page_desc)?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($og_image)?>">
+
+    <!-- Local SEO Geo Meta Tags -->
+    <meta name="geo.region" content="US-NJ">
+    <meta name="geo.placename" content="Edison, New Jersey">
+    <meta name="geo.position" content="40.597565;-74.359202">
+    <meta name="ICBM" content="40.597565, -74.359202">
+
+    <!-- Medical & Clinic Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["MedicalClinic", "MedicalBusiness", "Physician"],
+          "@id": "https://drriteshamin.com/#clinic",
+          "name": "Dr. Ritesh Amin, MD - Advanced TMS Therapy & Psychiatry",
+          "url": "https://drriteshamin.com",
+          "logo": "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png",
+          "image": "https://drriteshamin.com/assets/logo/Dr.-Ritesh-Amin-main.png",
+          "description": "Board-certified physician specializing in FDA-cleared Transcranial Magnetic Stimulation (TMS), Spravato (Esketamine), and innovative psychiatric & neurological care in Edison, NJ.",
+          "telephone": "+1-732-379-1797",
+          "email": "psychiatrycare@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Edison Medical Center",
+            "addressLocality": "Edison",
+            "addressRegion": "NJ",
+            "postalCode": "08820",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 40.597565,
+            "longitude": -74.359202
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "09:00",
+              "closes": "17:00"
+            }
+          ],
+          "medicalSpecialty": [
+            "Psychiatry",
+            "Neurology",
+            "Neuropsychiatry",
+            "Neuromodulation"
+          ],
+          "availableService": [
+            {
+              "@type": "MedicalProcedure",
+              "name": "Transcranial Magnetic Stimulation (TMS) Therapy",
+              "description": "Non-invasive brain stimulation for Treatment-Resistant Depression, OCD, Anxiety, PTSD, and neurological symptoms."
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Spravato (Esketamine) Therapy",
+              "description": "FDA-approved nasal spray for treatment-resistant depression administered in a certified REMS setting."
+            },
+            {
+              "@type": "MedicalProcedure",
+              "name": "Ketamine Infusion Therapy",
+              "description": "Physician-supervised rapid relief infusions for severe depressive and mood disorders."
+            }
+          ],
+          "priceRange": "$$",
+          "isAcceptingNewPatients": "True"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://drriteshamin.com/#website",
+          "url": "https://drriteshamin.com",
+          "name": "Dr. Ritesh Amin, MD",
+          "description": "Advanced TMS Therapy and Mental Wellness in Central New Jersey",
+          "publisher": {
+            "@id": "https://drriteshamin.com/#clinic"
+          }
+        }
+      ]
+    }
+    </script>
+    <?php if (!empty($page_schema_json)): ?>
+    <script type="application/ld+json">
+    <?= $page_schema_json ?>
+    </script>
+    <?php endif; ?>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

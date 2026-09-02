@@ -1,7 +1,53 @@
 <?php
-$page_title = 'Frequently Asked Questions | Dr. Ritesh Amin – TMS Therapy & Psychiatry in NJ';
-$page_desc = 'Find answers to common questions about TMS therapy, Spravato, Ketamine infusions, insurance coverage, and psychiatric care at Dr. Ritesh Amin\'s Edison, NJ clinic.';
+$page_title = 'Frequently Asked Questions (FAQ) | TMS Therapy & Psychiatry NJ | Dr. Ritesh Amin';
+$page_desc = 'Get answers about FDA-cleared TMS therapy, Spravato, Ketamine infusions, insurance coverage, cost, and psychiatric evaluations with Dr. Ritesh Amin in Edison, NJ.';
 $body_class = 'bg-beige font-sans';
+$page_schema_json = json_encode([
+    "@context" => "https://schema.org",
+    "@type" => "FAQPage",
+    "mainEntity" => [
+        [
+            "@type" => "Question",
+            "name" => "What conditions does Dr. Amin treat with TMS therapy?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "Dr. Amin specializes in treatment-resistant depression, generalized anxiety disorder, OCD, PTSD, ADHD, bipolar depression, panic disorder, and select neurological conditions including traumatic brain injury recovery, Parkinson's symptoms, chronic migraine, stroke recovery, and neuropathic pain."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "What is TMS therapy and how does it work?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "Transcranial Magnetic Stimulation (TMS) is an FDA-cleared, non-invasive treatment that uses gentle magnetic pulses to stimulate underactive neural circuits in brain regions responsible for mood regulation, promoting neuroplasticity without systemic medication side effects."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "Is TMS therapy covered by insurance and Medicare in NJ?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "Yes. TMS therapy is covered by Medicare and most major private health insurance plans in New Jersey, including Horizon Blue Cross Blue Shield, Aetna, Cigna, UnitedHealthcare, and Oxford, typically for patients who have tried at least one to two antidepressant medications without adequate relief."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "Is TMS therapy painful or does it require anesthesia?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "No. TMS is an outpatient procedure that requires zero anesthesia or sedation. Patients feel a mild rhythmic tapping sensation on the scalp and can immediately resume normal daily activities, including driving to work or home."
+            ]
+        ],
+        [
+            "@type" => "Question",
+            "name" => "How long does a course of TMS treatment take?",
+            "acceptedAnswer" => [
+                "@type" => "Answer",
+                "text" => "A typical full course of TMS consists of 30 to 36 sessions, usually administered 5 days per week for 6 to 7 weeks. Each daily treatment session takes approximately 19 to 30 minutes."
+            ]
+        ]
+    ]
+], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 $extra_css = '
     /* ══════════════════════════════════════════
        FAQ PAGE STYLES

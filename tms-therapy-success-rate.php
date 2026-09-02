@@ -1,0 +1,195 @@
+<?php
+$page_title = "TMS Therapy Success Rate & Clinical Remission | Dr. Ritesh Amin NJ";
+$page_desc = "Discover the proven success rates and clinical efficacy of TMS therapy for depression and OCD. Real results with Dr. Ritesh Amin in Edison, NJ. (732) 379-1797.";
+$body_class = 'bg-beige font-sans';
+$page_schema_json = <<<'SCHEMA'
+{
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "TMS Therapy Success Rate & Clinical Remission | Dr. Ritesh Amin NJ",
+    "description": "Discover the proven success rates and clinical efficacy of TMS therapy for depression and OCD. Real results with Dr. Ritesh Amin in Edison, NJ. (732) 379-1797.",
+    "mainEntity": {
+        "@type": "MedicalProcedure",
+        "name": "Transcranial Magnetic Stimulation (TMS)",
+        "procedureType": "NoninvasiveProcedure",
+        "howPerformed": "Pulsed magnetic fields stimulate underactive neurons in the prefrontal cortex to restore balanced mood regulation."
+    }
+}
+SCHEMA;
+$extra_css = '
+    .bihero { position: relative; padding: 10rem 0 5rem; background: var(--color-midnight); overflow: hidden; }
+    .bihero::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(rgba(37,111,168,0.06) 1px, transparent 1px); background-size: 30px 30px; pointer-events: none; }
+    .bihero::after { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent 0%, var(--color-gold) 22%, var(--color-gold-light) 50%, var(--color-gold) 78%, transparent 100%); }
+    .bihero-orb-1 { position: absolute; top: -30%; right: -8%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(37,111,168,0.16) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .bihero-orb-2 { position: absolute; bottom: -35%; left: -6%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(37,111,168,0.08) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    @media (max-width: 640px) { .bihero { padding: 8rem 0 3rem; } }
+';
+include __DIR__ . '/header.php';
+?>
+
+    <!-- Hero Section -->
+    <section class="bihero" id="hero">
+        <div class="bihero-orb-1"></div>
+        <div class="bihero-orb-2"></div>
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest text-gold-light border border-gold/30 bg-gold/10 mb-6">Evidence-Based Outcomes</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif text-white leading-tight mb-6">TMS Therapy Success Rates & Clinical Effectiveness</h1>
+                <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-8">Clinical evidence and real-world remission statistics for treatment-resistant depression.</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                    <a href="/contact.php" class="btn btn-primary shadow-xl shadow-gold/25 py-4 px-8 text-base">Schedule a Consultation</a>
+                    <a href="tel:+17323791797" class="btn btn-ghost !border-white/20 !text-white hover:!border-white hover:!bg-white hover:!text-midnight transition-all py-4 px-8 text-base">Call (732) 379-1797</a>
+                </div>
+                <div class="flex flex-wrap justify-center items-center gap-4 text-xs font-medium text-white/75">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4 text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>FDA-Cleared Technology</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4 text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Medicare &amp; Commercial Insurance Accepted</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-4 h-4 text-gold-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Zero Systemic Side Effects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="py-12 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl lg:text-4xl font-serif font-bold text-gold mb-1">83%</div>
+                    <div class="text-xs uppercase tracking-wider font-semibold text-slate-500">Clinical Response Rate</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl lg:text-4xl font-serif font-bold text-gold mb-1">0</div>
+                    <div class="text-xs uppercase tracking-wider font-semibold text-slate-500">Systemic Drug Side Effects</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl lg:text-4xl font-serif font-bold text-gold mb-1">20 Min</div>
+                    <div class="text-xs uppercase tracking-wider font-semibold text-slate-500">Daily Outpatient Sessions</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl lg:text-4xl font-serif font-bold text-gold mb-1">100%</div>
+                    <div class="text-xs uppercase tracking-wider font-semibold text-slate-500">Insurance Navigation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="py-16 md:py-24 bg-slate-50">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-slate-100">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold mb-3 block">Clinical Overview</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-midnight mb-6 leading-tight">Real-World Clinical Efficacy of TMS</h2>
+                <div class="prose max-w-none text-slate-700 text-base md:text-lg leading-relaxed space-y-5">
+                    <p>When antidepressant medications fail to provide adequate relief, patients often wonder: 'What are the real success rates of TMS therapy?' Large-scale clinical trials and real-world psychiatric registries consistently demonstrate that Transcranial Magnetic Stimulation is one of the most effective non-invasive treatments available for major depressive disorder.</p>
+                    <p>In multi-center clinical trials and extensive real-world registry studies, approximately 70% to 83% of patients with treatment-resistant depression experience a significant, measurable clinical response (at least a 50% reduction in depressive symptoms). Furthermore, between 50% and 62% of patients achieve complete symptom remission, meaning they no longer meet the clinical criteria for major depression.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In-Depth Neuromodulation Science -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-7">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold mb-3 block">Mechanism of Action</span>
+                    <h2 class="text-3xl md:text-4xl font-serif text-midnight mb-6 leading-tight">Durability of Results: How Long Does TMS Relief Last?</h2>
+                    <p class="text-slate-700 text-base md:text-lg leading-relaxed mb-6">The mood improvements achieved through a full course of TMS therapy are remarkably durable. Research published in major psychiatric journals shows that the vast majority of patients maintain their clinical improvement for 12 months or longer following completion of treatment. If mild symptoms begin to reappear down the road, brief maintenance 'booster' sessions can rapidly restore full therapeutic response.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                            <p class="text-slate-700 text-sm md:text-base font-medium">Reactivates dormant neural circuits in the prefrontal cortex.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                            <p class="text-slate-700 text-sm md:text-base font-medium">Promotes enduring synaptic neuroplasticity without chemical tolerance.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0 mt-0.5">✓</div>
+                            <p class="text-slate-700 text-sm md:text-base font-medium">Zero anesthesia, zero memory loss, and no post-session recovery downtime.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-5 bg-midnight text-white p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-serif font-bold text-gold-light mb-4">Board-Certified Care</h3>
+                    <p class="text-white/80 text-sm leading-relaxed mb-6">Under the direct leadership of Dr. Ritesh Amin, MD, every treatment protocol is individualized to your anatomical mapping and diagnostic history.</p>
+                    <div class="border-t border-white/10 pt-6 space-y-3 text-xs text-white/70">
+                        <p>📍 Edison Medical Center, Edison, NJ</p>
+                        <p>📞 Phone: <a href="tel:+17323791797" class="text-gold-light font-semibold hover:underline">(732) 379-1797</a></p>
+                        <p>🕒 Mon - Fri: 9:00 AM – 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section with Schema -->
+    <section class="py-16 md:py-24 bg-slate-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-gold mb-3 block">Got Questions?</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-midnight mb-4">Frequently Asked Questions</h2>
+                <p class="text-slate-600 text-base max-w-xl mx-auto">Helpful information about TMS therapy, insurance coverage, candidate qualification, and what to expect.</p>
+            </div>
+            <div>
+                
+                <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 bg-white shadow-sm">
+                    <button class="w-full text-left p-5 font-semibold text-midnight flex justify-between items-center hover:text-gold transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base md:text-lg">How soon will I know if TMS therapy is working for me?</span>
+                        <svg class="w-5 h-5 text-gold transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-600 text-sm md:text-base leading-relaxed border-t border-slate-100 pt-3">
+                        Most patients begin experiencing noticeable improvements in sleep quality, morning energy, and mental clarity between week 2 and week 3 of daily treatment.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 bg-white shadow-sm">
+                    <button class="w-full text-left p-5 font-semibold text-midnight flex justify-between items-center hover:text-gold transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base md:text-lg">What happens if TMS doesn't work for my depression?</span>
+                        <svg class="w-5 h-5 text-gold transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-600 text-sm md:text-base leading-relaxed border-t border-slate-100 pt-3">
+                        Dr. Ritesh Amin offers an integrative suite of interventional treatments, including Spravato (Esketamine), IV Ketamine infusion protocols, and targeted medication adjustments.
+                    </div>
+                </div>
+                <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 bg-white shadow-sm">
+                    <button class="w-full text-left p-5 font-semibold text-midnight flex justify-between items-center hover:text-gold transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="text-base md:text-lg">Does TMS therapy change brain structure permanently?</span>
+                        <svg class="w-5 h-5 text-gold transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-600 text-sm md:text-base leading-relaxed border-t border-slate-100 pt-3">
+                        TMS promotes neuroplasticity—the brain's natural ability to form and strengthen synaptic connections. This leads to lasting functional reorganization of underactive mood networks.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA Banner -->
+    <section class="py-16 bg-midnight text-white text-center relative overflow-hidden">
+        <div class="container mx-auto px-4 max-w-4xl relative z-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-gold-light mb-3 block">Take the First Step</span>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">Reclaim Your Mental Wellness</h2>
+            <p class="text-white/75 text-base md:text-lg max-w-2xl mx-auto mb-8">You do not have to struggle in silence with treatment-resistant depression or anxiety. Dr. Ritesh Amin and our dedicated team are ready to help you recover.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="/contact.php" class="btn btn-primary py-4 px-10 text-base shadow-lg shadow-gold/20">Book Your Consultation</a>
+                <a href="tel:+17323791797" class="btn btn-ghost !border-white/30 !text-white hover:!bg-white hover:!text-midnight py-4 px-10 text-base">Call (732) 379-1797</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    function toggleFaq(btn) {
+        const content = btn.nextElementSibling;
+        const svg = btn.querySelector('svg');
+        const isOpen = !content.classList.contains('hidden');
+        if (isOpen) {
+            content.classList.add('hidden');
+            svg.classList.remove('rotate-180');
+        } else {
+            content.classList.remove('hidden');
+            svg.classList.add('rotate-180');
+        }
+    }
+    </script>
+
+<?php include __DIR__ . '/footer.php'; ?>
