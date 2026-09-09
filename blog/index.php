@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'Is TMS Therapy Safe? A Complete Guide',
+        'date'        => '2026-09-09',
+        'category'    => 'TMS Therapy',
+        'excerpt'     => 'Is Transcranial Magnetic Stimulation safe for your brain? Explore FDA safety data, common side effects, long-term risks, and how TMS compares to medications & ECT from Dr. Ritesh Amin in Edison, NJ.',
+        'image'       => '/assets/images/blog-is-tms-therapy-safe.png',
+        'slug'        => 'is-tms-therapy-safe',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'Can OCD Get Worse With Age? Understanding the Progression of Obsessive-Compulsive Disorder',
         'date'        => '2026-08-19',
         'category'    => 'OCD',
