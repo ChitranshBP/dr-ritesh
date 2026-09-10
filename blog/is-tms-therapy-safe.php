@@ -27,6 +27,17 @@ $content = <<<'HTML'
     </p>
 </div>
 
+<h2 id="what-is-tms">What is TMS Therapy?</h2>
+<p>
+    Before exploring the extensive clinical safety data, it is helpful to understand what Transcranial Magnetic Stimulation is and how it functions. <strong>Transcranial Magnetic Stimulation (TMS)</strong> is an advanced, non-invasive neuromodulation therapy cleared by the U.S. Food and Drug Administration (FDA) to treat Major Depressive Disorder (MDD), Obsessive-Compulsive Disorder (OCD), and anxious depression—particularly for patients who have not found adequate relief from traditional antidepressant medications.
+</p>
+<p>
+    Unlike psychiatric medications that travel through the bloodstream and affect the entire body, TMS is a targeted, localized medical procedure. It uses an electromagnetic coil placed comfortably against the scalp to deliver focused magnetic pulses—similar in strength to an MRI machine—to the <strong>dorsolateral prefrontal cortex (DLPFC)</strong>. This specific region of the brain regulates mood, motivation, and emotional processing, and is often underactive in individuals experiencing clinical depression.
+</p>
+<p>
+    By gently stimulating underactive neurons, TMS encourages <em>neuroplasticity</em>—helping the brain rebuild synaptic connections and naturally release vital neurotransmitters such as serotonin, dopamine, and norepinephrine. Because TMS requires no surgery, no general anesthesia, and no systemic chemicals, patients remain fully awake and comfortable throughout each 20-minute session and can immediately return to work or daily activities.
+</p>
+
 <h2 id="is-tms-safe">Is TMS Therapy Safe? An Overview of Clinical Evidence</h2>
 <p>
     When evaluating any new medical procedure for clinical depression or anxiety, safety is naturally a top concern. Patients often ask: <strong>is TMS therapy safe? Does magnetic brain stimulation carry long-term risks or alter brain tissue negatively?</strong>
