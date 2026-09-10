@@ -15,7 +15,7 @@ $read_time  = 9;
 
 $content = <<<'HTML'
 <!-- AEO Direct Answer Summary Box -->
-<div style="background: rgba(37, 111, 168, 0.08); border-left: 4px solid var(--color-gold); padding: 1.25rem 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem;">
+<div class="post-aeo-box" style="background: rgba(37, 111, 168, 0.08); border-left: 4px solid var(--color-gold); padding: 1.25rem 1.5rem; border-radius: 0 12px 12px 0; margin-bottom: 2rem;">
     <p style="font-family: var(--font-sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 0.5rem;">
         ⚡ Direct Answer / Clinical Summary
     </p>
@@ -112,6 +112,7 @@ $content = <<<'HTML'
     Comparing TMS to traditional psychiatric treatments highlights why so many patients and clinicians prefer non-invasive neuromodulation:
 </p>
 
+<div class="post-table-container">
 <table style="width:100%; border-collapse: collapse; margin-bottom: 2rem; font-size: 0.92rem;">
     <thead>
         <tr style="border-bottom: 2px solid var(--color-gold); background: rgba(37,111,168,0.06); text-align: left;">
@@ -160,6 +161,7 @@ $content = <<<'HTML'
         </tr>
     </tbody>
 </table>
+</div>
 
 <h2 id="fda-clearance">FDA Approvals & Regulatory Safety Milestones</h2>
 <p>
@@ -232,7 +234,7 @@ $content = <<<'HTML'
 </ul>
 
 <!-- Strategic In-Content CTA Box -->
-<div style="background: linear-gradient(135deg, var(--color-midnight) 0%, rgba(11,25,44,0.92) 100%); border: 1px solid rgba(37,111,168,0.3); border-radius: 16px; padding: 2rem; margin: 2.5rem 0; color: #ffffff; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+<div class="post-in-content-cta" style="background: linear-gradient(135deg, var(--color-midnight) 0%, rgba(11,25,44,0.92) 100%); border: 1px solid rgba(37,111,168,0.3); border-radius: 16px; padding: 2rem; margin: 2.5rem 0; color: #ffffff; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
     <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: #ffffff; margin-bottom: 0.75rem;">
         Take the First Step Toward Drug-Free Relief
     </h3>
@@ -286,8 +288,9 @@ $extra_css  = '
         align-items: start;
         max-width: 1100px;
         margin: 0 auto;
+        width: 100%;
     }
-    @media (max-width: 1099px) { .post-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 1099px) { .post-layout { grid-template-columns: 1fr; gap: 1.5rem; } }
 
     /* Desktop TOC — sticky left sidebar */
     .post-toc-sidebar {
@@ -303,6 +306,14 @@ $extra_css  = '
     /* Blog post body section — clears fixed navbar */
     .post-body-section {
         padding-top: 5.5rem;
+    }
+    @media (max-width: 640px) {
+        .post-body-section {
+            padding-top: 2.5rem !important;
+            padding-bottom: 2.5rem !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
     }
 
     /* Mobile TOC accordion */
@@ -334,7 +345,7 @@ $extra_css  = '
     }
     .post-toc-toggle {
         display: flex; align-items: center; justify-content: space-between;
-        width: 100%;
+        width: 100%; min-height: 44px;
         background: rgba(37,111,168,.07); border: 1px solid rgba(37,111,168,.2);
         border-radius: 10px; padding: .7rem 1rem;
         font-size: .82rem; font-weight: 600; color: var(--color-gold);
@@ -349,14 +360,60 @@ $extra_css  = '
     }
     .post-toc-drawer-links.open { max-height: 600px; }
     .post-toc-drawer-links a {
-        display: block; padding: .42rem .75rem; border-radius: 6px;
+        display: block; padding: .5rem .75rem; border-radius: 6px;
         font-size: .82rem; color: var(--color-text-light);
         text-decoration: none; transition: background .2s;
     }
     .post-toc-drawer-links a:hover,
     .post-toc-drawer-links a.active { background: rgba(37,111,168,.08); color: var(--color-gold); }
 
-    .post-content-wrap { max-width: 720px; }
+    .post-content-wrap { max-width: 720px; width: 100%; margin: 0 auto; }
+
+    /* Table responsive wrapper */
+    .post-table-container {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        border: 1px solid rgba(11,25,44,.08);
+        background: var(--color-white);
+    }
+    .post-table-container table {
+        min-width: 600px;
+        margin-bottom: 0 !important;
+    }
+
+    /* Responsive boxes inside content */
+    @media (max-width: 640px) {
+        .post-aeo-box {
+            padding: 1rem 1.15rem !important;
+            margin-bottom: 1.5rem !important;
+        }
+        .post-in-content-cta {
+            padding: 1.35rem 1rem !important;
+            margin: 1.75rem 0 !important;
+            border-radius: 12px !important;
+        }
+        .post-in-content-cta h3 {
+            font-size: 1.25rem !important;
+        }
+        .post-in-content-cta p {
+            font-size: 0.88rem !important;
+            margin-bottom: 1.25rem !important;
+        }
+        .post-in-content-cta > div {
+            flex-direction: column !important;
+            align-items: stretch !important;
+            gap: 0.75rem !important;
+        }
+        .post-in-content-cta a {
+            text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+    }
 
     /* Read time pill */
     .post-read-pill {
@@ -366,12 +423,21 @@ $extra_css  = '
         letter-spacing: .08em; padding: .3rem .75rem; border-radius: 100px;
     }
 
-    /* Body typography */
+    /* Body typography & responsiveness */
+    .post-body {
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    .post-body img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
     .post-body h2 {
         font-family: var(--font-serif);
         font-size: clamp(1.4rem, 1.6vw + 0.4rem, 1.9rem);
         font-weight: 700; color: var(--color-midnight);
-        margin: 2.5rem 0 .9rem; line-height: 1.2;
+        margin: 2.5rem 0 .9rem; line-height: 1.25;
         scroll-margin-top: 6rem;
     }
     .post-body h3 {
@@ -403,6 +469,14 @@ $extra_css  = '
     .post-body a { color: var(--color-gold); text-decoration: underline; text-underline-offset: 3px; }
     .post-body a:hover { color: var(--color-gold-light); }
 
+    @media (max-width: 640px) {
+        .post-body h2 { font-size: 1.35rem !important; margin: 2rem 0 .75rem !important; }
+        .post-body h3 { font-size: 1.1rem !important; margin: 1.5rem 0 .5rem !important; }
+        .post-body p, .post-body li { font-size: .95rem !important; line-height: 1.75 !important; }
+        .post-body ul, .post-body ol { padding-left: 1.15rem !important; }
+        .post-body blockquote { padding: .85rem 1rem !important; margin: 1.25rem 0 !important; }
+    }
+
     .post-share       { background: var(--color-white); border: 1px solid rgba(11,25,44,.08); }
     .post-author-card { background: var(--color-white); border-top: 3px solid var(--color-gold); }
     .post-rule        { width: 48px; height: 2px; background: linear-gradient(90deg,var(--color-gold),var(--color-gold-light),transparent); border-radius: 1px; }
@@ -414,14 +488,35 @@ $extra_css  = '
     .post-hero-excerpt { max-width: 640px; }
 
     @media (max-width: 768px) {
-        .post-hero-geo-1 { display: none; }
-        .post-hero-geo-2 { display: none; }
-        .post-hero-geo-3 { display: none; }
-        .post-hero-geo-4 { display: none; }
+        .post-hero { min-height: auto !important; padding-top: 4.5rem !important; padding-bottom: 2rem !important; }
+        .post-hero-container { padding-top: 2rem !important; padding-bottom: 3rem !important; padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+        .post-hero-title { font-size: 2rem !important; line-height: 1.25 !important; margin-bottom: 1rem !important; }
+        .post-hero-excerpt { font-size: 0.95rem !important; line-height: 1.6 !important; margin-bottom: 1.75rem !important; }
+        .post-scroll-indicator { display: none !important; }
+        .post-hero-geo-1, .post-hero-geo-2, .post-hero-geo-3, .post-hero-geo-4 { display: none !important; }
+    }
+
+    @media (max-width: 639px) {
+        .post-share {
+            padding: 1.25rem 1rem !important;
+            margin-bottom: 2.5rem !important;
+            gap: 1rem !important;
+        }
+        .post-author-card {
+            flex-direction: column !important;
+            align-items: center !important;
+            text-align: center !important;
+            padding: 1.5rem 1.25rem !important;
+            gap: 1rem !important;
+            margin-bottom: 2.5rem !important;
+        }
+        .post-author-card > div:first-child {
+            margin: 0 auto;
+        }
     }
 
     /* FAQ accordion */
-    .post-faq-list { max-width: 720px; }
+    .post-faq-list { max-width: 720px; width: 100%; }
     .post-faq-item {
         background: var(--color-white);
         border: 1px solid rgba(11,25,44,.08);
@@ -431,7 +526,7 @@ $extra_css  = '
     }
     .post-faq-trigger {
         display: flex; align-items: center; justify-content: space-between;
-        width: 100%; padding: 1.1rem 1.25rem;
+        width: 100%; min-height: 48px; padding: 1.1rem 1.25rem;
         background: none; border: none; cursor: pointer;
         text-align: left; gap: 1rem;
     }
@@ -454,6 +549,13 @@ $extra_css  = '
     .post-faq-answer p {
         font-size: .875rem; line-height: 1.75;
         color: var(--color-text-light); margin: 0;
+    }
+
+    @media (max-width: 640px) {
+        .post-faq-trigger { padding: 0.9rem 1rem !important; }
+        .post-faq-question { font-size: 0.88rem !important; }
+        .post-faq-answer { padding: 0.25rem 1rem 1rem !important; }
+        .post-faq-answer p { font-size: 0.85rem !important; }
     }
 ';
 
@@ -485,7 +587,7 @@ include dirname(__DIR__) . '/header.php';
     <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--color-gold),var(--color-gold-light),transparent);z-index:2;opacity:.6;"></div>
 
     <!-- Content -->
-    <div class="max-w-4xl mx-auto px-6 py-24 text-center" style="position:relative;z-index:3;">
+    <div class="post-hero-container max-w-4xl mx-auto px-6 py-24 text-center" style="position:relative;z-index:3;">
         <!-- Category + meta row -->
         <div class="flex items-center justify-center gap-3 mb-6 flex-wrap">
             <span class="post-category-chip text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full"
@@ -529,7 +631,7 @@ include dirname(__DIR__) . '/header.php';
     </div>
 
     <!-- Scroll indicator -->
-    <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:.4;">
+    <div class="post-scroll-indicator" style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:.4;">
         <span style="font-family:var(--font-sans);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;">Scroll</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
     </div>
