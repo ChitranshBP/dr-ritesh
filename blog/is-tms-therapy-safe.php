@@ -163,6 +163,105 @@ $content = <<<'HTML'
 </table>
 </div>
 
+<!-- Mobile Card View Layout (< 768px) -->
+<div class="post-mobile-comparison">
+    <div class="post-card-compare">
+        <div class="post-card-compare-title">Systemic Body Distribution</div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">TMS Therapy</span>
+            <span class="post-card-compare-val tms">✓ None (Localized)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">Antidepressants</span>
+            <span class="post-card-compare-val ssri-warn">High (Full Bloodstream)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">ECT</span>
+            <span class="post-card-compare-val ect">High (Full Body Anesthesia)</span>
+        </div>
+    </div>
+
+    <div class="post-card-compare">
+        <div class="post-card-compare-title">Weight Gain / Metabolic Changes</div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">TMS Therapy</span>
+            <span class="post-card-compare-val tms">✓ Zero Risk</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">Antidepressants</span>
+            <span class="post-card-compare-val ssri">Common (25%–50% of patients)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">ECT</span>
+            <span class="post-card-compare-val ect-neutral">Low</span>
+        </div>
+    </div>
+
+    <div class="post-card-compare">
+        <div class="post-card-compare-title">Sexual Dysfunction / Emotional Numbness</div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">TMS Therapy</span>
+            <span class="post-card-compare-val tms">✓ Zero Risk</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">Antidepressants</span>
+            <span class="post-card-compare-val ssri-warn">Very Common (40%–70%)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">ECT</span>
+            <span class="post-card-compare-val ect-neutral">Occasional</span>
+        </div>
+    </div>
+
+    <div class="post-card-compare">
+        <div class="post-card-compare-title">Memory Loss / Cognitive Fog</div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">TMS Therapy</span>
+            <span class="post-card-compare-val tms">✓ None (Improves Focus)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">Antidepressants</span>
+            <span class="post-card-compare-val ssri">Frequent ("Brain Fog")</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">ECT</span>
+            <span class="post-card-compare-val ect">Significant Risk</span>
+        </div>
+    </div>
+
+    <div class="post-card-compare">
+        <div class="post-card-compare-title">Sedation or General Anesthesia</div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">TMS Therapy</span>
+            <span class="post-card-compare-val tms">✓ None (Awake & Alert)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">Antidepressants</span>
+            <span class="post-card-compare-val ssri">Drowsiness / Fatigue</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">ECT</span>
+            <span class="post-card-compare-val ect">Required Every Session</span>
+        </div>
+    </div>
+
+    <div class="post-card-compare">
+        <div class="post-card-compare-title">Post-Session Downtime</div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">TMS Therapy</span>
+            <span class="post-card-compare-val tms">✓ Zero (Drive Home Immediately)</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">Antidepressants</span>
+            <span class="post-card-compare-val ssri">Daily Pill Dependency</span>
+        </div>
+        <div class="post-card-compare-row">
+            <span class="post-card-compare-label">ECT</span>
+            <span class="post-card-compare-val ect">Full Recovery Day Needed</span>
+        </div>
+    </div>
+</div>
+
 <h2 id="fda-clearance">FDA Approvals & Regulatory Safety Milestones</h2>
 <p>
     FDA clearance represents one of the strongest validation pillars of medical safety. Transcranial Magnetic Stimulation is not experimental; it is an established therapeutic modality supported by thousands of clinical trials:
@@ -272,7 +371,18 @@ $page_title = "$title | Dr. Ritesh Amin, MD — Blog";
 $page_desc  = $excerpt;
 $body_class = 'bg-beige-dark';
 $extra_css  = '
-    body { overflow-x: hidden; }
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Prevent hidden desktop navigation panels from causing document overflow on mobile */
+    @media (max-width: 991px) {
+        .mega-menu { display: none !important; }
+        .nav-links:not(.active) { display: none !important; }
+    }
 
     .post-progress {
         position: fixed; top: 0; left: 0; height: 3px; z-index: 9999;
@@ -289,8 +399,32 @@ $extra_css  = '
         max-width: 1100px;
         margin: 0 auto;
         width: 100%;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+    .post-layout > div {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
     @media (max-width: 1099px) { .post-layout { grid-template-columns: 1fr; gap: 1.5rem; } }
+
+    /* Blog post body section — clears fixed navbar */
+    .post-body-section {
+        padding-top: 5.5rem;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+    }
+    @media (max-width: 640px) {
+        .post-body-section {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+            padding-left: 0.85rem !important;
+            padding-right: 0.85rem !important;
+        }
+    }
 
     /* Desktop TOC — sticky left sidebar */
     .post-toc-sidebar {
@@ -301,20 +435,7 @@ $extra_css  = '
         scrollbar-width: none;
     }
     .post-toc-sidebar::-webkit-scrollbar { display: none; }
-    @media (max-width: 1099px) { .post-toc-sidebar { display: none; } }
-
-    /* Blog post body section — clears fixed navbar */
-    .post-body-section {
-        padding-top: 5.5rem;
-    }
-    @media (max-width: 640px) {
-        .post-body-section {
-            padding-top: 2.5rem !important;
-            padding-bottom: 2.5rem !important;
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-        }
-    }
+    @media (max-width: 1099px) { .post-toc-sidebar { display: none !important; } }
 
     /* Mobile TOC accordion */
     .post-toc-mobile { display: none; }
@@ -341,7 +462,8 @@ $extra_css  = '
     /* Mobile drawer */
     .post-toc-drawer {
         background: var(--color-white); border: 1px solid rgba(11,25,44,.08);
-        border-radius: 14px; padding: 1.1rem; margin-bottom: 1.5rem;
+        border-radius: 14px; padding: 1rem; margin-bottom: 1.5rem;
+        width: 100% !important; box-sizing: border-box !important;
     }
     .post-toc-toggle {
         display: flex; align-items: center; justify-content: space-between;
@@ -350,9 +472,10 @@ $extra_css  = '
         border-radius: 10px; padding: .7rem 1rem;
         font-size: .82rem; font-weight: 600; color: var(--color-gold);
         cursor: pointer; transition: all .2s;
+        box-sizing: border-box !important;
     }
     .post-toc-toggle:hover { background: rgba(37,111,168,.12); }
-    .post-toc-toggle svg { transition: transform .25s ease; }
+    .post-toc-toggle svg { transition: transform .25s ease; flex-shrink: 0; }
     .post-toc-toggle.open svg { transform: rotate(180deg); }
     .post-toc-drawer-links {
         list-style: none; padding: 0; margin: .6rem 0 0;
@@ -363,55 +486,151 @@ $extra_css  = '
         display: block; padding: .5rem .75rem; border-radius: 6px;
         font-size: .82rem; color: var(--color-text-light);
         text-decoration: none; transition: background .2s;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
     }
     .post-toc-drawer-links a:hover,
     .post-toc-drawer-links a.active { background: rgba(37,111,168,.08); color: var(--color-gold); }
 
-    .post-content-wrap { max-width: 720px; width: 100%; margin: 0 auto; }
+    .post-content-wrap { max-width: 720px; width: 100%; margin: 0 auto; min-width: 0 !important; box-sizing: border-box !important; }
 
-    /* Table responsive wrapper */
+    /* Desktop Comparison Table */
     .post-table-container {
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
         margin-bottom: 2rem;
         border-radius: 12px;
         border: 1px solid rgba(11,25,44,.08);
         background: var(--color-white);
+        box-sizing: border-box !important;
     }
     .post-table-container table {
-        min-width: 600px;
+        min-width: 580px;
         margin-bottom: 0 !important;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .post-mobile-comparison {
+        display: none;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 767px) {
+        .post-table-container { display: none !important; }
+        .post-mobile-comparison { display: flex !important; flex-direction: column; gap: 1rem; }
+    }
+
+    /* Mobile Comparison Card Design */
+    .post-card-compare {
+        background: var(--color-white);
+        border: 1px solid rgba(11,25,44,.08);
+        border-radius: 14px;
+        padding: 1.1rem;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+    .post-card-compare-title {
+        font-family: var(--font-sans);
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--color-midnight);
+        margin-bottom: 0.85rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(11,25,44,0.06);
+    }
+    .post-card-compare-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-bottom: 0.75rem;
+    }
+    .post-card-compare-row:last-child {
+        margin-bottom: 0;
+    }
+    .post-card-compare-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--color-text-light);
+    }
+    .post-card-compare-val {
+        font-size: 0.88rem;
+        font-weight: 600;
+        padding: 0.4rem 0.65rem;
+        border-radius: 6px;
+        line-height: 1.4;
+    }
+    .post-card-compare-val.tms {
+        background: rgba(46, 204, 113, 0.12);
+        color: #1e8449;
+        border: 1px solid rgba(46, 204, 113, 0.25);
+    }
+    .post-card-compare-val.ssri {
+        background: rgba(11, 25, 44, 0.04);
+        color: var(--color-text);
+        border: 1px solid rgba(11, 25, 44, 0.08);
+    }
+    .post-card-compare-val.ssri-warn {
+        background: rgba(231, 76, 60, 0.08);
+        color: #c0392b;
+        border: 1px solid rgba(231, 76, 60, 0.2);
+    }
+    .post-card-compare-val.ect {
+        background: rgba(231, 76, 60, 0.08);
+        color: #c0392b;
+        border: 1px solid rgba(231, 76, 60, 0.2);
+    }
+    .post-card-compare-val.ect-neutral {
+        background: rgba(11, 25, 44, 0.04);
+        color: var(--color-text);
+        border: 1px solid rgba(11, 25, 44, 0.08);
     }
 
     /* Responsive boxes inside content */
     @media (max-width: 640px) {
         .post-aeo-box {
-            padding: 1rem 1.15rem !important;
+            padding: 1rem 1rem !important;
             margin-bottom: 1.5rem !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+            border-radius: 8px !important;
         }
         .post-in-content-cta {
-            padding: 1.35rem 1rem !important;
+            padding: 1.25rem 1rem !important;
             margin: 1.75rem 0 !important;
             border-radius: 12px !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
         }
         .post-in-content-cta h3 {
-            font-size: 1.25rem !important;
+            font-size: 1.2rem !important;
+            line-height: 1.3 !important;
         }
         .post-in-content-cta p {
             font-size: 0.88rem !important;
             margin-bottom: 1.25rem !important;
+            line-height: 1.55 !important;
         }
         .post-in-content-cta > div {
             flex-direction: column !important;
             align-items: stretch !important;
             gap: 0.75rem !important;
+            width: 100% !important;
         }
         .post-in-content-cta a {
             text-align: center !important;
             display: block !important;
             width: 100% !important;
             box-sizing: border-box !important;
+            padding: 0.75rem 1rem !important;
+            white-space: normal !important;
+            word-break: break-word !important;
         }
     }
 
@@ -425,90 +644,107 @@ $extra_css  = '
 
     /* Body typography & responsiveness */
     .post-body {
-        word-break: break-word;
-        overflow-wrap: break-word;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+        word-break: break-word !important;
+        box-sizing: border-box !important;
     }
     .post-body img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100% !important;
+        height: auto !important;
         border-radius: 12px;
     }
     .post-body h2 {
         font-family: var(--font-serif);
-        font-size: clamp(1.4rem, 1.6vw + 0.4rem, 1.9rem);
+        font-size: clamp(1.35rem, 2.5vw + 0.5rem, 1.9rem);
         font-weight: 700; color: var(--color-midnight);
-        margin: 2.5rem 0 .9rem; line-height: 1.25;
+        margin: 2.25rem 0 .85rem; line-height: 1.3;
         scroll-margin-top: 6rem;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
     }
     .post-body h3 {
         font-family: var(--font-serif);
-        font-size: clamp(1.05rem, 1.1vw + 0.4rem, 1.25rem);
+        font-size: clamp(1.05rem, 1.8vw + 0.4rem, 1.25rem);
         font-weight: 600; color: var(--color-midnight);
-        margin: 1.75rem 0 .65rem;
+        margin: 1.6rem 0 .6rem;
+        line-height: 1.35;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
     }
     .post-body p {
         font-size: clamp(.92rem, .7vw + 0.65rem, 1.03rem);
         line-height: 1.85; color: var(--color-text); margin-bottom: 1.3rem;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
     }
-    .post-body ul, .post-body ol { padding-left: 1.5rem; margin-bottom: 1.3rem; }
+    .post-body ul, .post-body ol { padding-left: 1.4rem; margin-bottom: 1.3rem; box-sizing: border-box !important; }
     .post-body li {
         font-size: clamp(.92rem, .7vw + 0.65rem, 1.03rem);
         line-height: 1.72; color: var(--color-text); margin-bottom: .5rem;
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
     }
     .post-body strong { font-weight: 600; color: var(--color-midnight); }
     .post-body blockquote {
         border-left: 3px solid var(--color-gold);
-        padding: 1rem 1.5rem; margin: 1.75rem 0;
+        padding: 1rem 1.25rem; margin: 1.5rem 0;
         background: rgba(37,111,168,.04); border-radius: 0 10px 10px 0;
+        box-sizing: border-box !important;
+        max-width: 100% !important;
     }
     .post-body blockquote p {
         font-family: var(--font-serif);
-        font-size: clamp(1rem, .85vw + 0.4rem, 1.12rem);
+        font-size: clamp(.95rem, .85vw + 0.4rem, 1.12rem);
         font-style: italic; color: var(--color-midnight); margin: 0;
+        line-height: 1.65;
     }
-    .post-body a { color: var(--color-gold); text-decoration: underline; text-underline-offset: 3px; }
+    .post-body a { color: var(--color-gold); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: break-word !important; word-break: break-word !important; }
     .post-body a:hover { color: var(--color-gold-light); }
 
     @media (max-width: 640px) {
-        .post-body h2 { font-size: 1.35rem !important; margin: 2rem 0 .75rem !important; }
-        .post-body h3 { font-size: 1.1rem !important; margin: 1.5rem 0 .5rem !important; }
-        .post-body p, .post-body li { font-size: .95rem !important; line-height: 1.75 !important; }
-        .post-body ul, .post-body ol { padding-left: 1.15rem !important; }
-        .post-body blockquote { padding: .85rem 1rem !important; margin: 1.25rem 0 !important; }
+        .post-body h2 { font-size: 1.28rem !important; margin: 1.85rem 0 .65rem !important; line-height: 1.3 !important; }
+        .post-body h3 { font-size: 1.08rem !important; margin: 1.35rem 0 .5rem !important; line-height: 1.35 !important; }
+        .post-body p, .post-body li { font-size: .92rem !important; line-height: 1.7 !important; }
+        .post-body ul, .post-body ol { padding-left: 1.1rem !important; }
+        .post-body blockquote { padding: .75rem .9rem !important; margin: 1.2rem 0 !important; }
     }
 
-    .post-share       { background: var(--color-white); border: 1px solid rgba(11,25,44,.08); }
-    .post-author-card { background: var(--color-white); border-top: 3px solid var(--color-gold); }
+    .post-share       { background: var(--color-white); border: 1px solid rgba(11,25,44,.08); max-width: 100% !important; box-sizing: border-box !important; }
+    .post-author-card { background: var(--color-white); border-top: 3px solid var(--color-gold); max-width: 100% !important; box-sizing: border-box !important; }
     .post-rule        { width: 48px; height: 2px; background: linear-gradient(90deg,var(--color-gold),var(--color-gold-light),transparent); border-radius: 1px; }
     .post-category-chip { background: rgba(37,111,168,.1); color: var(--color-gold); border: 1px solid rgba(37,111,168,.2); }
-    .post-hero        { background: var(--color-midnight); padding-top: 5.5rem; }
+    .post-hero        { background: var(--color-midnight); padding-top: 5.5rem; max-width: 100% !important; overflow-x: hidden !important; box-sizing: border-box !important; }
     .post-hero-img    { height: 440px; border-radius: 16px; overflow: hidden; }
     .post-hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-    .post-hero-title  { text-shadow: 0 2px 20px rgba(0,0,0,.35); }
-    .post-hero-excerpt { max-width: 640px; }
+    .post-hero-title  { text-shadow: 0 2px 20px rgba(0,0,0,.35); overflow-wrap: break-word !important; word-break: break-word !important; }
+    .post-hero-excerpt { max-width: 640px; overflow-wrap: break-word !important; word-break: break-word !important; }
 
     @media (max-width: 768px) {
         .post-hero { min-height: auto !important; padding-top: 4.5rem !important; padding-bottom: 2rem !important; }
-        .post-hero-container { padding-top: 2rem !important; padding-bottom: 3rem !important; padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
-        .post-hero-title { font-size: 2rem !important; line-height: 1.25 !important; margin-bottom: 1rem !important; }
-        .post-hero-excerpt { font-size: 0.95rem !important; line-height: 1.6 !important; margin-bottom: 1.75rem !important; }
+        .post-hero-container { padding-top: 1.75rem !important; padding-bottom: 2.25rem !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+        .post-hero-title { font-size: clamp(1.5rem, 5.5vw, 2.2rem) !important; line-height: 1.28 !important; margin-bottom: 0.85rem !important; }
+        .post-hero-excerpt { font-size: 0.92rem !important; line-height: 1.6 !important; margin-bottom: 1.5rem !important; }
         .post-scroll-indicator { display: none !important; }
         .post-hero-geo-1, .post-hero-geo-2, .post-hero-geo-3, .post-hero-geo-4 { display: none !important; }
     }
 
     @media (max-width: 639px) {
         .post-share {
-            padding: 1.25rem 1rem !important;
-            margin-bottom: 2.5rem !important;
-            gap: 1rem !important;
+            padding: 1.1rem 1rem !important;
+            margin-bottom: 2rem !important;
+            gap: 0.85rem !important;
         }
         .post-author-card {
             flex-direction: column !important;
             align-items: center !important;
             text-align: center !important;
-            padding: 1.5rem 1.25rem !important;
-            gap: 1rem !important;
-            margin-bottom: 2.5rem !important;
+            padding: 1.35rem 1rem !important;
+            gap: 0.85rem !important;
+            margin-bottom: 2rem !important;
         }
         .post-author-card > div:first-child {
             margin: 0 auto;
@@ -516,23 +752,27 @@ $extra_css  = '
     }
 
     /* FAQ accordion */
-    .post-faq-list { max-width: 720px; width: 100%; }
+    .post-faq-list { max-width: 720px; width: 100%; min-width: 0 !important; box-sizing: border-box !important; }
     .post-faq-item {
         background: var(--color-white);
         border: 1px solid rgba(11,25,44,.08);
         border-radius: 12px;
         overflow: hidden;
         margin-bottom: .6rem;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
     .post-faq-trigger {
         display: flex; align-items: center; justify-content: space-between;
-        width: 100%; min-height: 48px; padding: 1.1rem 1.25rem;
+        width: 100%; min-height: 48px; padding: 1rem 1.15rem;
         background: none; border: none; cursor: pointer;
-        text-align: left; gap: 1rem;
+        text-align: left; gap: 0.75rem;
+        box-sizing: border-box !important;
     }
     .post-faq-question {
-        font-size: .9rem; font-weight: 600; line-height: 1.4;
+        font-size: .88rem; font-weight: 600; line-height: 1.4;
         font-family: var(--font-sans); color: var(--color-midnight);
+        overflow-wrap: break-word !important; word-break: break-word !important;
     }
     .post-faq-icon {
         color: var(--color-gold); flex-shrink: 0;
@@ -543,19 +783,20 @@ $extra_css  = '
         transition: max-height .35s ease;
     }
     .post-faq-answer {
-        padding: .25rem 1.25rem 1.1rem;
+        padding: .25rem 1.15rem 1rem;
         border-top: 1px solid rgba(11,25,44,.06);
     }
     .post-faq-answer p {
-        font-size: .875rem; line-height: 1.75;
+        font-size: .86rem; line-height: 1.7;
         color: var(--color-text-light); margin: 0;
+        overflow-wrap: break-word !important; word-break: break-word !important;
     }
 
     @media (max-width: 640px) {
-        .post-faq-trigger { padding: 0.9rem 1rem !important; }
-        .post-faq-question { font-size: 0.88rem !important; }
-        .post-faq-answer { padding: 0.25rem 1rem 1rem !important; }
-        .post-faq-answer p { font-size: 0.85rem !important; }
+        .post-faq-trigger { padding: 0.85rem 0.9rem !important; }
+        .post-faq-question { font-size: 0.85rem !important; }
+        .post-faq-answer { padding: 0.25rem 0.9rem 0.85rem !important; }
+        .post-faq-answer p { font-size: 0.83rem !important; }
     }
 ';
 
