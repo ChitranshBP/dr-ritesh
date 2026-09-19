@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'How to Deal with Panic Attacks: Immediate Relief & TMS',
+        'date'        => '2026-09-18',
+        'category'    => 'Anxiety & Panic',
+        'excerpt'     => 'Discover 5 immediate techniques to stop panic attacks and learn how advanced TMS therapy from Dr. Ritesh Amin in Edison, NJ offers lasting relief.',
+        'image'       => '/assets/images/blog-how-to-deal-with-panic-attacks.png',
+        'slug'        => 'how-to-deal-with-panic-attacks',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'Is TMS Therapy Safe? A Complete Guide',
         'date'        => '2026-09-09',
         'category'    => 'TMS Therapy',
