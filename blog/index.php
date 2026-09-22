@@ -11,6 +11,15 @@
 
 $posts = [
     [
+        'title'       => 'What Causes Involuntary Movements? Causes & Symptoms',
+        'date'        => '2026-09-21',
+        'category'    => 'Neurology & TMS',
+        'excerpt'     => 'Learn what causes involuntary movements, common causes and symptoms, and when to seek professional evaluation and treatment from Dr. Ritesh Amin.',
+        'image'       => '/assets/images/blog-what-causes-involuntary-movements.png',
+        'slug'        => 'what-causes-involuntary-movements',
+        'featured'    => true,
+    ],
+    [
         'title'       => 'How to Deal with Panic Attacks: Immediate Relief & TMS',
         'date'        => '2026-09-18',
         'category'    => 'Anxiety & Panic',
