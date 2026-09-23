@@ -2,7 +2,7 @@ import os
 import glob
 from datetime import datetime
 
-BASE_DIR = r"c:\Users\intel\Desktop\ritesh\dr-ritesh"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DOMAIN = "https://drriteshamin.com"
 TODAY = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S+00:00")
 

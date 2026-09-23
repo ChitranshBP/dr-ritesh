@@ -11,6 +11,16 @@
 
 $posts = [
     [
+        'title'       => 'Can You Make a Full Recovery From a Stroke? Key Facts',
+        'date'        => '2026-09-23',
+        'category'    => 'Neurology & TMS',
+        'excerpt'     => 'Learn if you can make a full recovery from a stroke, what affects recovery, and how Dr. Ritesh Amin in Edison, NJ can support your treatment journey.',
+        'image'       => '/assets/images/blog-stroke-recovery.png',
+        'slug'        => 'can-you-make-a-full-recovery-from-a-stroke',
+        'read_time'   => 6,
+        'featured'    => true,
+    ],
+    [
         'title'       => 'What Causes Involuntary Movements? Causes & Symptoms',
         'date'        => '2026-09-21',
         'category'    => 'Neurology & TMS',
@@ -201,7 +211,7 @@ include dirname(__DIR__) . '/header.php';
 
         <div class="grid gap-8 md:grid-cols-2">
             <?php foreach ($featured as $p) :
-                $readTime = ceil(str_word_count($p['excerpt']) / 200) + 3;
+                $readTime = $p['read_time'] ?? (ceil(str_word_count($p['excerpt']) / 200) + 3);
                 $dateFmt  = date('F j, Y', strtotime($p['date']));
             ?>
             <a href="/blog/<?= $p['slug'] ?>.php" class="blog-card group block rounded-2xl overflow-hidden shadow-md"
@@ -284,7 +294,7 @@ include dirname(__DIR__) . '/header.php';
 
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" id="blog-grid">
             <?php foreach ($posts as $p) :
-                $readTime = ceil(str_word_count($p['excerpt']) / 200) + 3;
+                $readTime = $p['read_time'] ?? (ceil(str_word_count($p['excerpt']) / 200) + 3);
                 $dateFmt  = date('F j, Y', strtotime($p['date']));
             ?>
             <article class="blog-card group rounded-2xl overflow-hidden shadow-sm"

@@ -219,6 +219,7 @@ $canonical_url = $canonical_url ?? ('https://drriteshamin.com' . (strpos($clean_
 
         <?= $extra_css?>
     </style>
+    <?php if (!empty($extra_head)) echo $extra_head; ?>
 </head>
 
 <body class="<?= htmlspecialchars($body_class)?>">
