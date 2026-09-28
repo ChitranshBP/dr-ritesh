@@ -5,7 +5,7 @@
 
 $title      = 'What Causes Involuntary Movements? Causes & Symptoms';
 $category   = 'Neurology & TMS';
-$date       = '2026-09-21';
+$date       = '2026-09-15';
 $author     = 'Dr. Ritesh Amin | Edison, NJ';
 $hero_image = '/assets/images/blog-what-causes-involuntary-movements.png';
 $excerpt    = 'Learn what causes involuntary movements, common causes and symptoms, and when to seek professional evaluation and treatment from Dr. Ritesh Amin.';

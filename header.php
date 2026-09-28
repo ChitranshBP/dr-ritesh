@@ -229,11 +229,31 @@ $canonical_url = $canonical_url ?? ('https://drriteshamin.com' . (strpos($clean_
     <!-- End Google Tag Manager (noscript) -->
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
+        <script>
+        (function(){
+            function syncNav(){
+                var nb = document.getElementById('navbar');
+                if (!nb) return;
+                var st = window.scrollY || window.pageYOffset || (document.scrollingElement ? document.scrollingElement.scrollTop : 0) || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                if (st > 15) {
+                    nb.classList.add('scrolled');
+                } else {
+                    nb.classList.remove('scrolled');
+                }
+            }
+            window.addEventListener('scroll', syncNav, {passive:true, capture:true});
+            document.addEventListener('scroll', syncNav, {passive:true, capture:true});
+            window.addEventListener('resize', syncNav, {passive:true});
+            document.addEventListener('DOMContentLoaded', syncNav);
+            setInterval(syncNav, 150);
+            syncNav();
+        })();
+        </script>
         <div class="container nav-container">
             <!-- Logo -->
             <a href="/" class="logo">
-                <img src="/assets/logo/Dr.-Ritesh-Amin-main.png" alt="Dr. Ritesh Amin" class="logo-main hidden">
-                <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="logo-white block">
+                <img src="/assets/logo/Dr.-Ritesh-Amin-main.png" alt="Dr. Ritesh Amin" class="logo-main">
+                <img src="/assets/logo/Dr-Ritesh-Amin-white.png" alt="Dr. Ritesh Amin" class="logo-white">
             </a>
 
             <!-- Desktop nav links -->

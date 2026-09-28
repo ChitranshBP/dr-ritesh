@@ -2,12 +2,12 @@
 /**
  * Blog Post — Can You Make a Full Recovery From a Stroke?
  * Target Keyword: can you make a full recovery from a stroke
- * Date: September 23, 2026
+ * Date: September 18, 2026
  */
 
 $title      = 'Can You Make a Full Recovery From a Stroke? Key Facts';
 $category   = 'Neurology & TMS';
-$date       = '2026-09-23';
+$date       = '2026-09-18';
 $author     = 'Dr. Ritesh Amin | Edison, NJ';
 $hero_image = '/assets/images/blog-stroke-recovery.png';
 $excerpt    = 'Learn if you can make a full recovery from a stroke, what affects recovery, and how Dr. Ritesh Amin in Edison, NJ can support your treatment journey.';

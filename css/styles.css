@@ -179,19 +179,20 @@ img {
     transition: opacity 0.4s ease;
 }
 
-/* ── Scrolled state: warm ivory glass ── */
+/* ── Scrolled state: solid white ── */
+#navbar.scrolled,
 .navbar.scrolled {
-    top: 0.85rem;
-    background: rgba(255,255,255,0.94);
-    backdrop-filter: blur(22px) saturate(180%);
-    -webkit-backdrop-filter: blur(22px) saturate(180%);
-    border: 1px solid rgba(37,111,168,0.18);
-    box-shadow: 0 8px 36px rgba(11,25,44,0.10), 0 1px 0 rgba(37,111,168,0.12);
-    padding: 0.4rem 0;
+    top: 0.85rem !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border: 1px solid rgba(37,111,168,0.18) !important;
+    box-shadow: 0 8px 36px rgba(11,25,44,0.12), 0 1px 0 rgba(37,111,168,0.12) !important;
+    padding: 0.4rem 0 !important;
 }
 
+#navbar.scrolled::after,
 .navbar.scrolled::after {
-    opacity: 0; /* remove bottom hairline on scroll — the border takes over */
+    opacity: 0 !important; /* remove bottom hairline on scroll — the border takes over */
 }
 
 /* ── Layout ── */
@@ -223,18 +224,22 @@ img {
     width: auto;
 }
 
+#navbar.scrolled .logo-white,
 .navbar.scrolled .logo-white {
     display: none !important;
 }
 
+#navbar.scrolled .logo-main,
 .navbar.scrolled .logo-main {
     display: block !important;
 }
 
+#navbar:not(.scrolled) .logo-main,
 .navbar:not(.scrolled) .logo-main {
     display: none !important;
 }
 
+#navbar:not(.scrolled) .logo-white,
 .navbar:not(.scrolled) .logo-white {
     display: block !important;
 }
@@ -292,12 +297,14 @@ img {
 .dropdown:hover .drop-chevron { transform: rotate(180deg); }
 
 /* Scrolled link colours */
+#navbar.scrolled .nav-link,
 .navbar.scrolled .nav-link {
-    color: var(--color-midnight-light);
+    color: var(--color-midnight-light) !important;
 }
 
+#navbar.scrolled .nav-link:hover,
 .navbar.scrolled .nav-link:hover {
-    color: var(--color-midnight);
+    color: var(--color-midnight) !important;
 }
 
 /* ── Dropdown panel ── */

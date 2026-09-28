@@ -6,13 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Sticky Navbar
     const navbar = document.getElementById('navbar');
     
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+    const checkScroll = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        if (scrollTop > 15) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+    };
+
+    checkScroll();
+    window.addEventListener('scroll', checkScroll, { passive: true });
 
     // 2. Scroll Reveal Animations
     const revealElements = document.querySelectorAll('.reveal');
