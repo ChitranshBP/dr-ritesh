@@ -852,4 +852,4 @@ include dirname(__DIR__) . '/header.php';
 <?php
 $img_url = (strpos($hero_image, 'http') === 0) ? $hero_image : "https://drriteshamin.com" . $hero_image;
 ?>
-<?php include dirname(__DIR__) . '/header.php'; ?>
+<?php include dirname(__DIR__) . '/footer.php'; ?>
