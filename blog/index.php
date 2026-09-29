@@ -11,6 +11,16 @@
 
 $posts = [
     [
+        'title' => 'Who Is a Good Candidate for Ketamine Therapy? Complete Guide',
+        'date' => '2026-09-24',
+        'category' => 'Ketamine & Depression',
+        'excerpt' => 'Wondering who is a good candidate for ketamine therapy? Explore qualifying psychiatric conditions, medical criteria, contraindications, and expert evaluation in Edison, NJ.',
+        'image' => '/assets/images/blog-who-is-a-good-candidate-for-ketamine-therapy.png',
+        'slug' => 'who-is-a-good-candidate-for-ketamine-therapy',
+        'read_time' => 9,
+        'featured' => true,
+    ],
+    [
         'title' => 'What Causes Treatment-Resistant Depression? Causes & Risks',
         'date' => '2026-09-21',
         'category' => 'Depression & TMS Therapy',
