@@ -11,6 +11,16 @@
 
 $posts = [
     [
+        'title' => 'Does TMS Therapy Work for Anxiety? Success Rates & Guide',
+        'date' => '2026-10-13',
+        'category' => 'TMS & Anxiety',
+        'excerpt' => 'Does TMS therapy work for anxiety? Discover clinical success rates, FDA status, and non-drug relief for treatment-resistant anxiety and depression in NJ.',
+        'image' => '/assets/images/blog-does-tms-therapy-work-for-anxiety.jpg',
+        'slug' => 'does-tms-therapy-work-for-anxiety',
+        'read_time' => 8,
+        'featured' => true,
+    ],
+    [
         'title' => 'Who Is a Good Candidate for Ketamine Therapy? Complete Guide',
         'date' => '2026-09-24',
         'category' => 'Ketamine & Depression',

@@ -61,6 +61,7 @@ $content = <<<'HTML'
 <blockquote>
     <p><strong>Translation for patients:</strong> Even if TMS is prescribed primarily for depression, many people notice their anxiety improves significantly as well.</p>
 </blockquote>
+<p>For our latest in-depth clinical analysis and updated protocols, read our comprehensive guide: <a href="/blog/does-tms-therapy-work-for-anxiety.php">Does TMS Therapy Work for Anxiety? Success Rates, Science &amp; Guide</a>.</p>
 
 <h2 id="good-candidate">Who Is a Good Candidate for TMS for Anxiety?</h2>
 <p>

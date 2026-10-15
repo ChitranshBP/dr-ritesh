@@ -139,7 +139,7 @@ include __DIR__ . '/header.php';
                         <svg class="w-5 h-5 text-gold transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div class="hidden px-5 pb-5 text-slate-600 text-sm md:text-base leading-relaxed border-t border-slate-100 pt-3">
-                        Yes. Low-frequency TMS targeting the right prefrontal cortex has demonstrated remarkable clinical efficacy for treatment-resistant GAD.
+                        Yes. Low-frequency TMS targeting the right prefrontal cortex has demonstrated remarkable clinical efficacy for treatment-resistant GAD. Read our in-depth clinical guide on <a href="/blog/does-tms-therapy-work-for-anxiety.php" class="text-gold font-semibold hover:underline">does TMS therapy work for anxiety</a> to explore research, success rates, and protocols.
                     </div>
                 </div>
                 <div class="border border-slate-200 rounded-xl overflow-hidden mb-4 bg-white shadow-sm">
