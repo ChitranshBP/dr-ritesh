@@ -315,6 +315,8 @@ include 'header.php';
                                 </label>
                             </div>
 
+                            <div class="g-recaptcha mb-6" data-sitekey="6LfXFPItAAAAAJs8xRI3EpTqhL_Mohv5zEH-eJZw" data-action="CONTACT"></div>
+
                             <button type="submit" class="btn btn-primary w-full py-4 text-center justify-center text-base tracking-wide shadow-lg shadow-gold/20 hover:-translate-y-0.5 transition-all">
                                 Request a Consultation
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-5 h-5 ml-2 inline-block" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -577,6 +579,8 @@ include 'header.php';
         </span>
     </div>
 
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+    <script src="/js/recaptcha.js"></script>
     <script>
     // Form submission handler
     document.getElementById('contactForm').addEventListener('submit', function(e) {
