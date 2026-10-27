@@ -414,7 +414,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">Reclaim Your Days From Migraines</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Advanced magnetic stimulation can raise your migraine threshold safely and effectively.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
-            <p class="text-sm text-white/50 mt-6">Also explore <a href="/neurology/tms-for-stroke-recovery.php" class="underline hover:text-white">TMS for Stroke Recovery</a> and <a href="/neurology/tms-for-parkinsons-symptoms.php" class="underline hover:text-white">TMS for Parkinson's</a>.
+            <p class="text-sm text-white/50 mt-6">Also explore <a href="/blog/are-chronic-migraines-genetic.php" class="underline hover:text-white">Are Chronic Migraines Genetic?</a>, <a href="/neurology/tms-for-stroke-recovery.php" class="underline hover:text-white">TMS for Stroke Recovery</a>, and <a href="/neurology/tms-for-parkinsons-symptoms.php" class="underline hover:text-white">TMS for Parkinson's</a>.</p>
         </div>
     </section>
 

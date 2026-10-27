@@ -376,7 +376,7 @@ include __DIR__ . '/../header.php';
             <h2 class="text-4xl lg:text-5xl font-serif text-white mb-6">A Safer Path Out of Depression</h2>
             <p class="text-xl text-white/70 mb-10 max-w-2xl mx-auto">Discover how targeted magnetic stimulation can effectively treat bipolar depression without the systemic risks of traditional antidepressants.</p>
             <a href="/contact.php" class="btn btn-primary py-5 px-12 text-lg mt-2">Book Your Consultation Today</a>
-            <p class="text-sm text-white/50 mt-6">Also learn about <a href="/psychiatry/tms-for-major-depression.php" class="underline hover:text-white">TMS for Depression</a> or <a href="/psychiatry/tms-for-generalized-anxiety.php" class="underline hover:text-white">TMS for Anxiety</a>.
+            <p class="text-sm text-white/50 mt-6">Also explore our clinical guide on <a href="/blog/does-tms-therapy-work-for-bipolar-disorder.php" class="underline hover:text-white">Does TMS Therapy Work for Bipolar Disorder?</a>, <a href="/psychiatry/tms-for-major-depression.php" class="underline hover:text-white">TMS for Depression</a>, or <a href="/psychiatry/tms-for-generalized-anxiety.php" class="underline hover:text-white">TMS for Anxiety</a>.</p>
         </div>
     </section>
 

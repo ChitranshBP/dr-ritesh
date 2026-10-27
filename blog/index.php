@@ -11,6 +11,36 @@
 
 $posts = [
     [
+        'title' => 'Does TMS Cause Memory Loss? Side Effects Explained',
+        'date' => '2026-10-26',
+        'category' => 'TMS Therapy & Brain Health',
+        'excerpt' => 'Learn whether TMS therapy can cause memory loss, understand its potential side effects, and explore treatment options with Dr. Ritesh Amin.',
+        'image' => '/assets/images/blog-does-tms-cause-memory-loss.jpg',
+        'slug' => 'does-tms-cause-memory-loss',
+        'read_time' => 9,
+        'featured' => true,
+    ],
+    [
+        'title' => 'Does TMS Therapy Work for Bipolar Disorder? Benefits',
+        'date' => '2026-10-21',
+        'category' => 'Bipolar & TMS Therapy',
+        'excerpt' => 'Learn whether TMS therapy can help with bipolar disorder, its potential benefits, risks, and treatment considerations with Dr. Ritesh Amin.',
+        'image' => '/assets/images/blog-does-tms-work-for-bipolar-disorder.jpg',
+        'slug' => 'does-tms-therapy-work-for-bipolar-disorder',
+        'read_time' => 9,
+        'featured' => true,
+    ],
+    [
+        'title' => 'Are Chronic Migraines Genetic? Causes & Risk Factors',
+        'date' => '2026-10-16',
+        'category' => 'Neurology & Migraine',
+        'excerpt' => 'Learn how genetics may contribute to chronic migraines, explore common risk factors, and discover diagnosis and treatment options with Dr. Ritesh Amin.',
+        'image' => '/assets/images/blog-are-chronic-migraines-genetic.jpg',
+        'slug' => 'are-chronic-migraines-genetic',
+        'read_time' => 9,
+        'featured' => true,
+    ],
+    [
         'title' => 'Does TMS Therapy Work for Anxiety? Success Rates & Guide',
         'date' => '2026-10-13',
         'category' => 'TMS & Anxiety',

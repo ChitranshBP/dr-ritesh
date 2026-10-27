@@ -174,6 +174,7 @@ include __DIR__ . '/header.php';
                 <a href="/contact.php" class="btn btn-primary py-4 px-10 text-base shadow-lg shadow-gold/20">Book Your Consultation</a>
                 <a href="tel:+17323791797" class="btn btn-ghost !border-white/30 !text-white hover:!bg-white hover:!text-midnight py-4 px-10 text-base">Call (732) 379-1797</a>
             </div>
+            <p class="text-sm text-white/50 mt-6">Also read our clinical guide: <a href="/blog/does-tms-cause-memory-loss.php" class="underline hover:text-white">Does TMS Cause Memory Loss? Side Effects Explained</a>.</p>
         </div>
     </section>
 
