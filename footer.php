@@ -18,6 +18,9 @@
                             <a href="mailto:psychiatrycare@gmail.com" class="text-white hover:text-gold transition-colors">psychiatrycare@gmail.com</a>
                         </p>
                     </div>
+                    <div class="mt-6">
+                        <a href="https://tmslist.com/clinic/dr-ritesh-amin-kendall-park-nj/" title="Dr. Ritesh Amin, MD - TMS Therapy &amp; Psychiatry (Kendall Park) on TMS List" style="display:inline-block;line-height:0"><img src="https://tmslist.com/badge/dr-ritesh-amin-kendall-park-nj.svg?layout=pill" width="180" height="40" alt="Dr. Ritesh Amin, MD - TMS Therapy &amp; Psychiatry (Kendall Park) is listed on TMS List" loading="lazy" style="border:0;max-width:100%;height:auto"></a>
+                    </div>
                 </div>
 
                 <!-- Specialties Columns -->
