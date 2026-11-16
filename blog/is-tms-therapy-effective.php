@@ -14,7 +14,7 @@ $category   = 'TMS Therapy & Research';
 $date       = '2026-11-09';
 $author     = 'Dr. Ritesh Amin | Edison, NJ';
 $hero_image = '/assets/images/blog-is-tms-therapy-effective-research.jpg';
-$hero_alt   = 'Patient relaxing in a treatment chair during a TMS therapy session while a physician reviews brain imaging in a modern New Jersey clinic';
+$hero_alt   = 'Smiling patient receiving TMS therapy as a clinician positions the magnetic coil during a treatment session in Edison, NJ';
 $excerpt    = 'Is TMS therapy effective? Explore what clinical research says about TMS success rates for depression, OCD, and anxiety, and how it compares to medication.';
 $read_time  = 10;
 
@@ -358,8 +358,8 @@ $article_schema = [
     'image'            => [
         '@type'  => 'ImageObject',
         'url'    => 'https://drriteshamin.com' . $hero_image,
-        'width'  => 1344,
-        'height' => 752
+        'width'  => 1600,
+        'height' => 859
     ],
     'datePublished'    => '2026-11-09T08:00:00-05:00',
     'dateModified'     => '2026-11-09T08:00:00-05:00',
@@ -763,7 +763,7 @@ include dirname(__DIR__) . '/header.php';
     <!-- Background image -->
     <?php if ($hero_image) : ?>
     <div class="post-hero-bg" style="position:absolute;inset:0;z-index:0;">
-        <img src="<?= htmlspecialchars($hero_image) ?>" alt="<?= htmlspecialchars($hero_alt) ?>" width="1344" height="752" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;" />
+        <img src="<?= htmlspecialchars($hero_image) ?>" alt="<?= htmlspecialchars($hero_alt) ?>" width="1600" height="859" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;" />
         <div style="position:absolute;inset:0;background:linear-gradient(175deg,rgba(11,25,44,.86) 0%,rgba(11,25,44,.74) 50%,rgba(11,25,44,.94) 100%);"></div>
     </div>
     <?php else : ?>
