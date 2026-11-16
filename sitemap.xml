@@ -809,13 +809,19 @@
   </url>
   <url>
     <loc>https://drriteshamin.com/blog/</loc>
-    <lastmod>2026-10-26T12:00:00+00:00</lastmod>
+    <lastmod>2026-11-09T12:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://drriteshamin.com/blog/does-tms-cause-memory-loss</loc>
     <lastmod>2026-10-26T12:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://drriteshamin.com/blog/is-tms-therapy-effective</loc>
+    <lastmod>2026-11-09T12:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>

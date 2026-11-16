@@ -11,6 +11,16 @@
 
 $posts = [
     [
+        'title' => 'Is TMS Therapy Effective? What Does the Research Say',
+        'date' => '2026-11-09',
+        'category' => 'TMS Therapy & Research',
+        'excerpt' => 'Is TMS therapy effective? Explore what clinical research says about TMS success rates for depression, OCD, and anxiety, and how it compares to medication.',
+        'image' => '/assets/images/blog-is-tms-therapy-effective-research.jpg',
+        'slug' => 'is-tms-therapy-effective',
+        'read_time' => 10,
+        'featured' => true,
+    ],
+    [
         'title' => 'Does TMS Cause Memory Loss? Side Effects Explained',
         'date' => '2026-10-26',
         'category' => 'TMS Therapy & Brain Health',
