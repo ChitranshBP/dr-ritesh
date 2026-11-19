@@ -136,6 +136,7 @@
                     <a href="/terms.php" class="hover:text-gold transition-colors">Terms of Service</a>
                     <a href="/privacy-policy.php" class="hover:text-gold transition-colors">HIPAA Notice</a>
                     <a href="/contact.php" class="hover:text-gold transition-colors">Accessibility</a>
+                    <a href="#" data-cookie-settings class="hover:text-gold transition-colors">Cookie Settings</a>
                 </div>
             </div>
         </div>

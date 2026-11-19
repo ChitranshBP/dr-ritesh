@@ -19,6 +19,18 @@ $canonical_url = $canonical_url ?? ('https://drriteshamin.com' . (strpos($clean_
 <html lang="en">
 
 <head>
+    <!-- Cookie consent: apply a stored "Decline" before any tracker loads -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      (function(){
+        var c = null; try { c = localStorage.getItem('cookie_consent'); } catch (e) {}
+        window.ccDenied = c === 'denied';
+        var s = window.ccDenied ? 'denied' : 'granted';
+        gtag('consent', 'default', {ad_storage: s, ad_user_data: s, ad_personalization: s, analytics_storage: s});
+      })();
+    </script>
+    <script src="/js/cookie-consent.js" defer></script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,6 +58,7 @@ $canonical_url = $canonical_url ?? ('https://drriteshamin.com' . (strpos($clean_
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+    if (window.ccDenied) fbq('consent', 'revoke');
     fbq('init', '991689130319662');
     fbq('track', 'PageView');
     </script>

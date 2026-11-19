@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+    <!-- Cookie consent: apply a stored "Decline" before any tracker loads -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      (function(){
+        var c = null; try { c = localStorage.getItem('cookie_consent'); } catch (e) {}
+        window.ccDenied = c === 'denied';
+        var s = window.ccDenied ? 'denied' : 'granted';
+        gtag('consent', 'default', {ad_storage: s, ad_user_data: s, ad_personalization: s, analytics_storage: s});
+      })();
+    </script>
+    <script src="/js/cookie-consent.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
