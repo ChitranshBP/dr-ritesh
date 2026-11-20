@@ -2,18 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Cookie consent: apply a stored "Decline" before any tracker loads -->
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      (function(){
-        var c = null; try { c = localStorage.getItem('cookie_consent'); } catch (e) {}
-        window.ccDenied = c === 'denied';
-        var s = window.ccDenied ? 'denied' : 'granted';
-        gtag('consent', 'default', {ad_storage: s, ad_user_data: s, ad_personalization: s, analytics_storage: s});
-      })();
-    </script>
-    <script src="/js/cookie-consent.js" defer></script>
+    <script src="/js/consent.js"></script>
     <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -24,13 +13,10 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    if (window.ccDenied) fbq('consent', 'revoke');
+    fbq('consent', window.ktConsent ? ktConsent.fbq() : 'revoke');
     fbq('init', '991689130319662');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=991689130319662&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
