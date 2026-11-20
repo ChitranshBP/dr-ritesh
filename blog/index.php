@@ -11,6 +11,16 @@
 
 $posts = [
     [
+        'title' => 'Does PTSD Qualify for Disability Benefits?',
+        'date' => '2026-11-17',
+        'category' => 'PTSD & Mental Health',
+        'excerpt' => 'Does PTSD qualify for disability benefits? Learn SSA and VA criteria, the medical evidence you need, and how a psychiatrist in Edison, NJ can help.',
+        'image' => '/assets/images/blog-does-ptsd-qualify-for-disability-benefits.jpg',
+        'slug' => 'does-ptsd-qualify-for-disability-benefits',
+        'read_time' => 9,
+        'featured' => true,
+    ],
+    [
         'title' => 'Is TMS Therapy Effective? What Does the Research Say',
         'date' => '2026-11-09',
         'category' => 'TMS Therapy & Research',
